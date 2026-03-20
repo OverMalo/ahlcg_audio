@@ -1,0 +1,62 @@
+{
+  "start": {
+    "title": "Capítulo 2",
+    "description": "",
+    "options": [
+      {
+        "label": "HERMANOS DE LAS CENIZAS",
+        "description": "",
+        "next": "hermanos_cenizas"
+      }
+    ]
+  },
+  "hermanos_cenizas": {
+    "title": "HERMANOS DE LAS CENIZAS",
+    "description": "",
+    "options": [
+      {
+        "label": "Introducción: Un renacimiento glorioso.",
+        "description": "",
+        "next": "audio_introduccion"
+      },
+      {
+        "label": "Escenario I: Las llamas se propagan",
+        "description": "",
+        "next": "escenario_1"
+      },
+      {
+        "label": "Escenario II: Humo y espejos",
+        "description": "",
+        "next": "escenario_2"
+      },
+      {
+        "label": "Escenario III: Reina de las cenizas",
+        "description": "",
+        "next": "escenario_3"
+      }
+    ]
+  },
+  "audio_introduccion": {
+  "title": "Introducción",
+  "description": "Un renacimiento glorioso\n\nArkham siempre ha sido una ciudad un poco rara. Es como si cada vez que leyeras las noticias, hubiera algún artículo nuevo sobre un atroz asesinato o una repentina desaparición. Un cadáver apaleado en el Distrito ribereño. Un agente de policía desaparecido en French Hill. Un símbolo sangriento trazado en el callejón de atrás del Restaurante de Velma. Es cierto que la ciudad ha tenido su ración de chiflados y conspiranoicos, pero incluso los observadores más sensatos deben rendirse a la evidencia: a esta ciudad le pasa algo.\n\nSin embargo, a la mayoría de habitantes de Arkham no les gusta regodearse en lo malo. Tras la inundación que se produjo hace seis meses, la ciudad se está reconstruyendo más fuerte que nunca, y llega nueva financiación de inversores externos. Dicen que todo es legal y va de maravilla, y desde luego que es lo que parece. Pero sabes que la historia siempre va más allá de las apariencias.\n\nOcurra lo que ocurra, no tienes que afrontarlo sin ayuda. Hay más gente como tú que se ha encontrado con horrores similares y que no se conformará con explicaciones fáciles o distracciones reconfortantes. También ellos saben que hay un poso de verdad en lo relativo a las antiguas maldiciones y leyendas de brujas de esta ciudad. ¿Te pondrás de su lado y en contra de los males que acechan más allá de la mera comprensión mortal? ¿O sucumbirás como tantos otros ante los terrores de los Mitos?",
+  "audio": {
+    "src": "/audios/cap2_hermanos_de_las_cenizas_intro.mp3",
+    "title": "Introducción: Un renacimiento glorioso"
+    }
+  },
+  "escenario_1": {
+    "title": "Escenario I: Las llamas se propagan",
+    "description": "Pantalla pendiente de completar con tus siguientes opciones.",
+    "options": []
+  },
+  "escenario_2": {
+    "title": "Escenario II: Humo y espejos",
+    "description": "Pantalla pendiente de completar con tus siguientes opciones.",
+    "options": []
+  },
+  "escenario_3": {
+    "title": "Escenario III: Reina de las cenizas",
+    "description": "Pantalla pendiente de completar con tus siguientes opciones.",
+    "options": []
+  }
+}
