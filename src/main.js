@@ -86,6 +86,10 @@ function renderOptions(node) {
 function renderFinal(node) {
   const breadcrumb = pathLabels.length ? pathLabels.join(" → ") : "Acceso directo";
 
+  const audioSrc = node.audio?.src
+    ? `${import.meta.env.BASE_URL}${node.audio.src.replace(/^\/+/, "")}`
+    : "";
+
   screenEl.innerHTML = `
     <div class="final-box">
       <div>
@@ -96,7 +100,7 @@ function renderFinal(node) {
 
       <div class="audio-panel">
         <strong>${escapeHtml(node.audio.title || node.title)}</strong>
-        <audio controls preload="none" src="${escapeAttribute(node.audio.src || "")}"></audio>
+        <audio controls preload="none" src="${escapeAttribute(audioSrc)}"></audio>
         ${node.audio.src ? "" : '<p class="empty">Falta definir la ruta del audio.</p>'}
       </div>
 
