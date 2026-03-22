@@ -44,19 +44,230 @@
     "title": "Introducción: Un renacimiento glorioso"
     }
   },
+  "audio_escenario_uno_introduccion": {
+  "title": "Introducción",
+  "description": "Escenario I: Las llamas se propagan.\n\nEn Arkham están sucediendo cosas extrañas.Toda la ciudad está en vilo debido a una racha reciente de incendios y macabros “accidentes”.Aunque el Arkham Advertiser ha aventurado unas endebles explicaciones, tus colegas y tú no estáis tan seguros.Se han visto a unos personajes ataviados con túnicas cerca de estos sucesos tan raros, y un amigo mutuo está convencido de que se trata de los culpables.Resolvéis reuniros en la residencia de vuestro amigo, situada en la Universidad Miskatonic, para intentar llegar al fondo del asunto.Sin embargo, cuando llegas, la habitación de tu amigo está vacía, y la residencia está extrañamente tranquila...",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_intro.mp3",
+    "title": "Escenario I: Las llamas se propagan"
+    }
+  },
+  "audio_escenario_uno_no_reso": {
+  "title": "Ninguna resolución.",
+  "description": "Despiertas al final del campus. Te pican los ojos por el humo, y observas atónito y en silencio cómo arde la Universidad Miskatonic. Por encima de la conflagración danzan ascuas en el cielo como estrellas ardientes. Estás demasiado agotado como para ayudar, y ves a un grupo de estudiantes que se esfuerzan en vano por detener el fuego. Primero es el observatorio, luego la residencia universitaria, y por fin es el turno del edificio de Ciencias de sucumbir a las llamas. Entre el estruendo, encuentras al Dr. Henry Armitage bajo un abedul, viendo cómo arde la Biblioteca Orne. Las llamas no dejan más rastro del majestuoso edificio que el esqueleto de sus ruinas. El bibliotecario jefe se encuentra en un evidente estado de conmoción. Su cara adquiere un tono ceniciento cuando le explicas las extrañas circunstancias que rodean la desaparición de tu amigo. ¿Quién era el enemigo ardiente que te atacó? ¿Y qué querían los encapuchados que patrullaban el campus?",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_no.mp3",
+    "title": "Escenario I: Las llamas se propagan - Ninguna resolución."
+    }
+  },
+  "audio_escenario_uno_reso_uno": {
+  "title": "Resolución 1.",
+  "description": "El caos aumenta mientras docenas de estudiantes colaboran para combatir el ardiente infierno. Una sarta de preguntas asalta tu mente. ¿Quién era tu perseguidor? ¿Qué querían realmente los encapuchados que patrullaban el campus? ¿Y dónde está tu amigo? El Dr. Armitage te pone una mano en el hombro y te sobresalta.\n—Si queremos tener alguna posibilidad de encontrar a tu amigo y a su secuestrador, debemos marcharnos ya. Te lo explicaré todo por el camino.\n Miras a los estudiantes que combaten el fuego con valentía y luego al bibliotecario jefe. Podrías quedarte a ayudar, pero te costaría un tiempo precioso.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_uno.mp3",
+    "title": "Escenario I: Las llamas se propagan - Resolución 1."
+    }
+  },
+  "audio_escenario_uno_reso_dos": {
+  "title": "Resolución 2.",
+  "description": "Te pican los ojos debido al humo acre mientras colaboras con los demás para apagar las ávidas llamas. Lográis mantenerlas a raya hasta que llega el departamento de bomberos de Arkham. Cuando la situación está controlada, corres a reunirte con el Dr. Armitage.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_dos.mp3",
+    "title": "Escenario I: Las llamas se propagan - Resolución 2."
+    }
+  },
+  "audio_escenario_uno_reso_tres": {
+  "title": "Resolución 3.",
+  "description": "Huyes del campus con el Doctor Armitage, abandonando la universidad a su suerte. El aullido de las sirenas ahoga todos los demás sonidos mientras sigues al bibliotecario jefe a su piso.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_tres.mp3",
+    "title": "Escenario I: Las llamas se propagan - Resolución 3."
+    }
+  },
+  "audio_escenario_dos_intro": {
+  "title": "Introducción.",
+  "description": "Escenario II: Humo y espejos\nSigues al Dr. Armitage de vuelta a su piso. Un velo de humo negro tapa la luna y las estrellas, mientras que una brisa cálida lleva cenizas y ascuas por las familiares calles de la ciudad.\n—Tenía sospechas de que se estaba produciendo algo siniestro. Varios estudiantes han desaparecido en las últimas semanas —te dice el bibliotecario jefe—. Todos comenzaron a exhibir un comportamiento extraño tras asistir hace poco a una “reunión” supuestamente exclusiva fuera del campus. Se quejaban de horribles susurros incesantes, y en su piel apareció de repente un extraño moratón. Y luego desaparecieron.\nTemiendo lo peor, le preguntas por tu amigo.\n—Insistió en que nos viéramos hoy —te contesta—. Me habló de una organización que se hace llamar los “Hermanos de las cenizas” y que es quien ha estado invitando a estudiantes y a ciudadanos vulnerables a esos extraños encuentros. Tu amigo enumeró a una serie de individuos que asistían, pero no está claro si eran reclutas potenciales o adeptos leales. Antes de marcharse, tu amigo mencionó otra reunión que iba a producirse esta noche, un encuentro de todos los fieles. No sé por qué, pero sólo de pensarlo, me invade un temor indecible. Y ahora, tu amigo ha desaparecido —añade con pesar.\nDecides interrogar a la lista de sospechosos y luego acudir al Restaurante de Velma, en el Barrio Este, antes de la medianoche. El bibliotecario jefe te sugiere emplear la sutileza en lugar de ir a las bravas, para evitar alertar a los conspiradores. Sin embargo, temes que pueda no quedarte elección.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_intro.mp3",
+    "title": "Escenario II: Humo y espejos."
+    }
+  },
+  "audio_escenario_dos_no_reso": {
+  "title": "Ninguna resolución.",
+  "description": "Durante el trayecto en taxi hacia el Restaurante de Velma, reflexionas sobre todo lo que has descubierto. Por desgracia, tu búsqueda reveló muchos indicios... pero pocos resultados sólidos. Esperas que al Doctor Armitage le haya ido mejor.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_no.mp3",
+    "title": "Escenario II: Humo y espejos - Ninguna resolución."
+    }
+  },
+  "audio_escenario_dos_reso_uno": {
+  "title": "Resolución 1.",
+  "description": "Te montas en un taxi para ir al Barrio Este y reflexionas sobre todo lo que has descubierto. Pese a su intento por ocultar su verdadera identidad, has logrado descubrir quién estaba detrás de todo. Esperas que la información que has reunido baste para salvar a tu amigo desaparecido.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_uno.mp3",
+    "title": "Escenario II: Humo y espejos - Resolución 1."
+    }
+  },
+  "audio_escenario_dos_reso_dos": {
+  "title": "Resolución 2.",
+  "description": "De camino a reunirte con el Dr. Armitage, pides al taxista que se desvíe por la ubicación segura donde dejaste a tu némesis inconsciente. Al entrar, te asalta un fuerte olor a humo, y el suelo está negro de hollín. Pese a todo lo que hiciste, el macabro personaje logró escapar. Las esposas que usaste para retener al sirviente estaban reventadas, no fundidas ni manipuladas de algún otro modo, lo que sugiere que alguien contribuyó a su huida.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_dos.mp3",
+    "title": "Escenario II: Humo y espejos - Resolución 2."
+    }
+  },
+  "audio_escenario_tres_intro_uno": {
+  "title": "Introducción 1.",
+  "description": "El Dr. Armitage le da las gracias a la camarera del Restaurante de Velma cuando ésta pone sendos platos de tarta de manzana caliente entre vosotros. El bibliotecario jefe empuja uno de ellos hacia ti con una sonrisa cansada.\n—Arkham está cambiando. El mundo está cambiando, me temo que para peor, pero al menos tenemos tarta.\nJuntos, el Dr. Armitage y tú unís las piezas de la perturbadora imagen de la situación.\n—Los Hermanos de las cenizas no son conspiradores —dice Armitage—. Todos y cada uno de ellos son siervos. Siervos de una antigua diosa a la que llaman “Elokoss”.\nAntes de continuar, el Dr. Armitage te muestra una grotesca talla en madera de un árbol nudoso con ramas en llamas.\n—Tras asistir a una de las reuniones secretas de la secta, a algunos seguidores potenciales les sale un extraño moratón que los marca como propiedad de Elokoss. Estos seguidores provienen de todos los estratos sociales: ricos y pobres, fuertes y débiles. Lo más importante es que estos siervos no tienen ni idea de que se encuentran bajo su influjo. La misteriosa persona que te persigue es uno de ellos. Según la profecía, el “Sirviente de la llama” que nos atacó en la universidad es el heraldo del regreso de la reina. El sirviente prepara sacrificios para hacer realidad el glorioso renacimiento de su reina, que predicen que sucederá esta misma noche..",
+    "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_uno.mp3",
+    "title": "Escenario III: Reina de las cenizas - Introducción 1."
+    }
+  },
+  "audio_escenario_tres_intro_dos": {
+  "title": "Introducción 2.",
+  "description": "Te estremeces en lo más hondo con tan sólo pensar que vayan a sacrificar a tu amigo. En lugar de unir pruebas circunstanciales, sugieres registrar la residencia del Sirviente de la llama en busca de alguna pista. Al hacerlo, conseguís varios indicios: una invitación a una reunión secreta, un par de botas embarradas y arañadas, un registro de operaciones de contrabando en el Distrito ribereño, una foto de tres rostros iluminados por velas en la oscuridad. Todo apunta a las alcantarillas de Arkham.\n—¿No te parece un poco tonto que una secta que venera el fuego se instale en las alcantarillas para sus asuntos? —pregunta Armitage con una risilla—. Pero creo que tienes razón.\nDecidís rastrear juntos las alcantarillas en busca de tu amigo.",
+    "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_dos.mp3",
+    "title": "Escenario III: Reina de las cenizas - Introducción 2."
+    }
+  },
+  "audio_escenario_tres_intro_tres": {
+  "title": "Introducción 3.",
+  "description": "Te estremeces en lo más hondo con tan sólo pensar que vayan a sacrificar a tu amigo. Juntos, el Dr. Armitage y tú repasáis las pocas pistas valiosas que habéis reunido. Tras varias horas de aburrido análisis, Armitage conjetura que los Hermanos de las cenizas están llevando a cabo su ritual en las alcantarillas de Arkham.\n—¿No te parece un poco tonto que una secta que venera el fuego se instale en las alcantarillas para sus asuntos? —pregunta Armitage con una risilla—. Pero es lo único que tenemos.\nDecidís rastrear juntos las alcantarillas en busca de tu amigo.",
+    "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_tres.mp3",
+    "title": "Escenario III: Reina de las cenizas - Introducción 3."
+    }
+  },
+  "audio_escenario_tres_no_reso": {
+  "title": "Ninguna resolución.",
+  "description": "El Dr. Armitage escapa con vida de las alcantarillas a duras penas, roto por la culpa de dejar atrás a sus compañeros. Para cuando amanece, un fuego inextinguible se ha propagado por todo el Barrio Este, cobrándose innumerables vidas. Aunque el departamento de bomberos de Arkham hace todo lo posible, las llamas arden durante tres días antes de apagarse. Los que huyeron hablan entre susurros de visiones indecibles, rostros aterradores y macabros que miraban desde las llamas, que siguen persiguiéndolos. Los médicos y enfermeras todavía no han logrado identificar el origen de los extraños moratones que presentan las víctimas y que no se curan. El fuego ha volatilizado cualquier rastro de los compañeros de Armitage y de los Hermanos de las cenizas.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_no.mp3",
+    "title": "Escenario III: Reina de las cenizas - Ninguna resolución."
+    }
+  },
+  "audio_escenario_tres_reso_uno": {
+  "title": "Resolución 1.",
+  "description": "Pese a tenerlo todo en contra, el receptáculo del antiguo mal que encarnaba Elokoss ha quedado destruido, y los planes de la secta por devolverla a este plano han quedado frustrados. El Dr. Armitage asiste a los sectarios a medida que despiertan. Encuentras a tu amigo entre ellos, asustado y confuso, pero indemne por lo demás. Te escucha atentamente mientras le explicas los terribles acontecimientos de la noche. Al acompañarlos a él y al resto de inocentes fuera de las alcantarillas, ves que tiene en el cuello una extraña marca que conoces bien. El moratón es menos intenso y apenas es visible, pero sigue ahí.\n\nPuede que sea sólo cuestión de tiempo que la marca se reactive y que más seguidores de la Reina de las cenizas vuelvan a alzarse para resucitar a su diosa. Juras que estarás ahí si llega ese día.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_uno.mp3",
+    "title": "Escenario III: Reina de las cenizas - Resolución 1."
+    }
+  },
+  "audio_escenario_tres_reso_dos": {
+  "title": "Resolución 2.",
+  "description": "Un viento aullante os cubre de carbonilla. El Dr. Armitage coge un ajado tomo de las manos de un sectario caído y entona un gutural idioma inhumano. Un fuerte crujido, como el de la madera al partirse, resuena por toda la cisterna, y el árbol llameante se convierte en polvo y ceniza ante tus ojos. A tu alrededor, los sectarios sueltan las armas y se detienen, con aspecto perdido. Han dejado de estar bajo el influjo de Elokoss.\n\nEncuentras a tu amigo entre ellos, asustado y confuso, pero indemne por lo demás. La marca de su cuello ha desaparecido sin dejar el menor rastro, y el resto de la secta parece haber vuelto a la normalidad, sin ningún recuerdo de lo sucedido durante la noche. Aun así, lo que has vivido te deja con temor. Durante los meses siguientes, el menor atisbo de humo hace que se te acelere el pulso. Las llamas se apagaron, pero no logras librarte de la agobiante sensación de que, en algún profundo lugar bajo la ciudad, las ascuas de la ira de Elokoss siguen ardiendo.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_dos.mp3",
+    "title": "Escenario III: Reina de las cenizas - Resolución 2."
+    }
+  },
+  "audio_escenario_tres_reso_tres": {
+  "title": "Resolución 3.",
+  "description": "La antigua compuerta se abre con un chirrido y deja salir un torrente de aguas residuales fétidas. Oyes cómo la corriente de agua recorre los conductos, acompañada por los gritos de innumerables sectarios. En lugar de intentar huir, aceptas tu destino. Está claro que no hay escapatoria. Hiciste lo que debía hacerse. Mientras el fango sube rápidamente hasta tus tobillos, luego hasta tus rodillas y después hasta tu cuello, piensas en tu amigo y en el Dr. Armitage, así como en las muchas otras personas que seguramente se hayan ahogado. Te has sacrificado a ti y los has sacrificado a ellos para detener el regreso de un antiguo mal. Tan sólo esperas que tu sacrificio no haya sido en vano.",
+  "audio": {
+    "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_tres.mp3",
+    "title": "Escenario III: Reina de las cenizas - Resolución 3."
+    }
+  },
   "escenario_1": {
     "title": "Escenario I: Las llamas se propagan",
-    "description": "Pantalla pendiente de completar con tus siguientes opciones.",
-    "options": []
+    "description": "",
+    "options": [
+      {
+        "label": "Introducción.",
+        "description": "",
+        "next": "audio_escenario_uno_introduccion"
+      },
+      {
+        "label": "Ninguna resolución.",
+        "description": "",
+        "next": "audio_escenario_uno_no_reso"
+      },
+      {
+        "label": "Resolución 1.",
+        "description": "",
+        "next": "audio_escenario_uno_reso_uno"
+      },
+      {
+        "label": "Resolución 2.",
+        "description": "",
+        "next": "audio_escenario_uno_reso_dos"
+      },
+      {
+        "label": "Resolución 3.",
+        "description": "",
+        "next": "audio_escenario_uno_reso_tres"
+      }
+    ]
   },
   "escenario_2": {
     "title": "Escenario II: Humo y espejos",
     "description": "Pantalla pendiente de completar con tus siguientes opciones.",
-    "options": []
+    "options": [
+      {
+        "label": "Introducción.",
+        "description": "",
+        "next": "audio_escenario_dos_intro"
+      },
+      {
+        "label": "Ninguna resolución.",
+        "description": "",
+        "next": "audio_escenario_dos_no_reso"
+      },
+      {
+        "label": "Resolución 1.",
+        "description": "",
+        "next": "audio_escenario_dos_reso_uno"
+      },
+      {
+        "label": "Resolución 2.",
+        "description": "",
+        "next": "audio_escenario_dos_reso_dos"
+      }
+    ]
   },
   "escenario_3": {
     "title": "Escenario III: Reina de las cenizas",
     "description": "Pantalla pendiente de completar con tus siguientes opciones.",
-    "options": []
+    "options": [
+      {
+        "label": "Introducción 1.",
+        "description": "",
+        "next": "audio_escenario_tres_intro_uno"
+      },
+      {
+        "label": "Introducción 2.",
+        "description": "",
+        "next": "audio_escenario_tres_intro_dos"
+      },
+      {
+        "label": "Introducción 3.",
+        "description": "",
+        "next": "audio_escenario_tres_intro_tres"
+      },
+      {
+        "label": "Ninguna resolución.",
+        "description": "",
+        "next": "audio_escenario_tres_no_reso"
+      },
+      {
+        "label": "Resolución 1.",
+        "description": "",
+        "next": "audio_escenario_tres_reso_uno"
+      },
+      {
+        "label": "Resolución 2.",
+        "description": "",
+        "next": "audio_escenario_tres_reso_dos"
+      },
+      {
+        "label": "Resolución 3.",
+        "description": "",
+        "next": "audio_escenario_tres_reso_tres"
+      }
+    ]
   }
 }
