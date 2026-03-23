@@ -92,20 +92,14 @@ function renderFinal(node) {
 
   screenEl.innerHTML = `
     <div class="final-box">
-      <div>
-        <h2>${escapeHtml(node.title)}</h2>
-        <p class="description">${escapeHtml(node.description || "")}</p>
-        <div class="path">Ruta elegida: ${escapeHtml(breadcrumb)}</div>
-      </div>
-
+    <div class="path">${escapeHtml(breadcrumb)}</div>
       <div class="audio-panel">
         <strong>${escapeHtml(node.audio.title || node.title)}</strong>
         <audio controls preload="none" src="${escapeAttribute(audioSrc)}"></audio>
         ${node.audio.src ? "" : '<p class="empty">Falta definir la ruta del audio.</p>'}
       </div>
-
       <div>
-        <button id="restartBtn" class="btn btn-primary">Volver al inicio</button>
+        <p class="description">${escapeHtml(node.description || "")}</p>
       </div>
     </div>
   `;
