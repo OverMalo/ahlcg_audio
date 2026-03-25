@@ -114,7 +114,7 @@ function renderFinal(node) {
           return `
             <div class="audio-entry">
               <div class="audio-panel">
-                <strong class="audio-title">${escapeHtml(audioTitle)}</strong>
+                <strong class="audio-title">${audioTitle}</strong>
                 <audio controls preload="none" src="${escapeAttribute(audioSrc)}"></audio>
                 ${audioItem.description
                   ? `<p class="description audio-description">${escapeHtml(audioItem.description)}</p>`

@@ -52,6 +52,118 @@
       "title": ""
     }
   },
+  "audio_escenario_uno_plan_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 1a: Horas intempestivas.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a.mp3",
+        "description": "El campus está extrañamente tranquilo y no hay ni rastro de tu amigo. Unas figuras encapuchadas cruzan el patio principal mientras unos nerviosos estudiantes se apresuran bajo las farolas fastidiosamente brillantes."
+      },
+      {
+        "title": "Plan 1b: Humo en el viento.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b.mp3",
+        "description": "El viento lleva el olor del humo por todo el campus. Una columna de llamas sale de un edificio cercano."
+      }
+    ] 
+  },
+  "audio_escenario_uno_plan_2": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 2a: Encendido.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a.mp3",
+        "description": "El cielo presenta un resplandor anaranjado a medida que las llamas se propagan."
+      },
+      {
+        "title": "Plan 2b: Fuego incontrolable.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b.mp3",
+        "description": "Las ascuas recorren el aire sobre la Universidad Miskatonic. El alarido de una alarma de incendios resuena por el patio principal, mientras docenas de asustados estudiantes huyen del lugar."
+      }
+    ] 
+  },
+  "audio_escenario_uno_plan_3": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 3a: Llamas salvajes.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a.mp3",
+        "description": "¡El campus está ardiendo!"
+      },
+      {
+        "title": "Plan 3b: Ardiendo en llamas.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b.mp3",
+        "description": "Un denso humo negro llena el aire a tu alrededor y caes de rodillas entre toses. Más allá de las voraces llamas, ves que se mueven unas borrosas siluetas oscuras. Por mucho que te esfuerces, no logras ponerte a salvo. Se te nubla la vista mientras pierdes la consciencia."
+      }
+    ] 
+  },
+  "audio_escenario_uno_acto_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 1a: Donde hay humo...",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1a.mp3",
+        "description": "Registras la residencia universitaria en busca de algún rastro de tu amigo."
+      },
+      {
+        "title": "Acto 1b: ... hay fuego",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1b.mp3",
+        "description": "Encuentras la bolsa de tu amigo, quemada con el emblema estilizado de la palma de una mano abierta. Esté donde esté, supones que no se fue por voluntad propia. Cuando te dispones a marcharte, una figura enmascarada y envuelta en llamas se encara contigo. Emite un escalofriante chillido y la estancia se prende fuego a tu alrededor."
+      }
+    ] 
+  },
+  "audio_escenario_uno_acto_2": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 2a: Huida de la residencia.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2a.mp3",
+        "description": "Una aparición ardiente se interpone entre la salida y tú. ¡Debes escapar de la residencia!"
+      },
+      {
+        "title": "Acto 2b: Al aire libre.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2b.mp3",
+        "description": "Sales de la residencia al fresco aire de la noche otoñal con los pulmones a punto de reventar. Al mirar atrás, no hay ni rastro de tu perseguidor. Recuerdas que tu amigo quería hablar con el Dr. Henry Armitage, el bibliotecario jefe de la Universidad Miskatonic.\nTal vez él pueda ayudarte a entender lo que está pasando."
+      }
+    ] 
+  },
+  "audio_escenario_uno_acto_3": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 3a: En busca del Dr. Armitage.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3a.mp3",
+        "description": "Tu amigo mencionó que había visitado al Dr. Henry Armitage, el bibliotecario jefe. Cada vez llegan más personajes extraños, así que debes registrar el campus para dar con su paradero."
+      },
+      {
+        "title": "Acto 3b: El sirviente desatado.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3b.mp3",
+        "description": "Encuentras al Dr. Armitage atrincherado en una de las aulas de la Biblioteca Orne.\n\n—Ha habido personas que se comportaban de forma extraña en el campus últimamente, entre ellas tu amigo. Pero todo eso puede esperar. ¡Debemos enfrentarnos a tu perseguidor y detenerlo antes de que arda todo el campus! —dice el Dr. Armitage."
+      }
+    ] 
+  },
+  "audio_escenario_uno_acto_4": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 4a: Llamarada de gloria",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4a.mp3",
+        "description": "¡No puedes permitir que tu ardiente némesis haga daño a más inocentes! Con ayuda del Dr. Armitage, quizás puedas detenerlo."
+      },
+      {
+        "title": "Acto 4b: Una llama apagada",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4b.mp3",
+        "description": "Tu terrible perseguidor retrocede, tambaleante, y se aferra la cabeza con ambas manos, como si intentase arrancarse la máscara. El sonido de las sirenas a lo lejos va aumentando en intensidad. Te giras y ves un grupo de aterrados estudiantes que pasan corriendo junto a ti. Cuando vuelves tu atención a tu llameante némesis, se ha desvanecido sin dejar rastro."
+      }
+    ] 
+  },
   "audio_escenario_uno_no_reso": {
     "title": "",
     "description": "Despiertas al final del campus. Te pican los ojos por el humo, y observas atónito y en silencio cómo arde la Universidad Miskatonic. Por encima de la conflagración danzan ascuas en el cielo como estrellas ardientes. Estás demasiado agotado como para ayudar, y ves a un grupo de estudiantes que se esfuerzan en vano por detener el fuego. Primero es el observatorio, luego la residencia universitaria, y por fin es el turno del edificio de Ciencias de sucumbir a las llamas. Entre el estruendo, encuentras al Dr. Henry Armitage bajo un abedul, viendo cómo arde la Biblioteca Orne. Las llamas no dejan más rastro del majestuoso edificio que el esqueleto de sus ruinas. El bibliotecario jefe se encuentra en un evidente estado de conmoción. Su cara adquiere un tono ceniciento cuando le explicas las extrañas circunstancias que rodean la desaparición de tu amigo. ¿Quién era el enemigo ardiente que te atacó? ¿Y qué querían los encapuchados que patrullaban el campus?",
@@ -91,6 +203,54 @@
       "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_intro.mp3",
       "title": ""
     }
+  },
+  "audio_escenario_dos_plan_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 1a: Arkham viva.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_1a.mp3",
+        "description": "Una neblina antinatural llena las calles de Arkham. Algunos de los lugareños dicen que las colinas que hay al oeste de Arkham están ardiendo. Pese al fresco tiempo otoñal, las calles de la ciudad tienen una calidez poco natural mientras cae la noche."
+      },
+      {
+        "title": "Plan 1b: Llamas crecientes.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_1b.mp3",
+        "description": "Un picor que te has esforzado por ignorar se vuelve insoportable. Al remangarte, ves una zona de piel gris que se está pelando. Te rascas cuidadosamente la piel muerta y revelas una cicatriz lisa, casi como si te hubieran marcado a fuego. La cicatriz parece una mano con un ojo imperturbable en su interior. Al tocarla, sientes una sensación cálida y embriagadora, como de borrachera."
+      }
+    ] 
+  },
+  "audio_escenario_dos_plan_2": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 2a: Males emergentes.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_2a.mp3",
+        "description": "De la acera mojada brota vapor, como si el suelo que hay debajo estuviera ardiendo de verdad."
+      },
+      {
+        "title": "Plan 2b: Se acabó el tiempo.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_2b.mp3",
+        "description": "Miras tu reloj y ves que ya son las 11 y media. Sueltas un taco y paras un taxi para que te lleve al Barrio Este."
+      }
+    ] 
+  },
+  "audio_escenario_dos_acto_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 1a: Augurios de llama.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a.mp3",
+        "description": "Debes encontrar el paradero de los sospechosos de la lista de tu amigo."
+      },
+      {
+        "title": "Acto 1b: De vuelta al Restaurante de Velma.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b.mp3",
+        "description": "Tu búsqueda ha dado unos frutos interesantes. Con todo lo que has descubierto, tú y el Dr. Armitage deberíais tener suficientes pistas como para encontrar el paradero de tu amigo. Te montas en un taxi para volver al Barrio Este, donde podrás poner en común tus averiguaciones."
+      }
+    ] 
   },
   "audio_escenario_dos_no_reso": {
     "title": "",
@@ -243,6 +403,86 @@
       "title": ""
     }
   },
+  "audio_escenario_tres_plan_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 1a: Una reunión.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_1a.mp3",
+        "description": "Un cántico resuena por los fétidos túneles. ¡El renacimiento de la secta se acerca!"
+      },
+      {
+        "title": "Plan 1b: Llama en la oscuridad.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_1b.mp3",
+        "description": "En algún profundo lugar de las entrañas de la ciudad, la intensidad de una ardiente llama crece. Quienes llevan la marca de la reina se alzan para proclamar su regreso."
+      }
+    ] 
+  },
+  "audio_escenario_tres_plan_2": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 2a: Un ritual.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2a.mp3",
+        "description": "Un humo nocivo invade el aire mientras el sonido del cántico se vuelve más fuerte."
+      },
+      {
+        "title": "Plan 2b: Llega la madre.\n\n<em>Si está en juego el acto 1:</em>",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_1.mp3",
+        "description": "Las ávidas llamas se propagan por los túneles, y el cántico que proviene de más abajo se intensifica. Has llegado demasiado tarde para evitar la invocación."
+      },
+      {
+        "title": "Plan 2b: Llega la madre.\n\n<em>Si no es así:</em>",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_2.mp3",
+        "description": "La antigua reina de las cenizas despierta con un horripilante alarido."
+      }
+    ] 
+  },
+  "audio_escenario_tres_plan_3": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Plan 3b: Sin conocimiento.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_3b.mp3",
+        "description": "Una mano retorcida en forma de garra te aferra el brazo mientras varias docenas más se enroscan en torno a ti, como si te abrazaran. Arden al tacto. Gritas mientras unas horrendas fauces repletas de dientes se abren en el vientre de Elokoss.\n\n—No te preocupes, sólo quiere honrarte —dice una voz familiar.\n\nAl mirar hacia atrás, ves a tu amigo ataviado con la misma túnica negra y roja que llevan los demás Hermanos de las cenizas. Te sonríe mientras de las ardientes fauces brotan lenguas de llamas que te envuelven en un capullo de fuego. Lo último que oyes mientras te arrastran al abrasador infierno del pecho de Elokoss es a tu amigo, que junto con el resto de la secta canta un himno desafinado y rítmico por tu renacimiento.."
+      }
+    ] 
+  },
+  "audio_escenario_tres_acto_1": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 1a: Registrar las alcantarillas.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a.mp3",
+        "description": "Los Hermanos de las cenizas podrían estar en cualquier parte. Debes registrar las alcantarillas en busca del lugar del ritual de la secta si quieres salvar a tu amigo."
+      },
+      {
+        "title": "Acto 1b: El lugar del ritual.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b.mp3",
+        "description": "El cántico te lleva por un laberinto de túneles hasta una cisterna seca. Hay varias docenas de personajes ataviados con túnicas arrodillados ante un abedul ardiente. Tu amigo se encuentra entre ellos. ¡Debes detenerlo antes de que se sacrifique por Elokoss!"
+      }
+    ] 
+  },
+  "audio_escenario_tres_acto_2": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Acto 2a: Detener el rito.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a.mp3",
+        "description": "Debes detener el rito a toda costa. Podrías registrar la cisterna en busca de alguna forma de detener a la secta, ¡o bien podrías hacer leña de su ídolo profano!"
+      },
+      {
+        "title": "Acto 2b: Crisis evitada.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b.mp3",
+        "description": "Mientras haces leña del árbol ardiente, un aullido sobrenatural llena la cámara. Lo ignoras y prosigues tu ataque, asestando un certero golpe tras otro para destruir el mal primordial. Al final, la antigua efigie de la diosa de los Hermanos yace hecha pedazos."
+      }
+    ] 
+  },
   "audio_escenario_tres_no_reso": {
     "title": "",
     "description": "El Dr. Armitage escapa con vida de las alcantarillas a duras penas, roto por la culpa de dejar atrás a sus compañeros. Para cuando amanece, un fuego inextinguible se ha propagado por todo el Barrio Este, cobrándose innumerables vidas. Aunque el departamento de bomberos de Arkham hace todo lo posible, las llamas arden durante tres días antes de apagarse. Los que huyeron hablan entre susurros de visiones indecibles, rostros aterradores y macabros que miraban desde las llamas, que siguen persiguiéndolos. Los médicos y enfermeras todavía no han logrado identificar el origen de los extraños moratones que presentan las víctimas y que no se curan. El fuego ha volatilizado cualquier rastro de los compañeros de Armitage y de los Hermanos de las cenizas.",
@@ -333,9 +573,66 @@
         "next": "audio_escenario_uno_introduccion"
       },
       {
+        "label": "Planes",
+        "description": "",
+        "next": "escenario_1_planes"
+      },
+      {
+        "label": "Actos",
+        "description": "",
+        "next": "escenario_1_actos"
+      },
+      {
         "label": "Resoluciones",
         "description": "",
         "next": "escenario_1_resoluciones"
+      }
+    ]
+  },
+  "escenario_1_planes": {
+    "title": "Escenario I: Las llamas se propagan. Planes.",
+    "description": "",
+    "options": [
+      {
+        "label": "Plan 1",
+        "description": "",
+        "next": "audio_escenario_uno_plan_1"
+      },
+      {
+        "label": "Plan 2",
+        "description": "",
+        "next": "audio_escenario_uno_plan_2"
+      },
+      {
+        "label": "Plan 3",
+        "description": "",
+        "next": "audio_escenario_uno_plan_3"
+      }
+    ]
+  },
+  "escenario_1_actos": {
+    "title": "Escenario I: Las llamas se propagan. Actos.",
+    "description": "",
+    "options": [
+      {
+        "label": "Acto 1",
+        "description": "",
+        "next": "audio_escenario_uno_acto_1"
+      },
+      {
+        "label": "Acto 2",
+        "description": "",
+        "next": "audio_escenario_uno_acto_2"
+      },
+      {
+        "label": "Acto 3",
+        "description": "",
+        "next": "audio_escenario_uno_acto_3"
+      },
+      {
+        "label": "Acto 4",
+        "description": "",
+        "next": "audio_escenario_uno_acto_4"
       }
     ]
   },
@@ -375,6 +672,16 @@
         "next": "audio_escenario_dos_intro"
       },
       {
+        "label": "Planes",
+        "description": "",
+        "next": "escenario_2_planes"
+      },
+      {
+        "label": "Actos",
+        "description": "",
+        "next": "audio_escenario_dos_acto_1"
+      },
+      {
         "label": "Códices",
         "description": "",
         "next": "escenario_2_codices"
@@ -383,6 +690,22 @@
         "label": "Resoluciones",
         "description": "",
         "next": "escenario_2_resoluciones"
+      }
+    ]
+  },
+  "escenario_2_planes": {
+    "title": "Escenario II: Humo y espejos. Planes.",
+    "description": "",
+    "options": [
+      {
+        "label": "Plan 1",
+        "description": "",
+        "next": "audio_escenario_dos_plan_1"
+      },
+      {
+        "label": "Plan 2",
+        "description": "",
+        "next": "audio_escenario_dos_plan_2"
       }
     ]
   },
@@ -458,6 +781,16 @@
         "next": "escenario_3_introducciones"
       },
       {
+        "label": "Planes",
+        "description": "",
+        "next": "escenario_3_planes"
+      },
+      {
+        "label": "Actos",
+        "description": "",
+        "next": "escenario_3_actos"
+      },
+      {
         "label": "Códice Φ: Sirviente de la llama",
         "description": "",
         "next": "escenario_3_codices"
@@ -487,6 +820,43 @@
         "label": "Introducción 3.",
         "description": "",
         "next": "audio_escenario_tres_intro_tres"
+      }
+    ]
+  },
+  "escenario_3_planes": {
+    "title": "Escenario III: Reina de las cenizas. Planes.",
+    "description": "",
+    "options": [
+      {
+        "label": "Plan 1",
+        "description": "",
+        "next": "audio_escenario_tres_plan_1"
+      },
+      {
+        "label": "Plan 2",
+        "description": "",
+        "next": "audio_escenario_tres_plan_2"
+      },
+      {
+        "label": "Plan 3",
+        "description": "",
+        "next": "audio_escenario_tres_plan_3"
+      }
+    ]
+  },
+  "escenario_3_actos": {
+    "title": "Escenario III: Reina de las cenizas. Actos.",
+    "description": "",
+    "options": [
+      {
+        "label": "Acto 1",
+        "description": "",
+        "next": "audio_escenario_tres_acto_1"
+      },
+      {
+        "label": "Acto 2",
+        "description": "",
+        "next": "audio_escenario_tres_acto_2"
       }
     ]
   },
