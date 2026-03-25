@@ -177,9 +177,63 @@ body {
   padding: 16px;
 }
 
+.audio-panel strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
 audio {
   width: 100%;
   margin-top: 12px;
+}
+
+.audio-list {
+  display: grid;
+  gap: 18px;
+}
+
+.audio-entry {
+  position: relative;
+}
+
+.audio-entry + .audio-entry {
+  padding-top: 8px;
+}
+
+.audio-entry + .audio-entry::before {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-bottom: 18px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(148, 163, 184, 0.35) 20%,
+    rgba(148, 163, 184, 0.65) 50%,
+    rgba(148, 163, 184, 0.35) 80%,
+    transparent 100%
+  );
+}
+
+.audio-panel {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.88), rgba(2, 6, 23, 0.92));
+  border: 1px solid rgba(100, 116, 139, 0.45);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.audio-title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.audio-description {
+  margin-top: 14px;
+  margin-bottom: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(148, 163, 184, 0.18);
 }
 
 .empty {

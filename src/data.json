@@ -116,101 +116,100 @@
       "title": ""
     }
   },
-  "audio_escenario_dos_codice_uno_parte_1": {
-    "title": "Parte 1.",
-    "description": "El altivo señor Renfield intenta sacudírsete de encima educadamente, pero cuando mencionas a los “Hermanos de las cenizas”, sale huyendo por una calle cercana. Aunque lo persigues, el escatólogo es sorprendentemente rápido.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_1.mp3",
-      "title": ""
-    }
+  "audio_escenario_dos_codice_uno": {
+    "title": "David Renfield",
+    
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_1.mp3",
+        "description": "El altivo señor Renfield intenta sacudírsete de encima educadamente, pero cuando mencionas a los “Hermanos de las cenizas”, sale huyendo por una calle cercana. Aunque lo persigues, el escatólogo es sorprendentemente rápido."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_2.mp3",
+        "description": "Acabas por encontrar al señor Renfield escondido en una abarrotada librería. Tras explicarle mejor quién eres y qué intenciones tienes, accede a contestar tus preguntas.\n\n—Tan sólo asistí a la reunión por curiosidad académica —dice el escatólogo—. Aunque la mayor parte de lo que dijeron era pura bazofia, pude atisbar algunos datos interesantes. Parece que los Hermanos de las cenizas veneran a una antigua diablesa llamada “Elokoss”: un ser de fuego y destrucción a quien se le atribuye la responsabilidad del gran incendio de Alejandría. O eso dicen. Como si fuera algo de lo que sentirse orgulloso —se burla—.\n\nCuando mencionaste a los Hermanos, temí que fueras uno de ellos. Son un ejército de siervos sin mente, unidos a las órdenes de su reina."
+      }
+    ]
   },
-  "audio_escenario_dos_codice_uno_parte_2": {
-    "title": "Parte 2.",
-    "description": "Acabas por encontrar al señor Renfield escondido en una abarrotada librería. Tras explicarle mejor quién eres y qué intenciones tienes, accede a contestar tus preguntas.\n\n—Tan sólo asistí a la reunión por curiosidad académica —dice el escatólogo—. Aunque la mayor parte de lo que dijeron era pura bazofia, pude atisbar algunos datos interesantes. Parece que los Hermanos de las cenizas veneran a una antigua diablesa llamada “Elokoss”: un ser de fuego y destrucción a quien se le atribuye la responsabilidad del gran incendio de Alejandría. O eso dicen. Como si fuera algo de lo que sentirse orgulloso —se burla—.\n\nCuando mencionaste a los Hermanos, temí que fueras uno de ellos. Son un ejército de siervos sin mente, unidos a las órdenes de su reina.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_2.mp3",
-      "title": ""
-    }
+  "audio_escenario_dos_codice_dos": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_1.mp3",
+        "description": "Encuentras a la señorita Akely haciendo el turno de noche en un destartalado taller. Parece bastante simpática mientras te ofrece un cigarrillo, pero nada más mencionarle a los “Hermanos de las cenizas”, su expresión se vuelve pétrea y te señala la puerta para que te vayas."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_2.mp3",
+        "description": "Tus palabras acaban por tener efecto en la irritable capataz, que se disculpa y te invita a sentarte.\n\n—Acudí porque un par de amigos míos de la fábrica de NHI me hablaron maravillas de ellos. Al parecer, los tales “Hermanos de las cenizas” están predicando algo referente a un “renacimiento glorioso” para todos sus seguidores. Desconecté de lo demás. Tampoco es que me vaya mucho todo ese tipo de engañabobos —dice Cornelia.\n\nCuando le preguntas por sus amigos, sacude la cabeza y responde:\n\n—Ninguno de los tres ha acudido al trabajo durante las últimas semanas."
+      }
+    ]
   },
-  "audio_escenario_dos_codice_dos_parte_1": {
-    "title": "Parte 1.",
-    "description": "Encuentras a la señorita Akely haciendo el turno de noche en un destartalado taller. Parece bastante simpática mientras te ofrece un cigarrillo, pero nada más mencionarle a los “Hermanos de las cenizas”, su expresión se vuelve pétrea y te señala la puerta para que te vayas.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_1.mp3",
-      "title": ""
-    }
+  "audio_escenario_dos_codice_tres": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_1.mp3",
+        "description": "A la cabecilla de los O’Bannion le interesan poco tus preguntas, pero sí que está dispuesta a liquidar cualquier cosa que te cause problemas... a cambio de un precio. Tendrás que seguir soltando guita si quieres conseguir sacarle alguna información."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_2.mp3",
+        "description": "Naomi echa la cabeza hacia atrás mientras suelta una estentórea carcajada cuando mencionas a los Hermanos de las cenizas.\n\n—¿Esos chalados? No los conozco. Pero dos de mis hombres encontraron a un par de ellos husmeando en uno de nuestros garitos. Eran muy raros, como si no estuvieran del todo en sus cabales. Y no precisamente porque hubieran bebido, vaya —te cuenta antes de darle una larga calada a su cigarrillo de clavo de olor. Le preguntas por la ubicación exacta donde los encontraron y te echa una densa nube de humo a la cara.\n\n—Ni sueñes con que voy a darte el menor detalle sobre mis negocios. Piérdete."
+      }
+    ]
   },
-  "audio_escenario_dos_codice_dos_parte_2": {
-    "title": "Parte 2.",
-    "description": "Tus palabras acaban por tener efecto en la irritable capataz, que se disculpa y te invita a sentarte.\n\n—Acudí porque un par de amigos míos de la fábrica de NHI me hablaron maravillas de ellos. Al parecer, los tales “Hermanos de las cenizas” están predicando algo referente a un “renacimiento glorioso” para todos sus seguidores. Desconecté de lo demás. Tampoco es que me vaya mucho todo ese tipo de engañabobos —dice Cornelia.\n\nCuando le preguntas por sus amigos, sacude la cabeza y responde:\n\n—Ninguno de los tres ha acudido al trabajo durante las últimas semanas.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_2.mp3",
-      "title": ""
-    }
+  "audio_escenario_dos_codice_cuatro": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_1.mp3",
+        "description": "En cuanto mencionas a los “Hermanos de las cenizas”, el agente de policía empuña la porra y te dice que más te vale meter las narices en otra parte. Te preparas para pelear."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_2.mp3",
+        "description": "—Está bien, está bien —dice mientras escupe sangre y se toca la mejilla magullada.—Después de que procesáramos la tercera desaparición, vinieron a verme unos cuantos. Fueron muy insistentes respecto a que los desaparecidos lo habían hecho por voluntad propia. Cuando les dije que seguía sin estar convencido, me llevaron a una de sus reuniones, cerca de los muelles. Menudo asunto más turbio. Les pasaba algo en los ojos, como si estuvieran hipnotizados o algo así —te explica antes de apartar la mirada con gesto de arrepentimiento—. Me pagaron por mi silencio. No me enorgullezco de ello. No se lo cuentes a nadie... Prometo que no volveré a apartarme del buen camino a partir de ahora."
+      }
+    ]
   },
-  "audio_escenario_dos_codice_tres_parte_1": {
-    "title": "Parte 1.",
-    "description": "A la cabecilla de los O’Bannion le interesan poco tus preguntas, pero sí que está dispuesta a liquidar cualquier cosa que te cause problemas... a cambio de un precio. Tendrás que seguir soltando guita si quieres conseguir sacarle alguna información.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_1.mp3",
-      "title": "."
-    }
+  "audio_escenario_dos_codice_cinco": {
+    "title": "",
+    
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_1.mp3",
+        "description": "La bibliotecaria en prácticas desestima tus preguntas con un gesto mientras saca varios tomos de la estantería. Es posible que la única forma de que deje de prestar atención a su trabajo sea ayudarla a buscar lo que quiera que esté buscando."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_2.mp3",
+        "description": "Abigail se deja caer en un lujoso sillón y suspira.\n\n—Sí, llevo buscando información sobre los “Hermanos de las cenizas” desde que mi compañera de piso desapareció la semana pasada. Por suerte, he encontrado esto —te dice mientras abre un delgado volumen cuya cubierta contiene la delicada incrustación de un abedul con ojos que florecen. En su interior hay numerosos dibujos inquietantes de sacrificios violentos, víctimas quemadas vivas y extraños símbolos inhumanos dispuestos en extraños patrones.\n\n—¿Verdad que es bastante macabro? —dice Abigail—. Parece estar escrito en acadio. Por desgracia, pasarán semanas hasta que podamos traducirlo, porque todo el departamento de idiomas antiguos se encuentra de expedición. Esta vez han ido a Egipto. Lamento no poder ser de más ayuda —añade mientras toca la tapa del libro."
+      }
+    ]
   },
-  "audio_escenario_dos_codice_tres_parte_2": {
-    "title": "Parte 2.",
-    "description": "Naomi echa la cabeza hacia atrás mientras suelta una estentórea carcajada cuando mencionas a los Hermanos de las cenizas.\n\n—¿Esos chalados? No los conozco. Pero dos de mis hombres encontraron a un par de ellos husmeando en uno de nuestros garitos. Eran muy raros, como si no estuvieran del todo en sus cabales. Y no precisamente porque hubieran bebido, vaya —te cuenta antes de darle una larga calada a su cigarrillo de clavo de olor. Le preguntas por la ubicación exacta donde los encontraron y te echa una densa nube de humo a la cara.\n\n—Ni sueñes con que voy a darte el menor detalle sobre mis negocios. Piérdete.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_2.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_cuatro_parte_1": {
-    "title": "Parte 1.",
-    "description": "En cuanto mencionas a los “Hermanos de las cenizas”, el agente de policía empuña la porra y te dice que más te vale meter las narices en otra parte. Te preparas para pelear.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_1.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_cuatro_parte_2": {
-    "title": "Parte 2.",
-    "description": "—Está bien, está bien —dice mientras escupe sangre y se toca la mejilla magullada.—Después de que procesáramos la tercera desaparición, vinieron a verme unos cuantos. Fueron muy insistentes respecto a que los desaparecidos lo habían hecho por voluntad propia. Cuando les dije que seguía sin estar convencido, me llevaron a una de sus reuniones, cerca de los muelles. Menudo asunto más turbio. Les pasaba algo en los ojos, como si estuvieran hipnotizados o algo así —te explica antes de apartar la mirada con gesto de arrepentimiento—. Me pagaron por mi silencio. No me enorgullezco de ello. No se lo cuentes a nadie... Prometo que no volveré a apartarme del buen camino a partir de ahora.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_2.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_cinco_parte_1": {
-    "title": "Parte 1.",
-    "description": "La bibliotecaria en prácticas desestima tus preguntas con un gesto mientras saca varios tomos de la estantería. Es posible que la única forma de que deje de prestar atención a su trabajo sea ayudarla a buscar lo que quiera que esté buscando.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_1.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_cinco_parte_2": {
-    "title": "Parte 2.",
-    "description": "Abigail se deja caer en un lujoso sillón y suspira.\n\n—Sí, llevo buscando información sobre los “Hermanos de las cenizas” desde que mi compañera de piso desapareció la semana pasada. Por suerte, he encontrado esto —te dice mientras abre un delgado volumen cuya cubierta contiene la delicada incrustación de un abedul con ojos que florecen. En su interior hay numerosos dibujos inquietantes de sacrificios violentos, víctimas quemadas vivas y extraños símbolos inhumanos dispuestos en extraños patrones.\n\n—¿Verdad que es bastante macabro? —dice Abigail—. Parece estar escrito en acadio. Por desgracia, pasarán semanas hasta que podamos traducirlo, porque todo el departamento de idiomas antiguos se encuentra de expedición. Esta vez han ido a Egipto. Lamento no poder ser de más ayuda —añade mientras toca la tapa del libro.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_2.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_seis_parte_1": {
-    "title": "Parte 1.",
-    "description": "Margaret Liu, una de las cantantes de bar más conocidas de la ciudad, está completamente absorta en su actuación. Es posible que tengas que tirar de creatividad para llamar su atención.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_1.mp3",
-      "title": ""
-    }
-  },
-  "audio_escenario_dos_codice_seis_parte_2": {
-    "title": "Parte 2.",
-    "description": "Tus intentos de llamar la atención de la señorita Liu resultan muy efectivos, y no tardas en encontrarte entre bambalinas mientras te presta su más absoluta atención.\n\n—Debo decir que me ha impresionado mucho su... numerito —te dice—. Pero ¿a qué ha venido realmente?\n\nLa despreocupada sonrisa de la cantante se esfuma en cuanto mencionas a los Hermanos de las cenizas.\n\n—No sé quiénes son ni tampoco me importa —afirma—. Hace una semana, me dirigía a casa cuando me abordaron dos hombres que llevaban, y quiero enfatizar este hecho, las túnicas más feas que uno pueda echarse a la cara. Tenían un símbolo extrañísimo en la capucha.\n\nGarabatea un burdo símbolo en una servilleta, parece una mano con un ojo incrustado. Le preguntas qué pasó y señala con la cabeza al gorila que hay en la puerta.\n\n—Antonio los ahuyentó. No he vuelto a verlos desde entonces.",
-    "audio": {
-      "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_2.mp3",
-      "title": ""
-    }
+  "audio_escenario_dos_codice_seis": {
+    "title": "",
+    "audios": [
+      {
+        "title": "Parte 1.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_1.mp3",
+        "description": "Margaret Liu, una de las cantantes de bar más conocidas de la ciudad, está completamente absorta en su actuación. Es posible que tengas que tirar de creatividad para llamar su atención."
+      },
+      {
+        "title": "Parte 2.",
+        "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_2.mp3",
+        "description": "Tus intentos de llamar la atención de la señorita Liu resultan muy efectivos, y no tardas en encontrarte entre bambalinas mientras te presta su más absoluta atención.\n\n—Debo decir que me ha impresionado mucho su... numerito —te dice—. Pero ¿a qué ha venido realmente?\n\nLa despreocupada sonrisa de la cantante se esfuma en cuanto mencionas a los Hermanos de las cenizas.\n\n—No sé quiénes son ni tampoco me importa —afirma—. Hace una semana, me dirigía a casa cuando me abordaron dos hombres que llevaban, y quiero enfatizar este hecho, las túnicas más feas que uno pueda echarse a la cara. Tenían un símbolo extrañísimo en la capucha.\n\nGarabatea un burdo símbolo en una servilleta, parece una mano con un ojo incrustado. Le preguntas qué pasó y señala con la cabeza al gorila que hay en la puerta.\n\n—Antonio los ahuyentó. No he vuelto a verlos desde entonces."
+      }
+    ]
   },
   "audio_escenario_dos_codice_fi": {
     "title": "",
@@ -393,63 +392,33 @@
     "options": [
       {
         "label": "Códice 1: David Renfield",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_uno_parte_1"
-      },
-      {
-        "label": "Códice 1: David Renfield",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_uno_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_uno"
       },
       {
         "label": "Códice 2: Cornelia Akely",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_dos_parte_1"
-      },
-      {
-        "label": "Códice 2: Cornelia Akely",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_dos_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_dos"
       },
       {
         "label": "Códice 3: Naomi O’Bannion",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_tres_parte_1"
-      },
-      {
-        "label": "Códice 3: Naomi O’Bannion",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_tres_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_tres"
       },
       {
         "label": "Códice 4: Sgto. Earl Monroe",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_cuatro_parte_1"
-      },
-      {
-        "label": "Códice 4: Sgto. Earl Monroe",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_cuatro_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_cuatro"
       },
       {
         "label": "Códice 5: Abigail Foreman",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_cinco_parte_1"
-      },
-      {
-        "label": "Códice 5: Abigail Foreman",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_cinco_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_cinco"
       },
       {
         "label": "Códice 6: Margaret Liu",
-        "description": "Parte 1",
-        "next": "audio_escenario_dos_codice_seis_parte_1"
-      },
-      {
-        "label": "Códice 5: Margaret Liu",
-        "description": "Parte 2",
-        "next": "audio_escenario_dos_codice_seis_parte_2"
+        "description": "",
+        "next": "audio_escenario_dos_codice_seis"
       },
       {
         "label": "Códice Φ: Sirviente de la llama",

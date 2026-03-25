@@ -37,7 +37,7 @@ function render() {
     return;
   }
 
-  if (node.audio) {
+  if (node.audio || (Array.isArray(node.audios) && node.audios.length > 0)) {
     renderFinal(node);
     return;
   }
@@ -86,25 +86,55 @@ function renderOptions(node) {
 function renderFinal(node) {
   const breadcrumb = pathLabels.length ? pathLabels.join(" → ") : "Acceso directo";
 
-  const audioSrc = node.audio?.src
-    ? `${import.meta.env.BASE_URL}${node.audio.src.replace(/^\/+/, "")}`
-    : "";
+  const audioList = Array.isArray(node.audios) && node.audios.length > 0
+    ? node.audios
+    : node.audio
+      ? [
+          {
+            ...node.audio,
+            description: node.description || "",
+            itemTitle: node.title || ""
+          }
+        ]
+      : [];
+
+  const audioPanelsHtml = audioList.length
+    ? audioList
+        .map((audioItem, index) => {
+          const audioSrc = audioItem?.src
+            ? `${import.meta.env.BASE_URL}${audioItem.src.replace(/^\/+/, "")}`
+            : "";
+
+          const audioTitle =
+            audioItem?.title?.trim() ||
+            audioItem?.itemTitle?.trim() ||
+            node.title ||
+            ``;
+
+          return `
+            <div class="audio-entry">
+              <div class="audio-panel">
+                <strong class="audio-title">${escapeHtml(audioTitle)}</strong>
+                <audio controls preload="none" src="${escapeAttribute(audioSrc)}"></audio>
+                ${audioItem.description
+                  ? `<p class="description audio-description">${escapeHtml(audioItem.description)}</p>`
+                  : ""}
+                ${audioSrc ? "" : '<p class="empty">Falta definir la ruta del audio.</p>'}
+              </div>
+            </div>
+          `;
+        })
+        .join("")
+    : `<p class="empty">No hay audios definidos para esta pantalla.</p>`;
 
   screenEl.innerHTML = `
     <div class="final-box">
-    <div class="path">${escapeHtml(breadcrumb)}</div>
-      <div class="audio-panel">
-        <strong>${escapeHtml(node.audio.title || node.title)}</strong>
-        <audio controls preload="none" src="${escapeAttribute(audioSrc)}"></audio>
-        ${node.audio.src ? "" : '<p class="empty">Falta definir la ruta del audio.</p>'}
-      </div>
-      <div>
-        <p class="description">${escapeHtml(node.description || "")}</p>
+      <div class="path">${escapeHtml(breadcrumb)}</div>
+      <div class="audio-list">
+        ${audioPanelsHtml}
       </div>
     </div>
   `;
-
-  document.getElementById("restartBtn").addEventListener("click", goHome);
 }
 
 function goBack() {
