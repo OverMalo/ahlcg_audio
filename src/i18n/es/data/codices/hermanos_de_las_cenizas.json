@@ -1,0 +1,154 @@
+[
+  {
+    "label": "Códice 1: David Renfield - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "El altivo señor Renfield intenta sacudírsete de encima educadamente, pero cuando te niegas a marcharte, uno de sus gorilas te empuja contra la pared y te amenaza.\n—Escúcheme bien, amigo. No sé nada sobre ninguna secta ni ningún «Hermano». Tengo conexiones en esta ciudad, y más le vale que aprenda en qué metafóricos estanques no debe pescar. Ahora le diría que se marchase de mi propiedad.\nTe pide que te marches, y no de buenas maneras.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 1: David Renfield - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "Acabas por encontrar al señor Renfield escondido en una abarrotada librería. Te das cuenta de que tiene el cuello empapado en sudor. Al sentarte a su lado, te habla con la voz entrecortada.\n—Está bien, está bien. Sí estaba en esa reunión. Y vi a tu amigo allí. Se comportaba de forma muy extraña, en contraste con su habitual entusiasmo. Alguien lo tenía bajo control.\n—Hay algo más que deberías saber —continúa—: mientras estaba allí, vi una sombra oscura que susurraba algo al oído a algunos de los asistentes. Cuando la sombra desaparecía, sus ojos se ponían en blanco y los hacían llevar al interior, en la oscuridad.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 2: Cornelia Akely - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "Encuentras a la señorita Akely haciendo el turno de noche en un destartalado taller. Está tan centrada en su tarea que parece no haberse dado cuenta de que hay alguien más en el taller.\n—¿Hola? ¿Hay alguien?\nSeñorita Akely se gira, desorientada.\n—Perdona, estaba absorta en el trabajo. ¿Puedo ayudarte?",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 2: Cornelia Akely - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "Tus palabras acaban por tener efecto en la irritable capataz.\n—Está bien, está bien. Yo también estuve en esa reunión hace unas semanas. Me invitaron diciendo que había bebida gratis y creí que sería un buen sitio para conocer inversores. Pero la atmósfera era siniestra. Vi a tu amigo en la reunión; parecía muy emocionado, pero nervioso. Había un tipo con una máscara muy rara que se dirigió a él. Tu amigo se quedó parado como si lo hubieran alcanzado un rayo, y luego fue como si despertara de golpe y empezara a actuar de forma diferente. Muy diferente.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 3: Naomi O'Bannion - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "A la cabecilla de los O'Bannion le interesan poco tus preguntas.\n—¿Acaso parece que tenga tiempo para estupideces? Lárgate antes de que me arrepienta de que hayas entrado en uno de mis locales.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 3: Naomi O'Bannion - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "Naomi echa la cabeza hacia atrás mientras suelta una estentórea carcajada.\n—¿Que qué hacía yo en una reunión de culto? ¡Eso tiene mucha gracia! Mira, yo no estaba allí por lo del culto. Sólo fui para cobrarle una deuda a un tipo que organizó la reunión, y que tiene la cabeza llena de pajaritos. Aunque debo decir que la mitad de los lugareños de Arkham tienen la cabeza llena de pajaritos, ¿eh? En fin, cuando entré, escuché a unos individuos de lo más inquietantes que cantaban algo sobre el «ojo de la llama» y un «renacimiento». Vi a tu amigo, que parecía estar en trance. Ni siquiera me reconoció cuando le llamé por su nombre.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 4: Sgto. Earl Monroe - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "En cuanto mencionas a los «Hermanos de las cenizas», el agente de policía empuña la porra.\n—¿Cómo me has llamado? ¡Vaya, ya te puedes andar con ojo, listo!",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 4: Sgto. Earl Monroe - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "—Está bien, está bien —dice mientras escupe sangre y se toca la mejilla magullada—. Sí, estuve en esa reunión hace unas semanas. Tenía que investigar una denuncia. Cuando entré, vi a tu amigo y vi que lo estaban embaucando esas personas tan raras. Cuando intenté meterme, uno de ellos me puso un objeto brillante delante de la cara y lo siguiente que sé es que me desperté en el suelo de mi casa. Llevo semanas atormentado por eso. He tenido sueños muy raros sobre grandes llamas que hablan.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 5: Abigail Foreman - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "La bibliotecaria en prácticas desestima tus preguntas con un gesto mientras saca varios tomos de la estantería.\n—Lo siento, estoy muy ocupada. Si quieres que te ayude, hazte socio de la biblioteca.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 5: Abigail Foreman - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "Abigail se deja caer en un lujoso sillón y suspira.\n—La gente siempre se burla de los que buscamos la verdad, pero supongo que tú eres diferente. Sí, asistí a esa reunión hace un par de semanas. Buscaba información sobre ciertos rituales que había estado investigando. Pero allí me encontré con algo que no esperaba. Tu amigo estaba en la reunión. Una figura encapuchada que llevaba una antorcha le tocó el hombro y, de repente, tu amigo se quedó mirando fijamente la llama durante lo que pareció una eternidad. Cuando «volvió en sí», sus ojos habían cambiado. Tenían una especie de fulgor anaranjado.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 6: Margaret Liu - Parte 1",
+    "description": "Escenario II",
+    "leafDescription": "Margaret Liu, una de las cantantes de bar más conocidas de la ciudad, está completamente absorta en su actuación. Sus cierres de ojos te impiden captar su atención.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_1.mp3", "title": "" }
+  },
+  {
+    "label": "Códice 6: Margaret Liu - Parte 2",
+    "description": "Escenario II",
+    "leafDescription": "Tus intentos de llamar la atención de la señorita Liu resultan muy efectivos. Tras asegurarse de que nadie más puede escucharla, te habla en voz baja.\n—Tuve que actuar en esa reunión. Era un trabajo bien pagado y no me podía permitir rechazarlo. Había algo muy perturbador en esa gente. Cuando empecé a cantar, nadie bailó ni aplaudió. Se quedaron sentados y mirándome fijamente con expresión vacía, mientras uno de ellos hacía sonar un cuenco tibetano al ritmo de la música. Vi a tu amigo entre la audiencia. Parecía estar a punto de llorar de alegría. Al final de la actuación, se lanzó a los brazos de un hombre con túnica y empezó a reír de forma histérica.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_2.mp3", "title": "" }
+  },
+  {
+    "label": "Códice Φ: Sirviente de la llama",
+    "description": "Escenario II",
+    "leafDescription": "Tu némesis yace a tus pies, incapacitado. La llama que lo envolvía se ha extinguido. Cautelosamente, le retiras la máscara y te encuentras con un rostro agonizante, lleno de cicatrices a causa de las llamas. Reconoces sus rasgos y te quedas boquiabierto al darte cuenta de que es tu amigo.\n—Lo siento mucho —dice con un hilo de voz—. Tenía que hacerlo.\nAntes de que puedas preguntarle nada, pierde el conocimiento.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_fi.mp3", "title": "" }
+  },
+  {
+    "label": "Si _David Renfield_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa. David gruñe cuando intentas ayudarlo a ponerse en pie.\n—Déjame en paz, ¿quieres? Tengo... ¿dónde estoy? ¿Quién eres tú?\nLe explicas lo que ha pasado como mejor puedes, aunque él sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_1.mp3", "title": "" }
+  },
+  {
+    "label": "Si _Cornelia Akely_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nCornelia se mira las manos ensangrentadas con sorpresa.\n—¿Qué...? ¿Dónde estoy? ¿Qué me ha pasado?\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_2.mp3", "title": "" }
+  },
+  {
+    "label": "Si _Naomi O'Bannion_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\n—¿Qué clase de fiesta es ésta? —pregunta Naomi, mirando a su alrededor.\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_3.mp3", "title": "" }
+  },
+  {
+    "label": "Si _Sgto. Earl Monroe_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nEl rostro del agente está paralizado en una mueca de terror.\n—¡Dios mío! ¡Estaba atrapado dentro, lo veía todo pero no podía controlar mis actos!\nLe explicas lo que ha pasado como mejor puedes, aunque él sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_4.mp3", "title": "" }
+  },
+  {
+    "label": "Si _Abigail Foreman_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nAbigail te aferra las manos con fuerza cuando le quitas la máscara.\n—¡Sabía que vendrías a por mí! ¡Sabía que lo lograrías!\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_5.mp3", "title": "" }
+  },
+  {
+    "label": "Si _Margaret Liu_ es el heraldo de Elokoss...",
+    "description": "Escenario III",
+    "leafDescription": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\n—Esto es como la debacle en el Club Tictac... aunque un poco peor —dice Margaret, con voz temblorosa.\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_6.mp3", "title": "" }
+  }
+]

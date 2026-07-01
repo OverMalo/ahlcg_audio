@@ -13,30 +13,80 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arkham Horror LCG: Narraciones. </title>
+    <title>Arkham Horror LCG — Voice Over</title>
 
-    <meta name="theme-color" content="#0f172a" />
-    <meta name="description" content="Campañas narradas de Arkham Horror LCG" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" href="/icons/icon-192.png" />
-    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="theme-color" content="#0c0c12" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Textos narrados de Arkham Horror LCG" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
   </head>
   <body>
+    <!--
+      Los textos en español de este HTML son solo el "arranque" (primer pintado /
+      sin JS). La fuente de verdad de TODA la interfaz son los .json de i18n
+      (src/i18n/<idioma>/ui.json); main.js los aplica en cuanto carga (applyStaticI18n)
+      y al cambiar de idioma.
+    -->
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
     <div class="app">
-      <header class="topbar">
-        <div class="title-wrap">
-          <h1>Arkham Horror LCG: Narraciones.</h1>
-        </div>
+      <div class="app-top">
+        <header class="topbar">
+          <div class="topbar-main-left">
+            <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Abrir menú lateral" aria-controls="sidebar" aria-expanded="false">&#9776;</button>
+            <span class="topbar-emblem" aria-hidden="true">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="18"/>
+                <circle cx="24" cy="24" r="6" fill="currentColor" stroke="none"/>
+                <line x1="24" y1="6" x2="24" y2="18"/>
+                <line x1="24" y1="30" x2="24" y2="42"/>
+                <line x1="6" y1="24" x2="18" y2="24"/>
+                <line x1="30" y1="24" x2="42" y2="24"/>
+              </svg>
+            </span>
+          </div>
+          <p class="topbar-brand" aria-hidden="true"><span class="beta-badge">BETA</span></p>
+          <p class="topbar-province-hint" id="topbar-province-hint" aria-live="polite">Selecciona una campaña</p>
+          <div class="topbar-search-row">
+            <div class="card-search" role="search">
+              <span class="card-search-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="7" cy="7" r="5"/>
+                  <line x1="10.8" y1="10.8" x2="14.5" y2="14.5"/>
+                </svg>
+              </span>
+              <input
+                class="card-search-input"
+                id="card-search-input"
+                type="search"
+                inputmode="text"
+                autocomplete="off"
+                spellcheck="false"
+                maxlength="24"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+            </div>
+          </div>
+          <div class="lang-switcher" id="lang-switcher"></div>
+        </header>
 
-        <div class="actions">
-          <button id="backBtn" class="btn btn-secondary">Atrás</button>
-          <button id="homeBtn" class="btn btn-secondary">Inicio</button>
-        </div>
-      </header>
+        <div class="music-bar" id="music-bar"></div>
+      </div>
 
-      <main class="content">
-        <section class="screen-card" id="screen"></section>
-      </main>
+      <div class="app-body">
+        <aside class="sidebar" id="sidebar"></aside>
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <main class="content" id="main-content" tabindex="-1">
+          <section class="screen-card" id="screen" aria-label="Narraciones"></section>
+        </main>
+      </div>
     </div>
 
     <script type="module" src="/src/main.js"></script>

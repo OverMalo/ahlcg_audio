@@ -1,0 +1,119 @@
+{
+  "app": {
+    "title": "AHLCG Audio",
+    "metaDescription": "Textos narrados de Arkham Horror LCG",
+    "skipLink": "Saltar al contenido",
+    "campaignTitle": "Arkham Horror: El juego de cartas",
+    "mediaArtist": "AHLCG",
+    "mediaFallbackTitle": "AHLCG Audio"
+  },
+  "topbar": {
+    "selectProvinceHint": "Selecciona una campaña"
+  },
+  "a11y": {
+    "openSidebar": "Abrir menú lateral",
+    "closeSidebar": "Cerrar menú lateral",
+    "sidebarNav": "Navegación y ajustes",
+    "screenWelcome": "Bienvenida",
+    "screenNarrations": "Narraciones"
+  },
+  "langSwitcher": {
+    "label": "Cambiar idioma",
+    "current": "Idioma actual: {name}",
+    "menuLabel": "Seleccionar idioma"
+  },
+  "sidebar": {
+    "home": "Inicio",
+    "provincia": "Campaña",
+    "provinciaHint": "Elige una campaña",
+    "gremio": "Escenario",
+    "gremioHint": "Filtra por escenario",
+    "playback": "Reproducción",
+    "soundtrack": "Banda Sonora",
+    "autoplay": "Reproducción automática",
+    "ambient": "Audio ambiente",
+    "soundtrackToggle": "Activar banda sonora",
+    "allGuilds": "Todos"
+  },
+  "provincias": {
+    "hermanos_de_las_cenizas": "Hermanos de las Cenizas"
+  },
+  "gremios": {
+    "escenario_1": "Escenario I",
+    "escenario_2": "Escenario II",
+    "escenario_3": "Escenario III"
+  },
+  "content": {
+    "selectProvince": "Selecciona una campaña en el menú lateral para comenzar.",
+    "noMatches": "No hay paneles que coincidan con los filtros seleccionados."
+  },
+  "search": {
+    "placeholder": "Buscar narración",
+    "ariaLabel": "Buscar narración",
+    "disabledHint": "Selecciona una campaña para activar la búsqueda"
+  },
+  "player": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "seek": "Barra de progreso de la narración",
+    "missingAudio": "Falta definir la ruta del audio."
+  },
+  "soundtrackPlayer": {
+    "prev": "Canción anterior",
+    "playPause": "Reproducir/Pausar",
+    "next": "Canción siguiente",
+    "seek": "Barra de progreso de la canción",
+    "volume": "Volumen de la banda sonora",
+    "downloading": "Descargando… {pct}%",
+    "noTracks": "Sin pistas",
+    "fallbackTitle": "Soundtrack",
+    "idle": "Música de ambiente",
+    "barLabel": "Reproductor de música de ambiente"
+  },
+  "spoiler": {
+    "label": "Pulsa para mostrar el texto de la narración",
+    "hideLabel": "Pulsa para ocultar el texto de la narración"
+  },
+  "welcome": {
+    "bannerAria": "Espacio reservado para la imagen de cabecera",
+    "bannerLabel": "AHLCG AUDIO",
+    "bannerAlt": "Ilustración de cabecera de Arkham Horror: El juego de cartas",
+    "lead": "Aplicación de acompañamiento para Arkham Horror: El juego de cartas.",
+    "intro": "Da voz a tus partidas: esta aplicación narra los textos de introducciones, planes, actos, resoluciones y códices de las campañas, para que el grupo se sumerja en la historia sin necesidad de leer en voz alta. Elige una campaña en el menú lateral para empezar.",
+    "featuresTitle": "Características",
+    "features": [
+      {
+        "term": "Narración por voz",
+        "desc": "de introducciones, planes, actos, resoluciones y códices, organizada por campaña y escenario."
+      },
+      {
+        "term": "Filtros por campaña y escenario",
+        "desc": "para encontrar al instante el texto que necesitas."
+      },
+      {
+        "term": "Reproducción automática",
+        "desc": "(auto-play) del audio al abrir cada texto."
+      },
+      {
+        "term": "Velocidad de narración ajustable",
+        "desc": "(de 1x a 1,5x) para adaptarla al ritmo de la mesa."
+      },
+      {
+        "term": "Banda sonora",
+        "desc": "con reproductor integrado, control de volumen y mezcla automática con la narración."
+      },
+      {
+        "term": "Controles multimedia del sistema",
+        "desc": "controla la reproducción desde la pantalla de bloqueo o los auriculares."
+      },
+      {
+        "term": "Funciona sin conexión",
+        "desc": "instálala como aplicación (PWA) y reproduce todo el contenido aunque no tengas internet."
+      }
+    ],
+    "note": "Consejo: activa la banda sonora desde el menú lateral para dar atmósfera a toda la sesión.",
+    "footerCredits": "Aplicación desarrollada por OverMalo. Arkham Horror: El juego de cartas, junto con sus marcas, nombres y contenidos, es propiedad de sus respectivos titulares.",
+    "footerDisclaimer": "Esta aplicación es un complemento de la experiencia de juego: no sustituye al juego original ni pretende reemplazarlo.",
+    "footerContact": "Para dudas, consultas, sugerencias o reporte de errores, escribe a"
+  }
+}

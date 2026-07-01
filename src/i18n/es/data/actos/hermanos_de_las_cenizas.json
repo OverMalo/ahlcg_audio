@@ -1,0 +1,114 @@
+[
+  {
+    "label": "Acto 1a: Donde hay humo...",
+    "description": "Escenario I",
+    "leafDescription": "Registras la residencia universitaria en busca de algún rastro de tu amigo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 1b: ... hay fuego",
+    "description": "Escenario I",
+    "leafDescription": "Encuentras la bolsa de tu amigo, quemada con el emblema estilizado de la palma de una mano abierta. Esté donde esté, supones que no se fue por voluntad propia. Cuando te dispones a marcharte, una figura enmascarada y envuelta en llamas se encara contigo. Emite un escalofriante chillido y la estancia se prende fuego a tu alrededor.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 2a: Huida de la residencia.",
+    "description": "Escenario I",
+    "leafDescription": "Una aparición ardiente se interpone entre la salida y tú. ¡Debes escapar de la residencia!",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 2b: Al aire libre.",
+    "description": "Escenario I",
+    "leafDescription": "Sales de la residencia al fresco aire de la noche otoñal con los pulmones a punto de reventar. Al mirar atrás, no hay ni rastro de tu perseguidor. Recuerdas que tu amigo quería hablar con el Dr. Henry Armitage, el bibliotecario jefe de la Universidad Miskatonic.\nTal vez él pueda ayudarte a entender lo que está pasando.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 3a: En busca del Dr. Armitage.",
+    "description": "Escenario I",
+    "leafDescription": "Tu amigo mencionó que había visitado al Dr. Henry Armitage, el bibliotecario jefe. Cada vez llegan más personajes extraños, así que debes registrar el campus para dar con su paradero.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 3b: El sirviente desatado.",
+    "description": "Escenario I",
+    "leafDescription": "Encuentras al Dr. Armitage atrincherado en una de las aulas de la Biblioteca Orne.\n\n—Ha habido personas que se comportaban de forma extraña en el campus últimamente, entre ellas tu amigo. Pero todo eso puede esperar. ¡Debemos enfrentarnos a tu perseguidor y detenerlo antes de que arda todo el campus! —dice el Dr. Armitage.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 4a: Llamarada de gloria",
+    "description": "Escenario I",
+    "leafDescription": "¡No puedes permitir que tu ardiente némesis haga daño a más inocentes! Con ayuda del Dr. Armitage, quizás puedas detenerlo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 4b: Una llama apagada",
+    "description": "Escenario I",
+    "leafDescription": "Tu terrible perseguidor retrocede, tambaleante, y se aferra la cabeza con ambas manos, como si intentase arrancarse la máscara. El sonido de las sirenas a lo lejos va aumentando en intensidad. Te giras y ves un grupo de aterrados estudiantes que pasan corriendo junto a ti. Cuando vuelves tu atención a tu llameante némesis, se ha desvanecido sin dejar rastro.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_1",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 1a: Augurios de llama.",
+    "description": "Escenario II",
+    "leafDescription": "Debes encontrar el paradero de los sospechosos de la lista de tu amigo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 1b: De vuelta al Restaurante de Velma.",
+    "description": "Escenario II",
+    "leafDescription": "Tu búsqueda ha dado unos frutos interesantes. Con todo lo que has descubierto, tú y el Dr. Armitage deberíais tener suficientes pistas como para encontrar el paradero de tu amigo. Te montas en un taxi para volver al Barrio Este, donde podrás poner en común tus averiguaciones.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_2",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 1a: Registrar las alcantarillas.",
+    "description": "Escenario III",
+    "leafDescription": "Los Hermanos de las cenizas podrían estar en cualquier parte. Debes registrar las alcantarillas en busca del lugar del ritual de la secta si quieres salvar a tu amigo.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 1b: El lugar del ritual.",
+    "description": "Escenario III",
+    "leafDescription": "El cántico te lleva por un laberinto de túneles hasta una cisterna seca. Hay varias docenas de personajes ataviados con túnicas arrodillados ante un abedul ardiente. Tu amigo se encuentra entre ellos. ¡Debes detenerlo antes de que se sacrifique por Elokoss!",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 2a: Detener el rito.",
+    "description": "Escenario III",
+    "leafDescription": "Debes detener el rito a toda costa. Podrías registrar la cisterna en busca de alguna forma de detener a la secta, ¡o bien podrías hacer leña de su ídolo profano!",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a.mp3", "title": "" }
+  },
+  {
+    "label": "Acto 2b: Crisis evitada.",
+    "description": "Escenario III",
+    "leafDescription": "Mientras haces leña del árbol ardiente, un aullido sobrenatural llena la cámara. Lo ignoras y prosigues tu ataque, asestando un certero golpe tras otro para destruir el mal primordial. Al final, la antigua efigie de la diosa de los Hermanos yace hecha pedazos.",
+    "provinciaTag": "hermanos_de_las_cenizas",
+    "gremioTag": "escenario_3",
+    "audio": { "src": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b.mp3", "title": "" }
+  }
+]
