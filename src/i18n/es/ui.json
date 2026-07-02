@@ -8,7 +8,7 @@
     "mediaFallbackTitle": "AHLCG Audio"
   },
   "topbar": {
-    "selectProvinceHint": "Selecciona una campaña"
+    "selectSectionHint": "Elige un apartado"
   },
   "a11y": {
     "openSidebar": "Abrir menú lateral",
@@ -24,33 +24,24 @@
   },
   "sidebar": {
     "home": "Inicio",
-    "provincia": "Campaña",
-    "provinciaHint": "Elige una campaña",
-    "gremio": "Escenario",
-    "gremioHint": "Filtra por escenario",
+    "campaignGroup": "Campañas",
+    "standaloneGroup": "Escenarios independientes",
+    "standaloneEmpty": "Próximamente",
+    "comingSoon": "Próximamente",
+    "navHint": "Elige campaña, escenario y apartado",
     "playback": "Reproducción",
-    "soundtrack": "Banda Sonora",
-    "autoplay": "Reproducción automática",
-    "ambient": "Audio ambiente",
-    "soundtrackToggle": "Activar banda sonora",
-    "allGuilds": "Todos"
-  },
-  "provincias": {
-    "hermanos_de_las_cenizas": "Hermanos de las Cenizas"
-  },
-  "gremios": {
-    "escenario_1": "Escenario I",
-    "escenario_2": "Escenario II",
-    "escenario_3": "Escenario III"
+    "autoplay": "Reproducción automática"
   },
   "content": {
-    "selectProvince": "Selecciona una campaña en el menú lateral para comenzar.",
-    "noMatches": "No hay paneles que coincidan con los filtros seleccionados."
+    "selectSection": "Elige un apartado en el menú lateral para empezar a narrar.",
+    "noMatches": "No hay narraciones que coincidan con la búsqueda.",
+    "comingSoonLead": "Próximamente",
+    "comingSoonBody": "Este contenido está en preparación. Vuelve pronto para dar voz a sus horrores."
   },
   "search": {
     "placeholder": "Buscar narración",
     "ariaLabel": "Buscar narración",
-    "disabledHint": "Selecciona una campaña para activar la búsqueda"
+    "disabledHint": "Abre un apartado para activar la búsqueda"
   },
   "player": {
     "play": "Reproducir",

@@ -62,7 +62,7 @@ function resolve(messages, key) {
 }
 
 /**
- * Traduce una clave de interfaz con notación de puntos, p. ej. t("sidebar.provincia").
+ * Traduce una clave de interfaz con notación de puntos, p. ej. t("sidebar.home").
  * Soporta interpolación con {param}: t("soundtrackPlayer.downloading", { pct: 50 }).
  * Si resuelve a un objeto/array (p. ej. welcome.features), lo devuelve tal cual.
  * Si falta en el idioma actual, recurre al idioma por defecto y, por último, a la clave.

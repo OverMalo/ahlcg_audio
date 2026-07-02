@@ -1,0 +1,8 @@
+{
+  "type": "standalone",
+  "id": "traces_to_nowhere",
+  "title": "Traces to Nowhere",
+  "banner": "images/banner_traces_to_01.png",
+  "comingSoon": true,
+  "scenarios": []
+}

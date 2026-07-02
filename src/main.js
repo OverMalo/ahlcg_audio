@@ -8,34 +8,100 @@ let SOUNDTRACK = getContent().soundtrack;
 const screenEl = document.getElementById("screen");
 const sidebarEl = document.getElementById("sidebar");
 
-// Solo los IDs son estables; las etiquetas mostradas se traducen con t() en
-// tiempo de render (provincias.<id> / gremios.<id> en los .json de i18n).
-const FILTER_OPTIONS = {
-  provincias: ["hermanos_de_las_cenizas"],
-  gremios: ["escenario_1", "escenario_2", "escenario_3"]
-};
+// ── Navegación jerárquica ────────────────────────────────────────────────────
+// El contenido es un árbol  sección(campaña|standalone) → escenario → componente
+// → items(narraciones). Cada nodo del menú lateral se identifica con claves de
+// cadena estables; las etiquetas mostradas viven en los propios datos (títulos).
+const NAV_SEP = "|";
+const INTRO_COMPONENT = "__intro__";
+// Hoja de navegación especial: "índice" de un escenario (todos sus componentes).
+const OVERVIEW_COMPONENT = "__overview__";
+// Hoja especial: teaser "próximamente" de una sección aún sin contenido.
+const SOON_COMPONENT = "__soon__";
 
-const provinciaLabel = (id) => t(`provincias.${id}`);
-const gremioLabel = (id) => t(`gremios.${id}`);
+const allSections = () => [...(appData.campaigns || []), ...(appData.standalone || [])];
+
+function findSection(nav) {
+  if (!nav) return null;
+  return allSections().find((s) => s.type === nav.sectionType && s.id === nav.sectionId) || null;
+}
+
+// Claves de despliegue (nodos plegables del árbol lateral).
+const sectionToggleKey = (type, id) => ["sec", type, id].join(NAV_SEP);
+const scenarioToggleKey = (type, id, scnId) => ["scn", type, id, scnId].join(NAV_SEP);
+
+// Clave de selección (hoja de navegación: un componente, o la intro de campaña).
+function navId(nav) {
+  return ["nav", nav.sectionType, nav.sectionId, nav.scenarioId || "", nav.componentType || ""].join(NAV_SEP);
+}
+function parseNavId(str) {
+  const [, sectionType, sectionId, scenarioId, componentType] = String(str).split(NAV_SEP);
+  return {
+    sectionType,
+    sectionId,
+    scenarioId: scenarioId || null,
+    componentType: componentType || null,
+  };
+}
+
+// Resuelve una hoja de navegación a { scenario, componentTitle, groups[], isOverview? }.
+// Cada group = { type, title, nav, items } → 1 group para un componente/intro,
+// N groups (todos los componentes en orden) para el índice de un escenario.
+function resolveNavItems(nav) {
+  const section = findSection(nav);
+  if (!section) return null;
+
+  if (nav.componentType === SOON_COMPONENT) {
+    return { isSoon: true, scenario: null, componentTitle: section.title, groups: [] };
+  }
+
+  if (nav.componentType === INTRO_COMPONENT) {
+    if (!section.intro) return null;
+    return {
+      scenario: null,
+      componentTitle: section.intro.title,
+      groups: [{ type: "introduccion", title: section.intro.title, nav, items: section.intro.items || [] }]
+    };
+  }
+
+  const scenario = section.scenarios?.find((s) => s.id === nav.scenarioId);
+  if (!scenario) return null;
+
+  if (nav.componentType === OVERVIEW_COMPONENT) {
+    const groups = (scenario.components || []).map((c) => ({
+      type: c.type,
+      title: c.title,
+      nav: { sectionType: nav.sectionType, sectionId: nav.sectionId, scenarioId: scenario.id, componentType: c.type },
+      items: c.items || []
+    }));
+    return { scenario, componentTitle: scenario.title, isOverview: true, groups };
+  }
+
+  const comp = scenario.components?.find((c) => c.type === nav.componentType);
+  if (!comp) return null;
+  return {
+    scenario,
+    componentTitle: comp.title,
+    groups: [{ type: comp.type, title: comp.title, nav, items: comp.items || [] }]
+  };
+}
 
 function trackAudioPlay(node) {
   if (!node || typeof gtag !== "function") return;
-  const provincia = node.tags?.provincia ? provinciaLabel(node.tags.provincia) : "—";
-  const gremio   = node.tags?.gremio   ? gremioLabel(node.tags.gremio)   : "—";
   const audioName = node.audioSrc
     ? node.audioSrc.split("/").pop().replace(/\.[^.]+$/, "")
     : "—";
   gtag("event", "audio_play", {
     event_category: "audio",
-    campana:   provincia,
-    escenario: gremio,
+    campana:   node.tags?.campaignTitle || "—",
+    escenario: node.tags?.scenarioTitle || "—",
     panel:     node.title || "—",
     audio:     audioName,
   });
 }
 
 // Imagen de cabecera de la landing. Pon "" para volver al placeholder "ASSET HERE".
-const WELCOME_BANNER_SRC = "";
+const WELCOME_BANNER_SRC = "images/general_banner_01.png";
 
 // Email de contacto que aparece en el pie de la landing.
 const CONTACT_EMAIL = "overmalo@gmail.com";
@@ -72,16 +138,12 @@ function loadState() {
     if (saved) return JSON.parse(saved);
   } catch {}
   return {
-    selectedProvincia: "",
-    selectedGremio: "",
+    selectedNav: null,
+    expandedNav: [],
     revealedDescriptions: [],
     autoPlay: true,
     playbackRate: 1,
-    stEnabled: false,
-    provinciaCollapsed: false,
-    gremioCollapsed: false,
-    narrationsCollapsed: false,
-    bandaCollapsed: false
+    stEnabled: false
   };
 }
 
@@ -90,17 +152,13 @@ function saveState() {
     "ahlcg_audio:navState",
     JSON.stringify({
       view,
-      selectedProvincia,
-      selectedGremio,
+      selectedNav,
+      expandedNav: [...expandedNav],
       expandedPanels: [...expandedPanels],
       revealedDescriptions: [...revealedDescriptions],
       autoPlay,
       playbackRate,
       stEnabled,
-      provinciaCollapsed,
-      gremioCollapsed,
-      narrationsCollapsed,
-      bandaCollapsed,
       stVolume,
       stCurrentTrack,
       stCurrentTime: stAudio?.currentTime ?? 0
@@ -108,9 +166,21 @@ function saveState() {
   );
 }
 
+// Normaliza la hoja de navegación guardada (tolera estados antiguos → null).
+function sanitizeSelectedNav(raw) {
+  if (!raw || typeof raw !== "object") return null;
+  if (typeof raw.sectionType !== "string" || typeof raw.sectionId !== "string") return null;
+  return {
+    sectionType: raw.sectionType,
+    sectionId: raw.sectionId,
+    scenarioId: typeof raw.scenarioId === "string" ? raw.scenarioId : null,
+    componentType: typeof raw.componentType === "string" ? raw.componentType : null
+  };
+}
+
 const state = loadState();
-let selectedProvincia = typeof state.selectedProvincia === "string" ? state.selectedProvincia : "";
-let selectedGremio = typeof state.selectedGremio === "string" ? state.selectedGremio : "";
+let selectedNav = sanitizeSelectedNav(state.selectedNav);
+let expandedNav = new Set(Array.isArray(state.expandedNav) ? state.expandedNav : []);
 let expandedPanels = new Set(Array.isArray(state.expandedPanels) ? state.expandedPanels : []);
 let revealedDescriptions = new Set(Array.isArray(state.revealedDescriptions) ? state.revealedDescriptions : []);
 let autoPlay = typeof state.autoPlay === "boolean" ? state.autoPlay : true;
@@ -120,15 +190,17 @@ let stEnabled = typeof (state.stEnabled ?? state.ytEnabled) === "boolean" ? (sta
 // Vista activa: "inicio" (bienvenida) o "narraciones"
 let view = state.view === "narraciones" ? "narraciones" : "inicio";
 
-let provinciaCollapsed = typeof state.provinciaCollapsed === "boolean" ? state.provinciaCollapsed : false;
-let gremioCollapsed = typeof state.gremioCollapsed === "boolean" ? state.gremioCollapsed : false;
-let narrationsCollapsed = typeof state.narrationsCollapsed === "boolean" ? state.narrationsCollapsed : false;
-let bandaCollapsed = typeof state.bandaCollapsed === "boolean" ? state.bandaCollapsed : false;
+// Si el estado restaurado dice "narraciones" pero no hay hoja válida, vuelve a inicio.
+if (view === "narraciones" && !resolveNavItems(selectedNav)) {
+  view = "inicio";
+  selectedNav = null;
+}
 
 /** @type {null | { rafId: number, panelEl: HTMLAudioElement, ambientEl: HTMLAudioElement|null, hasAmbient: boolean, totalDuration: number, playerEl: HTMLElement, isSeeking: boolean }} */
 let activePlayer = null;
 
-let contentTree = buildTreeFromStart();
+// contentTree = hojas (narraciones) del componente actualmente seleccionado.
+let contentTree = buildLeavesForNav(selectedNav);
 let accordionIndex = buildAccordionIndex(contentTree);
 
 /** Map<cardLabel, nodeId> — sólo hojas con labels tipo XX-NN */
@@ -192,7 +264,7 @@ function resetCardSearch() {
 }
 
 function syncTopbarSearchAvailability() {
-  const enabled = Boolean(selectedProvincia);
+  const enabled = view === "narraciones" && contentTree.length > 0;
   const topbarProvinceHint = document.getElementById("topbar-province-hint");
   if (topbarProvinceHint) {
     topbarProvinceHint.hidden = enabled;
@@ -212,12 +284,70 @@ function syncTopbarSearchAvailability() {
 
 function goToInicio() {
   view = "inicio";
-  selectedProvincia = "";
-  selectedGremio = "";
+  selectedNav = null;
   resetCardSearch();
   stopActivePlayer();
+  rebuildContentTree();
   saveState();
   render();
+}
+
+// Reconstruye las hojas del componente seleccionado y sus índices asociados.
+function rebuildContentTree() {
+  contentTree = buildLeavesForNav(selectedNav);
+  accordionIndex = buildAccordionIndex(contentTree);
+  cardLabelMap = buildCardLabelMap();
+}
+
+// Colapsa los escenarios hermanos (acordeón: solo uno abierto a la vez).
+function collapseSiblingScenarios(sectionType, sectionId, keepScenarioId) {
+  const section = findSection({ sectionType, sectionId });
+  if (!section) return;
+  for (const sc of section.scenarios || []) {
+    if (sc.id !== keepScenarioId) {
+      expandedNav.delete(scenarioToggleKey(sectionType, sectionId, sc.id));
+    }
+  }
+}
+
+// Asegura que la ruta (sección → escenario) de una hoja esté desplegada,
+// colapsando de paso los demás escenarios de esa sección.
+function ensureNavExpanded(nav) {
+  if (!nav) return;
+  expandedNav.add(sectionToggleKey(nav.sectionType, nav.sectionId));
+  if (nav.scenarioId) {
+    collapseSiblingScenarios(nav.sectionType, nav.sectionId, nav.scenarioId);
+    expandedNav.add(scenarioToggleKey(nav.sectionType, nav.sectionId, nav.scenarioId));
+  }
+}
+
+// Selecciona un componente (o la intro de campaña) y muestra sus narraciones.
+function selectNav(nav) {
+  if (!resolveNavItems(nav)) return;
+  selectedNav = nav;
+  view = "narraciones";
+  resetCardSearch();
+  stopActivePlayer();
+  expandedPanels = new Set();
+  ensureNavExpanded(nav);
+  rebuildContentTree();
+  saveState();
+  render();
+  if (window.matchMedia?.("(max-width: 768px)").matches) setSidebarOpen(false);
+}
+
+// Toggle de un escenario desde el árbol lateral:
+//  · colapsado → entra: muestra su índice y lo despliega (colapsa hermanos).
+//  · ya desplegado → lo colapsa a mano, sin cambiar lo que se ve en el centro.
+function toggleScenario(overviewNav) {
+  const key = scenarioToggleKey(overviewNav.sectionType, overviewNav.sectionId, overviewNav.scenarioId);
+  if (expandedNav.has(key)) {
+    expandedNav.delete(key);
+    saveState();
+    render();
+  } else {
+    selectNav(overviewNav);
+  }
 }
 
 function getNodeCardLabel(node) {
@@ -866,9 +996,11 @@ document.addEventListener("keydown", (event) => {
 function reloadContent() {
   appData = getContent().appData;
   SOUNDTRACK = getContent().soundtrack;
-  contentTree = buildTreeFromStart();
-  accordionIndex = buildAccordionIndex(contentTree);
-  cardLabelMap = buildCardLabelMap();
+  if (view === "narraciones" && !resolveNavItems(selectedNav)) {
+    view = "inicio";
+    selectedNav = null;
+  }
+  rebuildContentTree();
   if (stCurrentTrack >= SOUNDTRACK.length) stCurrentTrack = 0;
 }
 
@@ -900,7 +1032,7 @@ function applyStaticI18n() {
   const skip = document.querySelector(".skip-link");
   if (skip) skip.textContent = t("app.skipLink");
   const topbarProvinceHint = document.getElementById("topbar-province-hint");
-  if (topbarProvinceHint) topbarProvinceHint.textContent = t("topbar.selectProvinceHint");
+  if (topbarProvinceHint) topbarProvinceHint.textContent = t("topbar.selectSectionHint");
   sidebarToggleEl?.setAttribute(
     "aria-label",
     sidebarEl.classList.contains("sidebar--open") ? t("a11y.closeSidebar") : t("a11y.openSidebar")
@@ -918,6 +1050,7 @@ renderLangSwitcher();
 renderMusicBar();
 bindMusicBarEvents();
 render();
+initAtmosphere();
 
 if (stEnabled) {
   setupSTPlayer();
@@ -1030,9 +1163,18 @@ function render() {
 
   screenEl.setAttribute("aria-label", t("a11y.screenNarrations"));
 
+  const resolved = selectedNav ? resolveNavItems(selectedNav) : null;
+  const section = selectedNav ? findSection(selectedNav) : null;
+
   let bodyHtml;
-  if (!selectedProvincia) {
-    bodyHtml = `<div class="empty-screen">${escapeHtml(t("content.selectProvince"))}</div>`;
+  if (!resolved) {
+    bodyHtml = `<div class="empty-screen">${escapeHtml(t("content.selectSection"))}</div>`;
+  } else if (resolved.isSoon) {
+    bodyHtml = `<div class="soon-teaser">${escapeHtml(t("content.comingSoonBody"))}</div>`;
+  } else if (resolved.isOverview) {
+    // Índice del escenario: cada componente como sección titulada con sus narraciones.
+    const groupsHtml = resolved.groups.map(renderOverviewGroup).filter(Boolean).join("");
+    bodyHtml = groupsHtml || `<div class="empty-screen">${escapeHtml(t("content.noMatches"))}</div>`;
   } else {
     const filteredRoots = contentTree
       .map(filterTree)
@@ -1047,15 +1189,25 @@ function render() {
       : `<div class="empty-screen">${escapeHtml(t("content.noMatches"))}</div>`;
   }
 
-  const provLabel = selectedProvincia ? provinciaLabel(selectedProvincia) : null;
-  const gremLabel = selectedGremio ? gremioLabel(selectedGremio) : null;
-  const breadcrumb = provLabel
-    ? `<p class="description breadcrumb">${escapeHtml(provLabel)}${gremLabel ? ` &mdash; ${escapeHtml(gremLabel)}` : ""}</p>`
+  const crumbParts = [];
+  if (section && !resolved?.isSoon) crumbParts.push(section.title);
+  if (resolved && !resolved.isOverview && !resolved.isSoon && resolved.scenario) crumbParts.push(resolved.scenario.title);
+  const breadcrumb = resolved?.isSoon
+    ? `<p class="description breadcrumb">${escapeHtml(t("content.comingSoonLead"))}</p>`
+    : (crumbParts.length ? `<p class="description breadcrumb">${crumbParts.map(escapeHtml).join(" &rsaquo; ")}</p>` : "");
+  const headTitle = resolved
+    ? (resolved.isOverview ? resolved.scenario.title : resolved.componentTitle)
+    : t("app.campaignTitle");
+
+  // Banner de la sección (campaña / escenario independiente) en lo alto del contenido.
+  const bannerHtml = section?.banner
+    ? `<div class="content-banner"><img class="content-banner-img" src="${escapeAttribute(audioUrl(section.banner))}" alt="${escapeAttribute(section.title)}" loading="lazy" decoding="async"></div>`
     : "";
 
   screenEl.innerHTML = `
+    ${bannerHtml}
     <div class="single-screen-head">
-      <h2>${escapeHtml(t("app.campaignTitle"))}</h2>
+      <h2>${escapeHtml(headTitle)}</h2>
       ${breadcrumb}
     </div>
     <div class="accordion-root">
@@ -1076,7 +1228,7 @@ function renderWelcome() {
     .join("");
 
   const bannerHtml = WELCOME_BANNER_SRC
-    ? `<img class="welcome-banner-img" src="${escapeAttribute(import.meta.env.BASE_URL + WELCOME_BANNER_SRC)}" alt="${escapeAttribute(t("welcome.bannerAlt"))}" decoding="async">`
+    ? `<div class="content-banner content-banner--hero"><img class="content-banner-img" src="${escapeAttribute(import.meta.env.BASE_URL + WELCOME_BANNER_SRC)}" alt="${escapeAttribute(t("welcome.bannerAlt"))}" decoding="async"></div>`
     : `<div class="welcome-banner" role="img" aria-label="${escapeAttribute(t("welcome.bannerAria"))}">
         <span class="welcome-banner-label">${escapeHtml(t("welcome.bannerLabel"))}</span>
       </div>`;
@@ -1104,47 +1256,40 @@ function renderWelcome() {
 }
 
 function renderSidebar() {
-  const inNarr = view === "narraciones";
-
-  const provinciaItems = FILTER_OPTIONS.provincias.map((id) => {
-    const active = inNarr && selectedProvincia === id;
-    return `<button type="button" class="sidebar-nav-item sidebar-nav-item--section${active ? " sidebar-nav-item--active" : ""}" data-filter-type="provincia" data-filter-value="${escapeAttribute(id)}" aria-pressed="${active ? "true" : "false"}"><span class="sidebar-nav-dot" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span><span class="sidebar-nav-text">${escapeHtml(provinciaLabel(id))}</span><span class="sidebar-nav-chevron" aria-hidden="true">${ICONS.chevronRight}</span></button>`;
-  }).join("");
-
-  const gremioNoneActive = inNarr && !selectedGremio;
-  const gremioBtn = (value, label, active) =>
-    `<button type="button" class="sidebar-nav-item sidebar-nav-item--filter${active ? " sidebar-nav-item--active" : ""}" data-filter-type="gremio" data-filter-value="${escapeAttribute(value)}" aria-pressed="${active ? "true" : "false"}"><span class="sidebar-nav-dot sidebar-nav-dot--check" aria-hidden="true">${active ? ICONS.boxFilled : ICONS.boxEmpty}</span><span class="sidebar-nav-text">${escapeHtml(label)}</span></button>`;
-  const gremioItems = [
-    gremioBtn("", t("sidebar.allGuilds"), gremioNoneActive),
-    ...FILTER_OPTIONS.gremios.map((id) => gremioBtn(id, gremioLabel(id), inNarr && selectedGremio === id)),
-  ].join("");
-
   const speedChips = [1.00, 1.15, 1.25, 1.5].map((rate) => {
     const active = playbackRate === rate;
     return `<button type="button" class="checkable-chip${active ? " checkable-chip--active" : ""}" data-config-rate="${rate}" aria-pressed="${active ? "true" : "false"}"><span class="checkable-chip-mark" aria-hidden="true">${active ? ICONS.dotFilled : ICONS.dotEmpty}</span><span>${rate.toFixed(2)}x</span></button>`;
   }).join("");
 
   const inicioActive = view === "inicio";
+  const campaigns = appData.campaigns || [];
+  const standalone = appData.standalone || [];
+
+  const campaignsHtml = campaigns.length
+    ? campaigns.map(renderSectionNode).join("")
+    : `<p class="sidebar-section-hint">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`;
+  const standaloneHtml = standalone.length
+    ? standalone.map(renderSectionNode).join("")
+    : `<p class="sidebar-section-hint">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`;
 
   return `
     <nav class="sidebar-nav" aria-label="${escapeAttribute(t("a11y.sidebarNav"))}">
       <button type="button" class="sidebar-close" data-sidebar-close aria-label="${escapeAttribute(t("a11y.closeSidebar"))}">${ICONS.close}</button>
       <div class="sidebar-section">
         <div class="sidebar-nav-list">
-          <button type="button" class="sidebar-nav-item${inicioActive ? " sidebar-nav-item--active" : ""}" data-nav-view="inicio" aria-current="${inicioActive ? "page" : "false"}"><span class="sidebar-nav-dot" aria-hidden="true">${inicioActive ? ICONS.diamondFilled : ICONS.diamondEmpty}</span>${escapeHtml(t("sidebar.home"))}</button>
+          <button type="button" class="sidebar-nav-item${inicioActive ? " sidebar-nav-item--active" : ""}" data-nav-view="inicio" aria-current="${inicioActive ? "page" : "false"}"><span class="sidebar-nav-dot" aria-hidden="true">${inicioActive ? ICONS.diamondFilled : ICONS.diamondEmpty}</span><span class="sidebar-nav-text">${escapeHtml(t("sidebar.home"))}</span></button>
         </div>
       </div>
       <div class="sidebar-divider"></div>
       <div class="sidebar-section">
-        <h3 class="sidebar-heading">${escapeHtml(t("sidebar.provincia"))}</h3>
-        <p class="sidebar-section-hint">${escapeHtml(t("sidebar.provinciaHint"))}</p>
-        <div class="sidebar-nav-list">${provinciaItems}</div>
+        <h3 class="sidebar-heading">${escapeHtml(t("sidebar.campaignGroup"))}</h3>
+        <p class="sidebar-section-hint">${escapeHtml(t("sidebar.navHint"))}</p>
+        <div class="sidebar-nav-list sidebar-nav-tree">${campaignsHtml}</div>
       </div>
       <div class="sidebar-divider"></div>
-      <div class="sidebar-section sidebar-section--filter">
-        <h3 class="sidebar-heading">${escapeHtml(t("sidebar.gremio"))}</h3>
-        <p class="sidebar-section-hint">${escapeHtml(t("sidebar.gremioHint"))}</p>
-        <div class="sidebar-nav-list sidebar-nav-list--filter">${gremioItems}</div>
+      <div class="sidebar-section">
+        <h3 class="sidebar-heading">${escapeHtml(t("sidebar.standaloneGroup"))}</h3>
+        <div class="sidebar-nav-list sidebar-nav-tree">${standaloneHtml}</div>
       </div>
       <div class="sidebar-divider"></div>
       <div class="sidebar-section">
@@ -1158,6 +1303,99 @@ function renderSidebar() {
         </div>
       </div>
     </nav>
+  `;
+}
+
+// Nodo de sección (campaña / escenario independiente): plegable; intro + escenarios.
+function renderSectionNode(section) {
+  if (section.comingSoon) {
+    const soonNav = { sectionType: section.type, sectionId: section.id, scenarioId: null, componentType: SOON_COMPONENT };
+    const active = view === "narraciones" && selectedNav && navId(selectedNav) === navId(soonNav);
+    return `
+      <button type="button" class="sidebar-nav-item sidebar-nav-item--section sidebar-nav-item--soon${active ? " sidebar-nav-item--active" : ""}" data-nav-select="${escapeAttribute(navId(soonNav))}" aria-current="${active ? "page" : "false"}">
+        <span class="sidebar-nav-dot" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span>
+        <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
+        <span class="soon-badge">${escapeHtml(t("sidebar.comingSoon"))}</span>
+      </button>
+    `;
+  }
+  const key = sectionToggleKey(section.type, section.id);
+  const open = expandedNav.has(key);
+  const caret = open ? ICONS.caretUp : ICONS.caretDown;
+
+  let childrenHtml = "";
+  if (open) {
+    const introHtml = section.intro
+      ? renderNavLeaf(
+          { sectionType: section.type, sectionId: section.id, scenarioId: null, componentType: INTRO_COMPONENT },
+          section.intro.title
+        )
+      : "";
+    const scenariosHtml = (section.scenarios || []).map((sc) => renderScenarioNode(section, sc)).join("");
+    childrenHtml = `<div class="sidebar-nav-list sidebar-nav-list--filter">${introHtml}${scenariosHtml}</div>`;
+  }
+
+  return `
+    <button type="button" class="sidebar-nav-item sidebar-nav-item--section" data-nav-toggle="${escapeAttribute(key)}" aria-expanded="${open ? "true" : "false"}">
+      <span class="sidebar-nav-dot" aria-hidden="true">${caret}</span>
+      <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
+    </button>
+    ${childrenHtml}
+  `;
+}
+
+// Nodo de escenario: al pulsarlo muestra su índice (todos los componentes) y se
+// despliega en el árbol; contiene sus componentes como sub-hojas seleccionables.
+function renderScenarioNode(section, scenario) {
+  const key = scenarioToggleKey(section.type, section.id, scenario.id);
+  const open = expandedNav.has(key);
+  const caret = open ? ICONS.caretUp : ICONS.caretDown;
+  const overviewNav = { sectionType: section.type, sectionId: section.id, scenarioId: scenario.id, componentType: OVERVIEW_COMPONENT };
+  const active = view === "narraciones" && selectedNav && navId(selectedNav) === navId(overviewNav);
+
+  let childrenHtml = "";
+  if (open) {
+    const comps = (scenario.components || [])
+      .map((c) =>
+        renderNavLeaf(
+          { sectionType: section.type, sectionId: section.id, scenarioId: scenario.id, componentType: c.type },
+          c.title
+        )
+      )
+      .join("");
+    childrenHtml = `<div class="sidebar-nav-list sidebar-nav-list--filter">${comps}</div>`;
+  }
+
+  return `
+    <button type="button" class="sidebar-nav-item sidebar-nav-item--scenario${active ? " sidebar-nav-item--active" : ""}" data-nav-scenario="${escapeAttribute(navId(overviewNav))}" aria-expanded="${open ? "true" : "false"}" aria-current="${active ? "page" : "false"}">
+      <span class="sidebar-nav-dot" aria-hidden="true">${caret}</span>
+      <span class="sidebar-nav-text">${escapeHtml(scenario.title)}</span>
+    </button>
+    ${childrenHtml}
+  `;
+}
+
+// Hoja de navegación seleccionable (un componente o la intro de campaña).
+function renderNavLeaf(nav, label) {
+  const id = navId(nav);
+  const active = view === "narraciones" && selectedNav && navId(selectedNav) === id;
+  return `<button type="button" class="sidebar-nav-item sidebar-nav-item--filter${active ? " sidebar-nav-item--active" : ""}" data-nav-select="${escapeAttribute(id)}" aria-current="${active ? "page" : "false"}"><span class="sidebar-nav-dot sidebar-nav-dot--check" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span><span class="sidebar-nav-text">${escapeHtml(label)}</span></button>`;
+}
+
+// Grupo del índice de escenario: título de sección (enlace a esa sección) + narraciones.
+function renderOverviewGroup(group) {
+  const leaves = contentTree.filter((n) => n.tags.component === group.type);
+  const visible = cardSearchQuery ? leaves.filter((n) => matchesFilters(n)) : leaves;
+  if (!visible.length) return "";
+  const panels = visible.map((node) => renderPanel(node, 0)).join("");
+  return `
+    <section class="overview-group">
+      <button type="button" class="overview-group-head" data-nav-select="${escapeAttribute(navId(group.nav))}">
+        <span class="overview-group-title">${escapeHtml(group.title)}</span>
+        <span class="overview-group-jump" aria-hidden="true">${ICONS.chevronRight}</span>
+      </button>
+      <div class="panel-children">${panels}</div>
+    </section>
   `;
 }
 
@@ -1198,18 +1436,6 @@ function bindConfigEvents() {
 }
 
 function bindFilterEvents() {
-  document.querySelectorAll("[data-filter-collapse]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = button.dataset.filterCollapse;
-      if (target === "provincia") provinciaCollapsed = !provinciaCollapsed;
-      if (target === "gremio") gremioCollapsed = !gremioCollapsed;
-      if (target === "narraciones") narrationsCollapsed = !narrationsCollapsed;
-      if (target === "banda") bandaCollapsed = !bandaCollapsed;
-      saveState();
-      render();
-    });
-  });
-
   document.querySelector("[data-sidebar-close]")?.addEventListener("click", () => {
     setSidebarOpen(false);
     sidebarToggleEl?.focus();
@@ -1217,35 +1443,33 @@ function bindFilterEvents() {
 
   document.querySelectorAll("[data-nav-view]").forEach((button) => {
     button.addEventListener("click", () => {
-      if (button.dataset.navView === "inicio") {
-        goToInicio();
-        return;
-      }
-      view = "narraciones";
-      stopActivePlayer();
+      if (button.dataset.navView === "inicio") goToInicio();
+    });
+  });
+
+  // Desplegar / plegar un nodo del árbol (sección o escenario).
+  document.querySelectorAll("[data-nav-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.navToggle;
+      if (!key) return;
+      if (expandedNav.has(key)) expandedNav.delete(key);
+      else expandedNav.add(key);
       saveState();
       render();
     });
   });
 
-  document.querySelectorAll("[data-filter-type]").forEach((button) => {
+  // Escenario: toggle entrar-índice / colapsar.
+  document.querySelectorAll("[data-nav-scenario]").forEach((button) => {
     button.addEventListener("click", () => {
-      const type = button.dataset.filterType;
-      const value = button.dataset.filterValue;
-      if (!type) return;
+      toggleScenario(parseNavId(button.dataset.navScenario || ""));
+    });
+  });
 
-      if (type === "provincia") {
-        selectedProvincia = value;
-        selectedGremio = "";
-        view = "narraciones";
-      }
-
-      if (type === "gremio") {
-        selectedGremio = selectedGremio === value ? "" : value;
-      }
-
-      saveState();
-      render();
+  // Seleccionar una hoja de navegación (componente o intro de campaña).
+  document.querySelectorAll("[data-nav-select]").forEach((button) => {
+    button.addEventListener("click", () => {
+      selectNav(parseNavId(button.dataset.navSelect || ""));
     });
   });
 
@@ -1289,18 +1513,11 @@ function bindPanelEvents() {
 }
 
 function resolveAmbientSrc(nodeId) {
-  let id = nodeId;
-  let parentId = accordionIndex.parentById.get(id);
-  while (parentId && parentId !== accordionIndex.rootId) {
-    id = parentId;
-    parentId = accordionIndex.parentById.get(id);
-  }
-  const categoryKey = id.replace(/^group-/, "");
-  const planAmbient = appData[categoryKey]?.ambient;
-  if (planAmbient) return planAmbient;
+  const node = findNodeById(contentTree, nodeId);
+  const campaignId = node?.tags?.campaign;
 
-  const provinciaAmbient = appData.ambientConfig?.provincias?.[selectedProvincia];
-  if (provinciaAmbient) return provinciaAmbient;
+  const campaignAmbient = campaignId ? appData.ambientConfig?.campaigns?.[campaignId] : null;
+  if (campaignAmbient) return campaignAmbient;
 
   const generalAmbient = appData.ambientConfig?.general;
   if (generalAmbient) return generalAmbient;
@@ -2020,135 +2237,42 @@ function filterTree(node) {
 }
 
 function matchesFilters(node) {
-  const provinciaMatch =
-    !selectedProvincia ||
-    node.tags.provincia === "all" ||
-    node.tags.provincia === selectedProvincia;
-
-  const gremioMatch =
-    !selectedGremio ||
-    node.tags.gremio === "all" ||
-    node.tags.gremio === selectedGremio;
-
-  const searchMatch =
-    !cardSearchQuery ||
-    nodeMatchesSearch(node, cardSearchQuery);
-
-  return provinciaMatch && gremioMatch && searchMatch;
+  return !cardSearchQuery || nodeMatchesSearch(node, cardSearchQuery);
 }
 
-function buildTreeFromStart() {
-  const root = appData.start;
-  if (!root || !Array.isArray(root.options)) {
-    return [];
+// Construye las hojas (narraciones) de la selección, con la forma que espera el
+// acordeón/reproductor central. Aplana todos los grupos (1 componente o el índice
+// completo de un escenario). Sin selección válida → lista vacía.
+function buildLeavesForNav(nav) {
+  if (!nav) return [];
+  const resolved = resolveNavItems(nav);
+  const section = findSection(nav);
+  if (!resolved || !section) return [];
+
+  const leaves = [];
+  for (const group of resolved.groups) {
+    group.items.forEach((item, index) => {
+      leaves.push({
+        id: `leaf-${item.id || `${navId(group.nav)}-${index}`}`,
+        type: "leaf",
+        title: item.label || "",
+        summary: "",
+        contentTitle: "",
+        description: item.text || "",
+        audioSrc: item.audio || "",
+        tags: {
+          campaign: section.id,
+          scenario: resolved.scenario?.id || "",
+          campaignTitle: section.title,
+          scenarioTitle: resolved.scenario?.title || section.title,
+          component: group.type,
+          componentTitle: group.title
+        },
+        children: []
+      });
+    });
   }
-
-  return root.options
-    .map((option, index) => buildNodeFromOption(option, [], `root-${index}`))
-    .filter(Boolean);
-}
-
-function buildNodeFromOption(option, parentTags, fallbackId) {
-  const inlineAudio = option?.audio || (Array.isArray(option?.audios) && option.audios.length ? option.audios[0] : null);
-  const hasInlineLeaf = !!(inlineAudio || option?.leafDescription);
-  const nextId = option?.next;
-  const nextNode = nextId ? appData[nextId] : null;
-  const derivedTags = mergeTags(parentTags, extractTags(option, nextId, nextNode));
-
-  if (hasInlineLeaf) {
-    return {
-      id: `leaf-${nextId || fallbackId}`,
-      type: "leaf",
-      title: option.label || nextId || fallbackId,
-      summary: option.description || "",
-      contentTitle: "",
-      description: option.leafDescription || option.description || "",
-      audioSrc: inlineAudio?.src || "",
-      tags: derivedTags,
-      children: []
-    };
-  }
-
-  if (!nextId || !nextNode) {
-    return {
-      id: `leaf-${fallbackId}`,
-      type: "leaf",
-      title: option?.label || fallbackId,
-      summary: option?.description || "",
-      contentTitle: "",
-      description: "",
-      audioSrc: "",
-      tags: derivedTags,
-      children: []
-    };
-  }
-
-  if (Array.isArray(nextNode.options) && nextNode.options.length) {
-    const children = nextNode.options
-      .map((childOption, index) => buildNodeFromOption(childOption, derivedTags, `${nextId}-${index}`))
-      .filter(Boolean);
-
-    return {
-      id: `group-${nextId}`,
-      type: "group",
-      title: option.label || nextNode.title || nextId,
-      summary: option.description || nextNode.description || "",
-      children,
-      tags: derivedTags
-    };
-  }
-
-  const audioData = nextNode.audio || (Array.isArray(nextNode.audios) && nextNode.audios[0]) || null;
-
-  return {
-    id: `leaf-${nextId || fallbackId}`,
-    type: "leaf",
-    title: option.label || nextNode.title || nextId,
-    summary: option.description || "",
-    contentTitle: nextNode.title || "",
-    description: nextNode.description || "",
-    audioSrc: audioData?.src || "",
-    tags: derivedTags,
-    children: []
-  };
-}
-
-function mergeTags(parentTags, ownTags) {
-  return {
-    provincia: ownTags.provincia || parentTags.provincia || "",
-    gremio: ownTags.gremio || parentTags.gremio || ""
-  };
-}
-
-function extractTags(option, _nextId, _nextNode) {
-  const explicitProvincia = normalizeProvinciaTag(option?.provinciaTag || option?.provincia || "");
-  const explicitGremio = normalizeGremioTag(option?.gremioTag || option?.gremio || "");
-
-  return {
-    provincia: explicitProvincia,
-    gremio: explicitGremio
-  };
-}
-
-function normalizeProvinciaTag(value) {
-  const v = String(value || "").trim().toLowerCase();
-  if (v === "all" || v === "hermanos_de_las_cenizas") {
-    return v;
-  }
-  return "";
-}
-
-function normalizeGremioTag(value) {
-  const v = String(value || "").trim().toLowerCase();
-  if (
-    v === "all" ||
-    v === "escenario_1" ||
-    v === "escenario_2" ||
-    v === "escenario_3"
-  ) {
-    return v;
-  }
-  return "";
+  return leaves;
 }
 
 function escapeHtml(value) {
@@ -2170,12 +2294,41 @@ function escapeAttribute(value) {
   return escapeHtml(value);
 }
 
-function goHome() {
-  currentScreenId = "start";
-  historyStack = [];
-  pathLabels = [];
-  render();
-}
 
-backBtn.addEventListener("click", goBack);
-homeBtn.addEventListener("click", goHome);
+// Atmósfera "Abismo": capa de profundidad con parallax de ratón + niebla inferior.
+// Se inyecta por JS para no tocar el HTML; respeta prefers-reduced-motion.
+function initAtmosphere() {
+  if (typeof document === "undefined" || document.querySelector(".abyss-deep")) return;
+
+  const deep = document.createElement("div");
+  deep.className = "abyss abyss-deep";
+  deep.setAttribute("aria-hidden", "true");
+  const fog = document.createElement("div");
+  fog.className = "abyss abyss-fog";
+  fog.setAttribute("aria-hidden", "true");
+  document.body.append(deep, fog);
+
+  if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+
+  const root = document.documentElement;
+  let rafId = 0;
+  let deepX = 0, deepY = 0, parX = 0, parY = 0;
+  const apply = () => {
+    rafId = 0;
+    deep.style.transform = `translate3d(${deepX.toFixed(1)}px, ${deepY.toFixed(1)}px, 0)`;
+    // Parallax del banner (lo consume .content-banner-img vía CSS vars).
+    root.style.setProperty("--par-x", `${parX.toFixed(1)}px`);
+    root.style.setProperty("--par-y", `${parY.toFixed(1)}px`);
+  };
+  window.addEventListener(
+    "mousemove",
+    (event) => {
+      const nx = (event.clientX / window.innerWidth) - 0.5;
+      const ny = (event.clientY / window.innerHeight) - 0.5;
+      deepX = -nx * 24; deepY = -ny * 18;
+      parX = -nx * 12; parY = -ny * 8;
+      if (!rafId) rafId = requestAnimationFrame(apply);
+    },
+    { passive: true }
+  );
+}
