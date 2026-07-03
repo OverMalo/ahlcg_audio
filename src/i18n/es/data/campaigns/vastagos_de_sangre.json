@@ -1,8 +1,9 @@
 {
   "type": "campaign",
+  "origin": "oficial",
   "id": "vastagos_de_sangre",
   "title": "Vástagos de Sangre",
-  "banner": "images/banner_children_of_blood.png",
+  "banner": "images/banner_children_of_blood.webp",
   "comingSoon": true,
   "scenarios": []
 }

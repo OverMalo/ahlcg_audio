@@ -1,8 +1,14 @@
 {
   "type": "campaign",
+  "origin": "oficial",
   "id": "hermanos_de_las_cenizas",
   "title": "Hermanos de las Cenizas",
-  "banner": "images/banner_Er_lokos_01.png",
+  "banner": "images/banner_Er_lokos_01.webp",
+  "about": [
+    "Arkham siempre ha sido una ciudad rara: apenas pasa un día sin un asesinato atroz o una desaparición repentina. Seis meses después de la gran inundación, la ciudad se reconstruye más fuerte que nunca gracias al dinero de inversores llegados de fuera. Todo parece legal y próspero… pero sabes que la historia siempre va más allá de las apariencias.",
+    "Una racha de incendios y macabros «accidentes» mantiene a la ciudad en vilo, y cerca de cada suceso se han visto figuras ataviadas con túnicas. Cuando un amigo desaparece tras seguirles la pista, tú y otros investigadores decidís llegar al fondo del asunto. El rastro conduce a una secta —los Hermanos de las Cenizas— y a algo muy antiguo que arde bajo las cenizas, dispuesto a reclamar su «renacimiento glorioso».",
+    "Hermanos de las Cenizas es una campaña de tres escenarios —«Las llamas se propagan», «Humo y espejos» y «Reina de las cenizas»— para 1 a 4 investigadores. Aquí tienes narradas todas sus piezas: introducciones, planes, actos, resoluciones y códices, escenario a escenario, para que tu mesa se sumerja en la historia sin leer en voz alta. Elige un escenario en el menú lateral para comenzar."
+  ],
   "intro": {
     "type": "introduccion",
     "title": "Introducción",
@@ -33,50 +39,8 @@
           ]
         },
         {
-          "type": "planes",
-          "title": "Planes",
-          "items": [
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a",
-              "label": "Plan 1a: Horas intempestivas.",
-              "text": "El campus está extrañamente tranquilo y no hay ni rastro de tu amigo. Unas figuras encapuchadas cruzan el patio principal mientras unos nerviosos estudiantes se apresuran bajo las farolas fastidiosamente brillantes.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b",
-              "label": "Plan 1b: Humo en el viento.",
-              "text": "El viento lleva el olor del humo por todo el campus. Una columna de llamas sale de un edificio cercano.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a",
-              "label": "Plan 2a: Encendido.",
-              "text": "El cielo presenta un resplandor anaranjado a medida que las llamas se propagan.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b",
-              "label": "Plan 2b: Fuego incontrolable.",
-              "text": "Las ascuas recorren el aire sobre la Universidad Miskatonic. El alarido de una alarma de incendios resuena por el patio principal, mientras docenas de asustados estudiantes huyen del lugar.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a",
-              "label": "Plan 3a: Llamas salvajes.",
-              "text": "¡El campus está ardiendo!",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b",
-              "label": "Plan 3b: Ardiendo en llamas.",
-              "text": "Un denso humo negro llena el aire a tu alrededor y caes de rodillas entre toses. Más allá de las voraces llamas, ves que se mueven unas borrosas siluetas oscuras. Por mucho que te esfuerces, no logras ponerte a salvo. Se te nubla la vista mientras pierdes la consciencia.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b.mp3"
-            }
-          ]
-        },
-        {
-          "type": "actos",
-          "title": "Actos",
+          "type": "actos_planes",
+          "title": "Actos y Planes",
           "items": [
             {
               "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_1a",
@@ -125,6 +89,42 @@
               "label": "Acto 4b: Una llama apagada",
               "text": "Tu terrible perseguidor retrocede, tambaleante, y se aferra la cabeza con ambas manos, como si intentase arrancarse la máscara. El sonido de las sirenas a lo lejos va aumentando en intensidad. Te giras y ves un grupo de aterrados estudiantes que pasan corriendo junto a ti. Cuando vuelves tu atención a tu llameante némesis, se ha desvanecido sin dejar rastro.",
               "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a",
+              "label": "Plan 1a: Horas intempestivas.",
+              "text": "El campus está extrañamente tranquilo y no hay ni rastro de tu amigo. Unas figuras encapuchadas cruzan el patio principal mientras unos nerviosos estudiantes se apresuran bajo las farolas fastidiosamente brillantes.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b",
+              "label": "Plan 1b: Humo en el viento.",
+              "text": "El viento lleva el olor del humo por todo el campus. Una columna de llamas sale de un edificio cercano.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a",
+              "label": "Plan 2a: Encendido.",
+              "text": "El cielo presenta un resplandor anaranjado a medida que las llamas se propagan.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b",
+              "label": "Plan 2b: Fuego incontrolable.",
+              "text": "Las ascuas recorren el aire sobre la Universidad Miskatonic. El alarido de una alarma de incendios resuena por el patio principal, mientras docenas de asustados estudiantes huyen del lugar.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a",
+              "label": "Plan 3a: Llamas salvajes.",
+              "text": "¡El campus está ardiendo!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b",
+              "label": "Plan 3b: Ardiendo en llamas.",
+              "text": "Un denso humo negro llena el aire a tu alrededor y caes de rodillas entre toses. Más allá de las voraces llamas, ves que se mueven unas borrosas siluetas oscuras. Por mucho que te esfuerces, no logras ponerte a salvo. Se te nubla la vista mientras pierdes la consciencia.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b.mp3"
             }
           ]
         },
@@ -177,9 +177,21 @@
           ]
         },
         {
-          "type": "planes",
-          "title": "Planes",
+          "type": "actos_planes",
+          "title": "Actos y Planes",
           "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a",
+              "label": "Acto 1a: Augurios de llama.",
+              "text": "Debes encontrar el paradero de los sospechosos de la lista de tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b",
+              "label": "Acto 1b: De vuelta al Restaurante de Velma.",
+              "text": "Tu búsqueda ha dado unos frutos interesantes. Con todo lo que has descubierto, tú y el Dr. Armitage deberíais tener suficientes pistas como para encontrar el paradero de tu amigo. Te montas en un taxi para volver al Barrio Este, donde podrás poner en común tus averiguaciones.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b.mp3"
+            },
             {
               "id": "cap2_hermanos_de_las_cenizas_escenario_dos_plan_1a",
               "label": "Plan 1a: Arkham viva.",
@@ -203,24 +215,6 @@
               "label": "Plan 2b: Se acabó el tiempo.",
               "text": "Miras tu reloj y ves que ya son las 11 y media. Sueltas un taco y paras un taxi para que te lleve al Barrio Este.",
               "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_2b.mp3"
-            }
-          ]
-        },
-        {
-          "type": "actos",
-          "title": "Actos",
-          "items": [
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a",
-              "label": "Acto 1a: Augurios de llama.",
-              "text": "Debes encontrar el paradero de los sospechosos de la lista de tu amigo.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b",
-              "label": "Acto 1b: De vuelta al Restaurante de Velma.",
-              "text": "Tu búsqueda ha dado unos frutos interesantes. Con todo lo que has descubierto, tú y el Dr. Armitage deberíais tener suficientes pistas como para encontrar el paradero de tu amigo. Te montas en un taxi para volver al Barrio Este, donde podrás poner en común tus averiguaciones.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b.mp3"
             }
           ]
         },
@@ -363,9 +357,33 @@
           ]
         },
         {
-          "type": "planes",
-          "title": "Planes",
+          "type": "actos_planes",
+          "title": "Actos y Planes",
           "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a",
+              "label": "Acto 1a: Registrar las alcantarillas.",
+              "text": "Los Hermanos de las cenizas podrían estar en cualquier parte. Debes registrar las alcantarillas en busca del lugar del ritual de la secta si quieres salvar a tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b",
+              "label": "Acto 1b: El lugar del ritual.",
+              "text": "El cántico te lleva por un laberinto de túneles hasta una cisterna seca. Hay varias docenas de personajes ataviados con túnicas arrodillados ante un abedul ardiente. Tu amigo se encuentra entre ellos. ¡Debes detenerlo antes de que se sacrifique por Elokoss!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a",
+              "label": "Acto 2a: Detener el rito.",
+              "text": "Debes detener el rito a toda costa. Podrías registrar la cisterna en busca de alguna forma de detener a la secta, ¡o bien podrías hacer leña de su ídolo profano!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b",
+              "label": "Acto 2b: Crisis evitada.",
+              "text": "Mientras haces leña del árbol ardiente, un aullido sobrenatural llena la cámara. Lo ignoras y prosigues tu ataque, asestando un certero golpe tras otro para destruir el mal primordial. Al final, la antigua efigie de la diosa de los Hermanos yace hecha pedazos.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b.mp3"
+            },
             {
               "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_1a",
               "label": "Plan 1a: Una reunión.",
@@ -401,36 +419,6 @@
               "label": "Plan 3b: Sin conocimiento.",
               "text": "Una mano retorcida en forma de garra te aferra el brazo mientras varias docenas más se enroscan en torno a ti, como si te abrazaran. Arden al tacto. Gritas mientras unas horrendas fauces repletas de dientes se abren en el vientre de Elokoss.\n\n—No te preocupes, sólo quiere honrarte —dice una voz familiar.\n\nAl mirar hacia atrás, ves a tu amigo ataviado con la misma túnica negra y roja que llevan los demás Hermanos de las cenizas. Te sonríe mientras de las ardientes fauces brotan lenguas de llamas que te envuelven en un capullo de fuego. Lo último que oyes mientras te arrastran al abrasador infierno del pecho de Elokoss es a tu amigo, que junto con el resto de la secta canta un himno desafinado y rítmico por tu renacimiento.",
               "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_3b.mp3"
-            }
-          ]
-        },
-        {
-          "type": "actos",
-          "title": "Actos",
-          "items": [
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a",
-              "label": "Acto 1a: Registrar las alcantarillas.",
-              "text": "Los Hermanos de las cenizas podrían estar en cualquier parte. Debes registrar las alcantarillas en busca del lugar del ritual de la secta si quieres salvar a tu amigo.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b",
-              "label": "Acto 1b: El lugar del ritual.",
-              "text": "El cántico te lleva por un laberinto de túneles hasta una cisterna seca. Hay varias docenas de personajes ataviados con túnicas arrodillados ante un abedul ardiente. Tu amigo se encuentra entre ellos. ¡Debes detenerlo antes de que se sacrifique por Elokoss!",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a",
-              "label": "Acto 2a: Detener el rito.",
-              "text": "Debes detener el rito a toda costa. Podrías registrar la cisterna en busca de alguna forma de detener a la secta, ¡o bien podrías hacer leña de su ídolo profano!",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a.mp3"
-            },
-            {
-              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b",
-              "label": "Acto 2b: Crisis evitada.",
-              "text": "Mientras haces leña del árbol ardiente, un aullido sobrenatural llena la cámara. Lo ignoras y prosigues tu ataque, asestando un certero golpe tras otro para destruir el mal primordial. Al final, la antigua efigie de la diosa de los Hermanos yace hecha pedazos.",
-              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b.mp3"
             }
           ]
         },

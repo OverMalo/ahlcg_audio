@@ -18,6 +18,8 @@ const INTRO_COMPONENT = "__intro__";
 const OVERVIEW_COMPONENT = "__overview__";
 // Hoja especial: teaser "próximamente" de una sección aún sin contenido.
 const SOON_COMPONENT = "__soon__";
+// Hoja especial: portada de la campaña ("de qué va"), distinta de la intro narrada.
+const ABOUT_COMPONENT = "__about__";
 
 const allSections = () => [...(appData.campaigns || []), ...(appData.standalone || [])];
 
@@ -53,6 +55,10 @@ function resolveNavItems(nav) {
 
   if (nav.componentType === SOON_COMPONENT) {
     return { isSoon: true, scenario: null, componentTitle: section.title, groups: [] };
+  }
+
+  if (nav.componentType === ABOUT_COMPONENT) {
+    return { isAbout: true, scenario: null, componentTitle: section.title, groups: [] };
   }
 
   if (nav.componentType === INTRO_COMPONENT) {
@@ -101,10 +107,11 @@ function trackAudioPlay(node) {
 }
 
 // Imagen de cabecera de la landing. Pon "" para volver al placeholder "ASSET HERE".
-const WELCOME_BANNER_SRC = "images/general_banner_01.png";
+const WELCOME_BANNER_SRC = "images/general_banner_01.webp";
 
 // Email de contacto que aparece en el pie de la landing.
 const CONTACT_EMAIL = "overmalo@gmail.com";
+const RINCON_URL = "https://rinconmiskatonic.org/";
 
 // ── SVG Icons ────────────────────────────────────────────────────────────────
 const ICONS = {
@@ -130,6 +137,8 @@ const ICONS = {
   minus:         `<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="2" y="7" width="12" height="2"/></svg>`,
   plus:          `<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="2" y="7" width="12" height="2"/><rect x="7" y="2" width="2" height="12"/></svg>`,
   chevronRight:  `<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5,2 11,8 5,14"/></svg>`,
+  // Selector de tema: círculo medio relleno (glifo de "contraste/tema")
+  theme:         `<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M8 1.6 A6.4 6.4 0 0 1 8 14.4 Z" fill="currentColor" stroke="none"/></svg>`,
 };
 
 function loadState() {
@@ -263,28 +272,34 @@ function resetCardSearch() {
   if (cardSearchInput) cardSearchInput.value = "";
 }
 
+// Gobierna el buscador de narraciones (vive al INICIO del área de contenido, no en
+// la topbar) y el texto contextual de la topbar. El buscador solo aparece en
+// pantallas con narraciones (no en Inicio, portada de campaña ni "próximamente").
 function syncTopbarSearchAvailability() {
   const enabled = view === "narraciones" && contentTree.length > 0;
-  const topbarProvinceHint = document.getElementById("topbar-province-hint");
-  if (topbarProvinceHint) {
-    topbarProvinceHint.hidden = enabled;
-  }
 
-  const cardSearchWrap = document.querySelector(".card-search");
-  if (cardSearchWrap) cardSearchWrap.hidden = !enabled;
-
+  const searchWrap = document.getElementById("content-search");
+  if (searchWrap) searchWrap.hidden = !enabled;
   const cardSearchInput = document.getElementById("card-search-input");
   if (cardSearchInput) {
     cardSearchInput.disabled = !enabled;
     cardSearchInput.setAttribute("aria-disabled", enabled ? "false" : "true");
-    cardSearchInput.setAttribute("title", enabled ? "" : t("search.disabledHint"));
-    if (!enabled) cardSearchInput.value = "";
+    if (!enabled && cardSearchInput.value) cardSearchInput.value = "";
+  }
+
+  // La topbar muestra el contexto: la sección actual, o el texto por defecto.
+  const topbarProvinceHint = document.getElementById("topbar-province-hint");
+  if (topbarProvinceHint) {
+    const section = view === "narraciones" && selectedNav ? findSection(selectedNav) : null;
+    topbarProvinceHint.hidden = false;
+    topbarProvinceHint.textContent = section ? section.title : t("topbar.selectSectionHint");
   }
 }
 
 function goToInicio() {
   view = "inicio";
   selectedNav = null;
+  expandedNav.clear();          // volver a Inicio colapsa todo el árbol
   resetCardSearch();
   stopActivePlayer();
   rebuildContentTree();
@@ -297,6 +312,18 @@ function rebuildContentTree() {
   contentTree = buildLeavesForNav(selectedNav);
   accordionIndex = buildAccordionIndex(contentTree);
   cardLabelMap = buildCardLabelMap();
+}
+
+// Colapsa las demás secciones (campañas / escenarios independientes) y sus
+// escenarios: acordeón de nivel superior, solo una campaña abierta a la vez.
+function collapseOtherSections(keepType, keepId) {
+  for (const s of allSections()) {
+    if (s.type === keepType && s.id === keepId) continue;
+    expandedNav.delete(sectionToggleKey(s.type, s.id));
+    for (const sc of s.scenarios || []) {
+      expandedNav.delete(scenarioToggleKey(s.type, s.id, sc.id));
+    }
+  }
 }
 
 // Colapsa los escenarios hermanos (acordeón: solo uno abierto a la vez).
@@ -314,10 +341,15 @@ function collapseSiblingScenarios(sectionType, sectionId, keepScenarioId) {
 // colapsando de paso los demás escenarios de esa sección.
 function ensureNavExpanded(nav) {
   if (!nav) return;
+  collapseOtherSections(nav.sectionType, nav.sectionId);
   expandedNav.add(sectionToggleKey(nav.sectionType, nav.sectionId));
   if (nav.scenarioId) {
     collapseSiblingScenarios(nav.sectionType, nav.sectionId, nav.scenarioId);
     expandedNav.add(scenarioToggleKey(nav.sectionType, nav.sectionId, nav.scenarioId));
+  } else if (nav.componentType !== ABOUT_COMPONENT) {
+    // Introducción narrada a nivel campaña: vuelve a la raíz → colapsa escenarios.
+    // La portada/general (ABOUT) NO colapsa: deja el árbol como lo tiene el usuario.
+    collapseSiblingScenarios(nav.sectionType, nav.sectionId, null);
   }
 }
 
@@ -333,21 +365,16 @@ function selectNav(nav) {
   rebuildContentTree();
   saveState();
   render();
-  if (window.matchMedia?.("(max-width: 768px)").matches) setSidebarOpen(false);
+  // El menú NO se cierra al navegar (móvil): lo cierra el usuario con la X, el
+  // overlay o Escape. Así se puede saltar entre apartados sin reabrirlo cada vez.
 }
 
-// Toggle de un escenario desde el árbol lateral:
-//  · colapsado → entra: muestra su índice y lo despliega (colapsa hermanos).
-//  · ya desplegado → lo colapsa a mano, sin cambiar lo que se ve en el centro.
+// Click en un escenario desde el árbol lateral: SIEMPRE entra en su índice y lo
+// deja desplegado, colapsando los escenarios hermanos (acordeón de uno abierto).
+// Nunca se colapsa a sí mismo aunque ya estuviera abierto: volver a pulsarlo (o
+// pulsar su cabecera tras entrar en un componente) reabre su índice sin plegarlo.
 function toggleScenario(overviewNav) {
-  const key = scenarioToggleKey(overviewNav.sectionType, overviewNav.sectionId, overviewNav.scenarioId);
-  if (expandedNav.has(key)) {
-    expandedNav.delete(key);
-    saveState();
-    render();
-  } else {
-    selectNav(overviewNav);
-  }
+  selectNav(overviewNav);
 }
 
 function getNodeCardLabel(node) {
@@ -917,6 +944,30 @@ function updateSTMediaSession(playing) {
 
 // Barra de música de ambiente (persistente en la zona superior).
 const musicBarEl = document.getElementById("music-bar");
+// Barra de reproducción (autoplay + velocidad), bajo la de música.
+const playbackBarEl = document.getElementById("playback-bar");
+
+// Controles globales de reproducción (autoplay + velocidad de narración),
+// en la barra superior. Se re-renderiza en cada render() → bindConfigEvents
+// engancha sobre elementos frescos (sin listeners duplicados).
+function renderPlaybackBar() {
+  if (!playbackBarEl) return;
+  const speedChips = [1.00, 1.15, 1.25, 1.5].map((rate) => {
+    const active = playbackRate === rate;
+    return `<button type="button" class="checkable-chip${active ? " checkable-chip--active" : ""}" data-config-rate="${rate}" aria-pressed="${active ? "true" : "false"}"><span class="checkable-chip-mark" aria-hidden="true">${active ? ICONS.dotFilled : ICONS.dotEmpty}</span><span>${rate.toFixed(2)}x</span></button>`;
+  }).join("");
+
+  playbackBarEl.innerHTML = `
+    <div class="pb-inner" role="group" aria-label="${escapeAttribute(t("sidebar.playback"))}">
+      <span class="pb-label">${escapeHtml(t("sidebar.playback"))}</span>
+      <label class="pb-autoplay">
+        <input type="checkbox" id="autoplay-checkbox" class="autoplay-checkbox"${autoPlay ? " checked" : ""}>
+        <span>${escapeHtml(t("sidebar.autoplay"))}</span>
+      </label>
+      <div class="pb-speed">${speedChips}</div>
+    </div>
+  `;
+}
 
 // ── Language switcher ─────────────────────────────────────────────────────
 const langSwitcherEl = document.getElementById("lang-switcher");
@@ -971,6 +1022,7 @@ function bindLangSwitcherEvents() {
         render();
       }
       renderLangSwitcher();
+      renderThemeSwitcher();
       document.getElementById("lang-btn")?.focus();
     });
   });
@@ -983,13 +1035,102 @@ function closeLangMenu() {
   document.getElementById("lang-btn")?.setAttribute("aria-expanded", "false");
 }
 
+// ── Theme switcher ────────────────────────────────────────────────────────
+// 3 temas: "green" (Verde tentacular, por defecto), "cosmic" (Púrpura cósmico),
+// "light" (Claridad psícopata). Solo cambian tokens CSS vía [data-theme] en :root.
+// El swatch es un color representativo de cada tema (se pinta inline).
+const THEMES = [
+  { code: "green",  swatch: "#64a596" },
+  { code: "cosmic", swatch: "#a98fe0" },
+  { code: "light",  swatch: "#e8dcbf" },
+];
+const DEFAULT_THEME = "green";
+const THEME_BAR_COLOR = { green: "#0f1a17", cosmic: "#0e0b1a", light: "#d8ccac" };
+const themeSwitcherEl = document.getElementById("theme-switcher");
+let themeMenuOpen = false;
+
+function loadTheme() {
+  try {
+    const stored = localStorage.getItem("ahlcg_audio:theme");
+    if (stored === "cosmic" || stored === "light" || stored === "green") return stored;
+  } catch {}
+  return DEFAULT_THEME;
+}
+let currentTheme = loadTheme();
+
+function applyTheme(theme) {
+  currentTheme = theme;
+  const root = document.documentElement;
+  // "green" es el tema base (:root), sin atributo; los demás activan su bloque.
+  if (theme === "green") root.removeAttribute("data-theme");
+  else root.setAttribute("data-theme", theme);
+  try { localStorage.setItem("ahlcg_audio:theme", theme); } catch {}
+  document.querySelector('meta[name="theme-color"]')
+    ?.setAttribute("content", THEME_BAR_COLOR[theme] || THEME_BAR_COLOR.green);
+}
+
+function renderThemeSwitcher() {
+  if (!themeSwitcherEl) return;
+  const options = THEMES.map((th) => {
+    const isCurrent = th.code === currentTheme;
+    return `<button type="button" class="theme-option" role="menuitemradio" aria-checked="${isCurrent ? "true" : "false"}" data-theme-code="${escapeAttribute(th.code)}"><span class="theme-option-swatch" style="background:${th.swatch}" aria-hidden="true"></span><span class="theme-option-name">${escapeHtml(t("themes." + th.code))}</span><span class="theme-option-mark" aria-hidden="true">${isCurrent ? ICONS.diamondFilled : ICONS.diamondEmpty}</span></button>`;
+  }).join("");
+  const btnLabel = `${t("themeSwitcher.label")}. ${t("themeSwitcher.current", { name: t("themes." + currentTheme) })}`;
+
+  themeSwitcherEl.innerHTML = `
+    <button type="button" class="theme-btn" id="theme-btn" aria-haspopup="menu" aria-expanded="${themeMenuOpen ? "true" : "false"}" aria-label="${escapeAttribute(btnLabel)}">
+      <span aria-hidden="true">${ICONS.theme}</span>
+    </button>
+    <div class="theme-menu" id="theme-menu" role="menu" aria-label="${escapeAttribute(t("themeSwitcher.menuLabel"))}"${themeMenuOpen ? "" : " hidden"}>
+      ${options}
+    </div>
+  `;
+  bindThemeSwitcherEvents();
+}
+
+function bindThemeSwitcherEvents() {
+  const btn = document.getElementById("theme-btn");
+  const menu = document.getElementById("theme-menu");
+  if (!btn || !menu) return;
+
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    themeMenuOpen = !themeMenuOpen;
+    menu.hidden = !themeMenuOpen;
+    btn.setAttribute("aria-expanded", themeMenuOpen ? "true" : "false");
+    if (themeMenuOpen) menu.querySelector(".theme-option")?.focus();
+  });
+
+  menu.querySelectorAll("[data-theme-code]").forEach((opt) => {
+    opt.addEventListener("click", () => {
+      const code = opt.dataset.themeCode;
+      themeMenuOpen = false;
+      if (code && code !== currentTheme) applyTheme(code);
+      renderThemeSwitcher();
+      document.getElementById("theme-btn")?.focus();
+    });
+  });
+}
+
+function closeThemeMenu() {
+  if (!themeMenuOpen) return;
+  themeMenuOpen = false;
+  document.getElementById("theme-menu")?.setAttribute("hidden", "");
+  document.getElementById("theme-btn")?.setAttribute("aria-expanded", "false");
+}
+
 document.addEventListener("click", (event) => {
   if (langMenuOpen && langSwitcherEl && !langSwitcherEl.contains(event.target)) closeLangMenu();
+  if (themeMenuOpen && themeSwitcherEl && !themeSwitcherEl.contains(event.target)) closeThemeMenu();
 });
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && langMenuOpen) {
     closeLangMenu();
     document.getElementById("lang-btn")?.focus();
+  }
+  if (event.key === "Escape" && themeMenuOpen) {
+    closeThemeMenu();
+    document.getElementById("theme-btn")?.focus();
   }
 });
 
@@ -1045,12 +1186,13 @@ function applyStaticI18n() {
   applyManifest();
 }
 
+applyTheme(currentTheme);
 applyStaticI18n();
 renderLangSwitcher();
+renderThemeSwitcher();
 renderMusicBar();
 bindMusicBarEvents();
 render();
-initAtmosphere();
 
 if (stEnabled) {
   setupSTPlayer();
@@ -1152,6 +1294,7 @@ function registerServiceWorker() {
 function render() {
   syncTopbarSearchAvailability();
   sidebarEl.innerHTML = renderSidebar();
+  renderPlaybackBar();
 
   if (view === "inicio") {
     screenEl.setAttribute("aria-label", t("a11y.screenWelcome"));
@@ -1170,7 +1313,9 @@ function render() {
   if (!resolved) {
     bodyHtml = `<div class="empty-screen">${escapeHtml(t("content.selectSection"))}</div>`;
   } else if (resolved.isSoon) {
-    bodyHtml = `<div class="soon-teaser">${escapeHtml(t("content.comingSoonBody"))}</div>`;
+    bodyHtml = renderSoon(section);
+  } else if (resolved.isAbout) {
+    bodyHtml = renderAbout(section);
   } else if (resolved.isOverview) {
     // Índice del escenario: cada componente como sección titulada con sus narraciones.
     const groupsHtml = resolved.groups.map(renderOverviewGroup).filter(Boolean).join("");
@@ -1190,18 +1335,23 @@ function render() {
   }
 
   const crumbParts = [];
-  if (section && !resolved?.isSoon) crumbParts.push(section.title);
+  if (section && !resolved?.isSoon && !resolved?.isAbout) crumbParts.push(section.title);
   if (resolved && !resolved.isOverview && !resolved.isSoon && resolved.scenario) crumbParts.push(resolved.scenario.title);
   const breadcrumb = resolved?.isSoon
     ? `<p class="description breadcrumb">${escapeHtml(t("content.comingSoonLead"))}</p>`
+    : resolved?.isAbout
+    ? `<p class="description breadcrumb">${escapeHtml(t("content.aboutLead"))}</p>`
     : (crumbParts.length ? `<p class="description breadcrumb">${crumbParts.map(escapeHtml).join(" &rsaquo; ")}</p>` : "");
   const headTitle = resolved
     ? (resolved.isOverview ? resolved.scenario.title : resolved.componentTitle)
     : t("app.campaignTitle");
 
   // Banner de la sección (campaña / escenario independiente) en lo alto del contenido.
+  // En la portada de campaña ("de qué va") usa el formato hero, más grande.
+  // El banner encabeza el contenido (siempre visible al entrar): carga inmediata
+  // (eager) y prioridad alta para que aparezca cuanto antes y no se quede en blanco.
   const bannerHtml = section?.banner
-    ? `<div class="content-banner"><img class="content-banner-img" src="${escapeAttribute(audioUrl(section.banner))}" alt="${escapeAttribute(section.title)}" loading="lazy" decoding="async"></div>`
+    ? `<div class="content-banner${resolved?.isAbout ? " content-banner--hero" : ""}"><img class="content-banner-img" src="${escapeAttribute(audioUrl(section.banner))}" alt="${escapeAttribute(section.title)}" loading="eager" fetchpriority="high" decoding="async"></div>`
     : "";
 
   screenEl.innerHTML = `
@@ -1221,6 +1371,37 @@ function render() {
   bindDescriptionRevealEvents();
 }
 
+// Página "próximamente" de una sección. Para secciones sin contenido (oficiales
+// aún sin narrar) es solo el aviso. Para escenarios fanmade muestra además su
+// descripción (`about`) y el enlace de descarga (`download`), ya que el material
+// existe y es jugable aunque las narraciones en audio estén por llegar.
+function renderSoon(section) {
+  const hasContent = !!(section?.about || section?.download);
+  const parts = [];
+  if (section?.about) parts.push(renderAbout(section));
+  if (section?.download?.url) {
+    const label = section.download.label || section.download.url;
+    parts.push(
+      `<p class="fanmade-download">${escapeHtml(t("content.fanmadeDownloadLead"))} ` +
+      `<a href="${escapeAttribute(section.download.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a></p>`
+    );
+  }
+  const note = hasContent ? t("content.fanmadeAudioSoon") : t("content.comingSoonBody");
+  parts.push(`<p class="soon-teaser">${escapeHtml(note)}</p>`);
+  return parts.join("");
+}
+
+// Portada de campaña: prosa "de qué va" (campo `about` en los datos: string o
+// array de párrafos). Distinta de la introducción narrada del escenario.
+function renderAbout(section) {
+  const about = section?.about;
+  const paras = Array.isArray(about) ? about : (about ? [about] : []);
+  const html = paras.length
+    ? paras.map((p) => `<p class="about-paragraph">${escapeHtml(p)}</p>`).join("")
+    : `<p class="about-paragraph about-paragraph--muted">${escapeHtml(t("content.aboutEmpty"))}</p>`;
+  return `<div class="about-content">${html}</div>`;
+}
+
 function renderWelcome() {
   const features = t("welcome.features");
   const featuresHtml = (Array.isArray(features) ? features : [])
@@ -1228,7 +1409,7 @@ function renderWelcome() {
     .join("");
 
   const bannerHtml = WELCOME_BANNER_SRC
-    ? `<div class="content-banner content-banner--hero"><img class="content-banner-img" src="${escapeAttribute(import.meta.env.BASE_URL + WELCOME_BANNER_SRC)}" alt="${escapeAttribute(t("welcome.bannerAlt"))}" decoding="async"></div>`
+    ? `<div class="content-banner content-banner--hero"><img class="content-banner-img" src="${escapeAttribute(import.meta.env.BASE_URL + WELCOME_BANNER_SRC)}" alt="${escapeAttribute(t("welcome.bannerAlt"))}" loading="eager" fetchpriority="high" decoding="async"></div>`
     : `<div class="welcome-banner" role="img" aria-label="${escapeAttribute(t("welcome.bannerAria"))}">
         <span class="welcome-banner-label">${escapeHtml(t("welcome.bannerLabel"))}</span>
       </div>`;
@@ -1237,7 +1418,7 @@ function renderWelcome() {
     <div class="welcome">
       ${bannerHtml}
       <div class="welcome-intro">
-        <h2>${escapeHtml(t("app.campaignTitle"))}</h2>
+        <h2>${escapeHtml(t("welcome.appTitle"))}</h2>
         <p class="welcome-lead">${escapeHtml(t("welcome.lead"))}</p>
         <p class="welcome-text">${escapeHtml(t("welcome.intro"))}</p>
         <h3 class="welcome-features-title">${escapeHtml(t("welcome.featuresTitle"))}</h3>
@@ -1247,6 +1428,7 @@ function renderWelcome() {
         <p class="welcome-text welcome-note">${escapeHtml(t("welcome.note"))}</p>
       </div>
       <footer class="welcome-footer">
+        <p>${escapeHtml(t("welcome.footerDevLead"))} <a href="${RINCON_URL}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("welcome.footerDevStudio"))}</a>.</p>
         <p>${escapeHtml(t("welcome.footerCredits"))}</p>
         <p>${escapeHtml(t("welcome.footerDisclaimer"))}</p>
         <p>${escapeHtml(t("welcome.footerContact"))} <a href="mailto:${CONTACT_EMAIL}">${escapeHtml(CONTACT_EMAIL)}</a></p>
@@ -1256,21 +1438,12 @@ function renderWelcome() {
 }
 
 function renderSidebar() {
-  const speedChips = [1.00, 1.15, 1.25, 1.5].map((rate) => {
-    const active = playbackRate === rate;
-    return `<button type="button" class="checkable-chip${active ? " checkable-chip--active" : ""}" data-config-rate="${rate}" aria-pressed="${active ? "true" : "false"}"><span class="checkable-chip-mark" aria-hidden="true">${active ? ICONS.dotFilled : ICONS.dotEmpty}</span><span>${rate.toFixed(2)}x</span></button>`;
-  }).join("");
-
   const inicioActive = view === "inicio";
   const campaigns = appData.campaigns || [];
   const standalone = appData.standalone || [];
 
-  const campaignsHtml = campaigns.length
-    ? campaigns.map(renderSectionNode).join("")
-    : `<p class="sidebar-section-hint">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`;
-  const standaloneHtml = standalone.length
-    ? standalone.map(renderSectionNode).join("")
-    : `<p class="sidebar-section-hint">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`;
+  const campaignsHtml = renderOriginSubgroups(campaigns);
+  const standaloneHtml = renderOriginSubgroups(standalone);
 
   return `
     <nav class="sidebar-nav" aria-label="${escapeAttribute(t("a11y.sidebarNav"))}">
@@ -1284,26 +1457,31 @@ function renderSidebar() {
       <div class="sidebar-section">
         <h3 class="sidebar-heading">${escapeHtml(t("sidebar.campaignGroup"))}</h3>
         <p class="sidebar-section-hint">${escapeHtml(t("sidebar.navHint"))}</p>
-        <div class="sidebar-nav-list sidebar-nav-tree">${campaignsHtml}</div>
+        <div class="sidebar-origins">${campaignsHtml}</div>
       </div>
       <div class="sidebar-divider"></div>
       <div class="sidebar-section">
         <h3 class="sidebar-heading">${escapeHtml(t("sidebar.standaloneGroup"))}</h3>
-        <div class="sidebar-nav-list sidebar-nav-tree">${standaloneHtml}</div>
-      </div>
-      <div class="sidebar-divider"></div>
-      <div class="sidebar-section">
-        <h3 class="sidebar-heading">${escapeHtml(t("sidebar.playback"))}</h3>
-        <div class="sidebar-controls">
-          <label class="sidebar-ctrl-label">
-            <input type="checkbox" id="autoplay-checkbox" class="autoplay-checkbox"${autoPlay ? " checked" : ""}>
-            <span>${escapeHtml(t("sidebar.autoplay"))}</span>
-          </label>
-          <div class="sidebar-speed">${speedChips}</div>
-        </div>
+        <div class="sidebar-origins">${standaloneHtml}</div>
       </div>
     </nav>
   `;
+}
+
+// Subdivide una lista de secciones (campañas o escenarios independientes) en dos
+// subgrupos por procedencia — "Oficial" y "Fanmade" — cada uno con su subtítulo.
+// El origen por defecto (sin campo `origin`) es "oficial".
+function renderOriginSubgroups(sections) {
+  const oficial = sections.filter((s) => (s.origin || "oficial") === "oficial");
+  const fanmade = sections.filter((s) => s.origin === "fanmade");
+  const block = (headingKey, list) => `
+    <div class="sidebar-origin">
+      <h4 class="sidebar-subheading">${escapeHtml(t(headingKey))}</h4>
+      ${list.length
+        ? `<div class="sidebar-nav-list sidebar-nav-tree">${list.map(renderSectionNode).join("")}</div>`
+        : `<p class="sidebar-section-hint sidebar-section-hint--sub">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`}
+    </div>`;
+  return block("sidebar.originOfficial", oficial) + block("sidebar.originFanmade", fanmade);
 }
 
 // Nodo de sección (campaña / escenario independiente): plegable; intro + escenarios.
@@ -1314,14 +1492,19 @@ function renderSectionNode(section) {
     return `
       <button type="button" class="sidebar-nav-item sidebar-nav-item--section sidebar-nav-item--soon${active ? " sidebar-nav-item--active" : ""}" data-nav-select="${escapeAttribute(navId(soonNav))}" aria-current="${active ? "page" : "false"}">
         <span class="sidebar-nav-dot" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span>
-        <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
-        <span class="soon-badge">${escapeHtml(t("sidebar.comingSoon"))}</span>
+        <span class="sidebar-nav-soon-body">
+          <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
+          <span class="soon-badge">${escapeHtml(t("sidebar.comingSoon"))}</span>
+        </span>
       </button>
     `;
   }
   const key = sectionToggleKey(section.type, section.id);
   const open = expandedNav.has(key);
   const caret = open ? ICONS.caretUp : ICONS.caretDown;
+  // La cabecera de campaña abre su portada ("de qué va") y despliega el árbol.
+  const aboutNav = { sectionType: section.type, sectionId: section.id, scenarioId: null, componentType: ABOUT_COMPONENT };
+  const active = view === "narraciones" && selectedNav && navId(selectedNav) === navId(aboutNav);
 
   let childrenHtml = "";
   if (open) {
@@ -1336,7 +1519,7 @@ function renderSectionNode(section) {
   }
 
   return `
-    <button type="button" class="sidebar-nav-item sidebar-nav-item--section" data-nav-toggle="${escapeAttribute(key)}" aria-expanded="${open ? "true" : "false"}">
+    <button type="button" class="sidebar-nav-item sidebar-nav-item--section${active ? " sidebar-nav-item--active" : ""}" data-nav-toggle="${escapeAttribute(key)}" data-nav-about="${escapeAttribute(navId(aboutNav))}" aria-expanded="${open ? "true" : "false"}" aria-current="${active ? "page" : "false"}">
       <span class="sidebar-nav-dot" aria-hidden="true">${caret}</span>
       <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
     </button>
@@ -1447,19 +1630,32 @@ function bindFilterEvents() {
     });
   });
 
-  // Desplegar / plegar un nodo del árbol (sección o escenario).
+  // Cabecera de campaña: colapsable. Cerrada → abre su portada ("de qué va") y
+  // despliega el árbol; abierta → se pliega a mano (el centro no cambia).
   document.querySelectorAll("[data-nav-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       const key = button.dataset.navToggle;
       if (!key) return;
-      if (expandedNav.has(key)) expandedNav.delete(key);
-      else expandedNav.add(key);
-      saveState();
-      render();
+      const aboutId = button.dataset.navAbout;
+      const aboutNav = aboutId ? parseNavId(aboutId) : null;
+      const onAbout = aboutNav && view === "narraciones" && selectedNav && navId(selectedNav) === navId(aboutNav);
+      // Colapsa SOLO si ya está abierta y estás en su "general". Si estás dentro
+      // de la campaña (viendo un componente), te lleva al general SIN colapsar.
+      if (expandedNav.has(key) && onAbout) {
+        expandedNav.delete(key);
+        saveState();
+        render();
+      } else if (aboutNav) {
+        selectNav(aboutNav);
+      } else {
+        expandedNav.add(key);
+        saveState();
+        render();
+      }
     });
   });
 
-  // Escenario: toggle entrar-índice / colapsar.
+  // Escenario: entrar en su índice (siempre despliega y colapsa hermanos).
   document.querySelectorAll("[data-nav-scenario]").forEach((button) => {
     button.addEventListener("click", () => {
       toggleScenario(parseNavId(button.dataset.navScenario || ""));
@@ -2295,40 +2491,3 @@ function escapeAttribute(value) {
 }
 
 
-// Atmósfera "Abismo": capa de profundidad con parallax de ratón + niebla inferior.
-// Se inyecta por JS para no tocar el HTML; respeta prefers-reduced-motion.
-function initAtmosphere() {
-  if (typeof document === "undefined" || document.querySelector(".abyss-deep")) return;
-
-  const deep = document.createElement("div");
-  deep.className = "abyss abyss-deep";
-  deep.setAttribute("aria-hidden", "true");
-  const fog = document.createElement("div");
-  fog.className = "abyss abyss-fog";
-  fog.setAttribute("aria-hidden", "true");
-  document.body.append(deep, fog);
-
-  if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
-
-  const root = document.documentElement;
-  let rafId = 0;
-  let deepX = 0, deepY = 0, parX = 0, parY = 0;
-  const apply = () => {
-    rafId = 0;
-    deep.style.transform = `translate3d(${deepX.toFixed(1)}px, ${deepY.toFixed(1)}px, 0)`;
-    // Parallax del banner (lo consume .content-banner-img vía CSS vars).
-    root.style.setProperty("--par-x", `${parX.toFixed(1)}px`);
-    root.style.setProperty("--par-y", `${parY.toFixed(1)}px`);
-  };
-  window.addEventListener(
-    "mousemove",
-    (event) => {
-      const nx = (event.clientX / window.innerWidth) - 0.5;
-      const ny = (event.clientY / window.innerHeight) - 0.5;
-      deepX = -nx * 24; deepY = -ny * 18;
-      parX = -nx * 12; parY = -ny * 8;
-      if (!rafId) rafId = requestAnimationFrame(apply);
-    },
-    { passive: true }
-  );
-}

@@ -21,6 +21,8 @@ import soundtrack from "./soundtrack.json";
 import hermanosDeLasCenizas from "./data/campaigns/hermanos_de_las_cenizas.json";
 import vastagosDeSangre from "./data/campaigns/vastagos_de_sangre.json";
 import tracesToNowhere from "./data/standalone/traces_to_nowhere.json";
+import sleepyHollow from "./data/standalone/sleepy_hollow.json";
+import elDiaQueLaTierraAullo from "./data/standalone/el_dia_que_la_tierra_aullo.json";
 import ambient from "./data/ambient.json";
 
 import { composeContent } from "../../i18n/compose.js";
@@ -33,7 +35,7 @@ export default {
   appData: composeContent({
     chapter: "Capítulo 2",
     campaigns: [hermanosDeLasCenizas, vastagosDeSangre],
-    standalone: [tracesToNowhere],
+    standalone: [tracesToNowhere, sleepyHollow, elDiaQueLaTierraAullo],
     ambientConfig: ambient.ambientConfig,
   }),
 };

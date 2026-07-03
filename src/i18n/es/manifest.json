@@ -1,6 +1,6 @@
 {
-  "name": "AHLCG Audio",
-  "short_name": "AHLCG",
+  "name": "Voices From Over: AHLCG",
+  "short_name": "Voices From Over",
   "description": "Textos narrados de Arkham Horror LCG",
   "start_url": "/ahlcg_audio/",
   "scope": "/ahlcg_audio/",

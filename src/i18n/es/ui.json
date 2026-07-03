@@ -1,11 +1,11 @@
 {
   "app": {
-    "title": "AHLCG Audio",
+    "title": "Voices From Over: AHLCG",
     "metaDescription": "Textos narrados de Arkham Horror LCG",
     "skipLink": "Saltar al contenido",
     "campaignTitle": "Arkham Horror: El juego de cartas",
     "mediaArtist": "AHLCG",
-    "mediaFallbackTitle": "AHLCG Audio"
+    "mediaFallbackTitle": "Voices From Over: AHLCG"
   },
   "topbar": {
     "selectSectionHint": "Elige un apartado"
@@ -22,11 +22,23 @@
     "current": "Idioma actual: {name}",
     "menuLabel": "Seleccionar idioma"
   },
+  "themeSwitcher": {
+    "label": "Cambiar tema",
+    "current": "Tema actual: {name}",
+    "menuLabel": "Seleccionar tema"
+  },
+  "themes": {
+    "green": "Verde tentacular",
+    "cosmic": "Púrpura cósmico",
+    "light": "Claridad psícopata"
+  },
   "sidebar": {
     "home": "Inicio",
     "campaignGroup": "Campañas",
     "standaloneGroup": "Escenarios independientes",
     "standaloneEmpty": "Próximamente",
+    "originOfficial": "Oficial",
+    "originFanmade": "Fanmade",
     "comingSoon": "Próximamente",
     "navHint": "Elige campaña, escenario y apartado",
     "playback": "Reproducción",
@@ -36,7 +48,11 @@
     "selectSection": "Elige un apartado en el menú lateral para empezar a narrar.",
     "noMatches": "No hay narraciones que coincidan con la búsqueda.",
     "comingSoonLead": "Próximamente",
-    "comingSoonBody": "Este contenido está en preparación. Vuelve pronto para dar voz a sus horrores."
+    "comingSoonBody": "Este contenido está en preparación. Vuelve pronto para dar voz a sus horrores.",
+    "aboutLead": "La campaña",
+    "aboutEmpty": "Elige un escenario en el menú lateral para empezar a narrar esta campaña.",
+    "fanmadeDownloadLead": "Este escenario fanmade puede descargarse e imprimirse desde:",
+    "fanmadeAudioSoon": "Las narraciones en audio de este escenario aún están en preparación. Vuelve pronto para darles voz."
   },
   "search": {
     "placeholder": "Buscar narración",
@@ -69,7 +85,8 @@
     "bannerAria": "Espacio reservado para la imagen de cabecera",
     "bannerLabel": "AHLCG AUDIO",
     "bannerAlt": "Ilustración de cabecera de Arkham Horror: El juego de cartas",
-    "lead": "Aplicación de acompañamiento para Arkham Horror: El juego de cartas.",
+    "appTitle": "Voices from Over: Arkham Horror",
+    "lead": "Aplicación creada por fans de acompañamiento narrativo para Arkham Horror: El juego de cartas.",
     "intro": "Da voz a tus partidas: esta aplicación narra los textos de introducciones, planes, actos, resoluciones y códices de las campañas, para que el grupo se sumerja en la historia sin necesidad de leer en voz alta. Elige una campaña en el menú lateral para empezar.",
     "featuresTitle": "Características",
     "features": [
@@ -103,7 +120,9 @@
       }
     ],
     "note": "Consejo: activa la banda sonora desde el menú lateral para dar atmósfera a toda la sesión.",
-    "footerCredits": "Aplicación desarrollada por OverMalo. Arkham Horror: El juego de cartas, junto con sus marcas, nombres y contenidos, es propiedad de sus respectivos titulares.",
+    "footerDevLead": "Aplicación desarrollada por OverMalo. Estilo visual y navegación diseñados por",
+    "footerDevStudio": "Rincón Miskatonic",
+    "footerCredits": "Arkham Horror: El juego de cartas, junto con sus marcas, nombres y contenidos, es propiedad de sus respectivos titulares.",
     "footerDisclaimer": "Esta aplicación es un complemento de la experiencia de juego: no sustituye al juego original ni pretende reemplazarlo.",
     "footerContact": "Para dudas, consultas, sugerencias o reporte de errores, escribe a"
   }

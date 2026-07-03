@@ -1,0 +1,17 @@
+{
+  "type": "standalone",
+  "origin": "fanmade",
+  "id": "sleepy_hollow",
+  "title": "La Leyenda de Sleepy Hollow",
+  "banner": "images/banner_sleepy_hollow.webp",
+  "comingSoon": true,
+  "about": [
+    "El sheriff Engle agita la carta con desdén: la policía de Nueva York cerró el caso por falta de pruebas y, para él, todo esto es absurdo. Pero el acaudalado terrateniente holandés Frederic Van Brunt ha preguntado por ti expresamente. Un espectro al que llaman el Jinete sin Cabeza recorre los bosques de Sleepy Hollow, y ya son cuatro los vecinos que han desaparecido sin dejar rastro. Van Brunt ofrece una generosa recompensa a quien se atreva a adentrarse en la espesura y enfrentarse a lo que allí acecha.",
+    "Inspirado en el relato clásico de Washington Irving (1820), este escenario independiente enfrenta a los investigadores a un enemigo que se fortalece sin descanso mientras recorren el pueblo para desentrañar sus misterios. Un caso de atmósfera otoñal y tensión creciente, con cartas de arte extendido, diseñado por The Beard, traducido por BRniac y maquetado por Rincón Miskatonic."
+  ],
+  "download": {
+    "url": "https://rinconmiskatonic.org/2026/01/05/sleepy-hollow/",
+    "label": "La Leyenda de Sleepy Hollow — Rincón Miskatonic"
+  },
+  "scenarios": []
+}
