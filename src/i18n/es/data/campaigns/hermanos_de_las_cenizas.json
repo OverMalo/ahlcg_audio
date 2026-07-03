@@ -1,0 +1,500 @@
+{
+  "type": "campaign",
+  "origin": "oficial",
+  "id": "hermanos_de_las_cenizas",
+  "title": "Hermanos de las Cenizas",
+  "banner": "images/banner_Er_lokos_01.webp",
+  "about": [
+    "Arkham siempre ha sido una ciudad rara: apenas pasa un día sin un asesinato atroz o una desaparición repentina. Seis meses después de la gran inundación, la ciudad se reconstruye más fuerte que nunca gracias al dinero de inversores llegados de fuera. Todo parece legal y próspero… pero sabes que la historia siempre va más allá de las apariencias.",
+    "Una racha de incendios y macabros «accidentes» mantiene a la ciudad en vilo, y cerca de cada suceso se han visto figuras ataviadas con túnicas. Cuando un amigo desaparece tras seguirles la pista, tú y otros investigadores decidís llegar al fondo del asunto. El rastro conduce a una secta —los Hermanos de las Cenizas— y a algo muy antiguo que arde bajo las cenizas, dispuesto a reclamar su «renacimiento glorioso».",
+    "Hermanos de las Cenizas es una campaña de tres escenarios —«Las llamas se propagan», «Humo y espejos» y «Reina de las cenizas»— para 1 a 4 investigadores. Aquí tienes narradas todas sus piezas: introducciones, planes, actos, resoluciones y códices, escenario a escenario, para que tu mesa se sumerja en la historia sin leer en voz alta. Elige un escenario en el menú lateral para comenzar."
+  ],
+  "intro": {
+    "type": "introduccion",
+    "title": "Introducción",
+    "items": [
+      {
+        "id": "cap2_hermanos_de_las_cenizas_intro",
+        "label": "Introducción: Un renacimiento glorioso",
+        "text": "Un renacimiento glorioso\n\nArkham siempre ha sido una ciudad un poco rara. Es como si cada vez que leyeras las noticias, hubiera algún artículo nuevo sobre un atroz asesinato o una repentina desaparición. Un cadáver apaleado en el Distrito ribereño. Un agente de policía desaparecido en French Hill. Un símbolo sangriento trazado en el callejón de atrás del Restaurante de Velma. Es cierto que la ciudad ha tenido su ración de chiflados y conspiranoicos, pero incluso los observadores más sensatos deben rendirse a la evidencia: a esta ciudad le pasa algo.\n\nSin embargo, a la mayoría de habitantes de Arkham no les gusta regodearse en lo malo. Tras la inundación que se produjo hace seis meses, la ciudad se está reconstruyendo más fuerte que nunca, y llega nueva financiación de inversores externos. Dicen que todo es legal y va de maravilla, y desde luego que es lo que parece. Pero sabes que la historia siempre va más allá de las apariencias.\n\nOcurra lo que ocurra, no tienes que afrontarlo sin ayuda. Hay más gente como tú que se ha encontrado con horrores similares y que no se conformará con explicaciones fáciles o distracciones reconfortantes. También ellos saben que hay un poso de verdad en lo relativo a las antiguas maldiciones y leyendas de brujas de esta ciudad. ¿Te pondrás de su lado y en contra de los males que acechan más allá de la mera comprensión mortal? ¿O sucumbirás como tantos otros ante los terrores de los Mitos?",
+        "audio": "audios/cap2_hermanos_de_las_cenizas_intro.mp3"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "escenario_1",
+      "title": "Escenario I: Las llamas se propagan",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_intro",
+              "label": "Escenario I: Las llamas se propagan",
+              "text": "Escenario I: Las llamas se propagan.\n\nEn Arkham están sucediendo cosas extrañas. Toda la ciudad está en vilo debido a una racha reciente de incendios y macabros «accidentes». Aunque el Arkham Advertiser ha aventurado unas endebles explicaciones, tus colegas y tú no estáis tan seguros. Se han visto a unos personajes ataviados con túnicas cerca de estos sucesos tan raros, y un amigo mutuo está convencido de que se trata de los culpables. Resolvéis reuniros en la residencia de vuestro amigo, situada en la Universidad Miskatonic, para intentar llegar al fondo del asunto. Sin embargo, cuando llegas, la habitación de tu amigo está vacía, y la residencia está extrañamente tranquila...",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_1a",
+              "label": "Acto 1a: Donde hay humo...",
+              "text": "Registras la residencia universitaria en busca de algún rastro de tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_1b",
+              "label": "Acto 1b: ... hay fuego",
+              "text": "Encuentras la bolsa de tu amigo, quemada con el emblema estilizado de la palma de una mano abierta. Esté donde esté, supones que no se fue por voluntad propia. Cuando te dispones a marcharte, una figura enmascarada y envuelta en llamas se encara contigo. Emite un escalofriante chillido y la estancia se prende fuego a tu alrededor.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_2a",
+              "label": "Acto 2a: Huida de la residencia.",
+              "text": "Una aparición ardiente se interpone entre la salida y tú. ¡Debes escapar de la residencia!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_2b",
+              "label": "Acto 2b: Al aire libre.",
+              "text": "Sales de la residencia al fresco aire de la noche otoñal con los pulmones a punto de reventar. Al mirar atrás, no hay ni rastro de tu perseguidor. Recuerdas que tu amigo quería hablar con el Dr. Henry Armitage, el bibliotecario jefe de la Universidad Miskatonic.\nTal vez él pueda ayudarte a entender lo que está pasando.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_2b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_3a",
+              "label": "Acto 3a: En busca del Dr. Armitage.",
+              "text": "Tu amigo mencionó que había visitado al Dr. Henry Armitage, el bibliotecario jefe. Cada vez llegan más personajes extraños, así que debes registrar el campus para dar con su paradero.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_3b",
+              "label": "Acto 3b: El sirviente desatado.",
+              "text": "Encuentras al Dr. Armitage atrincherado en una de las aulas de la Biblioteca Orne.\n\n—Ha habido personas que se comportaban de forma extraña en el campus últimamente, entre ellas tu amigo. Pero todo eso puede esperar. ¡Debemos enfrentarnos a tu perseguidor y detenerlo antes de que arda todo el campus! —dice el Dr. Armitage.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_3b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_4a",
+              "label": "Acto 4a: Llamarada de gloria",
+              "text": "¡No puedes permitir que tu ardiente némesis haga daño a más inocentes! Con ayuda del Dr. Armitage, quizás puedas detenerlo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_acto_4b",
+              "label": "Acto 4b: Una llama apagada",
+              "text": "Tu terrible perseguidor retrocede, tambaleante, y se aferra la cabeza con ambas manos, como si intentase arrancarse la máscara. El sonido de las sirenas a lo lejos va aumentando en intensidad. Te giras y ves un grupo de aterrados estudiantes que pasan corriendo junto a ti. Cuando vuelves tu atención a tu llameante némesis, se ha desvanecido sin dejar rastro.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_acto_4b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a",
+              "label": "Plan 1a: Horas intempestivas.",
+              "text": "El campus está extrañamente tranquilo y no hay ni rastro de tu amigo. Unas figuras encapuchadas cruzan el patio principal mientras unos nerviosos estudiantes se apresuran bajo las farolas fastidiosamente brillantes.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b",
+              "label": "Plan 1b: Humo en el viento.",
+              "text": "El viento lleva el olor del humo por todo el campus. Una columna de llamas sale de un edificio cercano.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a",
+              "label": "Plan 2a: Encendido.",
+              "text": "El cielo presenta un resplandor anaranjado a medida que las llamas se propagan.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b",
+              "label": "Plan 2b: Fuego incontrolable.",
+              "text": "Las ascuas recorren el aire sobre la Universidad Miskatonic. El alarido de una alarma de incendios resuena por el patio principal, mientras docenas de asustados estudiantes huyen del lugar.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_2b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a",
+              "label": "Plan 3a: Llamas salvajes.",
+              "text": "¡El campus está ardiendo!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b",
+              "label": "Plan 3b: Ardiendo en llamas.",
+              "text": "Un denso humo negro llena el aire a tu alrededor y caes de rodillas entre toses. Más allá de las voraces llamas, ves que se mueven unas borrosas siluetas oscuras. Por mucho que te esfuerces, no logras ponerte a salvo. Se te nubla la vista mientras pierdes la consciencia.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_plan_3b.mp3"
+            }
+          ]
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_reso_no",
+              "label": "Ninguna resolución",
+              "text": "Despiertas al final del campus. Te pican los ojos por el humo. Te incorporas como puedes y ves a lo lejos el resplandor de las llamas que consumen la residencia universitaria. Una voz áspera te pregunta si estás bien. Al girarte, ves al Dr. Armitage de pie junto a ti.\n—He llegado nada más que para verte inconsicente en el suelo. ¿Qué diantres ha pasado aquí?\nEsperas haberle podido ser de más utilidad.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_no.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_reso_uno",
+              "label": "Resolución 1",
+              "text": "El caos aumenta mientras docenas de estudiantes colaboran para combatir el ardiente infierno. Lamentablemente, el campus sufre bastantes daños. El Dr. Armitage contempla las llamas junto a ti, consternado. Sabes que las cosas podrían haber sido mucho peores si no hubieras estado ahí.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_uno.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_reso_dos",
+              "label": "Resolución 2",
+              "text": "Te pican los ojos debido al humo acre mientras colaboras con los demás para apagar las ávidas llamas. Milagrosamente, tan sólo se queman algunos libros y muebles. El Dr. Armitage os agradece los esfuerzos.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_dos.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_uno_reso_tres",
+              "label": "Resolución 3",
+              "text": "Huyes del campus con el Doctor Armitage, abandonando la universidad a su suerte. Al mirar atrás, ves que el edificio está completamente en llamas. Mientras corres, rezas para que en el campus no haya quedado nadie.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_uno_reso_tres.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_2",
+      "title": "Escenario II: Humo y espejos",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_intro",
+              "label": "Escenario II: Humo y espejos",
+              "text": "Escenario II: Humo y espejos\n\nSigues al Dr. Armitage de vuelta a su piso. Un velo de humo negro tapa la luna y las estrellas, mientras que una brisa cálida lleva cenizas y ascuas por las familiares calles de la ciudad.\n—Tenía sospechas de que se estaba produciendo algo siniestro. Varios estudiantes han desaparecido en las últimas semanas —te dice el bibliotecario jefe—. Todos comenzaron a exhibir un comportamiento extraño tras asistir hace poco a una «reunión» supuestamente exclusiva fuera del campus. Se quejaban de horribles susurros incesantes, y en su piel apareció de repente un extraño moratón. Y luego desaparecieron.\nTemiendo lo peor, le preguntas por tu amigo.\n—Insistió en que nos viéramos hoy —te contesta—. Me habló de una organización que se hace llamar los «Hermanos de las cenizas» y que es quien ha estado invitando a estudiantes y a ciudadanos vulnerables a esos extraños encuentros. Tu amigo enumeró a una serie de individuos que asistían, pero no está claro si eran reclutas potenciales o adeptos leales. Antes de marcharse, tu amigo mencionó otra reunión que iba a producirse esta noche, un encuentro de todos los fieles. No sé por qué, pero sólo de pensarlo, me invade un temor indecible. Y ahora, tu amigo ha desaparecido —añade con pesar.\nDecides interrogar a la lista de sospechosos y luego acudir al Restaurante de Velma, en el Barrio Este, antes de la medianoche. El bibliotecario jefe te sugiere emplear la sutileza en lugar de ir a las bravas, para evitar alertar a los conspiradores. Sin embargo, temes que pueda no quedarte elección.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a",
+              "label": "Acto 1a: Augurios de llama.",
+              "text": "Debes encontrar el paradero de los sospechosos de la lista de tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b",
+              "label": "Acto 1b: De vuelta al Restaurante de Velma.",
+              "text": "Tu búsqueda ha dado unos frutos interesantes. Con todo lo que has descubierto, tú y el Dr. Armitage deberíais tener suficientes pistas como para encontrar el paradero de tu amigo. Te montas en un taxi para volver al Barrio Este, donde podrás poner en común tus averiguaciones.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_plan_1a",
+              "label": "Plan 1a: Arkham viva.",
+              "text": "Una neblina antinatural llena las calles de Arkham. Algunos de los lugareños dicen que las colinas que hay al oeste de Arkham están ardiendo. Pese al fresco tiempo otoñal, las calles de la ciudad tienen una calidez poco natural mientras cae la noche.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_plan_1b",
+              "label": "Plan 1b: Llamas crecientes.",
+              "text": "Un picor que te has esforzado por ignorar se vuelve insoportable. Al remangarte, ves una zona de piel gris que se está pelando. Te rascas cuidadosamente la piel muerta y revelas una cicatriz lisa, casi como si te hubieran marcado a fuego. La cicatriz parece una mano con un ojo imperturbable en su interior. Al tocarla, sientes una sensación cálida y embriagadora, como de borrachera.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_plan_2a",
+              "label": "Plan 2a: Males emergentes.",
+              "text": "De la acera mojada brota vapor, como si el suelo que hay debajo estuviera ardiendo de verdad.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_plan_2b",
+              "label": "Plan 2b: Se acabó el tiempo.",
+              "text": "Miras tu reloj y ves que ya son las 11 y media. Sueltas un taco y paras un taxi para que te lleve al Barrio Este.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_plan_2b.mp3"
+            }
+          ]
+        },
+        {
+          "type": "codices",
+          "title": "Códices",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_1",
+              "label": "Códice 1: David Renfield - Parte 1",
+              "text": "El altivo señor Renfield intenta sacudírsete de encima educadamente, pero cuando te niegas a marcharte, uno de sus gorilas te empuja contra la pared y te amenaza.\n—Escúcheme bien, amigo. No sé nada sobre ninguna secta ni ningún «Hermano». Tengo conexiones en esta ciudad, y más le vale que aprenda en qué metafóricos estanques no debe pescar. Ahora le diría que se marchase de mi propiedad.\nTe pide que te marches, y no de buenas maneras.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_2",
+              "label": "Códice 1: David Renfield - Parte 2",
+              "text": "Acabas por encontrar al señor Renfield escondido en una abarrotada librería. Te das cuenta de que tiene el cuello empapado en sudor. Al sentarte a su lado, te habla con la voz entrecortada.\n—Está bien, está bien. Sí estaba en esa reunión. Y vi a tu amigo allí. Se comportaba de forma muy extraña, en contraste con su habitual entusiasmo. Alguien lo tenía bajo control.\n—Hay algo más que deberías saber —continúa—: mientras estaba allí, vi una sombra oscura que susurraba algo al oído a algunos de los asistentes. Cuando la sombra desaparecía, sus ojos se ponían en blanco y los hacían llevar al interior, en la oscuridad.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_uno_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_1",
+              "label": "Códice 2: Cornelia Akely - Parte 1",
+              "text": "Encuentras a la señorita Akely haciendo el turno de noche en un destartalado taller. Está tan centrada en su tarea que parece no haberse dado cuenta de que hay alguien más en el taller.\n—¿Hola? ¿Hay alguien?\nSeñorita Akely se gira, desorientada.\n—Perdona, estaba absorta en el trabajo. ¿Puedo ayudarte?",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_2",
+              "label": "Códice 2: Cornelia Akely - Parte 2",
+              "text": "Tus palabras acaban por tener efecto en la irritable capataz.\n—Está bien, está bien. Yo también estuve en esa reunión hace unas semanas. Me invitaron diciendo que había bebida gratis y creí que sería un buen sitio para conocer inversores. Pero la atmósfera era siniestra. Vi a tu amigo en la reunión; parecía muy emocionado, pero nervioso. Había un tipo con una máscara muy rara que se dirigió a él. Tu amigo se quedó parado como si lo hubieran alcanzado un rayo, y luego fue como si despertara de golpe y empezara a actuar de forma diferente. Muy diferente.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_dos_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_1",
+              "label": "Códice 3: Naomi O'Bannion - Parte 1",
+              "text": "A la cabecilla de los O'Bannion le interesan poco tus preguntas.\n—¿Acaso parece que tenga tiempo para estupideces? Lárgate antes de que me arrepienta de que hayas entrado en uno de mis locales.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_2",
+              "label": "Códice 3: Naomi O'Bannion - Parte 2",
+              "text": "Naomi echa la cabeza hacia atrás mientras suelta una estentórea carcajada.\n—¿Que qué hacía yo en una reunión de culto? ¡Eso tiene mucha gracia! Mira, yo no estaba allí por lo del culto. Sólo fui para cobrarle una deuda a un tipo que organizó la reunión, y que tiene la cabeza llena de pajaritos. Aunque debo decir que la mitad de los lugareños de Arkham tienen la cabeza llena de pajaritos, ¿eh? En fin, cuando entré, escuché a unos individuos de lo más inquietantes que cantaban algo sobre el «ojo de la llama» y un «renacimiento». Vi a tu amigo, que parecía estar en trance. Ni siquiera me reconoció cuando le llamé por su nombre.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_tres_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_1",
+              "label": "Códice 4: Sgto. Earl Monroe - Parte 1",
+              "text": "En cuanto mencionas a los «Hermanos de las cenizas», el agente de policía empuña la porra.\n—¿Cómo me has llamado? ¡Vaya, ya te puedes andar con ojo, listo!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_2",
+              "label": "Códice 4: Sgto. Earl Monroe - Parte 2",
+              "text": "—Está bien, está bien —dice mientras escupe sangre y se toca la mejilla magullada—. Sí, estuve en esa reunión hace unas semanas. Tenía que investigar una denuncia. Cuando entré, vi a tu amigo y vi que lo estaban embaucando esas personas tan raras. Cuando intenté meterme, uno de ellos me puso un objeto brillante delante de la cara y lo siguiente que sé es que me desperté en el suelo de mi casa. Llevo semanas atormentado por eso. He tenido sueños muy raros sobre grandes llamas que hablan.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cuatro_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_1",
+              "label": "Códice 5: Abigail Foreman - Parte 1",
+              "text": "La bibliotecaria en prácticas desestima tus preguntas con un gesto mientras saca varios tomos de la estantería.\n—Lo siento, estoy muy ocupada. Si quieres que te ayude, hazte socio de la biblioteca.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_2",
+              "label": "Códice 5: Abigail Foreman - Parte 2",
+              "text": "Abigail se deja caer en un lujoso sillón y suspira.\n—La gente siempre se burla de los que buscamos la verdad, pero supongo que tú eres diferente. Sí, asistí a esa reunión hace un par de semanas. Buscaba información sobre ciertos rituales que había estado investigando. Pero allí me encontré con algo que no esperaba. Tu amigo estaba en la reunión. Una figura encapuchada que llevaba una antorcha le tocó el hombro y, de repente, tu amigo se quedó mirando fijamente la llama durante lo que pareció una eternidad. Cuando «volvió en sí», sus ojos habían cambiado. Tenían una especie de fulgor anaranjado.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_cinco_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_1",
+              "label": "Códice 6: Margaret Liu - Parte 1",
+              "text": "Margaret Liu, una de las cantantes de bar más conocidas de la ciudad, está completamente absorta en su actuación. Sus cierres de ojos te impiden captar su atención.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_2",
+              "label": "Códice 6: Margaret Liu - Parte 2",
+              "text": "Tus intentos de llamar la atención de la señorita Liu resultan muy efectivos. Tras asegurarse de que nadie más puede escucharla, te habla en voz baja.\n—Tuve que actuar en esa reunión. Era un trabajo bien pagado y no me podía permitir rechazarlo. Había algo muy perturbador en esa gente. Cuando empecé a cantar, nadie bailó ni aplaudió. Se quedaron sentados y mirándome fijamente con expresión vacía, mientras uno de ellos hacía sonar un cuenco tibetano al ritmo de la música. Vi a tu amigo entre la audiencia. Parecía estar a punto de llorar de alegría. Al final de la actuación, se lanzó a los brazos de un hombre con túnica y empezó a reír de forma histérica.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_seis_parte_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_codice_fi",
+              "label": "Códice Φ: Sirviente de la llama",
+              "text": "Tu némesis yace a tus pies, incapacitado. La llama que lo envolvía se ha extinguido. Cautelosamente, le retiras la máscara y te encuentras con un rostro agonizante, lleno de cicatrices a causa de las llamas. Reconoces sus rasgos y te quedas boquiabierto al darte cuenta de que es tu amigo.\n—Lo siento mucho —dice con un hilo de voz—. Tenía que hacerlo.\nAntes de que puedas preguntarle nada, pierde el conocimiento.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_codice_fi.mp3"
+            }
+          ]
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_reso_no",
+              "label": "Ninguna resolución",
+              "text": "Durante el trayecto en taxi hacia el Restaurante de Velma, reflexionas sobre todo lo que has descubierto. No consigues ubicar a ningún sospechoso, y has tardado demasiado. Ya son las 11 y pico. Te retuerces de inquietud, pues te preocupa que sea demasiado tarde para salvar a tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_no.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_reso_uno",
+              "label": "Resolución 1",
+              "text": "Te montas en un taxi para ir al Barrio Este y reflexionas sobre todo lo que has descubierto. No estás seguro de que esto nos lleve hasta tu amigo, pero sientes que estáis muy cerca de desenmascarar a los Hermanos de las cenizas.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_uno.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_dos_reso_dos",
+              "label": "Resolución 2",
+              "text": "De camino a reunirte con el Dr. Armitage, pides al taxista que se desvíe por la ubicación segura donde dejaste a tu némesis inconsciente. Al llegar, os apostáis junto al misterioso individuo y esperáis. Cuando finalmente recupera el conocimiento, comienzas el interrogatorio.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_dos_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_3",
+      "title": "Escenario III: Reina de las cenizas",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_intro_uno",
+              "label": "Escenario III: Introducción 1",
+              "text": "El Dr. Armitage le da las gracias a la camarera del Restaurante de Velma cuando ésta pone sendos platos de tarta de manzana caliente entre vosotros. El bibliotecario jefe empuja uno de ellos hacia ti con una sonrisa cansada.\n—Arkham está cambiando. El mundo está cambiando, me temo que para peor, pero al menos tenemos tarta.\nJuntos, el Dr. Armitage y tú unís las piezas de la perturbadora imagen de la situación.\n—Los Hermanos de las cenizas no son conspiradores —dice Armitage—. Todos y cada uno de ellos son siervos. Siervos de una antigua diosa a la que llaman «Elokoss».\nAntes de continuar, el Dr. Armitage te muestra una grotesca talla en madera de un árbol nudoso con ramas en llamas.\n—Tras asistir a una de las reuniones secretas de la secta, a algunos seguidores potenciales les sale un extraño moratón que los marca como propiedad de Elokoss. Estos seguidores provienen de todos los estratos sociales: ricos y pobres, fuertes y débiles. Lo más importante es que estos siervos no tienen ni idea de que se encuentran bajo su influjo. La misteriosa persona que te persigue es uno de ellos. Según la profecía, el «Sirviente de la llama» que nos atacó en la universidad es el heraldo del regreso de la reina. El sirviente prepara sacrificios para hacer realidad el glorioso renacimiento de su reina, que predicen que sucederá esta misma noche.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_uno.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_intro_dos",
+              "label": "Escenario III: Introducción 2",
+              "text": "Te estremeces en lo más hondo con tan sólo pensar que vayan a sacrificar a tu amigo. En lugar de unir pruebas circunstanciales, sugieres registrar la residencia del Sirviente de la llama en busca de alguna pista. Al hacerlo, conseguís varios indicios: una invitación a una reunión secreta, un par de botas embarradas y arañadas, un registro de operaciones de contrabando en el Distrito ribereño, una foto de tres rostros iluminados por velas en la oscuridad. Todo apunta a las alcantarillas de Arkham.\n—¿No te parece un poco tonto que una secta que venera el fuego se instale en las alcantarillas para sus asuntos? —pregunta Armitage con una risilla—. Pero creo que tienes razón.\nDecidís rastrear juntos las alcantarillas en busca de tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_dos.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_intro_tres",
+              "label": "Escenario III: Introducción 3",
+              "text": "Te estremeces en lo más hondo con tan sólo pensar que vayan a sacrificar a tu amigo. Juntos, el Dr. Armitage y tú repasáis las pocas pistas valiosas que habéis reunido. Tras varias horas de aburrido análisis, Armitage conjetura que los Hermanos de las cenizas están llevando a cabo su ritual en las alcantarillas de Arkham.\n—¿No te parece un poco tonto que una secta que venera el fuego se instale en las alcantarillas para sus asuntos? —pregunta Armitage con una risilla—. Pero es lo único que tenemos.\nDecidís rastrear juntos las alcantarillas en busca de tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_intro_tres.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a",
+              "label": "Acto 1a: Registrar las alcantarillas.",
+              "text": "Los Hermanos de las cenizas podrían estar en cualquier parte. Debes registrar las alcantarillas en busca del lugar del ritual de la secta si quieres salvar a tu amigo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b",
+              "label": "Acto 1b: El lugar del ritual.",
+              "text": "El cántico te lleva por un laberinto de túneles hasta una cisterna seca. Hay varias docenas de personajes ataviados con túnicas arrodillados ante un abedul ardiente. Tu amigo se encuentra entre ellos. ¡Debes detenerlo antes de que se sacrifique por Elokoss!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a",
+              "label": "Acto 2a: Detener el rito.",
+              "text": "Debes detener el rito a toda costa. Podrías registrar la cisterna en busca de alguna forma de detener a la secta, ¡o bien podrías hacer leña de su ídolo profano!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b",
+              "label": "Acto 2b: Crisis evitada.",
+              "text": "Mientras haces leña del árbol ardiente, un aullido sobrenatural llena la cámara. Lo ignoras y prosigues tu ataque, asestando un certero golpe tras otro para destruir el mal primordial. Al final, la antigua efigie de la diosa de los Hermanos yace hecha pedazos.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_acto_2b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_1a",
+              "label": "Plan 1a: Una reunión.",
+              "text": "Un cántico resuena por los fétidos túneles. ¡El renacimiento de la secta se acerca!",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_1b",
+              "label": "Plan 1b: Llama en la oscuridad.",
+              "text": "En algún profundo lugar de las entrañas de la ciudad, la intensidad de una ardiente llama crece. Quienes llevan la marca de la reina se alzan para proclamar su regreso.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_1b.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_2a",
+              "label": "Plan 2a: Un ritual.",
+              "text": "Un humo nocivo invade el aire mientras el sonido del cántico se vuelve más fuerte.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_1",
+              "label": "Plan 2b: Llega la madre. (Acto 1 en juego)",
+              "text": "Las ávidas llamas se propagan por los túneles, y el cántico que proviene de más abajo se intensifica. Has llegado demasiado tarde para evitar la invocación.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_2",
+              "label": "Plan 2b: Llega la madre. (De lo contrario)",
+              "text": "La antigua reina de las cenizas despierta con un horripilante alarido.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_2b_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_plan_3b",
+              "label": "Plan 3b: Sin conocimiento.",
+              "text": "Una mano retorcida en forma de garra te aferra el brazo mientras varias docenas más se enroscan en torno a ti, como si te abrazaran. Arden al tacto. Gritas mientras unas horrendas fauces repletas de dientes se abren en el vientre de Elokoss.\n\n—No te preocupes, sólo quiere honrarte —dice una voz familiar.\n\nAl mirar hacia atrás, ves a tu amigo ataviado con la misma túnica negra y roja que llevan los demás Hermanos de las cenizas. Te sonríe mientras de las ardientes fauces brotan lenguas de llamas que te envuelven en un capullo de fuego. Lo último que oyes mientras te arrastran al abrasador infierno del pecho de Elokoss es a tu amigo, que junto con el resto de la secta canta un himno desafinado y rítmico por tu renacimiento.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_plan_3b.mp3"
+            }
+          ]
+        },
+        {
+          "type": "codices",
+          "title": "Códices",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_1",
+              "label": "Si _David Renfield_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa. David gruñe cuando intentas ayudarlo a ponerse en pie.\n—Déjame en paz, ¿quieres? Tengo... ¿dónde estoy? ¿Quién eres tú?\nLe explicas lo que ha pasado como mejor puedes, aunque él sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_1.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_2",
+              "label": "Si _Cornelia Akely_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nCornelia se mira las manos ensangrentadas con sorpresa.\n—¿Qué...? ¿Dónde estoy? ¿Qué me ha pasado?\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_2.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_3",
+              "label": "Si _Naomi O'Bannion_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\n—¿Qué clase de fiesta es ésta? —pregunta Naomi, mirando a su alrededor.\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_3.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_4",
+              "label": "Si _Sgto. Earl Monroe_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nEl rostro del agente está paralizado en una mueca de terror.\n—¡Dios mío! ¡Estaba atrapado dentro, lo veía todo pero no podía controlar mis actos!\nLe explicas lo que ha pasado como mejor puedes, aunque él sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_4.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_5",
+              "label": "Si _Abigail Foreman_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\nAbigail te aferra las manos con fuerza cuando le quitas la máscara.\n—¡Sabía que vendrías a por mí! ¡Sabía que lo lograrías!\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_5.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_6",
+              "label": "Si _Margaret Liu_ es el heraldo de Elokoss...",
+              "text": "Al derrotar al Sirviente de la llama, has logrado que recupere el juicio. Cuando le quitas la máscara, te mira con expresión confusa.\n—Esto es como la debacle en el Club Tictac... aunque un poco peor —dice Margaret, con voz temblorosa.\nLe explicas lo que ha pasado como mejor puedes, aunque ella sigue sin entenderlo del todo.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_codice_fi_6.mp3"
+            }
+          ]
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_reso_no",
+              "label": "Ninguna resolución",
+              "text": "El Dr. Armitage escapa con vida de las alcantarillas a duras penas, roto por la culpa de dejar atrás a sus compañeros. Lo has perdido todo, salvo la vida.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_no.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_reso_uno",
+              "label": "Resolución 1",
+              "text": "Pese a tenerlo todo en contra, el receptáculo del antiguo mal que encarnaba Elokoss ha quedado destruido. Se oye un alarido sobrenatural que surge del suelo cuando la entidad primordial es arrastrada de vuelta a las profundidades de las que proviene.\n—Ya te advertí de que la secta tenía siglos de antigüedad —dice el Dr. Armitage—. Han logrado liberar a Elokoss anteriormente y siempre se las han arreglado para devolver al mundo su presencia abrasadora. Debemos tener cuidado de que no vuelvan a intentarlo.\nLe estrecho la mano al Dr. Armitage, que tiene que hacer un esfuerzo para aferrarla con firmeza a causa del agotamiento. Lentamente, juntos, iniciais el ascenso de regreso a la superficie.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_uno.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_reso_dos",
+              "label": "Resolución 2",
+              "text": "Un viento aullante os cubre de carbonilla. El Dr. Armitage coge un ajado tomo de las manos de un sectario caído.\n—Necesitaremos esto. Debemos descifrar cómo fue posible que liberasen a Elokoss. Si su culto está tan extendido como yo temo, puede que esto no sea más que el principio.\nLa fría brisa del exterior es un alivio bienvenido después de la sofocante calima de las alcantarillas.\n—Esperemos que esto haya terminado de una vez por todas —dices.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_dos.mp3"
+            },
+            {
+              "id": "cap2_hermanos_de_las_cenizas_escenario_tres_reso_tres",
+              "label": "Resolución 3",
+              "text": "La antigua compuerta se abre con un chirrido y deja salir un torrente de aguas residuales fétidas. Desde el umbral, la fría brisa del exterior resulta un bienvenido alivio.\n—Hemos sobrevivido —dice el Dr. Armitage, y la incredulidad en su voz habla por sí sola—. Contra todo pronóstico, hemos sobrevivido.\nAl salir a la superficie, veis que amanecer sobre una ciudad diferente.",
+              "audio": "audios/cap2_hermanos_de_las_cenizas_escenario_tres_reso_tres.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

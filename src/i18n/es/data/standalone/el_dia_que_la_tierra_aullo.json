@@ -1,0 +1,17 @@
+{
+  "type": "standalone",
+  "origin": "fanmade",
+  "id": "el_dia_que_la_tierra_aullo",
+  "title": "El día que la Tierra aulló",
+  "banner": "images/banner_tierra_aullo.webp",
+  "comingSoon": true,
+  "about": [
+    "El excéntrico profesor Challenger está convencido de una idea descabellada: la Tierra no es una roca muerta, sino una criatura viva que duerme bajo nuestros pies. Para demostrarlo ha construido una descomunal máquina perforadora y os ha reclutado para supervisar el descenso. Capa a capa, la broca horada la corteza hacia lo más hondo jamás alcanzado… y, conforme se acercan al corazón del planeta, los operarios empiezan a perder la cordura.",
+    "Basado en el relato «Cuando la Tierra gritó» de Arthur Conan Doyle (1928) y adaptado al universo de los Mitos, es un escenario independiente pensado para el multijugador épico, estrenado en la Arkham Con ’25. Diseñado por The Beard y traducido al español por Rincón Miskatonic."
+  ],
+  "download": {
+    "url": "https://rinconmiskatonic.org/2026/01/06/el-dia-que-la-tierra-aullo/",
+    "label": "El día que la Tierra aulló — Rincón Miskatonic"
+  },
+  "scenarios": []
+}
