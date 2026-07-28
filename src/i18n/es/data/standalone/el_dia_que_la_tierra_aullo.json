@@ -4,7 +4,6 @@
   "id": "el_dia_que_la_tierra_aullo",
   "title": "El día que la Tierra aulló",
   "banner": "images/banner_tierra_aullo.webp",
-  "comingSoon": true,
   "about": [
     "El excéntrico profesor Challenger está convencido de una idea descabellada: la Tierra no es una roca muerta, sino una criatura viva que duerme bajo nuestros pies. Para demostrarlo ha construido una descomunal máquina perforadora y os ha reclutado para supervisar el descenso. Capa a capa, la broca horada la corteza hacia lo más hondo jamás alcanzado… y, conforme se acercan al corazón del planeta, los operarios empiezan a perder la cordura.",
     "Basado en el relato «Cuando la Tierra gritó» de Arthur Conan Doyle (1928) y adaptado al universo de los Mitos, es un escenario independiente pensado para el multijugador épico, estrenado en la Arkham Con ’25. Diseñado por The Beard y traducido al español por Rincón Miskatonic."
@@ -13,5 +12,129 @@
     "url": "https://rinconmiskatonic.org/2026/01/06/el-dia-que-la-tierra-aullo/",
     "label": "El día que la Tierra aulló — Rincón Miskatonic"
   },
-  "scenarios": []
+  "components": [
+    {
+      "type": "introduccion",
+      "title": "Introducción",
+      "items": [
+        {
+          "id": "tierra_aullo_intro",
+          "label": "El día que la Tierra aulló",
+          "segments": [
+            { "type": "audio", "title": "Inicio", "src": "audios/fanmade/standalone/tierra_aullo/intro_parte_01.mp3", "content": "Se te había advertido que debías ser puntual costase lo que costase y allí te encuentras ahora, plantado ante la casa londinense del profesor George Challenger a las diez en punto. El hombre gozaba de una reputación intachable en todos los aspectos: por su inteligencia, por su corpulencia física y también por su ego y su temperamento. Cualquier cosa que pudieras hacer para ganarte su favor se había convertido en un asunto prioritario. Estas advertencias te llegaron de William Dyer, jefe del departamento de Geología de la Universidad Miskatonic. Muchos —incluido el propio Dyer— se sorprendieron cuando Challenger le envió una propuesta para participar en un proyecto de la más absoluta confidencialidad. Las sorpresas continuaron cuando varios meses después Dyer se puso en contacto contigo mediante una llamada urgente solicitando tu ayuda. La puerta se abre con exactitud milimétrica y un mayordomo de rostro pétreo te hace pasar al estudio de Challenger. La estancia está repleta de trofeos y recuerdos que atestiguan los triunfos científicos del profesor, pero ninguno de ellos resulta tan imponente como el propio hombre. Incluso sentado tras su escritorio, su tamaño y su presencia se hacen evidentes sin que medie palabra. A pesar de sus lujos, Challenger te recuerda a un cavernícola, ancho, macizo y con una espesa barba negra. Escribe con trazo firme y deliberado, sin variar el ritmo, mientras entras en la estancia.\n—Hable o márchese. Mi tiempo es muy valioso —gruñe sin dedicarte siquiera una mirada.\nLe das una breve explicación, y solo cuando mencionas el nombre de Dyer, Challenger se detiene por fin.\n—Al fin, entonces, ya podemos avanzar.—Se levanta bruscamente, como un oso pardo recién despertado de su hibernación.\n—Confío en que ignora por completo la naturaleza de esta empresa. De no ser así, Dyer habría violado las instrucciones explícitas que le di.—\nConfirmas que no se te dijo nada, y que únicamente has leído los periódicos que te han dado alguna pista sobre la índole y la magnitud del proyecto. La mera mención de la prensa provoca que el ceño de Challenger se frunza.\n—Las hienas de la prensa han seguido con avidez al león desde que comenzó mi experimento." },
+            { "type": "audio", "title": "Si 1 o más investigadores _Reportero_ participan en este escenario, esos investigadores leen _Pisar con cuidado_.", "boxed": true, "src": "audios/fanmade/standalone/tierra_aullo/intro_parte_media.mp3", "content": "Los ojos de Challenger se entrecierran y esperas una mueca burlona tras su espesa barba.\n—Aunque no es imposible que un periodista tenga ciertos escrúpulos, también va en contra de la naturaleza carroñera de su profesión. Una vez concluido este experimento se ceñirá a la verdad absoluta y a los hechos científicos que descubramos, o me encontrará como el elemento más peligroso de este experimento.\nAceptas, tanto por honestidad como por instinto de supervivencia" },
+            { "type": "audio", "title": "Continuación", "src": "audios/fanmade/standalone/tierra_aullo/intro_parte_02.mp3", "content": "Los hombros de Challenger se relajan levemente y vuelve a rodear su escritorio.\n—Dyer ha respondido por tu integridad así que no insistiré más en ello. Una vez que jure guardar el más absoluto secreto, podremos ocuparnos del asunto que nos concierne.\nEl científico permanece de pie tras su escritorio, mirándote fijamente, hasta que finalmente juras guardar el secreto.\n —El experimento, dicho de forma sencilla, consiste en penetrar la corteza terrestre para demostrar o refutar una hipótesis simple: que el planeta es en sí mismo un enorme organismo viviente.\nEstás a punto de cuestionar en voz alta la cordura del hombre, pero logras pedirle una explicación en su lugar. Challenger abre un cajón del escritorio y extrae un erizo de mar.\n—Observe esta especie de equinodermo. Desde el exterior, parece inorgánico. Formas de vida microscópicas se agrupan y prosperan en su superficie. Ahora traslade este hecho a la propia Tierra.\nHay innumerables preguntas que podrías formular, pero a la luz de lo que ya has descubierto en Arkham, la idea de un planeta vivo resulta extrañamente razonable. En su lugar, preguntas qué papel se espera que desempeñes en el experimento.\n—Las operaciones de perforación han avanzado según lo previsto, y nos encontramos ya cerca del límite de la corteza terrestre, a ocho millas de profundidad. Es ahí, sin embargo, donde los operarios comenzaron a perder la cordura. ¡La propia premisa del experimento sugiere el descubrimiento de algo vivo! —Challenger se eriza de indignación—. ¿Por qué habrían de sentirse horrorizados al encontrar vida exactamente donde se propuso hallarla?\nPreguntas a qué tipo de vida se refiere Challenger si el experimento aún no ha concluido.\n—La Tierra todavía no ha sido atravesada. Hay otras cosas en las profundidades que se acumulan en el exterior y están interfiriendo con la perforación. No abandonaré este experimento en el último momento, así que retomará la operación de la perforadora. Dyer me ha asegurado que posee las habilidades adecuadas… Partamos inmediatamente hacia Sussex.\nChallenger dispone tu traslado de inmediato en una de las numerosas furgonetas que transportan al equipo. Eres escoltado a través de controles y vallas de alambre de púas, pasando junto a numerosos periodistas fisgones que gritan conjeturas a tu paso. Finalmente, el vehículo se detiene y desciendes solo para encontrarte cara a cara con el profesor Dyer. El hombre ha conocido días mejores y todo indica que ese ha sido su estado habitual durante algún tiempo. Dyer parece completamente exhausto. Resulta imposible determinar si es por el estrés de dirigir un proyecto de semejante envergadura, por los hallazgos antinaturales en las profundidades de la excavación o por el desgaste constante de intentar apaciguar a Challenger.\n—Me alegra verte —grazna con un suspiro cansado—. El proyecto está casi terminado y estaré encantado de dejar este asunto atrás para siempre.\nEntras con Dyer en un ascensor enjaulado y comienzas el largo descenso hacia la inmensa excavación. Dyer aprovecha el tiempo para instruirte en el manejo de la perforadora y lo que es igual de importante en los peligros que hicieron huir a tus predecesores.\n —A mayor profundidad, todo se vuelve más extraño, incluso al aproximarnos al manto de la Tierra. Ármate de valor. No me atrevería a especular sobre lo que realmente yace ahí abajo." }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "actos_planes",
+      "title": "Actos y Planes",
+      "items": [
+        {
+          "id": "tierra_aullo_acto_1a_1",
+          "label": "Acto 1a: Espiral descendente (v. I)",
+          "text": "Cuando ocupas tu puesto, la voz del profesor Challenger retumba a través de los receptores instalados por toda la plataforma de perforación.\n-Ahora comienza el momento decisivo. Atiendan con rigor a sus cometidos, pues lo que está a punto de producirse hará temblar al mundo científico hasta sus más profundos cimientos, y por añadidura, al propio mundo físico.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/acto_1a.mp3" 
+        },
+        {
+          "id": "tierra_aullo_acto_1a_2",
+          "label": "Acto 1a: Espiral descendente (v. II)",
+          "text": "Cuando ocupas tu puesto, la voz del profesor Challenger retumba a través de los receptores instalados por toda la plataforma de perforación.\n-Ahora comienza el momento decisivo. Atiendan con rigor a sus cometidos, pues lo que está a punto de producirse hará temblar al mundo científico hasta sus más profundos cimientos, y por añadidura, al propio mundo físico.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/acto_1a.mp3"
+        },
+        {
+          "id": "tierra_aullo_acto_1b_1",
+          "label": "Acto 1b: Aún más profundo",
+          "segments": [
+            { 
+              "type": "audio", 
+              "title": "", 
+              "src": "audios/fanmade/standalone/tierra_aullo/acto_1b_p1.mp3", 
+              "content": "El monótono rechinar de la barrena cambia de tono en el instante en que atraviesas una nueva capa de la Tierra primigenia."
+            },
+            { 
+              "type": "audio", 
+              "title": "Si el nivel de Profundidad es 4 o más", 
+              "src": "audios/fanmade/standalone/tierra_aullo/acto_1b_p2.mp3", 
+              "content": "El calor sofocante se intensifica a medida que atraviesas la roca ígnea. ¡Te encuentras en el límite mismo de la corteza terrestre!"
+            }
+          ]
+        },
+        {
+          "id": "tierra_aullo_acto_1b_2",
+          "label": "Acto 1b: El lugar más profundo",
+          "text": "El calor sofocante se intensifica a medida que atraviesas la roca ígnea. ¡Te encuentras en el límite mismo de la corteza terrestre!",
+          "audio": "audios/fanmade/standalone/tierra_aullo/acto_1b_p2.mp3" 
+        },
+        {
+          "id": "tierra_aullo_acto_2a",
+          "label": "Acto 2a: Golpear la Tierra",
+          "text": "La risa poderosa de Challenger suena por la radio cuando se anuncia que se ha alcanzado la última capa.\n-¡Al fin! ¡Dyer, mantenga la perforadora al máximo rendimiento! ¡Haga descender a todo el personal disponible para abrir la corteza exterior! ¡Si la Tierra está viva, sabrá que George Edward Challenger la ha descubierto y le ha hecho consciente de toda la raza humana que habita sobre su superficie!",
+          "audio": "audios/fanmade/standalone/tierra_aullo/acto_2a.mp3" 
+        },
+        {
+          "id": "tierra_aullo_acto_2b",
+          "label": "Acto 2b: La Tierra Aúlla",
+          "text": "La última envoltura de la Tierra se revela como uno de los materiales más duros con los que jamás te has enfrentado. Solo tras un largo esfuerzo, la perforadora consigue al fin penetrar la roca ígnea y abrirse paso. De improviso, el rechinar de la maquinaria se detiene y un chapoteo repugnante resuena por todo el túnel cuando la plataforma se hunde de golpe. Un hedor penetrante la precede por un instante, seguido de una violenta eyección ascendente de una sustancia imposible de identificar. Y, apenas unos momentos después... escuchas el grito más ensordecedor que hayas oído jamás.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/acto_2b.mp3" 
+        },
+        {
+          "id": "tierra_aullo_plan_1a",
+          "label": "Plan 1a: El experimento comienza",
+          "text": "El descenso, lento y opresivo, se prolongó durante casi una hora. Cuando el ascensor se detuvo, una colosal máquina perforadora aguardaba en el fondo del pozo.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_1a.mp3" 
+        },
+        {
+          "id": "tierra_aullo_plan_1b",
+          "label": "Plan 1b: Esto es un simulacro",
+          "text": "Un violento estremecimiento sacude el túnel descendente. El conducto abierto por la barrena se resquebraja, y una criatura monstruosa, de forma tubular, se precipita hacia vosotros. Dyer lucha con los controles mientras las alarmas repican por toda la instalación. Nunca antes os habíais enfrentado a algo así.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_1b.mp3" 
+        },
+        {
+          "id": "tierra_aullo_plan_2a",
+          "label": "Plan 2a: Temblores por todas partes",
+          "text": "La voz de Challenger resuena de nuevo en la radio.\n—¿Qué demonios esta pasando ahí abajo? ¡Permanezcan firmes, a cualquier precio!",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_2a.mp3" 
+        },
+        {
+          "id": "tierra_aullo_plan_2b",
+          "label": "Plan 2b: Problema profundo",
+          "text": "Otro retumbo resuena bajo vuestros pies, y un segundo gusano irrumpe junto a la perforadora haciendo temblar toda la plataforma.\n-¿Cuántos de estos monstruos habitan en las profundidades?- se pregunta Dyer en voz alta mientras lucha por mantener el control.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_2b.mp3"
+        },
+        {
+          "id": "tierra_aullo_plan_3a",
+          "label": "Plan 3a: Punto de ruptura",
+          "text": "-Estamos en un punto critico- dice Dyer mientras revisa los indicadores-\nSi esto sigue así, el taladro podría venirse abajo.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_3a.mp3"
+        },
+        {
+          "id": "tierra_aullo_plan_3b",
+          "label": "Plan 3b: Derrota aplastante",
+          "text": "Sacudidas aún más violentas que las provocadas por las dos criaturas anteriores estremecen el túnel. El mundo entero parece temblar cuando un gigantesco par de mandíbulas irrumpe desgarrando la roca bajo la plataforma y se cierra con violencia. Los remaches saltan y las rejillas de acero se doblan mientras la perforadora queda atrapada en las fauces de la criatura.\n-Corran, de vuelta por el túnel! -grita Dyer, abandonando los controles\n- No hay forma de salvar la perforadora, ¡y quizá ya sea demasiado tarde para nosotros!",
+          "audio": "audios/fanmade/standalone/tierra_aullo/plan_3b.mp3"
+        }
+      ]
+    },
+    {
+      "type": "resoluciones",
+      "title": "Resoluciones",
+      "items": [
+        {
+          "id": "tierra_aullo_reso_uno",
+          "label": "Resolución 1",
+          "text": "Apenas lográis arrastraros hasta la jaula del ascensor en lo alto del tramo final de la perforación. Todo el túnel resuena con el chirrido del metal desgarrándose contra la roca. Las luces tenues dentro y alrededor del ascensor parpadean y chisporrotean, y te aferras con tensión a las barras de sujeción. Toda la estructura amenaza con desmoronarse y devolverte al abismo, pero de algún modo, logra llevaros a Dyer y a ti hasta la superficie. Apenas ha pasado un minuto desde que alcanzáis la cima cuando el túnel entero se comprime hacia dentro, sellando de nuevo la Tierra. Challenger arroja su sombrero al suelo, presa de la furia, y comienza una airada diatriba sobre el experimento fallido. Dyer deja escapar un largo suspiro mientras se pasa una mano por el cabello.\n—Intentaré… intentaré calmarlo. Y le haré saber las cosas con las que nos encontramos ahí abajo. No es que eso compense la pérdida del túnel y del equipo, pero quizá lo haga cambiar de enfoque. Solo… descansa un poco.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/reso_uno.mp3"
+        },
+        {
+          "id": "tierra_aullo_reso_dos",
+          "label": "Resolución 2",
+          "text": "Te zumban los oídos mientras te alejas por el túnel, iniciando el ascenso en cuanto Dyer entra en el ascensor. El pasadizo entero se estremece a tu alrededor, contrayéndose como si fuese un músculo —una comparación inquietantemente plausible, dadas las revelaciones—. La estructura amenaza con colapsar y devolverte al abismo, pero en contra de toda lógica consigue llevaros a Dyer y a ti hasta la superficie. Apenas has salido del ascensor y te arrojas a cubierto cuando una oleada de fluido viscoso brota del túnel, expulsada mientras la excavación entera se contrae sobre sí misma. Los periodistas gritan y jadean al quedar cubiertos por la sustancia repugnante, pero la risa atronadora de Challenger se impone al caos.\n—¿Un experimento exitoso y la mortificación de los buitres aquí presentes? ¡Verdaderamente, un día memorable! Me atrevería a decir que el aullido de la Tierra se escuchó al otro lado del canal, ¡si no más lejos aún!\nAvanza hacia ti para darte una palmada en el hombro y estrecharte la mano.\n—Debo conceder el debido mérito tanto a usted como a Dyer,por supuesto. He de admitir que tenía mis dudas, pero resistieron hasta que el experimento concluyó. Sin embargo, la ciencia siempre avanza y sin pausa alguna ya es momento de considerar nuevas hipótesis que poner a prueba. Si en el futuro se encuentran con algún misterio, no duden en remitírmelo para que lo examine con mi pericia habitual.",
+          "audio": "audios/fanmade/standalone/tierra_aullo/reso_dos.mp3"
+        }
+      ]
+    }
+  ]
 }

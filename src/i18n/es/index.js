@@ -35,7 +35,7 @@ export default {
   appData: composeContent({
     chapter: "Capítulo 2",
     campaigns: [hermanosDeLasCenizas, vastagosDeSangre],
-    standalone: [tracesToNowhere, sleepyHollow, elDiaQueLaTierraAullo],
+    standalone: [tracesToNowhere, elDiaQueLaTierraAullo, sleepyHollow ],
     ambientConfig: ambient.ambientConfig,
   }),
 };
