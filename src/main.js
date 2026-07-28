@@ -70,6 +70,27 @@ function resolveNavItems(nav) {
     };
   }
 
+  // Standalone sin escenarios: los componentes están directamente en la sección.
+  if (section.type === "standalone" && section.components && !nav.scenarioId) {
+    if (nav.componentType === OVERVIEW_COMPONENT) {
+      const groups = section.components.map((c) => ({
+        type: c.type,
+        title: c.title,
+        nav: { sectionType: nav.sectionType, sectionId: nav.sectionId, scenarioId: null, componentType: c.type },
+        items: c.items || []
+      }));
+      return { scenario: null, componentTitle: section.title, isOverview: true, groups };
+    }
+
+    const comp = section.components.find((c) => c.type === nav.componentType);
+    if (!comp) return null;
+    return {
+      scenario: null,
+      componentTitle: comp.title,
+      groups: [{ type: comp.type, title: comp.title, nav, items: comp.items || [] }]
+    };
+  }
+
   const scenario = section.scenarios?.find((s) => s.id === nav.scenarioId);
   if (!scenario) return null;
 
@@ -763,6 +784,8 @@ function tickSTProgress() {
 
 function renderMusicBar() {
   if (!musicBarEl) return;
+  if (!SOUNDTRACK.length) { musicBarEl.innerHTML = ""; musicBarEl.hidden = true; return; }
+  musicBarEl.hidden = false;
   const engaged = stEnabled && stAudio;
   const isPlaying = engaged ? !stAudio.paused : false;
   const title = engaged
@@ -858,6 +881,7 @@ function stNext() {
 
 function bindMusicBarEvents() {
   if (!musicBarEl || musicBarEl.dataset.bound === "true") return;
+  if (!SOUNDTRACK.length) return;
   musicBarEl.dataset.bound = "true";
 
   musicBarEl.addEventListener("click", (event) => {
@@ -1343,7 +1367,7 @@ function render() {
     ? `<p class="description breadcrumb">${escapeHtml(t("content.aboutLead"))}</p>`
     : (crumbParts.length ? `<p class="description breadcrumb">${crumbParts.map(escapeHtml).join(" &rsaquo; ")}</p>` : "");
   const headTitle = resolved
-    ? (resolved.isOverview ? resolved.scenario.title : resolved.componentTitle)
+    ? (resolved.isOverview ? (resolved.scenario?.title || section?.title || t("app.campaignTitle")) : resolved.componentTitle)
     : t("app.campaignTitle");
 
   // Banner de la sección (campaña / escenario independiente) en lo alto del contenido.
@@ -1514,8 +1538,23 @@ function renderSectionNode(section) {
           section.intro.title
         )
       : "";
-    const scenariosHtml = (section.scenarios || []).map((sc) => renderScenarioNode(section, sc)).join("");
-    childrenHtml = `<div class="sidebar-nav-list sidebar-nav-list--filter">${introHtml}${scenariosHtml}</div>`;
+
+    let bodyHtml;
+    // Standalone con componentes directos (sin escenarios).
+    if (section.type === "standalone" && section.components) {
+      bodyHtml = (section.components || [])
+        .map((c) =>
+          renderNavLeaf(
+            { sectionType: section.type, sectionId: section.id, scenarioId: null, componentType: c.type },
+            c.title
+          )
+        )
+        .join("");
+    } else {
+      bodyHtml = (section.scenarios || []).map((sc) => renderScenarioNode(section, sc)).join("");
+    }
+
+    childrenHtml = `<div class="sidebar-nav-list sidebar-nav-list--filter">${introHtml}${bodyHtml}</div>`;
   }
 
   return `
@@ -1706,6 +1745,138 @@ function bindPanelEvents() {
       togglePanel(button.dataset.panelToggle || "");
     });
   });
+
+  bindMultiSegmentEvents();
+}
+
+// Bind play/seekbar events for multi-segment panels. Each segment player is
+// independent; clicking play or interacting with a seekbar on a segment that
+// is NOT the currently active player stops the active one and inits the new one.
+function bindMultiSegmentEvents() {
+  screenEl.querySelectorAll('.leaf-content--multi .custom-player').forEach((playerEl) => {
+    if (playerEl.dataset.segBound === "true") return;
+    playerEl.dataset.segBound = "true";
+
+    const segId = playerEl.dataset.playerId;
+    const leafId = playerEl.dataset.leafId;
+
+    const playBtn = playerEl.querySelector("[data-player-play]");
+    const seekbar = playerEl.querySelector("[data-player-seek]");
+
+    function activateSegment(andPlay) {
+      // If this segment is already the active player, delegate to normal play/pause.
+      if (activePlayer && activePlayer.playerEl === playerEl) return false;
+
+      // Stop whatever was playing before.
+      stopActivePlayer();
+
+      // Find audio elements for this segment.
+      const contentEl = document.getElementById(`${leafId}-content`);
+      if (!contentEl) return false;
+      const panelAudio = contentEl.querySelector(`audio[data-seg-id="${CSS.escape(segId)}"][data-role="panel"]`);
+      const ambientAudio = contentEl.querySelector(`audio[data-seg-id="${CSS.escape(segId)}"][data-role="ambient"]`);
+      if (!panelAudio) return false;
+
+      const node = findNodeById(contentTree, leafId);
+
+      const doInit = () => {
+        const panelDuration = panelAudio.duration;
+        const totalDuration = ambientAudio ? panelDuration + 2 : panelDuration;
+        initPlayer(contentEl, panelAudio, ambientAudio || null, totalDuration, panelDuration, node, playerEl);
+
+        if (andPlay) {
+          duckSTFade(() => {
+            const p = activePlayer;
+            if (!p) return;
+            if (!p.playTracked) { trackAudioPlay(p.node); p.playTracked = true; }
+            if (p.hasAmbient) {
+              p.phaseStartMs = performance.now();
+              ambientAudio.play().catch(() => {});
+            } else {
+              panelAudio.play().catch(() => {});
+            }
+            p.rafId = requestAnimationFrame(playerRaf);
+            setPlayerBtnState(p.playerEl, true);
+            p.playing = true;
+            updateMediaSession(true);
+          });
+        }
+      };
+
+      if (isFinite(panelAudio.duration) && panelAudio.duration > 0) {
+        doInit();
+      } else {
+        panelAudio.addEventListener("loadedmetadata", () => doInit(), { once: true });
+      }
+      return true;
+    }
+
+    if (playBtn) {
+      playBtn.addEventListener("click", () => {
+        // If already active, handle play/pause toggle.
+        if (activePlayer && activePlayer.playerEl === playerEl) {
+          const p = activePlayer;
+          if (p.phase === "ended" || p.panelEl.ended) {
+            // Restart from beginning
+            trackAudioPlay(p.node);
+            p.playTracked = true;
+            if (p.hasAmbient) {
+              if (p.ambientEl) { p.ambientEl.volume = 0.25; p.ambientEl.currentTime = 0; }
+              p.panelEl.currentTime = 0;
+              p.phase = "pre-roll";
+              p.preRollPosAtStart = 0;
+              p.fadeOutPosAtStart = 0;
+              p.phaseStartMs = performance.now();
+              p.ambientEl?.play().catch(() => {});
+            } else {
+              p.panelEl.currentTime = 0;
+              p.phase = "playing";
+              p.panelEl.play().catch(() => {});
+            }
+            p.rafId = requestAnimationFrame(playerRaf);
+            setPlayerBtnState(p.playerEl, true);
+            p.playing = true;
+            updateMediaSession(true);
+            duckST();
+          } else if (p.playing) {
+            pauseActivePlayerInternal();
+          } else {
+            resumeActivePlayerInternal();
+          }
+          return;
+        }
+        activateSegment(true);
+      });
+    }
+
+    if (seekbar) {
+      seekbar.addEventListener("mousedown", () => {
+        if (activePlayer && activePlayer.playerEl === playerEl) {
+          activePlayer.isSeeking = true;
+          return;
+        }
+        activateSegment(false);
+      });
+      seekbar.addEventListener("touchstart", () => {
+        if (activePlayer && activePlayer.playerEl === playerEl) {
+          activePlayer.isSeeking = true;
+          return;
+        }
+        activateSegment(false);
+      }, { passive: true });
+      seekbar.addEventListener("input", () => {
+        if (!activePlayer || activePlayer.playerEl !== playerEl) return;
+        const vt = (parseInt(seekbar.value, 10) / 1000) * activePlayer.totalDuration;
+        updatePlayerUI(activePlayer, vt);
+      });
+      seekbar.addEventListener("change", () => {
+        if (!activePlayer || activePlayer.playerEl !== playerEl) return;
+        activePlayer.isSeeking = false;
+        const vt = (parseInt(seekbar.value, 10) / 1000) * activePlayer.totalDuration;
+        seekPlayer(vt);
+      });
+    }
+  });
 }
 
 function resolveAmbientSrc(nodeId) {
@@ -1747,6 +1918,7 @@ function stopActivePlayer() {
   cancelAnimationFrame(activePlayer.rafId);
   activePlayer.rafId = 0;
   activePlayer.playing = false;
+  setPlayerBtnState(activePlayer.playerEl, false);
   activePlayer.panelEl.pause();
   if (activePlayer.ambientEl) activePlayer.ambientEl.pause();
   activePlayer = null;
@@ -1944,9 +2116,11 @@ function resumeActivePlayerInternal() {
   duckST();
 }
 
-function initPlayer(contentEl, panelEl, ambientEl, totalDuration, panelDuration, node) {
-  const playerEl = contentEl.querySelector(".custom-player");
+function initPlayer(contentEl, panelEl, ambientEl, totalDuration, panelDuration, node, playerElOverride) {
+  const playerEl = playerElOverride || contentEl.querySelector(".custom-player");
   if (!playerEl) return;
+
+  const skipEventBinding = !!playerElOverride;
 
   const hasAmbient = !!ambientEl;
 
@@ -2007,6 +2181,7 @@ function initPlayer(contentEl, panelEl, ambientEl, totalDuration, panelDuration,
     navigator.mediaSession.setActionHandler("stop", () => stopActivePlayer());
   }
 
+  if (!skipEventBinding) {
   playerEl.querySelector("[data-player-play]")?.addEventListener("click", () => {
     if (!activePlayer) return;
     const p = activePlayer;
@@ -2120,6 +2295,7 @@ function initPlayer(contentEl, panelEl, ambientEl, totalDuration, panelDuration,
       seekPlayer(vt);
     });
   }
+  } // end if (!skipEventBinding)
 }
 
 function togglePanel(panelId) {
@@ -2151,14 +2327,27 @@ function togglePanel(panelId) {
     if (node?.type === "leaf") {
       const contentEl = document.getElementById(`${panelId}-content`);
       if (contentEl) {
-        const panelEl = contentEl.querySelector('audio[data-role="panel"]');
-        const ambientEl = contentEl.querySelector('audio[data-role="ambient"]');
+        // Multi-segment: find first segment's audio; single: find the only audio.
+        const isMulti = !!node.segments;
+        let panelEl, ambientEl, playerEl;
+
+        if (isMulti) {
+          const firstSegId = `${node.id}__seg0`;
+          panelEl = contentEl.querySelector(`audio[data-seg-id="${CSS.escape(firstSegId)}"][data-role="panel"]`);
+          ambientEl = contentEl.querySelector(`audio[data-seg-id="${CSS.escape(firstSegId)}"][data-role="ambient"]`);
+          playerEl = contentEl.querySelector(`.custom-player[data-player-id="${CSS.escape(firstSegId)}"]`);
+        } else {
+          panelEl = contentEl.querySelector('audio[data-role="panel"]');
+          ambientEl = contentEl.querySelector('audio[data-role="ambient"]');
+          playerEl = contentEl.querySelector('.custom-player');
+        }
+
         if (!panelEl) return;
 
         const setupAndStart = () => {
           const panelDuration = panelEl.duration;
           const totalDuration = ambientEl ? panelDuration + 2 : panelDuration;
-          initPlayer(contentEl, panelEl, ambientEl || null, totalDuration, panelDuration, node);
+          initPlayer(contentEl, panelEl, ambientEl || null, totalDuration, panelDuration, node, isMulti ? playerEl : undefined);
           if (autoPlay) {
             duckSTFade(() => {
               const p = activePlayer;
@@ -2194,6 +2383,10 @@ function collapseBranch(panelId) {
   contentEl?.querySelectorAll("audio").forEach((a) => a.pause());
   expandedPanels.delete(panelId);
   revealedDescriptions.delete(panelId);
+  // Clear multi-segment text reveal states for this panel.
+  for (const key of revealedDescriptions) {
+    if (key.startsWith(panelId + "__text")) revealedDescriptions.delete(key);
+  }
   const children = accordionIndex.childrenByParent.get(panelId) || [];
   children.forEach((childId) => collapseBranch(childId));
 }
@@ -2265,6 +2458,10 @@ function audioUrl(src) {
 }
 
 function renderLeafContent(node) {
+  if (node.segments) {
+    return renderMultiSegmentContent(node);
+  }
+
   const isOpen = expandedPanels.has(node.id);
 
   const panelSrc = audioUrl(node.audioSrc);
@@ -2354,6 +2551,120 @@ function renderLeafDescription(node) {
   `;
 }
 
+function renderMultiSegmentContent(node) {
+  const isOpen = expandedPanels.has(node.id);
+  const rawAmbientSrc = (isOpen && !(stAudio && !stAudio.paused)) ? resolveAmbientSrc(node.id) : null;
+  const ambientSrc = audioUrl(rawAmbientSrc);
+
+  let html = '<article class="leaf-content leaf-content--multi">';
+  let audioIndex = 0;
+  let textIndex = 0;
+
+  for (const seg of node.segments) {
+    if (seg.type === "text") {
+      const textId = `${node.id}__text${textIndex}`;
+      const boxedClass = seg.boxed ? " segment-block--boxed" : "";
+      const titleHtml = seg.title ? `<strong class="segment-title">${renderLabel(seg.title)}</strong>` : "";
+      const isRevealed = revealedDescriptions.has(textId);
+
+      html += `<div class="segment-block${boxedClass}" data-segment-text-id="${escapeAttribute(textId)}">`;
+      html += titleHtml;
+
+      if (seg.content) {
+        if (isRevealed) {
+          html += `
+            <div class="spoiler spoiler--revealed">
+              <button type="button" class="spoiler-toggle-btn" data-reveal-description="${escapeAttribute(textId)}" aria-expanded="true">
+                <span class="spoiler-preview-label">${escapeHtml(t("spoiler.hideLabel"))}</span>
+                <span class="spoiler-caret" aria-hidden="true">${ICONS.caretUp}</span>
+              </button>
+              <p class="description leaf-description">${escapeHtml(seg.content)}</p>
+            </div>
+          `;
+        } else {
+          html += `
+            <button type="button" class="spoiler spoiler-preview" data-reveal-description="${escapeAttribute(textId)}" aria-expanded="false">
+              <span class="spoiler-preview-label">${escapeHtml(t("spoiler.label"))}</span>
+              <span class="spoiler-lines" aria-hidden="true">
+                <span class="spoiler-line"></span>
+                <span class="spoiler-line"></span>
+                <span class="spoiler-line"></span>
+              </span>
+            </button>
+          `;
+        }
+      }
+
+      html += `</div>`;
+      textIndex++;
+    } else if (seg.type === "audio") {
+      const segId = `${node.id}__seg${audioIndex}`;
+      const src = audioUrl(seg.src);
+      const boxedClass = seg.boxed ? " segment-block--boxed" : "";
+      const titleHtml = seg.title ? `<strong class="segment-title">${renderLabel(seg.title)}</strong>` : "";
+      const audioTextId = `${node.id}__audiotext${audioIndex}`;
+
+      html += `<div class="segment-block${boxedClass}" data-segment-text-id="${escapeAttribute(audioTextId)}">`;
+      html += titleHtml;
+
+      if (!src) {
+        html += `<p class="empty">${escapeHtml(t("player.missingAudio"))}</p>`;
+      } else {
+        html += `
+          <div class="custom-player" data-player-id="${escapeAttribute(segId)}" data-leaf-id="${escapeAttribute(node.id)}" data-seg-index="${audioIndex}">
+            <button type="button" class="player-btn" data-player-play aria-label="${escapeAttribute(t("player.play"))}">${ICONS.play}</button>
+            <div class="player-track">
+              <input type="range" class="player-seekbar" data-player-seek min="0" max="1000" value="0" step="1" aria-label="${escapeAttribute(t("player.seek"))}" disabled>
+              <div class="player-time">
+                <span data-player-current>0:00</span>
+                <span data-player-total>-:--</span>
+              </div>
+            </div>
+          </div>
+        `;
+        if (isOpen) {
+          html += `<audio preload="metadata" src="${escapeAttribute(src)}" data-role="panel" data-seg-id="${escapeAttribute(segId)}" hidden></audio>`;
+          if (ambientSrc) {
+            html += `<audio preload="metadata" src="${escapeAttribute(ambientSrc)}" data-role="ambient" data-seg-id="${escapeAttribute(segId)}" loop hidden></audio>`;
+          }
+        }
+      }
+
+      if (seg.content) {
+        const isAudioTextRevealed = revealedDescriptions.has(audioTextId);
+        if (isAudioTextRevealed) {
+          html += `
+            <div class="spoiler spoiler--revealed">
+              <button type="button" class="spoiler-toggle-btn" data-reveal-description="${escapeAttribute(audioTextId)}" aria-expanded="true">
+                <span class="spoiler-preview-label">${escapeHtml(t("spoiler.hideLabel"))}</span>
+                <span class="spoiler-caret" aria-hidden="true">${ICONS.caretUp}</span>
+              </button>
+              <p class="description leaf-description">${escapeHtml(seg.content)}</p>
+            </div>
+          `;
+        } else {
+          html += `
+            <button type="button" class="spoiler spoiler-preview" data-reveal-description="${escapeAttribute(audioTextId)}" aria-expanded="false">
+              <span class="spoiler-preview-label">${escapeHtml(t("spoiler.label"))}</span>
+              <span class="spoiler-lines" aria-hidden="true">
+                <span class="spoiler-line"></span>
+                <span class="spoiler-line"></span>
+                <span class="spoiler-line"></span>
+              </span>
+            </button>
+          `;
+        }
+      }
+
+      html += `</div>`;
+      audioIndex++;
+    }
+  }
+
+  html += '</article>';
+  return html;
+}
+
 function bindDescriptionRevealEvents() {
   screenEl.querySelectorAll("[data-reveal-description]").forEach((button) => {
     if (button.dataset.bound === "true") return;
@@ -2388,6 +2699,113 @@ function toggleDescription(panelId) {
 }
 
 function updateDescriptionDisplay(panelId) {
+  // Multi-segment text: IDs contain "__text" — re-render just that segment block.
+  if (panelId.includes("__text")) {
+    const blockEl = document.querySelector(`[data-segment-text-id="${CSS.escape(panelId)}"]`);
+    if (!blockEl) return;
+    const leafId = panelId.split("__text")[0];
+    const node = findNodeById(contentTree, leafId);
+    if (!node || !node.segments) return;
+    const textIdx = parseInt(panelId.split("__text")[1], 10);
+    let currentTextIdx = 0;
+    let seg = null;
+    for (const s of node.segments) {
+      if (s.type === "text") {
+        if (currentTextIdx === textIdx) { seg = s; break; }
+        currentTextIdx++;
+      }
+    }
+    if (!seg) return;
+
+    const isRevealed = revealedDescriptions.has(panelId);
+    const boxedClass = seg.boxed ? " segment-block--boxed" : "";
+    const titleHtml = seg.title ? `<strong class="segment-title">${renderLabel(seg.title)}</strong>` : "";
+
+    let innerHtml = titleHtml;
+    if (seg.content) {
+      if (isRevealed) {
+        innerHtml += `
+          <div class="spoiler spoiler--revealed">
+            <button type="button" class="spoiler-toggle-btn" data-reveal-description="${escapeAttribute(panelId)}" aria-expanded="true">
+              <span class="spoiler-preview-label">${escapeHtml(t("spoiler.hideLabel"))}</span>
+              <span class="spoiler-caret" aria-hidden="true">${ICONS.caretUp}</span>
+            </button>
+            <p class="description leaf-description">${escapeHtml(seg.content)}</p>
+          </div>
+        `;
+      } else {
+        innerHtml += `
+          <button type="button" class="spoiler spoiler-preview" data-reveal-description="${escapeAttribute(panelId)}" aria-expanded="false">
+            <span class="spoiler-preview-label">${escapeHtml(t("spoiler.label"))}</span>
+            <span class="spoiler-lines" aria-hidden="true">
+              <span class="spoiler-line"></span>
+              <span class="spoiler-line"></span>
+              <span class="spoiler-line"></span>
+            </span>
+          </button>
+        `;
+      }
+    }
+    blockEl.className = `segment-block${boxedClass}`;
+    blockEl.innerHTML = innerHtml;
+    bindDescriptionRevealEvents();
+    return;
+  }
+
+  // Multi-segment audio with content: IDs contain "__audiotext" — re-render just the spoiler part.
+  if (panelId.includes("__audiotext")) {
+    const blockEl = document.querySelector(`[data-segment-text-id="${CSS.escape(panelId)}"]`);
+    if (!blockEl) return;
+    const leafId = panelId.split("__audiotext")[0];
+    const node = findNodeById(contentTree, leafId);
+    if (!node || !node.segments) return;
+    const audioIdx = parseInt(panelId.split("__audiotext")[1], 10);
+    let currentAudioIdx = 0;
+    let seg = null;
+    for (const s of node.segments) {
+      if (s.type === "audio") {
+        if (currentAudioIdx === audioIdx) { seg = s; break; }
+        currentAudioIdx++;
+      }
+    }
+    if (!seg || !seg.content) return;
+
+    const isRevealed = revealedDescriptions.has(panelId);
+    // Re-render only the spoiler portion — keep existing player/title intact by replacing from spoiler onward.
+    const existingSpoiler = blockEl.querySelector(".spoiler, .spoiler-preview");
+    if (!existingSpoiler) return;
+
+    let spoilerHtml = "";
+    if (isRevealed) {
+      spoilerHtml = `
+        <div class="spoiler spoiler--revealed">
+          <button type="button" class="spoiler-toggle-btn" data-reveal-description="${escapeAttribute(panelId)}" aria-expanded="true">
+            <span class="spoiler-preview-label">${escapeHtml(t("spoiler.hideLabel"))}</span>
+            <span class="spoiler-caret" aria-hidden="true">${ICONS.caretUp}</span>
+          </button>
+          <p class="description leaf-description">${escapeHtml(seg.content)}</p>
+        </div>
+      `;
+    } else {
+      spoilerHtml = `
+        <button type="button" class="spoiler spoiler-preview" data-reveal-description="${escapeAttribute(panelId)}" aria-expanded="false">
+          <span class="spoiler-preview-label">${escapeHtml(t("spoiler.label"))}</span>
+          <span class="spoiler-lines" aria-hidden="true">
+            <span class="spoiler-line"></span>
+            <span class="spoiler-line"></span>
+            <span class="spoiler-line"></span>
+          </span>
+        </button>
+      `;
+    }
+
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = spoilerHtml;
+    existingSpoiler.replaceWith(tempDiv.firstElementChild);
+    bindDescriptionRevealEvents();
+    return;
+  }
+
   const contentEl = document.getElementById(`${panelId}-content`);
   if (!contentEl) return;
 
@@ -2456,6 +2874,7 @@ function buildLeavesForNav(nav) {
         contentTitle: "",
         description: item.text || "",
         audioSrc: item.audio || "",
+        segments: item.segments || null,
         tags: {
           campaign: section.id,
           scenario: resolved.scenario?.id || "",

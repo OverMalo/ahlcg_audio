@@ -1112,6 +1112,41 @@ body::after {
   padding: 14px;
 }
 
+.leaf-content--multi {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leaf-content--multi .segment-text {
+  margin: 0;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.leaf-content--multi .custom-player {
+  margin: 4px 0;
+}
+
+.segment-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.segment-block--boxed {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  background: rgb(var(--frame-rgb) / 0.4);
+}
+
+.segment-title {
+  font-size: 0.92rem;
+  color: var(--heading);
+  letter-spacing: 0.02em;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
