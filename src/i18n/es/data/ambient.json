@@ -2,7 +2,8 @@
   "ambientConfig": {
     "general": "",
     "campaigns": {
-      "hermanos_de_las_cenizas": ""
+      "hermanos_de_las_cenizas": "",
+      "el_dia_que_la_tierra_aullo": "audios/ambient/base.mp3"
     }
   }
 }
