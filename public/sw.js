@@ -2,13 +2,13 @@ const CACHE_VERSION = "v2";
 const STATIC_CACHE = `ahlcg-static-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `ahlcg-runtime-${CACHE_VERSION}`;
 const SOUNDTRACK_CACHE = "ahlcg-soundtrack-v1";
-const BASE = "/ahlcg_audio";
+const BASE = "";
 
 const APP_ASSETS = [
-  `${BASE}/`,
-  `${BASE}/manifest.webmanifest`,
-  `${BASE}/icons/icon-192.png`,
-  `${BASE}/icons/icon-512.png`,
+  `/`,
+  `/manifest.webmanifest`,
+  `/icons/icon-192.png`,
+  `/icons/icon-512.png`,
 ];
 
 self.addEventListener("install", (event) => {
