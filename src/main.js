@@ -1,26 +1,6 @@
 import "./styles.css";
 import { t, getLang, setLang, LANGUAGES, getContent } from "./i18n.js";
 
-// Only shown to users still accessing from the old GitHub Pages origin
-if (location.hostname.endsWith('github.io')) {
-  const banner = document.createElement('div');
-  banner.style.cssText = `
-    position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
-    background: var(--panel-2); color: var(--ink);
-    border-top: 1px solid var(--gold-line);
-    padding: 10px 16px; font-family: 'Crimson Pro', serif; font-size: 15px;
-    display: flex; align-items: center; justify-content: center; gap: 16px;
-  `;
-  banner.innerHTML = `
-    <span>Nos hemos mudado a <strong style="color:var(--accent)">arkham.voicesfromover.com</strong> — reinstala la app desde ahí para seguir recibiendo actualizaciones.</span>
-    <button onclick="this.parentElement.remove()" style="
-      background: none; border: 1px solid var(--gold-line); color: var(--muted);
-      cursor: pointer; padding: 2px 8px; font-family: inherit; border-radius: 3px;
-    ">✕</button>
-  `;
-  document.body.appendChild(banner);
-}
-
 // ── Locale data ──────────────────────────────────────────────────────────────
 let appData = getContent().appData;
 let SOUNDTRACK = getContent().soundtrack;
