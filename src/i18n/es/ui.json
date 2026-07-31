@@ -1,11 +1,11 @@
 {
   "app": {
-    "title": "Voices From Over: AHLCG",
+    "title": "Arkham Voices",
     "metaDescription": "Textos narrados de Arkham Horror LCG",
     "skipLink": "Saltar al contenido",
     "campaignTitle": "Arkham Horror: El juego de cartas",
-    "mediaArtist": "AHLCG",
-    "mediaFallbackTitle": "Voices From Over: AHLCG"
+    "mediaArtist": "Arkham Voices",
+    "mediaFallbackTitle": "Arkham Voices"
   },
   "topbar": {
     "selectSectionHint": "Elige un apartado"
@@ -85,7 +85,7 @@
     "bannerAria": "Espacio reservado para la imagen de cabecera",
     "bannerLabel": "AHLCG AUDIO",
     "bannerAlt": "Ilustración de cabecera de Arkham Horror: El juego de cartas",
-    "appTitle": "Voices from Over: Arkham Horror",
+    "appTitle": "Arkham Voices",
     "lead": "Aplicación creada por fans de acompañamiento narrativo para Arkham Horror: El juego de cartas.",
     "intro": "Da voz a tus partidas: esta aplicación narra los textos de introducciones, planes, actos, resoluciones y códices de las campañas, para que el grupo se sumerja en la historia sin necesidad de leer en voz alta. Elige una campaña en el menú lateral para empezar.",
     "featuresTitle": "Características",
