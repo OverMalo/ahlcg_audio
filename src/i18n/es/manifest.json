@@ -1,9 +1,9 @@
 {
-  "name": "Voices From Over: AHLCG",
-  "short_name": "Voices From Over",
+  "name": "Arkham Voices",
+  "short_name": "Arkham Voices",
   "description": "Textos narrados de Arkham Horror LCG",
-  "start_url": "/ahlcg_audio/",
-  "scope": "/ahlcg_audio/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0a0f15",
   "theme_color": "#0a0f15",
