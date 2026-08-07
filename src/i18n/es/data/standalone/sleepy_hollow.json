@@ -1,6 +1,7 @@
 {
   "type": "standalone",
   "origin": "fanmade",
+  "era": 1,
   "id": "sleepy_hollow",
   "title": "La Leyenda de Sleepy Hollow",
   "banner": "images/banner_sleepy_hollow.webp",

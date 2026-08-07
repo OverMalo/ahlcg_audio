@@ -1,0 +1,567 @@
+{
+  "type": "campaign",
+  "origin": "oficial",
+  "era": 1,
+  "beta": true,
+  "id": "el_legado_de_dunwich",
+  "title": "El legado de Dunwich",
+  "banner": "images/banner_Er_lokos_01.webp",
+  "about": [
+    "“Lo primero que pienso hacer es quemar este maldito diario, y si quieren obrar como hombres prudentes les aconsejo que dinamiten cuanto antes la piedra altar que hay en esa cima y echen abajo todos los círculos de monolitos que se levantan en las restantes montañas. Cosas así son las que, a la postre, traen a seres como esos de los que tanto gustaban los Whateley...” –H.P. Lovecraft, “El Horror de Dunwich”",
+    "El legado de Dunwich es una campaña para Arkham Horror: El juego de cartas pensada para 1–4 jugadores. El legado de Dunwich contiene 8 escenarios: “Actividad extracurricular”, “La casa siempre gana”, “El museo Miskatonic”, “El Essex County Express”, “Sangre en el altar”, “Invisibles y sin dimensión”, “Donde aguarda la perdición” y “Perdidos en el tiempo y el espacio”. Aquí tienes narradas todas sus piezas: introducciones, planes, actos, resoluciones y códices, escenario a escenario, para que tu mesa se sumerja en la historia sin leer en voz alta. Elige un escenario en el menú lateral para comenzar."
+  ],
+  "intro": {
+    "type": "introduccion",
+    "title": "Introducción",
+    "items": [
+      {
+        "id": "cap1_dunwich_intro",
+        "label": "Prólogo",
+        "text": "El Dr. Henry Armitage se sirve un vaso de pinot y toma asiento en su mesa mientras os hace un gesto para que os sentéis frente a él.\n\n–Lamento haberos avisado con tan poca antelación –os dice. Tiene el rostro pálido, y el sudor le perla las arrugas de preocupación que surcan su frente.\n\nArmitage, el bibliotecario jefe de la Universidad Miskatonic y antiguo mentor vuestro, se puso en contacto con vosotros de forma privada con la esperanza de conseguir vuestra ayuda. Deseosos de prestársela, os pusisteis camino de su casa en el Barrio Sur. Al entrar, os sorprendió ver el desorden imperante. Había libros y notas desperdigadas por su escritorio, y una botella de vino vacía volcada en el suelo junto a la chimenea. El Armitage que siempre habéis conocido era una persona pulcra y bien organizada.\n\nEl anciano se toma un instante para componer sus ideas y os dice:\n–Estoy buscando a dos de mis colegas: el Dr. Francis Morgan, profesor de Arqueología, y Warren Rice, profesor de idiomas. Se suponía que Warren iba a reunirse conmigo para almorzar hoy, ya que íbamos a hablar acerca de varios hallazgos importantes, pero ha desaparecido desde entonces. Al principio no le di importancia, pero tengo la acuciante sensación de que hay algo más. Es una sensación muy... familiar.\n\nNunca antes habéis visto a Armitage tan preocupado. Cuando va a coger el vaso de su escritorio, le tiemblan las manos, y da un sorbo de forma nerviosa.\n\n–Intenté encontrar a Francis, con la esperanza de que supiera donde estaba Warren, pero él también está ilocalizable. Francis ha estado frecuentando un garito de juego muy a menudo, o eso me han dicho.\n–Os he llamado porque me preocupa que Warren pueda estar en problemas. Os estaría muy agradecido si pudierais encontrarlo. Y puede que también queráis pedirle ayuda a Francis si lográis dar con él.",
+        "audio": "audios/cap1/campaign/dunwich/prologo.mp3"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "escenario_1_a",
+      "title": "Escenario I-A: Actividad extracurricular",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_intro",
+              "label": "Escenario I-A: Actividad extracurricular",
+              "text": "Al Dr. Armitage le preocupa que su colega, el profesor Warren Rice, pueda estar en problemas, así que os ha pedido ayuda para encontrar a su amigo. Parece irracionalmente nervioso por la desaparición de su colega teniendo en cuenta que el profesor Rice sólo ha estado “desaparecido” unas horas...",
+              "audio": "audios/cap1/campaign/dunwich/cap1_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Al huir de la universidad, oís gritos que provienen desde el extremo norte del campus. Una ambulancia pasa a vuestro lado, y os teméis lo peor. Horas más tarde, os enteráis de que “una especie de perro rabioso” se coló en la residencia estudiantil. La criatura atacó a los estudiantes del interior, y muchos quedaron gravemente heridos o murieron en el ataque.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_no_reso.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_uno",
+              "label": "Resolución 1",
+              "text": "Encontráis al profesor Rice atado y amordazado en el armario empotrado de su despacho. Cuando lo liberáis, os informa de que los extraños hombres y mujeres que deambulaban por el campus llevaban horas acechándolo. Lo acorralaron en su despacho y lo ataron, aunque Rice no está seguro de cuál era su propósito. Le explicáis que os envía el Dr. Armitage, y Rice parece aliviado, aunque sospecha que el Dr. Morgan también podría estar en peligro. Puesto que los extraños del campus parecían tener como objetivo al profesor Rice, decidís que el mejor curso de acción es escoltarlo lejos del campus lo antes posible. Cuando os marcháis de la universidad, oís gritos que provienen desde el extremo norte del campus. Una ambulancia pasa a vuestro lado, y os teméis lo peor. Horas más tarde, os enteráis de que “una especie de perro rabioso” se coló en la residencia estudiantil. La criatura atacó a los estudiantes del interior, y muchos quedaron gravemente heridos o murieron en el ataque.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_dos",
+              "label": "Resolución 2",
+              "text": "Activáis todas las alarmas de incendios de la residencia estudiantil y hacéis salir a los estudiantes a toda prisa por la salida norte del edificio, esperando poder huir del campus. Muchos de los estudiantes están confusos y agotados, pero creéis que intentar explicarles la situación haría más mal que bien. Minutos más tarde, un terrible chillido resuena por todo el campus, penetrante y ensordecedor. Les decís a los estudiantes que esperen y volvéis a la residencia para investigar. Sin embargo, no encontráis el menor indicio de la extraña criatura, lo cual os causa mucha más preocupación que alivio. Os apresuráis a llegar a los despachos del profesorado para encontrar al profesor Rice, pero no hay ni rastro de él por ninguna parte.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_tres",
+              "label": "Resolución 3",
+              "text": "Tras derrotar a la extraña y aterradora criatura del departamento de Alquimia, os apresuráis a llegar a los despachos del profesorado para encontrar al profesor Rice. Para cuando llegáis a su despacho, no hay ni rastro de él por ninguna parte.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_cuatro",
+              "label": "Resolución 4",
+              "text": "Os despertáis horas más tarde, agotados y heridos. No estáis seguros de lo que habéis visto, pero su mera visión os inundó la mente de terror. Otros supervivientes os dicen que “una especie de perro rabioso” se coló en la residencia estudiantil. La criatura atacó a los estudiantes del interior, y muchos quedaron gravemente heridos o murieron en el ataque.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_reso_cuatro.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_1_b",
+      "title": "Escenario I-B: La casa siempre gana",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_b_intro",
+              "label": "Escenario I-B: La casa siempre gana",
+              "text": "El Dr. Armitage os sugirió que buscaseis a su socio, el Dr. Francis Morgan. No está seguro de si el Dr. Morgan tiene problemas, pero no le agradan particularmente las compañías que está frecuentando su colega. Se encuentra en el Clover Club, un notorio garito de juego en algún lugar del centro. Encontrar la ubicación exacta del club no es fácil; tenéis que untar unas cuantas manos sólo para descubrir cuál de los restaurantes del centro actúa como tapadera del club. Se trata de La Bella Luna, un establecimiento italiano de cierta sofisticación que hay junto al teatro. Os ponéis vuestras mejores galas y os dirigís allí. Delante de La Bella Luna hay un hombre con traje de raya diplomática que os escudriña con la mirada cuando os acercáis.\n\n–Que lo pasen bien –os dice con una sonrisa taimada mientras abre la puerta del restaurante.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_b_reso_uno",
+              "label": "Resolución 1",
+              "text": "Huis hasta el final de la manzana y os paráis para recuperaros. Antes de poder recobrar el aliento, el suelo tiembla con gran estruendo. La gente sale de sus casas y tiendas para ver qué es ese alboroto, y se forma una multitud en la calle. Os acercáis a la primera fila de la muchedumbre y os horroriza ver que el edificio del que habíais huido minutos antes ha quedado reducido a escombros. No hay ni rastro del Dr. Morgan por ninguna parte.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_b_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_reso_dos",
+              "label": "Resolución 2",
+              "text": "–¿Pero qué diantres...? –El Dr. Morgan sale por fin de su estupor cuando lográis poneros a salvo. Le preguntáis qué recuerda, y balbucea y sacude la cabeza.\n\n–Es todo como nebuloso –explica, visiblemente agotado–. ¡Estaba en la mayor racha de mi vida! Puede que me hubiera tomado alguna copa de más. Pero, esas criaturas... no había visto nada así desde...\n\nPierde el hilo, y notáis perfectamente cómo su mente trabaja a toda velocidad. Abre los ojos como platos al comprenderlo, y su rostro palidece.\n\n–Puede que no esté en la mejor de las formas, pero os ayudaré con vuestra investigación. Cueste lo que cueste.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_reso_tres",
+              "label": "Resolución 3",
+              "text": "Aunque no lograsteis encontrar al Dr. Morgan en el club, el hombre al que rescatasteis os está agradecido por vuestra ayuda. Se presenta como Peter Clover, el dueño del establecimiento que acabáis de abandonar. A pesar de la situación, mantiene un aire de serena profesionalidad. Al salir a la calle, un brillante Chrysler B-70 se detiene junto a vosotros, y de él sale una bellísima mujer de largo cabello castaño y ojos pequeños. Está flanqueada por hombres de aspecto peligroso que se meten la mano en la chaqueta al veros.\n\n–Peter –dice con un suspiro de alivio–. Estás bien. ¿Es cierto que ha habido problemas? –Se vuelve hacia vosotros y os dirige una mirada asesina–. ¿Quiénes son?\n\nEl Sr. Clover se sacude el polvo del chaleco, sin aspecto de estar preocupado.–Naomi, querida, son amigos míos. Ellos... –se aclara la garganta–. Ellos me han acompañado fuera del establecimiento – explica tras una breve pausa–.Se han ganado nuestra gratitud.\n\nLa mujer cruza los brazos y dedica un instante a examinaros con la mirada antes de dedicaros una sonrisa sardónica.\n\n–Muy bien. Entonces debo daros las gracias por cuidar de Peter. Y ahora marchaos; ya nos encargamos nosotros del resto.\n\nHace un gesto a los matones que la flanquean, y éstos pasan junto a vosotros para dirigirse a la entrada trasera del club mientras se sacan armas de fuego de las chaquetas. No estáis seguros de qué quiere decir “encargarse”, pero estáis totalmente seguros de que no queréis estar aquí cuando empiece el tiroteo. Les dais las gracias a Naomi y a Peter y os marcháis.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_reso_cuatro",
+              "label": "Resolución 4",
+              "text": "Varios bomberos os sacan de entre los escombros, y uno de ellos exclama: –¡Tenemos supervivientes!\n\nVarios de ellos os practican primeros auxilios, y la policía os pregunta por lo sucedido. Estáis seguros de que no se van a creer vuestra historia de que unas horribles monstruosidades han derribado el edificio desde dentro. Sin saber muy bien qué decir, declaráis vagamente que apenas recordáis gran cosa.\n\n–Os vamos a llevar al Santa María –dice una de las enfermeras mientras señala una ambulancia cercana. Sabiendo como sabéis lo acuciante de la situación, os escabullís mientras está distraída con algo de los escombros...",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_reso_cuatro.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interludio_1",
+      "title": "Interludio I: El destino de Armitage",
+      "components": [
+        {
+          "type": "resoluciones",
+          "title": "Destinos",
+          "items": [
+            {
+              "id": "cap1_dunwich_interludio_uno_reso_uno",
+              "label": "El destino de Armitage 1",
+              "text": "Vuestras experiencias en la universidad y en el Clover Club os han dejado más que simplemente agitados. No estáis seguros de qué pensar sobre quienquiera (o lo que quiera) que fuese tras Rice y Morgan. Ahora os preocupa el Dr. Armitage, así que volvéis a su casa lo más rápido que podéis. Cuando llegáis, descubrís que han reventado los cerrojos de su puerta delantera, y que han registrado a lo bestia su sala de estar y su estudio. El Dr. Armitage no aparece por ninguna parte. Al buscar por su casa, encontráis un diario que los intrusos no se han llevado porque estaba oculto bajo otros documentos en el cajón inferior del escritorio del Dr. Armitage. El diario parece escrito en un extraño idioma que no podéis descifrar, y emplea una escritura que no habéis visto jamás en la vida. Por suerte, parece que el Dr. Armitage ya se había tomado la molestia de traducirlo, y al parecer pertenece a un tal “Wilbur Whateley”.\n\nEl diario, junto con muchas de las notas de Armitage, cuenta un relato alucinante que apenas seríais capaces de creeros de no ser por vuestras siniestras experiencias de esta misma noche...",
+              "audio": "audios/cap1/campaign/dunwich/inter1_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_interludio_uno_reso_dos",
+              "label": "El destino de Armitage 2",
+              "text": "Cuando llegáis a casa del Dr. Armitage en el Barrio Sur, lo encontráis sentado en su escritorio, con el rostro pálido y sudando de preocupación. Os agradece que buscaseis a sus colegas, pero no parece aliviado. Tras una larga pausa, se coloca las gafas y explica:\n\n–Me temo que debo disculparme. Hay algo que no os mencioné antes –os dice, antes de empezar a contaros un relato que apenas seríais capaces de creeros de no ser por vuestras siniestras experiencias de esta misma noche...",
+              "audio": "audios/cap1/campaign/dunwich/inter1_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_2",
+      "title": "Escenario II: El museo Miskatonic",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_dos_intro",
+              "label": "Escenario II: El museo Miskatonic",
+              "text": "Hace algunos meses, Armitage y sus colegas detuvieron a un horror desatado que iba a destruir Dunwich, una apartada ciudad que se encuentra a varias horas de Arkham, hacia el noroeste. Al principio pensáis que esta bestia es un oso rabioso o algo peor, pero la descripción que hace el profesor de la criatura describe algo muy distinto.\n\nTodo comenzó cuando un hombre llamado Wilbur Whateley entró en la biblioteca Orne en busca de la traducción al latín de Olaus Wormius de un libro llamado el Necronomicón. Wilbur ya poseía una ajada traducción al inglés del Dr. John Dee, pero no le bastaba para sus propósitos. Armitage le prohibió el acceso, pues temía el posible uso que pudiera darle al libro ese extraño hombre. Whateley volvió en secreto, con la esperanza de poder robar el libro, pero fue atacado por un sabueso guardián de la universidad. Más tarde, Armitage, Rice y Morgan descubrieron el cuerpo de Whateley. Una descripción del terrible cadáver –semiantropomórfico y cubierto de pelaje, con una piel coriácea y tentáculos de un color gris verdoso– os hace cuestionaros si Whateley era humano realmente.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_intro.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_intro_p1",
+              "label": "Parte 1",
+              "text": "Las notas escritas por el Dr. Armitage en su diario hacen hincapié en el deseo de Whateley por hacerse con el Necronomicón para algún terrible propósito. Al seguir leyendo, parece que el Dr. Armitage llevó la copia del tomo que tenía la universidad a Harold Walsted, el conservador del museo Miskatonic, para que la guardara en la sala restringida del museo. Aunque os preocupa vuestro mentor, os preocupa igualmente que los secuestradores de Armitage puedan hacerse con este Necronomicón. Decidís acudir al museo para evitar que lo consigan.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_intro_p1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_intro_p2",
+              "label": "Parte 2",
+              "text": "–Mis colegas y yo tratamos de olvidar toda esa odisea rápidamente –os dice Armitage con un suspiro–. Pero parece que las cosas no se han resuelto por completo. Os contaré el resto más tarde, pero por ahora, es fundamental que nos hagamos con esa copia del Necronomicón. Si mi instinto no me falla, los agresores con los que os habéis encontrado lo estarán buscando. Después de todo lo que ocurrió, no me sentía seguro guardándolo en la biblioteca, así que se lo llevé a mi buen amigo Harold Walsted. Es el actual conservador del museo Miskatonic. Pensé que estaría seguro en la sala restringida del museo, pero ahora ya no lo tengo tan claro. ¡Debéis recuperarlo a toda costa! Tengo un miedo horrible a lo que podrían hacer con los ritos que contienen esas páginas...",
+              "audio": "audios/cap1/campaign/dunwich/cap2_intro_p2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_dos_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Fuera lo que fuera la criatura del museo, no teníais ni la voluntad ni los medios para destruirla. Parece que debéis abandonar cualquier esperanza de recuperar el Necronomicón. Aun así, hay otros que dependen de vosotros, así que hacéis acopio de valor y os preparáis para vuestra siguiente tarea.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_no_reso.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_reso_uno",
+              "label": "Resolución 1",
+              "text": "Mientras exista esta traducción del Necronomicón, habrá hechiceros y otros agentes siniestros como Whateley que lo busquen. Al final, sabéis lo que debéis hacer para proteger a la humanidad de las amenazas que habéis visto. Buscáis una papelera, la llenáis de libros y documentos y tiráis el Necronomicón encima. Hacen falta varias cerillas para que el contenido de la papelera prenda, y las llamas llenan la estancia de calor, mientras las sombras se retiran ante la luz. Observáis cómo arde el libro durante un rato, mirando cómo sus páginas se convierten en cenizas. Esperáis haber tomado la decisión correcta.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_reso_dos",
+              "label": "Resolución 2",
+              "text": "El Necronomicón es más que un simple libro; es una herramienta. Sus páginas contienen una enorme cantidad de información sobre las fuerzas y criaturas con las que os habéis topado. Sabiendo lo útil que podría ser en vuestro empeño, ¿cómo podríais ser capaces de destruirlo? Además, mientras el libro siga estando a salvo en vuestras manos, seguiréis frustrando los planes de quienes quieren usarlo para siniestros propósitos.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_3",
+      "title": "Escenario III: El Essex County Express",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_tres_intro",
+              "label": "Escenario III: El Essex County Express",
+              "text": "Los recientes acontecimientos en el museo os han obligado a reconsiderar el relato de Armitage sobre Dunwich. No puede ser una coincidencia: Wilbur Whateley, el Necronomicón, la criatura de Dunwich y la gente y criaturas que os atacaron aquí, en Arkham... todo debe de estar conectado. Ahora estáis seguros de adónde debéis dirigiros: a la solitaria y lúgubre ciudad de Dunwich. Os planteáis contarle a la policía estatal de Massachusetts lo que sabéis, pero las consecuencias negativas superan a cualquier posible beneficio. Dada la naturaleza de vuestra historia, probablemente pensarían que es un fraude absurdo. O peor, podrían encerraros. Después de todo, estuvisteis presentes en un garito ilegal y también os colasteis en el museo. Así que desecháis la idea y decidís dirigiros a Dunwich vosotros mismos para seguir investigando. Metéis en el equipaje todo lo que creéis que podréis necesitar y lográis descansar un poco durante la noche. Por la mañana, vais a la estación de tren del Barrio Norte y compráis billetes de última hora para el tren expreso. Dunwich está a varias horas en tren hacia el noroeste, siguiendo el valle del río Miskatonic. En la localidad no hay estación de tren, pero lográis hablar por teléfono con uno de los conocidos de Armitage que viven allí: se trata de un hombre llamado Zebulon Whateley, que estuvo presente durante los sucesos de hace unos meses. Las notas de Armitage indican que el árbol genealógico de la familia Whateley tiene una gran cantidad de ramas, algunas repletas de miembros de la familia decadentes y sin escrúpulos, y otras “limpias” o libres de la influencia de los ritos diabólicos y siniestros. Según Armitage, la rama de la familia de Zebulon se encuentra entre los Whateley podridos y los no podridos, y aunque conocían las tradiciones de sus ancestros, no fueron corrompidos por ellas. Zebulon accede a recogeros en la estación más cercana y llevaros a la ciudad. Cuando el tren sale de Arkham, notáis que los acontecimientos de la noche anterior empiezan a pasaros factura, y el cansancio os vence. Pero antes de que podáis llegar a vuestro destino sanos y salvos, el vagón empieza a temblar y sacudirse y os saca de vuestro sopor. El tren se detiene brusca y ruidosamente, y oís un traqueteo a vuestra espalda...",
+              "audio": "audios/cap1/campaign/dunwich/cap3_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_tres_investigador_derrotado",
+              "label": "Investigador derrotado",
+              "text": "Vuestra experiencia al otro lado del portal es a la vez aterradora e imposible de recordar claramente. Un hipnótico espectáculo de luces, sensaciones sobrenaturales y geometría alterada baila en los límites hechos jirones de vuestra mente. Una voz fantasmal que viene del más allá resuena en vuestros oídos, pero su significado es un enigma. Cuando despertáis, os encontráis en los bosques, a varias millas del río Miskatonic. Estáis rodeados de vagones de tren destruidos, que han quedado arrugados como si hubieran sufrido un impacto tremendo, y también están deteriorados de una forma que parece como si años de óxido y suciedad hubieran hecho estragos en ellos. No hay ni rastro de los demás pasajeros.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_investigador_derrotado.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_reso_uno",
+              "label": "Resolución 1",
+              "text": "Dais un suspiro de alivio cuando el portal que hay detrás del tren se colapsa sobre sí mismo. Los pocos pasajeros que han sobrevivido a la odisea parecen incapaces de comprender lo que acaba de suceder. Un pasajero menciona “una tubería que ha explotado en el vagón trasero”, y eso se convierte rápidamente en la explicación para los inocentes e ignorantes, aquellos que no pueden o no quieren indagar más en el misterio. Vosotros, en cambio, sabéis la verdad... aunque desearíais no saberla.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_reso_dos",
+              "label": "Resolución 2 (¡lee primero Investigador derrotado!)",
+              "text": "Conmocionados, echáis a andar siguiendo las vías del tren en dirección a Dunwich.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_4",
+      "title": "Escenario IV: Sangre en el altar",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cuatro_intro",
+              "label": "Escenario IV: Sangre en el altar",
+              "text": "Cuando por fin llegáis a Dunwich, os reciben Zebulon Whateley y Earl Sawyer, otro hombre del pueblo que conoció al Dr. Armitage durante el incidente de hace unos meses. –Las cosas no pintan bien por aquí –os dice Earl–. Hace varias noches desaparecieron varias personas. Los chotacabras tampoco se callan. No sé a qué han venido, pero la última vez que unos tipos de Arkham estuvieron aquí, no pasó nada bueno. Todo lo contrario. –Sus ojos parpadean rápidamente, y tose a la vez que aparta la mirada. –Oigan, ¿por qué no descansan esta noche y ya buscarán lo que estén buscando mañana? –añade Zebulon mientras le pone la arrugada mano en el hombro a uno de vosotros. Queréis protestar, pero vuestros doloridos músculos y agotada mente no os permiten rechazar la idea. El anciano os ofrece alojaros durante la noche, y os lleva hasta su casa, en las afueras del pueblo de Dunwich. Se trata de una población destartalada y fantasmagórica, y os descubrís deseando no haber venido aquí. Os quedáis dormidos durante el trayecto, y apenas recordáis nada más de esa noche. Cuando despertáis, descubrís que la casa de Zebulon está abandonada, y no hay ni rastro del anciano ni del Sr. Sawyer. Temiendo lo peor, os dirigís al pueblo de Dunwich para investigar, con la esperanza de encontrar respuestas.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cuatro_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Los gritos de los chotacabras se desvanecen a lo lejos, y la ciudad de Dunwich queda sumida en un silencio sepulcral. Lo único que se oye es el seco silbido del frío viento y el lento arrastrar de las hojas secas. No hay ni rastro de los lugareños desaparecidos, ni volverá a haberlo jamás.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_no_reso.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_reso_uno",
+              "label": "Resolución 1",
+              "text": "Cuando asestáis el golpe final, el cuerpo de la criatura explota en cientos de apéndices similares a cuerdas que no dejan de retorcerse por el suelo y de trepar por las paredes. Estáis tan sorprendidos que no sois lo suficientemente rápidos como para evitar que escapen de la estancia. Aun así, fuera lo que fuera esa criatura, os alegra que haya muerto.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_reso_dos",
+              "label": "Resolución 2",
+              "text": "No tenéis mucho tiempo para reaccionar mientras la criatura en la que se ha convertido Silas trata de atacaros pese a estar encadenada. Sabiendo que el Necronomicón podría contener un hechizo o ensalmo para someter a Silas, rechazáis a la abominación el tiempo suficiente como para encontrar un fragmento que os sea útil. Sin tiempo que perder, recitáis el ensalmo en latín, y descubrís que las palabras acuden a vuestra lengua sin ningún esfuerzo, como si las tuvieseis de un recuerdo anterior. El cuerpo de la criatura comienza a encogerse y fundirse a medida que el ensalmo crece, y sus gritos son aterradores y espectrales. Al final, lo único que queda es el cadáver desfigurado de un hombre: Silas Bishop. Metido en su camisa, encontráis un colgante de plata grabado con una extraña constelación. Os lo lleváis con la esperanza de que pueda resultaros de utilidad.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_reso_tres",
+              "label": "Resolución 3",
+              "text": "No tenéis mucho tiempo para reaccionar mientras la criatura en la que se ha convertido Silas trata de atacaros pese a estar encadenada. Pensando que quizá haya algo en la cámara que podáis usar a vuestro favor, rechazáis a la abominación el tiempo suficiente como para encontrar un diario; muchos de sus pasajes están escritos en latín. Parece ser un fragmento manuscrito del Necronomicón, cuyo propósito os es desconocido. Sin tiempo que perder, recitáis el ensalmo, trabucando las palabras y notando cómo se os agarrota la garganta con cada frase. El cuerpo de la criatura comienza a encogerse y fundirse a medida que el ensalmo crece, y sus gritos son aterradores y espectrales. Al final, lo único que queda es un montón de un húmedo y pegajoso icor que emite un pestilente hedor.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_reso_tres.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interludio_2",
+      "title": "Interludio II: Los supervivientes",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_inter_dos_intro",
+              "label": "Interludio II: Los supervivientes",
+              "text": "Dentro de la cámara que contenía a la horrible bestia encontráis a los lugareños desaparecidos y a las demás personas de Arkham, atados y engrilletados. También encontráis varios documentos que sugieren que la criatura que encontrasteis no es la única de su especie en Dunwich. Liberáis a las víctimas de la criatura de sus ligaduras y os dan las gracias. Es hora de comenzar a planear vuestro siguiente movimiento.",
+              "audio": "audios/cap1/campaign/dunwich/inter2_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "resoluciones",
+          "title": "“Sacrificados a Yog-Sothoth” (personajes que no estén anotados)",
+          "items": [
+            {
+              "id": "cap1_dunwich_interludio_dos_reso_uno",
+              "label": "Dr. Henry Armitage",
+              "text": "–Es mucho peor de lo que pensábamos –dice el Dr. Armitage, pálido y tembloroso–. Wilbur Whateley sólo era el principio. Había muchísimos más en Dunwich que conocían a los “Primigenios” y ambicionaban el poder y el conocimiento por encima de todo, aunque con ello condenaran a la Tierra. Sabía que tendría que haber quemado el diario de ese infame. Pero gracias a su contenido, sé cómo podemos detenerlos. ¡Somos los únicos que podemos! Rápido, ayudadme con esta solución... El polvo es la clave, sí, el polvo es la única forma...",
+              "audio": "audios/cap1/campaign/dunwich/inter2_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_interludio_dos_reso_dos",
+              "label": "Profesor Warren Rice",
+              "text": "El profesor Rice se coloca las gafas y estudia los documentos y manuscritos arcanos que quedan en la cámara. –Pensaba que habíamos acabado con esta pesadilla de una vez por todas –suspira–. Pero tenemos la obligación de llegar hasta el final con esto. Debemos detener a estas criaturas o Dunwich no será el único lugar que tenga problemas. La mezcla en polvo que creó Armitage para ver a las criaturas será nuestra salvación –os explica antes de ponerse a recrear el polvo.",
+              "audio": "audios/cap1/campaign/dunwich/inter2_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_interludio_dos_reso_tres",
+              "label": "Dr. Francis Morgan",
+              "text": "–Gracias por todo lo que habéis hecho –dice el Dr. Morgan mientras revisa vuestras provisiones y munición–. La última vez nos hizo falta algo de ese extraño polvo que preparó Armitage para poder siquiera ver las bestias que aterrorizaban Dunwich. Si hay más de esas cosas ahí fuera, vamos a necesitar ese polvo. Creo que me acuerdo de cómo lo hacía...",
+              "audio": "audios/cap1/campaign/dunwich/inter2_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_interludio_dos_reso_cuatro",
+              "label": "Zebulon Whateley",
+              "text": "–Dunwich ha vivido no pocos acontecimientos extraños –os explica Zebulon con voz temblorosa–, pero nunca había visto nada tan enfermizo y siniestro como esta... esta... cosa. –Le da una última mirada de repulsión a los restos de la criatura antes de cerrar la puerta tras él, estremeciéndose. Os mira con expresión adusta–. Quien haya hecho esto debe pagar por ello. Haré todo lo que pueda para ayudar.",
+              "audio": "audios/cap1/campaign/dunwich/inter2_reso_cuatro.mp3"
+            },
+            {
+              "id": "cap1_dunwich_interludio_dos_reso_cinco",
+              "label": "Earl Sawyer",
+              "text": "–Nunca habría logrado sobrevivir si no fuera por ustedes –dice Earl con un cierto tartamudeo mientras os estrecha la mano repetidamente–. Si hay cualquier cosa que pueda hacer para devolverles el favor, pídanmela. No se me da muy bien pelear ni nada de eso, pero haré todo lo que pueda. Solamente... no me hagan volver a mirar nada como esa bestia, ¿de acuerdo?",
+              "audio": "audios/cap1/campaign/dunwich/inter2_reso_cinco.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_5",
+      "title": "Escenario V: Invisibles y sin dimensión",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cinco_intro",
+              "label": "Escenario V: Invisibles y sin dimensión",
+              "text": "Tras registrar el pueblo de Dunwich, habéis descubierto una serie de documentos, entradas de diarios y teorías esotéricas. Leer todo ese material os deja cansados y agotados emocionalmente. La mayor parte del contenido lo escribió la misma persona: un hombre llamado Seth Bishop. Cuando preguntáis en el pueblo, descubrís que Seth es un habitante de Dunwich. Junto a varias personas más, Seth asistió de primera mano a la devastación causada por los acontecimientos de “el horror de Dunwich”, como Armitage llamó al incidente. Curiosamente, muy poca gente había visto a Seth por el pueblo desde entonces, y quienes lo vieron afirman que tenía los ojos inyectados en sangre y el rostro sudoroso y pálido.\n\nEstáis seguros de que alguien que hubiera visto lo que Seth ha visto parecería nervioso o paranoico. Pero cuanto más leéis sus frenéticos y delirantes escritos, más creéis que está implicado en los acontecimientos recientes. En ellos habla de haber “reunido los restos” y de haber usado métodos arcanos para “imbuir la esencia de los padres” en otras criaturas y, al final, en otras personas. Las explicaciones y diagramas que hay después son inenarrablemente complejos y desafían toda comprensión.\n\nAntes de que podáis encontrar a Seth y enfrentaros a él, varios hombres y mujeres del pueblo se os acercan presas del pánico. –¡Ha vuelto! –grita uno de ellos, al que reconocéis como Curtis Whateley, de la rama no podrida–. ¡Lo que sea que matara a los Frye ha vuelto! ¡Ha machacado la casa de los Bishop como si fuera de papel! –Curtis y los demás lugareños no dejan de dar voces, completamente asustados.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_intro.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_intro_p1",
+              "label": "Parte 1",
+              "text": "Queréis calmar a los lugareños para que os puedan explicar qué está pasando. Os informan de que hubo un estruendo al norte, y que cuando fueron a investigarlo, encontraron la granja de los Bishop hecha trizas y un rastro de pesadas huellas que llevaba hacia la cercana cañada de Cold Spring. –Saben lo que tienen que hacer, ¿verdad? Ustedes los de Arkham detuvieron a esa cosa la última vez –dice uno de los lugareños. Curtis sacude la cabeza y se muerde el labio.\n\n–Ni siquiera podíamos ver a esa cosa infernal hasta que el viejo profesor le echó ese polvo –dice–. Y ahora pienso que ojalá no la hubiera visto nunca... –Hay que hacer algo para detener los desmanes del monstruo. Pero si los documentos que habéis encontrado son ciertos, podría haber más de una de esas criaturas suelta...",
+              "audio": "audios/cap1/campaign/dunwich/cap5_intro_p1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_intro_p2",
+              "label": "Parte 2",
+              "text": "Avisáis a los lugareños de que corren un grave peligro y los apremiáis a que huyan de Dunwich mientras puedan. Varios siguen vuestro consejo de inmediato, pues recuerdan a la terrible monstruosidad que ya puso en peligro al pueblo una vez. Curtis cae de rodillas, presa de la desesperación y sudando febrilmente: –Es esa cosa de nuevo, ¿verdad? Ha vuelto a por nosotros –masculla Curtis–. Espero que tengan ese polvo que tenía el viejo profesor la última vez. Ni siquiera podíamos ver a la maldita cosa hasta que la roció con él. Y ahora pienso que ojalá no la hubiera visto nunca... –Hay que hacer algo para detener los desmanes del monstruo. Pero si los documentos que habéis encontrado son ciertos, podría haber más de una de esas criaturas suelta...",
+              "audio": "audios/cap1/campaign/dunwich/cap5_intro_p2.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cinco_reso_uno",
+              "label": "Resolución 1",
+              "text": "Habéis hecho todo lo que habéis podido por detener a los violentos monstruos, pero había más de los que pensabais y no lograsteis matarlos a todos. Agotados y aterrados, os retiráis a casa de Zebulon con la esperanza de sobrevivir a la noche.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_reso_dos",
+              "label": "Resolución 2",
+              "text": "Tras matar al que parece ser el último de los violentos monstruos, os retiráis a casa de Zebulon, agotados y conmocionados por la experiencia.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_6",
+      "title": "Escenario VI: Donde aguarda la perdición",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_seis_intro",
+              "label": "Escenario VI: Donde aguarda la perdición",
+              "text": "Os despertáis con el sonido de unos chillidos. Temiendo lo peor, cogéis vuestras cosas y salís a las calles de Dunwich. En cuanto ponéis el pie en el exterior, notáis algo vil en el frío aire nocturno: un terrible y acre olor que apenas podéis describir, y una pesadez en la atmósfera que hace difícil respirar. Los ciudadanos de Dunwich han cerrado sus puertas a cal y canto, y el pueblo parece en silencio y solitario. A lo lejos, un tenue brillo sale de lo alto de una colina que hay por encima del pueblo. La conocéis por Zebulon y los registros de Armitage. Se llama Sentinel Hill. Los relatos sobre ella hablan de que allí se realizaban ritos satánicos; ritos en los que grandes piras rituales iluminaban el cielo nocturno mientras el suelo temblaba furiosamente bajo ellas.\n\nEn los tejados de la aldea hay posadas bandadas de chotacabras, observando siniestramente cómo os montáis en la vieja y destartalada camioneta de Zebulon. Mientras conducís hacia Sentinel Hill, el aire se llena de más chillidos con un tono tan horrible que os duelen los oídos. Todo lo que habéis leído sobre Dunwich y experimentado allí ha llevado hasta este momento. Si el siniestro ritual que Seth quiere llevar a cabo tiene algo que ver con lo que Armitage y sus colegas evitaron hace meses, está relacionado con el favor de una antigua criatura: Yog-Sothoth. Si no lográis detener este ritual, podría significar la perdición total... no sólo para Dunwich, sino para el mundo entero.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_intro.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_intro_p1",
+              "label": "Parte 1",
+              "text": "El sendero que sube por Sentinel Hill es estrecho y demasiado accidentado para la camioneta de Zebulon, así que la dejáis aparcada al pie de  a colina y os disponéis a hacer el resto del camino a pie. En ese momento os dais cuenta de que no estáis solos. Varios hombres y mujeres salen del bosque que hay a vuestra espalda, empuñando armas de fuego y apuntándoos con ellas. Levantáis las manos y os preparáis para lo peor. –Esperad –dice uno de ellos mientras levanta la mano para detener al resto–. Os reconozco del Clover Club –prosigue diciendo con una amplia sonrisa mientras baja el arma–. Naomi os manda recuerdos.\n\nLlenos de curiosidad, les preguntáis a los gánsteres qué hacen allí. –La Srta. O’Bannion nos puso a investigar el ataque contra el club de su prometido –os explica–. Resulta que había unos hombres en Arkham que estaban detrás de todo. Un tal Bishop y sus secuaces. Los seguimos hasta este vertedero. –Antes de poder seguir con su relato, el familiar sonido de una ametralladora resuena por la colina–. Ése debe de ser Vinny. ¡Vamos, chicos! – Hace un gesto a los demás para que lo sigan y corre colina arriba. Sacudís la cabeza y los seguís. Estos mafiosos no saben dónde se están metiendo.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_intro_p1.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_seis_reso_uno",
+              "label": "Resolución 1",
+              "text": "El tomo de pésima encuadernación parece ser las anotaciones del viejo Whateley, el hombre que le enseñó a Wilbur los antiguos secretos de la hechicería. Encontráis un fragmento que describe un lugar fuera del tiempo y el espacio en el que los mundos convergen y donde mora Yog-Sothoth. Sólo llegando a este nexo en los bordes de la realidad podréis reparar la grieta que se ha abierto en el mundo. Aunque tenéis la sensación de dirigiros a vuestra perdición, hacéis acopio de los restos de valor que os quedan y entráis en el portal.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_reso_dos",
+              "label": "Resolución 2",
+              "text": "En su búsqueda de un poder arcano más allá de este reino, los hechiceros de Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificios de sangre e indescriptibles experimentos, el oscuro poder que perseguían los hechiceros ahora está a su alcance. Sin embargo, nunca tendrán la oportunidad de hacer uso de él realmente. Al pedirle al padre de Wilbur que les otorgara conocimientos, han atraído a la criatura desde su reino extradimensional. Yog-Sothoth emerge de la grieta abierta sobre Sentinel Hill, oscureciendo el cielo y rodeando el mundo. Ahora que ha llegado a la Tierra, gobierna allí donde antes caminaba la humanidad.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_7",
+      "title": "Escenario VII: Perdidos en el tiempo y el espacio",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_siete_intro",
+              "label": "Escenario VII: Perdidos en el tiempo y el espacio",
+              "text": "Atravesar el portal es una experiencia totalmente distinta a todo lo que habéis vivido. Notáis cómo el cuerpo se retuerce y distorsiona, atravesando realidades mientras el portal os arrastra hacia su destino final: un lugar más allá de todo lo que pueda concebir la imaginación humana.\n\nDe pronto, se hace el silencio, y el caos del viaje da paso a una sensación de soledad y temor. Estáis en un lugar inenarrable, algo que se escapa por mucho a vuestra capacidad de raciocinio, y además completamente alienígena. El paisaje es surrealista y extraño, y la arquitectura, imposible. Estáis tan lejos de casa que ese concepto se ha convertido en un sueño que pende de un hilo y que apenas lográis recordar. Incluso si encontráis la forma de salir de este terrible lugar, puede que jamás volváis a ser los mismos.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_siete_investigador_derrotado",
+              "label": "Investigador derrotado",
+              "text": "¿De dónde vinisteis? ¿Por qué estáis aquí? ¿Estáis soñando, o este lugar es real? Ahora que lo pensáis, ¿no habéis estado antes aquí? O quizá estuvisteis aquí todo el tiempo. Ahora lo recordáis. Éste es vuestro hogar de verdad. El camino que recorréis no es más que un saliente, con muchos más por debajo. Sólo tenéis que caer para estar allí donde pertenecéis. Un paso más...",
+              "audio": "audios/cap1/campaign/dunwich/cap7_investigador_derrotado.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_reso_uno",
+              "label": "Resolución 1",
+              "text": "Estáis tumbados de espaldas sobre un trozo de hierba húmeda, mirando con nostalgia el cielo nocturno. De algún modo, habéis vuelto a la cima de Sentinel Hill, y no lográis recordar cómo llegasteis aquí exactamente. El cielo nocturno os hipnotiza. Los segundos se convierten en minutos, y los minutos se convierten en horas. Finalmente, un grupo de ciudadanos de Dunwich acaba por encontraros y os ponen en pie.\n\n–¿Qué ha ocurrido? ¿Qué hacen aquí? –os preguntan, asustados pero con curiosidad. Parece que no podéis encontrar las palabras apropiadas para describir los acontecimientos que tuvieron lugar al otro lado del portal... si es que ocurrieron realmente. Tampoco parece haber ni rastro de Seth Bishop, de las criaturas que combatisteis antes o del fantasmal y sobrenatural portal. Pero cada vez que dormís, soñáis... y cuando soñáis, todo vuelve como un torrente",
+              "audio": "audios/cap1/campaign/dunwich/cap7_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_reso_dos",
+              "label": "Resolución 2",
+              "text": "Varios de los aldeanos de Dunwich oyeron el alboroto de Sentinel Hill y fueron a investigar. Lo que encontraron allí no respondió a ninguna de sus preguntas.\n\n–¿Qué creéis que ha pasado? –pregunta un asustado Curtis Whateley mientras examinan la cima de la colina. El resto de aldeanos sacuden la cabeza sin poder ofrecer una explicación.\n\n–Lo último que vi es que el cielo se abrió y hubo un fuerte destello –dice uno de ellos mientras observa el cielo estrellado desde la cumbre de Sentinel Hill.\n\n–Esos tipos de Arkham no aparecen por ninguna parte –añade Curtis, mirando el agrietado altar de piedra–. No hay el menor rastro de ellos. A diferencia del Sr. Bishop y sus amigos –prosigue mientras señala varios cadáveres tirados en el suelo.\n\n–¿Creéis que deberíamos ir a buscar a los polis de Aylesbury?\n\n–¿Para qué? ¿Para que vuelvan a reírse de nosotros? –responde Curtis escupiendo–. Nunca nos creerían ni una palabra de todo esto –añade mientras mira de reojo el altar de piedra y se mueve inquieto –. Más vale que nos olvidemos del asunto. Vamos, enterremos a los muertos y marchémonos de aquí.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_reso_tres",
+              "label": "Resolución 3",
+              "text": "De la criatura surge una furia cósmica de sonidos, colores y espacio distorsionado que os repele y aleja de ella. Observáis horrorizados cómo uno de sus brazos rasga el tejido del mundo y su forma amorfa se introduce por la grieta, arrastrando con ella la urdimbre del mundo. Tratáis de agarraros a algo, pero os veis absorbidos inexorablemente por el desgarro. Notáis como si vuestro cuerpo se estirara y vuestra mente fuera aplastada. Después, todo se vuelve negro.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_reso_cuatro",
+              "label": "Resolución 4",
+              "text": "En su búsqueda de un poder arcano más allá de este reino, los hechiceros de Dunwich han logrado aquello que no pudieron conseguir Wilbur y el viejo Whateley. Mediante sacrificios de sangre e indescriptibles experimentos, el oscuro poder que perseguían los hechiceros ahora está a su alcance. Sin embargo, nunca tendrán la oportunidad de hacer uso de él realmente. Al pedirle al padre de Wilbur que les otorgara conocimientos, han atraído a la criatura desde su reino extradimensional. Yog-Sothoth emerge de la grieta abierta sobre Sentinel Hill, oscureciendo el cielo y rodeando el mundo. Ahora que ha llegado a la Tierra, gobierna allí donde antes caminaba la humanidad.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_reso_cuatro.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_epilogo",
+      "title": "Epílogo",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Epílogos",
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_epilogo_uno",
+              "label": "Epílogo 1",
+              "text": "Habían pasado seis meses, y la vida de Curtis Whateley por fin estaba volviendo a la normalidad. Puesto que habían ocultado el incidente y las autoridades guardaban las distancias con esta zona, el Sr Osborn había subastado las pertenencias de las familias Ericks y Bishop. Joe se quedó con algunas baratijas, claro, pero Curtis no quiso saber nada de ello. Ya había mucha gente que no se fiaba de él por los pecados de su familia, aunque había estado yendo a misa de forma habitual y se había mantenido alejado de cualquier cosa que pareciera remotamente arcana.\n\nAun así, Curtis no lograba quitarse de encima una sensación de premonición. Había visto la devastación que habían sufrido los hogares de los Ericks, los Bishop y los Frye. Había visto de primera mano la criatura que los tipos de Arkham habían desterrado. Algunos días, sus pensamientos lo llevaban a la granja de Wilbur Whateley, y se quedaba allí fuera, mirándola durante horas, demasiado asustado para entrar, pero demasiado curioso para marcharse. Puede que haya algo allí dentro que pueda hacer que se marchen estas terribles visiones. Algo que pudiera darle la fuerza suficiente como para resistir las pesadillas. Curtis decidió que lo encontraría",
+              "audio": "audios/cap1/campaign/dunwich/epilogo_uno.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_epilogo_dos",
+              "label": "Epílogo 2",
+              "text": "Gené se arrodilló para examinar más de cerca el signo que había en la tierra del suelo. La forma del signo le resultaba totalmente extraña, y las huellas que llevaban a él eran distintas a cualquiera que hubiera visto hasta la fecha. Todo eso, junto al informe de la universidad... No sabía muy bien qué pensar.\n\n–Srta. Beauregard –dijo su ayudante–, ¿ha encontrado algo?\n\nGené se incorporó y se volvió para mirar al estudiante de primer año que le habían asignado. Era un buen chico, y algo inexperto, pero trabajaba mucho y tenía ganas de demostrar lo que valía.\n\n–Se supone que este sitio estaba cerrado –respondió Gené–. Aquí no ha vivido nadie desde hace meses. Y aun así, mira: sus primitivos ritos prosiguen a día de hoy.\n\nEl alumno se acercó para examinar el signo junto a Gené, mientras hojeaba su diario buscando alguna referencia para los símbolos.\n\n–¿Qué cree que significa? –le preguntó. Ella sacudió la cabeza. Apenas llegaban forasteros a Dunwich, y todas las señales que indicaban cómo llegar hasta él han desaparecido del camino. Pero hoy en día, hasta los lugareños que tenían aquí su hogar lo habían abandonado.\n\n–No lo sé –admitió Gené–. Pero aquí hay alguien, y éste no es el primer signo similar que vemos. Las historias dicen que hay un altar en el que los lugareños llevaban a cabo rituales paganos sobre esa colina. Puede que allí averigüemos algo más.",
+              "audio": "audios/cap1/campaign/dunwich/epilogo_dos.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

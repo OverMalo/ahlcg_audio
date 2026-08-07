@@ -31,6 +31,7 @@ function findSection(nav) {
 // Claves de despliegue (nodos plegables del árbol lateral).
 const sectionToggleKey = (type, id) => ["sec", type, id].join(NAV_SEP);
 const scenarioToggleKey = (type, id, scnId) => ["scn", type, id, scnId].join(NAV_SEP);
+const eraToggleKey = (type, origin, era) => ["era", type, origin, era].join(NAV_SEP);
 
 // Clave de selección (hoja de navegación: un componente, o la intro de campaña).
 function navId(nav) {
@@ -209,8 +210,17 @@ function sanitizeSelectedNav(raw) {
 }
 
 const state = loadState();
+const isFirstVisit = !localStorage.getItem("ahlcg_audio:navState");
 let selectedNav = sanitizeSelectedNav(state.selectedNav);
 let expandedNav = new Set(Array.isArray(state.expandedNav) ? state.expandedNav : []);
+// Por defecto, Capítulo 2 desplegado si es primera visita.
+if (isFirstVisit) {
+  for (const s of allSections()) {
+    if ((s.era || 1) === 2) {
+      expandedNav.add(eraToggleKey(s.type, s.origin || "oficial", 2));
+    }
+  }
+}
 let expandedPanels = new Set(Array.isArray(state.expandedPanels) ? state.expandedPanels : []);
 let revealedDescriptions = new Set(Array.isArray(state.revealedDescriptions) ? state.revealedDescriptions : []);
 let autoPlay = typeof state.autoPlay === "boolean" ? state.autoPlay : true;
@@ -363,6 +373,13 @@ function collapseSiblingScenarios(sectionType, sectionId, keepScenarioId) {
 function ensureNavExpanded(nav) {
   if (!nav) return;
   collapseOtherSections(nav.sectionType, nav.sectionId);
+  // Abrir la era que contiene esta sección.
+  const section = findSection(nav);
+  if (section) {
+    const origin = section.origin || "oficial";
+    const era = section.era || 1;
+    expandedNav.add(eraToggleKey(section.type, origin, era));
+  }
   expandedNav.add(sectionToggleKey(nav.sectionType, nav.sectionId));
   if (nav.scenarioId) {
     collapseSiblingScenarios(nav.sectionType, nav.sectionId, nav.scenarioId);
@@ -1494,18 +1511,46 @@ function renderSidebar() {
 
 // Subdivide una lista de secciones (campañas o escenarios independientes) en dos
 // subgrupos por procedencia — "Oficial" y "Fanmade" — cada uno con su subtítulo.
+// Dentro de cada origen se agrupa por era (plegable).
 // El origen por defecto (sin campo `origin`) es "oficial".
 function renderOriginSubgroups(sections) {
   const oficial = sections.filter((s) => (s.origin || "oficial") === "oficial");
   const fanmade = sections.filter((s) => s.origin === "fanmade");
-  const block = (headingKey, list) => `
+  const block = (headingKey, list, origin) => `
     <div class="sidebar-origin">
       <h4 class="sidebar-subheading">${escapeHtml(t(headingKey))}</h4>
       ${list.length
-        ? `<div class="sidebar-nav-list sidebar-nav-tree">${list.map(renderSectionNode).join("")}</div>`
+        ? renderEraGroups(list, origin)
         : `<p class="sidebar-section-hint sidebar-section-hint--sub">${escapeHtml(t("sidebar.standaloneEmpty"))}</p>`}
     </div>`;
-  return block("sidebar.originOfficial", oficial) + block("sidebar.originFanmade", fanmade);
+  return block("sidebar.originOfficial", oficial, "oficial") + block("sidebar.originFanmade", fanmade, "fanmade");
+}
+
+// Agrupa secciones por era y renderiza cada grupo como nodo plegable.
+function renderEraGroups(sections, origin) {
+  const eras = new Map();
+  for (const s of sections) {
+    const era = s.era || 1;
+    if (!eras.has(era)) eras.set(era, []);
+    eras.get(era).push(s);
+  }
+  const sorted = [...eras.keys()].sort((a, b) => b - a);
+  return sorted.map((era) => {
+    const type = eras.get(era)[0].type;
+    const key = eraToggleKey(type, origin, era);
+    const open = expandedNav.has(key);
+    const caret = open ? ICONS.caretUp : ICONS.caretDown;
+    const label = t(`sidebar.era${era}`);
+    const items = open ? `<div class="sidebar-nav-list sidebar-nav-tree">${eras.get(era).map(renderSectionNode).join("")}</div>` : "";
+    return `
+      <div class="sidebar-era">
+        <button type="button" class="sidebar-era-toggle" data-nav-era="${escapeAttribute(key)}" aria-expanded="${open ? "true" : "false"}">
+          <span class="sidebar-era-caret" aria-hidden="true">${caret}</span>
+          <span class="sidebar-era-label">${escapeHtml(label)}</span>
+        </button>
+        ${items}
+      </div>`;
+  }).join("");
 }
 
 // Nodo de sección (campaña / escenario independiente): plegable; intro + escenarios.
@@ -1546,7 +1591,8 @@ function renderSectionNode(section) {
         .map((c) =>
           renderNavLeaf(
             { sectionType: section.type, sectionId: section.id, scenarioId: null, componentType: c.type },
-            c.title
+            c.title,
+            { beta: c.beta, comingSoon: c.comingSoon }
           )
         )
         .join("");
@@ -1557,10 +1603,12 @@ function renderSectionNode(section) {
     childrenHtml = `<div class="sidebar-nav-list sidebar-nav-list--filter">${introHtml}${bodyHtml}</div>`;
   }
 
+  const betaBadge = section.beta ? ` <span class="beta-badge">${escapeHtml(t("sidebar.beta"))}</span>` : "";
+
   return `
     <button type="button" class="sidebar-nav-item sidebar-nav-item--section${active ? " sidebar-nav-item--active" : ""}" data-nav-toggle="${escapeAttribute(key)}" data-nav-about="${escapeAttribute(navId(aboutNav))}" aria-expanded="${open ? "true" : "false"}" aria-current="${active ? "page" : "false"}">
       <span class="sidebar-nav-dot" aria-hidden="true">${caret}</span>
-      <span class="sidebar-nav-text">${escapeHtml(section.title)}</span>
+      <span class="sidebar-nav-text">${escapeHtml(section.title)}${betaBadge}</span>
     </button>
     ${childrenHtml}
   `;
@@ -1581,7 +1629,8 @@ function renderScenarioNode(section, scenario) {
       .map((c) =>
         renderNavLeaf(
           { sectionType: section.type, sectionId: section.id, scenarioId: scenario.id, componentType: c.type },
-          c.title
+          c.title,
+          { beta: c.beta, comingSoon: c.comingSoon }
         )
       )
       .join("");
@@ -1598,10 +1647,14 @@ function renderScenarioNode(section, scenario) {
 }
 
 // Hoja de navegación seleccionable (un componente o la intro de campaña).
-function renderNavLeaf(nav, label) {
+function renderNavLeaf(nav, label, opts) {
+  const { beta, comingSoon } = opts || {};
   const id = navId(nav);
   const active = view === "narraciones" && selectedNav && navId(selectedNav) === id;
-  return `<button type="button" class="sidebar-nav-item sidebar-nav-item--filter${active ? " sidebar-nav-item--active" : ""}" data-nav-select="${escapeAttribute(id)}" aria-current="${active ? "page" : "false"}"><span class="sidebar-nav-dot sidebar-nav-dot--check" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span><span class="sidebar-nav-text">${escapeHtml(label)}</span></button>`;
+  const badgeHtml = comingSoon
+    ? ` <span class="soon-badge">${escapeHtml(t("sidebar.comingSoon"))}</span>`
+    : beta ? ` <span class="beta-badge">${escapeHtml(t("sidebar.beta"))}</span>` : "";
+  return `<button type="button" class="sidebar-nav-item sidebar-nav-item--filter${active ? " sidebar-nav-item--active" : ""}" data-nav-select="${escapeAttribute(id)}" aria-current="${active ? "page" : "false"}"><span class="sidebar-nav-dot sidebar-nav-dot--check" aria-hidden="true">${active ? ICONS.diamondFilled : ICONS.diamondEmpty}</span><span class="sidebar-nav-text">${escapeHtml(label)}${badgeHtml}</span></button>`;
 }
 
 // Grupo del índice de escenario: título de sección (enlace a esa sección) + narraciones.
@@ -1666,6 +1719,21 @@ function bindFilterEvents() {
   document.querySelectorAll("[data-nav-view]").forEach((button) => {
     button.addEventListener("click", () => {
       if (button.dataset.navView === "inicio") goToInicio();
+    });
+  });
+
+  // Era: plegable puro (toggle open/close).
+  document.querySelectorAll("[data-nav-era]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.navEra;
+      if (!key) return;
+      if (expandedNav.has(key)) {
+        expandedNav.delete(key);
+      } else {
+        expandedNav.add(key);
+      }
+      saveState();
+      render();
     });
   });
 

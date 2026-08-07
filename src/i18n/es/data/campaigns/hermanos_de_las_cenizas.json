@@ -1,6 +1,7 @@
 {
   "type": "campaign",
   "origin": "oficial",
+  "era": 2,
   "id": "hermanos_de_las_cenizas",
   "title": "Hermanos de las Cenizas",
   "banner": "images/banner_Er_lokos_01.webp",

@@ -3,6 +3,8 @@
     "general": "",
     "campaigns": {
       "hermanos_de_las_cenizas": "",
+      "vastagos_de_sangre": "audios/ambient/base.mp3",
+      "el_legado_de_dunwich": "audios/ambient/base.mp3",
       "el_dia_que_la_tierra_aullo": "audios/ambient/base.mp3"
     }
   }

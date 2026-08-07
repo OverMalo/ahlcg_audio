@@ -1,9 +1,143 @@
 {
   "type": "campaign",
   "origin": "oficial",
+  "era": 2,
   "id": "vastagos_de_sangre",
-  "title": "Vástagos de Sangre",
+  "title": "Vástagos de la angre",
   "banner": "images/banner_children_of_blood.webp",
-  "comingSoon": true,
-  "scenarios": []
+  "comingSoon": false,
+  "intro": {
+    "type": "introduccion",
+    "title": "Introducción",
+    "items": [
+      {
+        "id": "cap2_vastagos_intro",
+        "label": "Prólogo",
+        "text": "El frío viento otoñal sopla por las calles de la ciudad de Arkham, cuyos adoquines están mojados por la tormenta caída ese mismo día. El cielo ya se ha despejado, y un campo de estrellas acompaña a la luna llena. Has caminado bajo el resplandor amarillo de las farolas hasta el Distrito ribereño de Arkham, antes conocido como el Distrito fluvial hasta que el Miskatonic anegó sus orillas hace unos meses.\n\nUna siniestra paranoia ha hecho presa del Distrito ribereño. Tras una serie de asesinatos y desapariciones, los habitantes de clase obrera de la zona temen salir de noche. Van a trabajar a los muelles, a los depósitos ferroviarios y a la planta de procesamiento de carne de New Horizons y luego vuelven corriendo a casa antes de que la oscuridad invada la ciudad. Los peatones no dejan de mirar atrás y de apresurar el paso cerca de los callejones oscuros. Algo está dando caza a la gente del distrito.\n\nHas estado trabajando con el detective Reynolds, del departamento de policía de Arkham, para llegar al fondo del asunto, pero no ha habido mucho de donde tirar.\n\nAl menos, hasta esta noche.\n\nUn ciudadano preocupado te ha pedido que acudas al Distrito ribereño. Christopher Stern te ha invitado a su casa, situada en Water Street, con la promesa de más información a cambio de que lo ayudes con un asunto personal. La promesa del señor Stern y su solicitud de asistencia resultan ser la misma cosa. Haciendo un doloroso esfuerzo, te relata que su esposa, Julia, trabaja en la planta de New Horizons. Ha estado realizando turnos cada vez más largos, hasta que empezó a marcharse a trabajar antes de que saliera el sol y a regresar después de su puesta. Con el tiempo, se ha ido volviendo fría y distante, hasta que han acabado durmiendo en cuartos separados y, en palabras de Christopher, ocultándose de él.",
+        "audio": "audios/cap2/campaign/vastagos/prologo.mp3"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "escenario_1",
+      "title": "Escenario I: Río de sangre",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_uno_intro",
+              "label": "Escenario I: Río de sangre",
+              "text": "–Sea lo que sea lo que haga falta para detenerla, para detener a esa cosa... –te dice Christopher mientras te preparas para partir en busca de Julia–. Hágalo\n\nTe pasas la noche buscando con ahínco por todo el Distrito ribereño, pero no logras encontrar nada concluyente. Te marchas a pasar una noche inquieta y esperas tener más suerte por la mañana.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_uno_no_reso",
+              "label": "Ninguna resolución",
+              "text": "No tardas mucho en darte cuenta de que en la noche acechan muchas más criaturas que simplemente el monstruo que fue Julia Stern. Su caza incesante ha resultado ser demasiado para ti. Lo último que recuerdas antes de perder piadosamente la consciencia es a las criaturas cerniéndose sobre ti.\n\nTe despiertas con la ardiente luz amarilla del alba. Tras recomponerte, vuelves a reunirte con el detective Reynolds.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_no_reso.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_reso_uno",
+              "label": "Resolución 1",
+              "text": "Tras un cruento conflicto, por fin logras doblegar a tu presa. En lugar de acabar con su vida, dejas inconsciente a Julia y te preparas para regresar con el detective Reynolds, con la esperanza de que tal vez exista un modo de salvarla. Sin embargo, cuando vuelves a por ella, descubres que ha desaparecido entre las sombras de nuevo. Esperas haber tomado la decisión correcta. De momento, el único camino que puedes seguir es volver a contactar con el detective Reynolds para llegar al fondo de lo que ha provocado todo este derramamiento de sangre.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_reso_uno.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_reso_dos",
+              "label": "Resolución 2",
+              "text": "Tu cacería toca a su fin. Acabar con la vida de Julia, y con las vidas de sus víctimas, es una decisión desafortunada, pero necesaria para que el Distrito ribereño vuelva a ser seguro. Después de tres noches sangrientas en las orillas del río Miskatonic, esperas poder volver a contactar con el detective Reynolds para llegar al fondo de lo que ha provocado todo esto.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_tres",
+              "label": "Resolución 3",
+              "text": "La caza es larga y ardua durante la noche, pero Julia resulta ser demasiado hábil y veloz pese a tu esfuerzo. La mañana del tercer día de tu búsqueda, te resignas a tener que esperar a que vuelva a atacar. De momento, el único camino que puedes tomar es volver a contactar con el detective Reynolds para llegar al fondo de lo que ha provocado todo este derramamiento de sangre.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_reso_cuatro",
+              "label": "Resolución 4",
+              "text": "Una vez de vuelta en el despacho del detective Reynolds, le explicas lo que has descubierto. Te cuenta que las pistas que ha seguido también apuntan a la planta de procesamiento de carne de New Horizons, y que han visto por el edificio a un grupo sospechoso ataviado con túnicas en lugar de con los delantales y monos habituales de los trabajadores.\n\n–Es el lugar de trabajo de Julia –dice Reynolds–. Parece que merece la pena ir a visitarlo.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_reso_cuatro.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_2",
+      "title": "Escenario II: New Horizons",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_dos_intro",
+              "label": "Escenario II: New Horizons",
+              "text": "En compañía del detective Reynolds, te diriges a la planta de New Horizons, en el Distrito ribereño.\n\n–A mi modo de ver, tenemos dos opciones –dice Reynolds–. Podemos entrar ahora mismo y llevar a cabo un registro. Tengo una orden, así que será más oficial, pero también hay gente trabajando, y la gente complica las cosas. O bien...\n\nSe saca un juego de ganzúas.\n\n–Podemos esperar a que oscurezca.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [],
+          "comingSoon": true
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_dos_no_reso",
+              "label": "Ninguna resolución",
+              "text": "",
+              "audio": "audios/cap2/campaign/vastagos/cap2_no_reso.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_reso_uno",
+              "label": "Resolución 1",
+              "text": "",
+              "audio": "audios/cap2/campaign/vastagos/cap2_reso_uno.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_reso_dos",
+              "label": "Resolución 2",
+              "text": "",
+              "audio": "audios/cap2/campaign/vastagos/cap2_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_reso_tres",
+              "label": "Resolución 3",
+              "text": "",
+              "audio": "audios/cap2/campaign/vastagos/cap2_reso_tres.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_reso_cuatro",
+              "label": "Resolución 4",
+              "text": "",
+              "audio": "audios/cap2/campaign/vastagos/cap2_reso_cuatro.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
