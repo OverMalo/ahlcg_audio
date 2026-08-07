@@ -2602,6 +2602,117 @@ input[type="range"]:focus-visible::-moz-range-thumb {
   --diamond: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M7 2 L12 7 L7 12 L2 7 Z' fill='%232b564e'/%3E%3C/svg%3E");
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   TEMA · SANGRE Y OBSIDIANA — Todo el armazon es obsidiana teñida de sangre: los fondos no son grises
+   neutros sino negros con hue rojo (#120b0c a #241819), un rango tonal muy
+   estrecho —luminancias de 0.0028 a 0.0118— para que la jerarquia se lea por
+   saltos minimos y ningun texto pierda contraste sobre la superficie mas
+   clara. El acento es carmesi arterial iluminado (#f2606f), sangre fresca bajo
+   la farola de gas del callejon, saturado pero con luminancia suficiente para
+   titulares en Cinzel.
+   Vástagos de la sangre. Verificado AA (ver bloque base para las reglas).
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="crimson"] {
+  color-scheme: dark;
+
+  --accent-rgb: 242 96 111;
+  --gold-rgb: 143 118 68;
+  --oxblood-rgb: 150 34 46;
+  --frame-rgb: 13 8 9;
+  --panel-rgb: 26 17 18;
+  --btn-hi-rgb: 38 25 26;
+  --btn-lo-rgb: 20 13 14;
+  --overlay-rgb: 10 5 7;
+  --shade-rgb: 0 0 0;
+  --on-accent: #1a0709;
+
+  --bg: #120b0c;
+  --bg-2: #160e0f;
+  --panel: #1a1112;
+  --panel-2: #211617;
+  --panel-hi: #1f1516;
+  --surface: #170f10;
+  --surface-raised: #241819;
+  --sunken: #100a0b;
+
+  --ink: #f6e6e4;
+  --text: #e0c9c7;
+  --muted: #ab9291;
+  --muted-2: #c4a493;
+
+  --accent: #f2606f;
+  --accent-2: #d24a58;
+  --accent-active: #ff8f97;
+
+  --nebula: #d4707c;
+  --nebula-2: #7c2230;
+
+  --border: #3a2224;
+  --border-strong: #56302f;
+
+  --danger: #d97a4e;
+  --focus: #ff8f97;
+
+  --corner-tl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%238c7245' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 30 V16 Q8 10 14 10 H30' stroke-width='1.8'/%3E%3Cpath d='M8 16 Q8 8 16 8' stroke-width='1.1' opacity='0.75'/%3E%3Cpath d='M22 10 Q12 10 12 20 Q12 25 17 24 Q21 23 19 18.5' stroke-width='1.2' opacity='0.85'/%3E%3Ccircle cx='8' cy='8' r='1.8' fill='%238c7245' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  --corner-br: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg transform='rotate(180 24 24)' fill='none' stroke='%238c7245' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 30 V16 Q8 10 14 10 H30' stroke-width='1.8'/%3E%3Cpath d='M8 16 Q8 8 16 8' stroke-width='1.1' opacity='0.75'/%3E%3Cpath d='M22 10 Q12 10 12 20 Q12 25 17 24 Q21 23 19 18.5' stroke-width='1.2' opacity='0.85'/%3E%3Ccircle cx='8' cy='8' r='1.8' fill='%238c7245' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  --diamond: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M7 2 L12 7 L7 12 L2 7 Z' fill='%23f2606f'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   TEMA · MORTAJA DE LINO — Un velatorio de la alta sociedad de Northside: sabanas de lino, marfil y
+   gris-ceniza con un tinte violeta frio -el de la piel del vampiro-, con todas
+   las superficies apretadas en un rango de luminancia estrecho para que la
+   pagina lea como papel de luto y no como una interfaz. El unico color
+   saturado es el borgona profundo del acento (#78202f), la mancha de sangre
+   sobre la mortaja, reservado a titulares en Cinzel, iconos y bordes activos.
+   Vástagos de la sangre. Verificado AA (ver bloque base para las reglas).
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-theme="shroud"] {
+  color-scheme: light;
+
+  --accent-rgb: 120 32 47;
+  --gold-rgb: 108 98 88;
+  --oxblood-rgb: 138 43 58;
+  --frame-rgb: 201 198 209;
+  --panel-rgb: 238 236 241;
+  --btn-hi-rgb: 243 241 246;
+  --btn-lo-rgb: 220 217 227;
+  --overlay-rgb: 8 10 20;
+  --shade-rgb: 54 46 52;
+  --on-accent: #f6f3ef;
+
+  --bg: #e6e4ea;
+  --bg-2: #eeecf1;
+  --panel: #f1eff4;
+  --panel-2: #e9e7ee;
+  --panel-hi: #f5f3f7;
+  --surface: #f6f4f8;
+  --surface-raised: #fbfafc;
+  --sunken: #e1dfe7;
+
+  --ink: #1a181e;
+  --text: #282631;
+  --muted: #48444f;
+  --muted-2: #584438;
+
+  --accent: #78202f;
+  --accent-2: #4a101c;
+  --accent-active: #5c1423;
+
+  --nebula: #8a2b3a;
+  --nebula-2: #6b1f2a;
+
+  --border: #c8c5d1;
+  --border-strong: #a9a5b5;
+
+  --danger: #8f2418;
+  --focus: #5c1423;
+
+  --corner-tl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%236b6157' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 30 V16 Q8 10 14 10 H30' stroke-width='1.8'/%3E%3Cpath d='M8 16 Q8 8 16 8' stroke-width='1.1' opacity='0.75'/%3E%3Cpath d='M22 10 Q12 10 12 20 Q12 25 17 24 Q21 23 19 18.5' stroke-width='1.2' opacity='0.85'/%3E%3Ccircle cx='8' cy='8' r='1.8' fill='%236b6157' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  --corner-br: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg transform='rotate(180 24 24)' fill='none' stroke='%236b6157' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 30 V16 Q8 10 14 10 H30' stroke-width='1.8'/%3E%3Cpath d='M8 16 Q8 8 16 8' stroke-width='1.1' opacity='0.75'/%3E%3Cpath d='M22 10 Q12 10 12 20 Q12 25 17 24 Q21 23 19 18.5' stroke-width='1.2' opacity='0.85'/%3E%3Ccircle cx='8' cy='8' r='1.8' fill='%236b6157' stroke='none'/%3E%3C/g%3E%3C/svg%3E");
+  --diamond: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M7 2 L12 7 L7 12 L2 7 Z' fill='%2378202f'/%3E%3C/svg%3E");
+}
+
 /* ── Selector de tema (junto al de idioma) ────────────────────────────────── */
 .topbar-tools {
   margin-left: auto;
@@ -2636,17 +2747,33 @@ input[type="range"]:focus-visible::-moz-range-thumb {
   top: calc(100% + 8px);
   right: 0;
   z-index: 120;
-  min-width: 214px;
+  min-width: 224px;
   display: flex;
   flex-direction: column;
   gap: 2px;
   padding: 6px;
+  /* La lista crece con cada colección de temas: que se desplace en vez de
+     desbordar la ventana en pantallas bajas. */
+  max-height: min(70vh, 560px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: linear-gradient(180deg, rgb(var(--panel-rgb) / 0.98), rgb(var(--frame-rgb) / 0.99));
   border: 1px solid var(--border-strong);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 .theme-menu[hidden] { display: none; }
+.theme-menu-group {
+  margin: 6px 0 2px;
+  padding: 0 11px;
+  color: var(--muted);
+  font-family: 'Cinzel', serif;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.theme-menu-group:first-child { margin-top: 2px; }
 .theme-option {
   display: flex;
   align-items: center;

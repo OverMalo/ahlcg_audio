@@ -15,19 +15,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arkham Voices</title>
 
-    <meta name="theme-color" content="#0f1a17" />
+    <meta name="theme-color" content="#120b0c" />
     <meta name="color-scheme" content="dark light" />
     <meta name="description" content="Textos narrados de Arkham Horror LCG" />
 
     <!-- Tema visual: se aplica ANTES de pintar para evitar parpadeo (FOUC).
-         Debe ir aquí, en el <head>, antes de que cargue el CSS/JS. -->
+         Debe ir aquí, en el <head>, antes de que cargue el CSS/JS.
+         La lista y el tema por defecto deben coincidir con THEMES/DEFAULT_THEME
+         de src/main.js. "green" es el tema base (:root), va sin atributo. -->
     <script>
-      try {
-        var t = localStorage.getItem("ahlcg_audio:theme");
-        if (t === "cosmic" || t === "light") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
-      } catch (e) {}
+      (function () {
+        var THEMES = ["crimson", "shroud", "green", "cosmic", "light"];
+        var t = null;
+        try { t = localStorage.getItem("ahlcg_audio:theme"); } catch (e) {}
+        if (THEMES.indexOf(t) === -1) t = "crimson";
+        if (t !== "green") document.documentElement.setAttribute("data-theme", t);
+      })();
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
