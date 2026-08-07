@@ -1077,23 +1077,33 @@ function closeLangMenu() {
 }
 
 // ── Theme switcher ────────────────────────────────────────────────────────
-// 3 temas: "green" (Verde tentacular, por defecto), "cosmic" (Púrpura cósmico),
-// "light" (Claridad psícopata). Solo cambian tokens CSS vía [data-theme] en :root.
-// El swatch es un color representativo de cada tema (se pinta inline).
+// Los temas solo cambian tokens CSS vía [data-theme] en :root (ver el final de
+// styles.css). Para añadir uno: bloque :root[data-theme="code"] en el CSS, entrada
+// aquí, nombre en i18n (themes.<code>) y el code en la lista del <script> del <head>
+// de index.html (aplica el tema antes de pintar para evitar parpadeo).
+//   group   agrupa el menú por colección de temas (i18n themeGroups.<group>)
+//   swatch  [superficie, acento] del tema: el punto del menú se parte en diagonal
+//           entre los dos, porque solo con el acento los temas claros salen todos
+//           del mismo rojo y solo con la superficie salen todos blancos.
+//   bar     color de la barra de estado del navegador (meta theme-color) = --bg
 const THEMES = [
-  { code: "green",  swatch: "#64a596" },
-  { code: "cosmic", swatch: "#a98fe0" },
-  { code: "light",  swatch: "#e8dcbf" },
+  // Vástagos de la sangre — colección vampírica (2026)
+  { code: "crimson",   group: "vastagos", swatch: ["#1a1112", "#f2606f"], bar: "#120b0c" },
+  { code: "shroud",    group: "vastagos", swatch: ["#f1eff4", "#78202f"], bar: "#e6e4ea" },
+  // Clásicos
+  { code: "green",     group: "classic",  swatch: ["#16241f", "#64a596"], bar: "#0f1a17" },
+  { code: "cosmic",    group: "classic",  swatch: ["#1b1533", "#a98fe0"], bar: "#0e0b1a" },
+  { code: "light",     group: "classic",  swatch: ["#e6ddc6", "#2b564e"], bar: "#d8ccac" },
 ];
-const DEFAULT_THEME = "green";
-const THEME_BAR_COLOR = { green: "#0f1a17", cosmic: "#0e0b1a", light: "#d8ccac" };
+const DEFAULT_THEME = "crimson";
+const THEME_BAR_COLOR = Object.fromEntries(THEMES.map((th) => [th.code, th.bar]));
 const themeSwitcherEl = document.getElementById("theme-switcher");
 let themeMenuOpen = false;
 
 function loadTheme() {
   try {
     const stored = localStorage.getItem("ahlcg_audio:theme");
-    if (stored === "cosmic" || stored === "light" || stored === "green") return stored;
+    if (THEMES.some((th) => th.code === stored)) return stored;
   } catch {}
   return DEFAULT_THEME;
 }
@@ -1112,9 +1122,17 @@ function applyTheme(theme) {
 
 function renderThemeSwitcher() {
   if (!themeSwitcherEl) return;
+  // Los temas se listan agrupados por colección; el encabezado se pinta al
+  // empezar cada grupo (el orden de THEMES ya viene agrupado).
+  let lastGroup = null;
   const options = THEMES.map((th) => {
     const isCurrent = th.code === currentTheme;
-    return `<button type="button" class="theme-option" role="menuitemradio" aria-checked="${isCurrent ? "true" : "false"}" data-theme-code="${escapeAttribute(th.code)}"><span class="theme-option-swatch" style="background:${th.swatch}" aria-hidden="true"></span><span class="theme-option-name">${escapeHtml(t("themes." + th.code))}</span><span class="theme-option-mark" aria-hidden="true">${isCurrent ? ICONS.diamondFilled : ICONS.diamondEmpty}</span></button>`;
+    const heading = th.group === lastGroup
+      ? ""
+      : `<p class="theme-menu-group" role="presentation">${escapeHtml(t("themeGroups." + th.group))}</p>`;
+    lastGroup = th.group;
+    const swatch = `linear-gradient(135deg, ${th.swatch[0]} 0 50%, ${th.swatch[1]} 50% 100%)`;
+    return `${heading}<button type="button" class="theme-option" role="menuitemradio" aria-checked="${isCurrent ? "true" : "false"}" data-theme-code="${escapeAttribute(th.code)}"><span class="theme-option-swatch" style="background:${swatch}" aria-hidden="true"></span><span class="theme-option-name">${escapeHtml(t("themes." + th.code))}</span><span class="theme-option-mark" aria-hidden="true">${isCurrent ? ICONS.diamondFilled : ICONS.diamondEmpty}</span></button>`;
   }).join("");
   const btnLabel = `${t("themeSwitcher.label")}. ${t("themeSwitcher.current", { name: t("themes." + currentTheme) })}`;
 

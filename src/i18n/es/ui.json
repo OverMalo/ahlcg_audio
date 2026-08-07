@@ -27,7 +27,13 @@
     "current": "Tema actual: {name}",
     "menuLabel": "Seleccionar tema"
   },
+  "themeGroups": {
+    "vastagos": "Vástagos de la sangre",
+    "classic": "Clásicos"
+  },
   "themes": {
+    "crimson": "Sangre y obsidiana",
+    "shroud": "Mortaja de lino",
     "green": "Verde tentacular",
     "cosmic": "Púrpura cósmico",
     "light": "Claridad psícopata"
