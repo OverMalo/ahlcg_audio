@@ -1,5 +1,6 @@
 import "./styles.css";
 import { t, getLang, setLang, LANGUAGES, getContent } from "./i18n.js";
+import { initNewsModal } from "./news.js";
 
 // ── Locale data ──────────────────────────────────────────────────────────────
 let appData = getContent().appData;
@@ -1259,6 +1260,7 @@ renderThemeSwitcher();
 renderMusicBar();
 bindMusicBarEvents();
 render();
+initNewsModal();
 
 if (stEnabled) {
   setupSTPlayer();

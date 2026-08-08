@@ -17,6 +17,7 @@
 import ui from "./ui.json";
 import manifest from "./manifest.json";
 import soundtrack from "./soundtrack.json";
+import news from "./news.json";
 
 import hermanosDeLasCenizas from "./data/campaigns/hermanos_de_las_cenizas.json";
 import vastagosDeSangre from "./data/campaigns/vastagos_de_sangre.json";
@@ -33,6 +34,7 @@ export default {
   ui,
   manifest,
   soundtrack,
+  news,
   appData: composeContent({
     chapter: "Capítulo 2",
     campaigns: [hermanosDeLasCenizas, vastagosDeSangre, elLegadoDeDunwich],
