@@ -179,8 +179,80 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_dos_plan_1a_v1",
+              "label": "Plan 1a: Día ajetreado",
+              "text": "Accedes a la planta de procesamiento de carne por la entrada trasera, entrando por el muelle de carga. Los trabajadores que cuestionan tu presencia reciben respuestas vagas, excusas suficientes para que te dejen en paz de momento. Tienes la certeza de que es cuestión de tiempo que acuda alguien con autoridad para exigirte respuestas, así que tendrás que investigar la planta tan rápido y eficazmente como puedas.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_1a_v1.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_plan_1b",
+              "label": "Plan 1b: Demasiada atención",
+              "text": "Evitas a los entrometidos trabajadores para poder indagar por el edificio y tienes la sensación de que esta investigación empieza a encauzarse. Sin embargo, no pasa mucho tiempo antes de que alguien te ponga una firme mano sobre el hombro.\n\n–¿Puedo ayudarle? –pregunta una voz. Al volverte, ves un hombre moreno de mentón cuadrado y con bigote que te mira con sospecha.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_1b_v1.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_plan_1a_v2",
+              "label": "Plan 1a: Noche tranquila",
+              "text": "Accedes a la planta de procesamiento de carne por la entrada trasera, entrando por el muelle de carga. Después de forzar la puerta cerrada, descubres que el almacén está oscuro y en silencio. Rayos plateados de luz lunar entran por las ventanas altas para iluminar partes de la planta de producción, pero no logras quitarte de encima la sensación de que algo se oculta entre las sombras mientras te observa.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_1a_v2.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_plan_1b_v2",
+              "label": "Plan 1b: Algo te ha oido",
+              "text": "Mientras te mueves cuidadosamente por la fábrica para evitar armar demasiado alboroto, tienes la sensación de que esta investigación empieza a encauzarse. Cada sonido que haces parece resonar de forma ensordecedora en la oscuridad. Sin embargo, tu sigilosa investigación se ve detenida cuando el sonido de una pesada puerta metálica que se abre rompe el silencio. Ves un monstruo descomunal, de un tamaño tal que apenas puedes creer que fuese humano alguna vez, que avanza arrastrando los pies por la planta de producción. Te ha oído y viene a por ti.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_1b_v2.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_plan_2a_v1",
+              "label": "Plan 2a: Adentrarse más (v. I) & (v. II)",
+              "text": "Cuanto más tiempo pasas en la planta, mayor certeza tienes de que cada rincón oscuro y cada puerta cerrada oculta algún secreto siniestro. Hasta el momento, te has encontrado con algo de resistencia, y lo más sensato sería dar media vuelta, pero no puedes dejar de pensar que, si no llegas al fondo de este asunto, Julia Stern no será más que la primera víctima de lo que esté sucediendo.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_2b",
+              "label": "Plan 2b: ¡Demasiado dentro!",
+              "text": "Desplazarse por la planta resulta más difícil de lo que esperabas, y las actividades de la secta también están más ocultas de lo que pensabas. Te parece pasar horas en la planta, pero cada lugar que registras y cada documento que lees no hacen sino ampliar el misterio o confundirte. Para empeorar las cosas, la secta te ha estado persiguiendo todo el rato, y dirías que su número no hace más que crecer. Decides intentar llegar a la salida, pero unos acólitos ataviados con túnicas no tardan en reducirte aferrándote de los brazos. Te quitan las armas y te arrastran a los túneles que hay bajo la planta.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_plan_2b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_1a",
+              "label": "Acto 1a: Hacia nuevos horizontes",
+              "text": "La planta de New Horizons es uno de los edificios de más reciente construcción de Arkham. Las limpias ventanas y la reluciente fachada de ladrillo presentan un exterior acogedor, pero tu instinto te dice que las apariencias engañan.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_1b",
+              "label": "Acto 1b: El camino hacia abajo",
+              "text": "Tu registro de la planta de producción y de las oficinas ha sido exhaustivo, y estás a punto de marcharte con las manos vacías cuando ves algo que antes habías pasado por alto: una trampilla cuadrada en el suelo del depósito del sótano. La trampilla se confunde con la superficie circundante, por lo que no se distingue del resto del suelo en la oscuridad; de no ser por el rastro de sangre seca que mancha el suelo y que se corta por el reborde de la trampilla, ni la habrías visto. No vas a marcharte de la planta sin comprobar todos los lugares donde podrían llevarse a cabo actividades de la secta. No te cuesta nada levantar la trampilla, que se abre hacia la oscuridad del nivel inferior.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_2a",
+              "label": "Acto 2a: La búsqueda de respuestas",
+              "text": "Los túneles que hay bajo la planta de New Horizons están oscuros, y son de piedra y tierra en su mayor parte. La única luz es el tenue resplandor ocasional de unas velas o de un solitario farol eléctrico. Debes de ir por buen camino.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_2b",
+              "label": "Acto 2b: Pruebas obtenidas",
+              "text": "Gracias a todo lo que has encontrado en los túneles que hay bajo la planta, por fin eres capaz de formarte una idea bastante completa de lo que está sucediendo.\n\nParece que la secta está llevando a cabo experimentos con personas en los que emplean recipientes de sangre procedente de... algo. No estás seguro de qué es exactamente. Algunas de esas personas parecen obreros de la planta, mientras que otras parecen ser sectarios. Estos experimentos han convertido a la gente en depredadores nocturnos sedientos de sangre. Al frente de todo, el nombre que has encontrado en muchas circulares y correspondencia es el de un tal Howard Wilkes. Parece que has encontrado lo que viniste a buscar.\n\nQueda el asunto del origen de toda esta sangre. Si pudieras encontrar a la criatura de la que la obtienen, tal vez logres poner fin a esta operación antes de enfrentarte al señor Wilkes.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_2b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_3a",
+              "label": "Acto 3a: Acabar con la bestia",
+              "text": "Sólo queda un sitio que no has investigado aún dentro de los túneles. El camino serpentea en un descenso continuo. Sientes una brisa y oyes el goteo del agua. Parece llegar a una especie de gran cámara. Sea lo que sea lo que hay ahí abajo, debe de ser la fuente de toda esta sangre contaminada.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_3a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_dos_actos_3b",
+              "label": "Acto 3b: Pesadilla abatida",
+              "text": "La bestia se abalanza contra ti, con sus fauces de innumerables colmillos sangrientos abierta de par en par para devorarte de un bocado. Un instante antes de que se produzca el fatal desenlace, asestas el golpe de gracia y haces que el enorme monstruo retroceda tambaleante. Con un contrito gañido, la criatura se desploma en el suelo de la caverna, sangrando por numerosas heridas. Te la quedas mirando el tiempo suficiente como para asegurarte de que no volverá a levantarse y luego te recompones y empiezas a dirigirte hacia la salida. Quieres poner tierra de por medio entre este lugar y tú.",
+              "audio": "audios/cap2/campaign/vastagos/cap2_acto_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -229,50 +301,45 @@
     {
       "id": "interludio",
       "title": "Interludio: Amigos en las bajas esferas",
-      "components": [
+      "flat": true,
+      "items": [
         {
-          "type": "resoluciones",
-          "title": "Amigos en las bajas esferas",
-          "items": [
-            {
-              "id": "vastagos_interludio_amigos_uno",
-              "label": "Amigos en las bajas esferas 1",
-              "text": "El detective Reynolds y tú os reunís en el Restaurante de Velma a primera hora de la mañana para debatir vuestros siguientes pasos. Tras haber alertado al departamento de policía de la situación producida en la planta de procesamiento de carne, el detective tiene la vista puesta en la persona responsable.\n\n–Logramos sacarles un nombre a esos condenados chalados –dice Reynolds en voz baja mientras sujeta su humeante taza de café–. Wilkes. Howard Wilkes. He echado un vistazo y es un tipo poderoso. Mucho dinero y muchos amigos. Se acaba de hacer un piso nuevo en el Barrio Norte. Lo llama “su ático”. Al parecer, es de diseño francés o algo así.\n\nReynolds se encoge de hombros.\n\n–El caso es que mientras la gente de su planta se ha convertido en sectarios o en monstruos, él ha sido como un ermitaño. Lleva semanas sin salir de casa y no deja que entre nadie. Al menos, hasta esta noche.\n\nReynolds te cuenta que, al parecer, el señor Wilkes da una fiesta en su ático. Es una oportunidad para alardear de su dinero e impresionar a otros empresarios de fuera de Arkham.\n\n–Quiere ampliar su zona de distribución y llevar esa carne contaminada a lugares externos a la ciudad. No podemos permitir que ocurra eso. Debemos entrar en esa fiesta, y conozco al tipo perfecto para meternos allí.\n\nComo si lo hubieran ensayado, la campanilla que cuelga sobre la puerta del restaurante tintinea. Sigues la mirada del detective Reynolds y ves entrar a un rostro conocido. Un hombre desaliñado de cara redonda y cabeza calva que lleva un raído traje gris y una corbata verde. Charlie Kane hace un gesto de familiaridad con la cabeza hacia la camarera mientras se dirige a vuestro reservado y se sienta junto a Reynolds.\n\n–Me alegra que haya podido venir, alcalde –dice el detective.\n\nCharlie hace una mueca al oír eso.\n\n–Que sea rápido –dice mientras echa la vista atrás, por encima del hombro.\n\n–¿Le preocupa que aún lo persigan? –pregunta Reynolds.\n\nCharlie le dedica una mirada seria al detective y responde: –Nunca dejan de hacerlo.\n\nRepasáis el plan juntos: Kane meterá vuestros nombres en la lista de invitados de la fiesta. El detective y tú llegaréis e intentaréis detener a Wilkes. Cuando Reynolds sugiere tener refuerzos policiales a la espera, Charlie niega con la cabeza.\n\n–Wilkes sabrá lo que tenéis planeado –dice el exalcalde–. Si se entera de que la pasma lo espera, podría ser capaz de cualquier cosa.\n\nCharlie mira por las ventanas del restaurante y examina las oscuras calles del exterior mientras habla.\n\n–Deberíais estar ojo avizor por una persona concreta: Priscilla Thomas. Es una empresaria muy espabilada de Boston; quiere cerrar un acuerdo de distribución con Wilkes para enviar sus productos por todo el estado. Lo mejor sería intentar convencerla de que es una mala idea, y que lo hagáis del modo que haga falta. Sin embargo, según mis contactos, la señorita Thomas no forma parte de la organización de Wilkes, así que... En fin, que intentéis negociar antes de sacar los puños a pasear.",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_1.mp3"
-            },
-            {
-              "id": "vastagos_interludio_amigos_udos",
-              "label": "Amigos en las bajas esferas 2",
-              "text": "–Gracias por tu ayuda, Charlie. Si decides volver a presentarte, esta vez te votaré.\n\nCharlie suelta un resoplido burlón.\n\n–No creo que vuelva a presentarme. Al menos no será en esta campaña –dice antes de clavarte una dura mirada–. No debéis fracasar en esto. Si Wilkes sigue con su propósito, y si cierra el trato con Priscilla, no pasará mucho tiempo antes de que todo Massachusetts quede invadido por esas... cosas.",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_2.mp3"
-            },
-            {
-              "id": "vastagos_interludio_amigos_tres",
-              "label": "Amigos en las bajas esferas 3",
-              "text": "–Charlie, ¿por qué no nos acompañas? Haz saber a quienes te persiguen que no les tienes miedo.\n\nCharlie entrecierra los ojos mientras se plantea tu propuesta. Te resulta obvio que está pensando en todo lo que ha ocurrido hasta el momento durante tu misión por ayudar a la gente del Distrito ribereño...",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_3.mp3"
-            },
-            {
-              "id": "vastagos_interludio_amigos_cuatrp",
-              "label": "Amigos en las bajas esferas 4",
-              "text": "Charlie se levanta del reservado y le da la mano al detective Reynolds primero y a ti después. Cuando le estrechas la mano, se produce una pausa. Oyes cómo se le acelera el corazón mientras le das un firme apretón. Sientes su pulso a través de su mano y puedes oler el miedo que crece en su interior. Tras un instante, aparta la mano de un brusco tirón y se apresura hacia la salida sin decir palabra.",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_4.mp3"
-            },
-            {
-              "id": "vastagos_interludio_amigos_quinto",
-              "label": "Amigos en las bajas esferas 5",
-              "text": "Charlie da un suspiro.\n\n–Habéis hecho mucho por ayudar a la gente del Distrito ribereño– dice–. Son civiles que se encuentran bajo el yugo de gente como Wilkes, y os habéis esforzado sobremanera por lograr que se haga justicia. Muy bien, me uniré a vosotros en la fiesta.",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_5.mp3"
-            },
-            {
-              "id": "vastagos_interludio_amigos_seis",
-              "label": "Amigos en las bajas esferas 6",
-              "text": "Charlie da un suspiro.\n\n–Habéis hecho mucho por ayudar a la gente del Distrito ribereño– dice–. Pero no es suficiente y aún no habéis acabado. Y lo peor es que habéis llamado mucho la atención. Una atención que no me puedo permitir. Lo lamento, pero ya he hecho demasiado. Estáis solos en esto.",
-              "audio": "audios/cap2/campaign/vastagos/interludio_amigos_6.mp3"
-            }
-          ]
+          "id": "vastagos_interludio_amigos_uno",
+          "label": "Amigos en las bajas esferas 1",
+          "text": "El detective Reynolds y tú os reunís en el Restaurante de Velma a primera hora de la mañana para debatir vuestros siguientes pasos. Tras haber alertado al departamento de policía de la situación producida en la planta de procesamiento de carne, el detective tiene la vista puesta en la persona responsable.\n\n–Logramos sacarles un nombre a esos condenados chalados –dice Reynolds en voz baja mientras sujeta su humeante taza de café–. Wilkes. Howard Wilkes. He echado un vistazo y es un tipo poderoso. Mucho dinero y muchos amigos. Se acaba de hacer un piso nuevo en el Barrio Norte. Lo llama “su ático”. Al parecer, es de diseño francés o algo así.\n\nReynolds se encoge de hombros.\n\n–El caso es que mientras la gente de su planta se ha convertido en sectarios o en monstruos, él ha sido como un ermitaño. Lleva semanas sin salir de casa y no deja que entre nadie. Al menos, hasta esta noche.\n\nReynolds te cuenta que, al parecer, el señor Wilkes da una fiesta en su ático. Es una oportunidad para alardear de su dinero e impresionar a otros empresarios de fuera de Arkham.\n\n–Quiere ampliar su zona de distribución y llevar esa carne contaminada a lugares externos a la ciudad. No podemos permitir que ocurra eso. Debemos entrar en esa fiesta, y conozco al tipo perfecto para meternos allí.\n\nComo si lo hubieran ensayado, la campanilla que cuelga sobre la puerta del restaurante tintinea. Sigues la mirada del detective Reynolds y ves entrar a un rostro conocido. Un hombre desaliñado de cara redonda y cabeza calva que lleva un raído traje gris y una corbata verde. Charlie Kane hace un gesto de familiaridad con la cabeza hacia la camarera mientras se dirige a vuestro reservado y se sienta junto a Reynolds.\n\n–Me alegra que haya podido venir, alcalde –dice el detective.\n\nCharlie hace una mueca al oír eso.\n\n–Que sea rápido –dice mientras echa la vista atrás, por encima del hombro.\n\n–¿Le preocupa que aún lo persigan? –pregunta Reynolds.\n\nCharlie le dedica una mirada seria al detective y responde: –Nunca dejan de hacerlo.\n\nRepasáis el plan juntos: Kane meterá vuestros nombres en la lista de invitados de la fiesta. El detective y tú llegaréis e intentaréis detener a Wilkes. Cuando Reynolds sugiere tener refuerzos policiales a la espera, Charlie niega con la cabeza.\n\n–Wilkes sabrá lo que tenéis planeado –dice el exalcalde–. Si se entera de que la pasma lo espera, podría ser capaz de cualquier cosa.\n\nCharlie mira por las ventanas del restaurante y examina las oscuras calles del exterior mientras habla.\n\n–Deberíais estar ojo avizor por una persona concreta: Priscilla Thomas. Es una empresaria muy espabilada de Boston; quiere cerrar un acuerdo de distribución con Wilkes para enviar sus productos por todo el estado. Lo mejor sería intentar convencerla de que es una mala idea, y que lo hagáis del modo que haga falta. Sin embargo, según mis contactos, la señorita Thomas no forma parte de la organización de Wilkes, así que... En fin, que intentéis negociar antes de sacar los puños a pasear.",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_1.mp3"
+        },
+        {
+          "id": "vastagos_interludio_amigos_udos",
+          "label": "Amigos en las bajas esferas 2",
+          "text": "–Gracias por tu ayuda, Charlie. Si decides volver a presentarte, esta vez te votaré.\n\nCharlie suelta un resoplido burlón.\n\n–No creo que vuelva a presentarme. Al menos no será en esta campaña –dice antes de clavarte una dura mirada–. No debéis fracasar en esto. Si Wilkes sigue con su propósito, y si cierra el trato con Priscilla, no pasará mucho tiempo antes de que todo Massachusetts quede invadido por esas... cosas.",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_2.mp3"
+        },
+        {
+          "id": "vastagos_interludio_amigos_tres",
+          "label": "Amigos en las bajas esferas 3",
+          "text": "–Charlie, ¿por qué no nos acompañas? Haz saber a quienes te persiguen que no les tienes miedo.\n\nCharlie entrecierra los ojos mientras se plantea tu propuesta. Te resulta obvio que está pensando en todo lo que ha ocurrido hasta el momento durante tu misión por ayudar a la gente del Distrito ribereño...",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_3.mp3"
+        },
+        {
+          "id": "vastagos_interludio_amigos_cuatrp",
+          "label": "Amigos en las bajas esferas 4",
+          "text": "Charlie se levanta del reservado y le da la mano al detective Reynolds primero y a ti después. Cuando le estrechas la mano, se produce una pausa. Oyes cómo se le acelera el corazón mientras le das un firme apretón. Sientes su pulso a través de su mano y puedes oler el miedo que crece en su interior. Tras un instante, aparta la mano de un brusco tirón y se apresura hacia la salida sin decir palabra.",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_4.mp3"
+        },
+        {
+          "id": "vastagos_interludio_amigos_quinto",
+          "label": "Amigos en las bajas esferas 5",
+          "text": "Charlie da un suspiro.\n\n–Habéis hecho mucho por ayudar a la gente del Distrito ribereño– dice–. Son civiles que se encuentran bajo el yugo de gente como Wilkes, y os habéis esforzado sobremanera por lograr que se haga justicia. Muy bien, me uniré a vosotros en la fiesta.",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_5.mp3"
+        },
+        {
+          "id": "vastagos_interludio_amigos_seis",
+          "label": "Amigos en las bajas esferas 6",
+          "text": "Charlie da un suspiro.\n\n–Habéis hecho mucho por ayudar a la gente del Distrito ribereño– dice–. Pero no es suficiente y aún no habéis acabado. Y lo peor es que habéis llamado mucho la atención. Una atención que no me puedo permitir. Lo lamento, pero ya he hecho demasiado. Estáis solos en esto.",
+          "audio": "audios/cap2/campaign/vastagos/interludio_amigos_6.mp3"
         }
-      ]
+    ]
     },
     {
       "id": "escenario_3",
@@ -293,8 +360,95 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+             {
+              "id": "cap2_vastgados_escenario_tres_plan_1a",
+              "label": "Plan 1a: Fiesta sin anfitrión",
+              "text": "Has llegado a la fiesta en plena cena, y la mayoría de los invitados están en el comedor. Notas que te observan incluso cuando no hay ningún otro invitado mirándote...",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_plan_1b",
+              "label": "Plan 1b: El anfitrión más molón",
+              "text": "Mientras el personal de servicio sirve el postre, se oye un ruido de cristales rotos en la cocina. La gente del comedor se detiene durante un tenso instante de silencio, hasta que un invitado se levanta de la silla y dice con una sonrisa:\n\n–Parece que Howard tiene su propia fiesta.\n\nMientras se dirige hacia la puerta de la cocina, un monstruo de afilados colmillos sale por ella de un salto y lo tira al suelo. Los demás invitados gritan de terror y la fiesta se sume en un sangriento caos.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_1b.mp3"
+            },
+            {
+               "id": "cap2_vastgados_escenario_tres_plan_2a_v1",
+              "label": "Plan 2a: Frenesí alimentario (v. I) & (v. II)",
+              "text": "Los trabajadores maculados de New Horizons han llegado hasta aquí. ¿Han acudido por voluntad propia? ¿O los has traído tú sin querer?",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_plan_2b",
+              "label": "Plan 2b: Renacimiento violento",
+              "text": "El inmaculado ático ha dejado de serlo para convertirse en un caótico baño de sangre mientras los monstruos se dan un festín con los asustados y confusos invitados a la fiesta. Para horror tuyo, los cuerpos que pueblan el suelo no permanecen mucho tiempo inmóviles...",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_2b.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_plan_3a",
+              "label": "Plan 3a: Bajo una luna de sangre",
+              "text": "Es imposible razonar con los monstruos mientras consumen de forma atroz a los aterrados invitados. La fiesta no tarda en sumirse en la locura.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_3a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_plan_3b",
+              "label": "Plan 3b: Desangrarse",
+              "text": "Te debates frente a la marea de monstruos, pero cada persona que cae no tarda en volver a levantarse con garras, colmillos y sed de sangre... incluyéndote a ti.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_plan_3b.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_1a",
+              "label": "Acto 1a: ¿Hay trato?",
+              "text": "El anfitrión de la fiesta no aparece por ninguna parte, pero la fiesta continúa igualmente. Es tu oportunidad de averiguar lo que puedas de los demás invitados, y tal vez de convencer a la señorita Thomas de que abandone su asociación con New Horizons.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_1b",
+              "label": "Acto 1b: Derecho de retracto",
+              "text": "Ahora que Priscilla Thomas ya no es un problema, puedes centrarte en llevar a Howard Wilkes ante la justicia. Si tan sólo pudieras encontrarlo...",
+              "audio": "audios/cap2/campaign/vastagos/cap3_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_2a",
+              "label": "Acto 2a: ¿Dónde está Wilkes?",
+              "text": "Ahora que Priscilla Thomas no es un problema, puedes centrarte en encontrar a Howard Wilkes y detenerlo.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_2b",
+              "label": "Acto 2b: La llegada de Howard",
+              "text": "Al asomarte al dormitorio principal, ves que la estancia se encuentra en un estado preocupante: la cama está totalmente deshecha, los cuadros cuelgan de cualquier manera de las paredes y, lo peor de todo, el suelo está resbaladizo de sangre recién derramada. Las puertas que dan al balcón están abiertas de par en par. Tus ojos se acostumbran a la oscuridad justo a tiempo de ver a una alta silueta que corre hacia ti.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_acto_2b.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_3a",
+              "label": "Acto 3a: Baño de sangre",
+              "text": "Howard Wilkes ha llegado por fin. Puedes intentar salvar a tantos invitados como te sea posible antes de huir o bien puedes enfrentarte a Howard y poner fin a esta pesadilla.",
+              "audio": "audios/cap2/campaign/vastagos/cap3_acto_3a.mp3"
+            },
+            {
+              "id": "cap2_vastgados_escenario_tres_acto_3b",
+              "label": "Acto 3b: Se acabó la fiesta",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si este acto avanzó porque Howard Wilkes fue derrotado:", 
+                  "content": "Tras una larga y sangrienta pelea, logras acabar con Howard Wilkes de una vez por todas. Esperas que esta pesadilla quede atrás por fin.",
+                  "src": "audios/cap2/campaign/vastagos/cap3_acto_3b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si este acto avanzó porque todos los investigadores supervivientes han desistido:", 
+                  "content": "Logras huir de la fiesta con vida. Tan sólo esperas haber logrado salvar a suficientes invitados y retrasado los planes de Howard el tiempo suficiente como para marcar la diferencia.",
+                  "src": "audios/cap2/campaign/vastagos/cap3_acto_3b_2.mp3"
+                }
+              ]
+              
+            }
+          ]
+          
         },
                 {
           "type": "codices",
