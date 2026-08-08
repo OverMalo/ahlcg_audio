@@ -2447,7 +2447,7 @@ function togglePanel(panelId) {
           const panelDuration = panelEl.duration;
           const totalDuration = ambientEl ? panelDuration + 2 : panelDuration;
           initPlayer(contentEl, panelEl, ambientEl || null, totalDuration, panelDuration, node, isMulti ? playerEl : undefined);
-          if (autoPlay) {
+          if (autoPlay && !node.noAutoPlay) {
             duckSTFade(() => {
               const p = activePlayer;
               if (!p) return;
@@ -2974,6 +2974,7 @@ function buildLeavesForNav(nav) {
         description: item.text || "",
         audioSrc: item.audio || "",
         segments: item.segments || null,
+        noAutoPlay: item.noAutoPlay || false,
         tags: {
           campaign: section.id,
           scenario: resolved.scenario?.id || "",
