@@ -2,6 +2,7 @@
   "type": "campaign",
   "origin": "oficial",
   "era": 1,
+  "comingSoon": true,
   "beta": true,
   "id": "el_legado_de_dunwich",
   "title": "El legado de Dunwich",
