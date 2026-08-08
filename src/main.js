@@ -96,6 +96,13 @@ function resolveNavItems(nav) {
   if (!scenario) return null;
 
   if (nav.componentType === OVERVIEW_COMPONENT) {
+    // Escenarios planos: items directos sin agrupar por componentes.
+    if (scenario.flat) {
+      const items = scenario.items || [];
+      const group = { type: scenario.id, title: scenario.title, nav, items };
+      return { scenario, componentTitle: scenario.title, isOverview: false, groups: [group] };
+    }
+
     const groups = (scenario.components || []).map((c) => ({
       type: c.type,
       title: c.title,
@@ -1635,11 +1642,17 @@ function renderSectionNode(section) {
 // Nodo de escenario: al pulsarlo muestra su índice (todos los componentes) y se
 // despliega en el árbol; contiene sus componentes como sub-hojas seleccionables.
 function renderScenarioNode(section, scenario) {
+  const overviewNav = { sectionType: section.type, sectionId: section.id, scenarioId: scenario.id, componentType: OVERVIEW_COMPONENT };
+  const active = view === "narraciones" && selectedNav && navId(selectedNav) === navId(overviewNav);
+
+  // Escenarios planos (p.ej. epílogos): se muestran como hoja sin hijos desplegables.
+  if (scenario.flat) {
+    return renderNavLeaf(overviewNav, scenario.title, { beta: scenario.beta, comingSoon: scenario.comingSoon });
+  }
+
   const key = scenarioToggleKey(section.type, section.id, scenario.id);
   const open = expandedNav.has(key);
   const caret = open ? ICONS.caretUp : ICONS.caretDown;
-  const overviewNav = { sectionType: section.type, sectionId: section.id, scenarioId: scenario.id, componentType: OVERVIEW_COMPONENT };
-  const active = view === "narraciones" && selectedNav && navId(selectedNav) === navId(overviewNav);
 
   let childrenHtml = "";
   if (open) {

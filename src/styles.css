@@ -7,7 +7,7 @@
 :root {
   /* ═══════════════════════════════════════════════════════════════════════
      TEMAS. El tema por defecto (VERDE TENTACULAR) vive aquí en :root. Los otros
-     dos (púrpura cósmico / claridad psícopata) están al final del fichero como
+     dos (púrpura cósmico / claridad psicópata) están al final del fichero como
      :root[data-theme="..."] y solo redefinen estos tokens. Los valores derivados
      — rgb(var(--x-rgb) / α), sombras… — siguen automáticamente al cambiar de tema,
      porque las custom properties se resuelven de forma perezosa en cada uso.
@@ -2596,7 +2596,7 @@ input[type="range"]:focus-visible::-moz-range-thumb {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   TEMA · CLARIDAD PSÍCOPATA — modo CLARO. Pergamino y marrones claros muestreados
+   TEMA · CLARIDAD PSICÓPATA — modo CLARO. Pergamino y marrones claros muestreados
    de los manuales oficiales; titulares en verde-teal apagado; secundario oxblood;
    filigranas en bronce oscuro. Toda la app en claro. Verificado AA (≥ 4.5:1).
    ═══════════════════════════════════════════════════════════════════════════ */
