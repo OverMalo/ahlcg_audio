@@ -39,8 +39,87 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap2_vastagos_escenario_uno_acto_1a",
+              "label": "Acto 1a: Encontrar la guarida",
+              "text": "La criatura se ha ocultado. Tendrás que encontrar su guarida y hacer que salga.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_acto_1a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_acto_1b",
+              "label": "Acto 1b: El mounstro aparece",
+              "text": "Julia sale de su escondite con un alarido que hiela la sangre. Da garrazos con total desenfreno y mira a su alrededor con ojos monstruosos en busca de su siguiente víctima.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_acto_1b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_acto_2a",
+              "label": "Acto 2a: Arriconar a la sospechosa",
+              "text": "Julia Stern anda suelta, y está claro que ha dejado de ser humana. Esta al acecho en las callas de Arkham, buscando víctimas. Tendrás que darte prisa en ralentizarla para evitar que mate de nuevo.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_acto_2a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_acto_2b",
+              "label": "Acto 2b: El destino de Julia Stern",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si Julia Stern _no está_ en la zona de victoria:", 
+                  "src": "audios/cap2/campaign/vastagos/cap1_acto_2b_a.mp3",
+                  "content": "Julia resulta ser un objetivo difícil de localizar. Incluso cuando crees que la tienes, te sorprende la velocidad a la que logra volver a escabullirse entre las sombras."
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si Julia Stern _está_ en la zona de victoria:", 
+                  "src": "audios/cap2/campaign/vastagos/cap1_acto_2b_b.mp3",
+                  "content": "Después de horas, días, de lucha, al fin logras abatir a Julia. Yace desplomada sobre los adoquines, con la respiración entrecortada y apenas consciente."
+                }
+              ]
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_1a",
+              "label": "Plan 1a: El primer día",
+              "text": "Julia Stern se oculta en alguna parte del Distrito ribereño. Tendrás que inspeccionar el barrio para ver si encuentras la guarida del monstruo antes de que vuelva a salir para matar.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_1a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_1b",
+              "label": "Plan 1b: Anochecer del primer día",
+              "text": "El sol se pone por debajo del horizonte occidental y vuelve a sumir Arkham en la oscuridad.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_1b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_2a",
+              "label": "Plan 2a: La primera noche",
+              "text": "La luz de la luna llena arroja sombras marcadas en las calles de Arkham y crea rincones oscuros y callejones demasiado en penumbra como para poder ver con claridad. La luz de las farolas no parece llegar tan lejos como debería. El sonido de alguien, o de algo, que araña la pared de un edificio cercano te pone en tensión. Pero sabes que tienes poco tiempo para encontrar a Yulia, así que te aprestas a enfrentarte a la noche.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_2a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_2b",
+              "label": "Plan 2b: Alba del segundo día",
+              "text": "Afortunadamente, el sol comienza a alzarse por el horizonte oriental e ilumina el Miskatonic con su resplandeciente reflejo.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_2b.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_3a",
+              "label": "Plan 3a: El segundo día",
+              "text": "Te quedas sin tiempo. Si quieres acabar con la amenaza de Julia Stern, tendrás que actuar con rapidez.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_3a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_4a",
+              "label": "Plan 4a: La noche final",
+              "text": "Cada vez que doblas una esquina, esperas encontrar otra víctima ensangrentada que ha caído presa de las maquinaciones predatorias de Julia. La noche es tranquila en general, pero el sonido de un grito lejano o el arañar de unas garras sobre los adoquines son recordatorios constantes de que hay monstruos ocultos en cada sombra.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_4a.mp3"
+            },
+            {
+              "id": "cap2_vastagos_escenario_uno_plan_4b",
+              "label": "Plan 4b: El alba final",
+              "text": "El río Miskatonic parece arder con una brillante luz anaranjada cuando el sol se alza por el este. La noche se desvanece, y las calles vuelven a llenarse de vida poco a poco mientras la gente del Distrito ribereño empieza un nuevo día. Ha transcurrido demasiado tiempo, y Julia Stern ha escapado. La única esperanza que te queda es que el detective Reynolds haya obtenido resultados en su investigación.",
+              "audio": "audios/cap2/campaign/vastagos/cap1_plan_4b.mp3"
+            }
+          ]
         },
 
         {
