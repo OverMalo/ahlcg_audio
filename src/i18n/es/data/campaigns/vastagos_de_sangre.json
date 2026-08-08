@@ -5,8 +5,11 @@
   "id": "vastagos_de_sangre",
   "title": "Vástagos de la sangre",
   "banner": "images/banner_children_of_blood.webp",
-  "comingSoon": false,
   "beta": true,
+  "about": [
+    "“Afirmar que creíamos realmente en vampiros o en hombres-lobo no sería exacto. Más bien puede decirse que no estábamos dispuestos a negar la posibilidad de ciertas modificaciones anormales y sin clasificar de la energía vital y la materia diluida, existentes con poca frecuencia en el espacio tridimensional a causa de su más íntima relación con otras unidades espaciales, pero lo suficientemente próximas a la nuestra como para manifestarse ocasionalmente en formas que, por faltarnos una perspectiva adecuada, escapan a nuestra comprensión”.–H. P. Lovecraft, “La casa evitada”",
+    "Vástagos de la sangre es una expansión de campaña pequeña para Arkham Horror: El juego de cartas para 1–4 jugadores que contiene los siguientes escenarios: “Río de sangre”, “New Horizons” y “Dinero de sangre”. Cada uno de estos escenarios también se puede jugar por sí solo como escenario independiente."
+  ],
   "intro": {
     "type": "introduccion",
     "title": "Introducción",
