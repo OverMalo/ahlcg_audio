@@ -43,9 +43,16 @@ export function initNewsModal() {
 
   const list = document.createElement("ul");
   list.className = "news-modal-list";
+  // Un item puede ser un string (viñeta normal) o { text, heading } para un
+  // encabezado centrado y sin viñeta.
   for (const item of news.items) {
     const li = document.createElement("li");
-    li.textContent = item;
+    if (typeof item === "string") {
+      li.textContent = item;
+    } else {
+      li.textContent = item.text || "";
+      if (item.heading) li.className = "is-heading";
+    }
     list.appendChild(li);
   }
 

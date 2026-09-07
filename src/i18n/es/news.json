@@ -1,7 +1,10 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "Novedades",
   "items": [
+    { "text": "Septiembre 2026", "heading": true },
+    "Nueva campaña 'El legado de Dunwich' disponible.",
+    { "text": "Agosto 2026", "heading": true },
     "Nueva campaña 'Vástagos de la sangre' disponible.",
     "Nuevo escenario fanmade 'El día que la Tierra aulló' disponible.",
     "Añadido dos nuevos temas visuales enfocados a la nueva campaña 'Vástagos de la sangre'."

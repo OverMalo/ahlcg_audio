@@ -2936,6 +2936,16 @@ input[type="range"]:focus-visible::-moz-range-thumb {
   background: var(--accent);
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='M7 2 L12 7 L7 12 L2 7 Z'/%3E%3C/svg%3E");
 }
+.news-modal-list li.is-heading {
+  padding-left: 0;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: var(--muted-2);
+  margin-top: 0.4rem;
+}
+.news-modal-list li.is-heading:first-child { margin-top: 0; }
+.news-modal-list li.is-heading::before { content: none; }
 .news-modal-close {
   align-self: center;
   margin-top: 0.5rem;
