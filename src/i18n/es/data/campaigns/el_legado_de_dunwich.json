@@ -2,7 +2,7 @@
   "type": "campaign",
   "origin": "oficial",
   "era": 1,
-  "comingSoon": true,
+  "comingSoon": false,
   "beta": true,
   "id": "el_legado_de_dunwich",
   "title": "El legado de Dunwich",
@@ -43,8 +43,81 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_1a",
+              "label": "Acto 1a: Después de clase",
+              "text": "Uno de los alumnos de Armitage vio por última vez al profesor Rice hace varias horas en el edificio de Humanidades.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_1b",
+              "label": "Acto 1b: El jefe de bedeles",
+              "text": "No lográis encontrar al profesor Rice, pero uno de los estudiantes con los que habláis menciona a un hombre extraño que entró en el despacho de Rice. Por desgracia, la puerta que lleva a los despachos del profesorado está cerrada a esta hora. El estudiante os dice que el jefe de bedeles, “Jazz”, podía dejaros entrar si lográis encontrarlo.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_2a",
+              "label": "Acto 2a: El paradero de Rice",
+              "text": "Preocupados por la seguridad del profesor Rice, buscáis al jefe de bedeles, que puede dejaros entrar en las secciones cerradas del campus.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_2b",
+              "label": "Acto 2b: ¡El experimento anda suelto!",
+              "text": "Convencéis a “Jazz” de que está ocurriendo algo extraño y el profesor Rice podría estar en peligro. No confía tanto en vosotros como para daros sus llaves, pero accede a acompañaros. De pronto, oís un estruendo que proviene del edificio de Ciencias, y un estudiante viene corriendo hacia vosotros. —¡Ayuda! —grita—. ¡Hay una especie de animal suelto en los laboratorios de química! Apenas lo he entrevisto, pero… —se estremece—. ¡Creo que se dirige a la residencia estudiantil! ¡Tenéis que hacer algo!",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_3a",
+              "label": "Acto 3a: Seguridad del campus",
+              "text": "Sólo tenéis unos instantes para reaccionar. Podéis advertir a los estudiantes de la residencia estudiantil y acompañarlos a un lugar seguro, o bien podéis continuar vuestra tarea de registrar los despachos del profesorado en busca del profesor Rice. O quizás podéis intentar matar a la bestia que amenaza el campus.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_acto_3b",
+              "label": "Acto 3a: La muerte de la bestia",
+              "text": "La monstruosa criatura emite un terrible aullido cuando sucumbe a sus heridas y se desploma en el suelo. Un nauseabundo olor emana de su cadáver mientras su carne comienza a burbujear y espumar. Vuestro alivio se convierte en repulsión cuando el cuerpo empieza a encoger y desintegrarse. Minutos más tarde, el cuerpo se ha evaporado casi por completo dejando una masa pegajosa, y el terrible olor ha desaparecido. Dentro de los restos del cuerpo de la criatura no encontráis más que huesos: la estructura esquelética de un canino.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_1a",
+              "label": "Plan 1a: Aulas tranquilas",
+              "text": "Habéis llegado al campus de la Universidad Miskatonic en busca del profesor Warren Rice. Las clases han terminado, y un misterioso silencio reina en el ambiente del patio principal.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_1b",
+              "label": "Plan 1b: Algo se agita",
+              "text": "En la universidad no se oye ni un alma. Las sombras se enroscan alrededor de vuestros pies al caminar, y juraríais que hay algo que os sigue a cada paso que dais. ¿Es sólo vuestra imaginación? ¿O realmente hay algo, o alguien, que os acecha?",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_2a",
+              "label": "Plan 2a: En mitad de la noche",
+              "text": "La desaparición del profesor Rice no es el único suceso extraño en la Universidad. No estáis seguros de qué está sucediendo exactamente, pero empezáis a creer que Armitage tenía razón en pedir vuestra ayuda.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_2b",
+              "label": "Plan 2b: Un experimento que salió mal",
+              "text": "Un grito de miedo resuena por el campus, y varios estudiantes vienen huyendo desde el lado este de la universidad, donde se encuentra el edificio de Ciencias. ¿Estará relacionado este alboroto con la desaparición del profesor Rice?",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_3a",
+              "label": "Plan 3a: La bestia desatada",
+              "text": "Una especie de criatura salvaje anda suelta. Sea lo que sea, parece que se dirige hacia la residencia estudiantil de la universidad.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_plan_3b",
+              "label": "Plan 3b: No llegáis a tiempo",
+              "text": "Antes de que podáis actuar, oís gritos provenientes de la parte norte del campus. Comenzáis a dirigiros hacia los gritos, pero vuestra visión se va oscureciendo con cada paso que dais. En cuanto tenéis a la criatura a la vista, sentís cómo la oscuridad se apodera de vosotros, y una fuerza os arrebata la consciencia. Todo se vuelve negro, y os desmayáis.",
+              "audio": "audios/cap1/campaign/dunwich/cap1_plan_3b.mp3"
+            }
+          ]
+          
         },
         {
           "type": "resoluciones",
@@ -103,8 +176,107 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_1a",
+              "label": "Acto 1a: La suerte del principiante",
+              "text": "Debéis encontrar al Dr. Morgan. El club está abarrotado, y quizás alguien sepa dónde está.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_1b",
+              "label": "Acto 1b: Jugador de altos vuelos",
+              "text": "Tras hablar con varios de los jugadores y camareros, parece que el Dr. Morgan ha tenido una racha increíble últimamente. En lugar de cobrar sus ganancias, le convencieron para que se lo jugara a doble o nada. La última vez que lo vieron, estaba entrando en el pasillo vigilado por guardias que hay en la parte trasera de la sala de juego.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_2a",
+              "label": "Acto 2a: Juego sucio",
+              "text": "El Dr. Morgan está en alguna parte de la sección privada del club, donde sólo se permite entrar a los VIP y a los encargados del club. Si queréis encontrarlo, vais a tener que colaros o abriros paso peleando.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_2b",
+              "label": "Acto 2b: El destino del Dr. Morgan",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si los jugadores _no_ han completado Actividad extracurricular:", 
+                  "content": "Encontráis al Dr. Morgan jugando en una de las salas VIP… pero parece estar jugando a las cartas con dos cuerpos inconscientes, con las pupilas dilatadas como si estuviera en trance. No deja de reír, sonreír y charlar con los otros “jugadores”.",
+                  "src": "audios/cap1/campaign/dunwich/cap1b_acto_2b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si los jugadores han completado Actividad extracurricular:", 
+                  "content": "Las salas VIP están llenas de los cuerpos mutilados y ensangrentados de infortunados clientes, pero no parece haber ni rastro del Dr. Morgan. Oís gritos y disparos provenientes de la zona principal del club.",
+                  "src": "audios/cap1/campaign/dunwich/cap1b_acto_2b_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_3a_1",
+              "label": "Acto 3a: No va más",
+              "text": "Tenéis que salir de aquí, con el Dr. Morgan o sin él. Y rápido.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_3a_1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_3b_1",
+              "label": "Acto 3b: A salvo… Por ahora",
+              "text": "Huis del club, tratando de pasar desapercibidos, cuando varios coches paran en la calle. De ellos salen hombres y mujeres de rostro adusto, que corren hacia la entrada del restaurante para controlar la situación. Uno se os queda mirando mientras aferra su arma del .38, pero, por suerte, vuelve a dirigir su atención al resto de su grupo y los sigue al interior del club. Dais un suspiro de alivio…",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_3b_1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_3a_2",
+              "label": "Acto 3a: Abandono",
+              "text": "—¡Barra libre para quien me saque de esta locura! —exclama un hombre desde el bar.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_3a_2.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_acto_3b_2",
+              "label": "Acto 3b: Huida del club",
+              "text": "Os ponéis en marcha para salir a las calles de Arkham, mojadas por la lluvia.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_acto_3b_2.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_1a",
+              "label": "Plan 1a: El Clover Club",
+              "text": "Habéis entrado en el casino del Clover Club en busca del Dr. Morgan. El club está abarrotado a estas horas de la noche, repleto de clientes que quieren relajarse y beber o bien ganar a lo grande. No parece que estéis en peligro.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_1b",
+              "label": "Plan 1b: Tras la buena pista",
+              "text": "Vuestras preguntas han atraído la atención de varios hombres con aspecto de matones a sueldo. —Francis no quiere que le molesten —dice uno de ellos—. Les sugerimos que abandonen el local antes de que debamos obligarles a marcharse.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_2a",
+              "label": "Plan 2a: Matones de los bajos fondos",
+              "text": "La mayoría de los demás clientes parecen ajenos a los mafiosos y matones que empiezan a rodearos. Pero vosotros sois conscientes de lo que ocurre: están a punto de daros una paliza.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_2b",
+              "label": "Plan 2b: Caos repentino",
+              "text": "Oís un estruendo que viene de fuera y gritos de dolor en el salón. Una terrible monstruosidad atraviesa la entrada del club, haciendo añicos la escalera y llevándose por delante tanto a clientes como a gánsteres.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_3a",
+              "label": "Plan 3a: Caos en el Clover Club",
+              "text": "Las extrañas abominaciones atacan a todos los presentes en el club entre el caos y la confusión. Las salas se llenan de gritos cuando comienza a correr la sangre.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_uno_b_plan_3b",
+              "label": "Plan 3b: El edificio se desploma",
+              "text": "Mientras las extrañas abominaciones siguen arrasando el club, los cimientos del edificio comienzan a sacudirse y temblar. Huis hacia la salida, pero quedáis atrapados por los escombros que caen cuando el club queda destruido.",
+              "audio": "audios/cap1/campaign/dunwich/cap1b_plan_3b.mp3"
+            }
+            
+          ]
+          
         },
         {
           "type": "resoluciones",
@@ -193,8 +365,106 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_1a",
+              "label": "Acto 1a: Encontrar una forma de entrar",
+              "text": "Por desgracia, la entrada del museo está cerrada a esta hora de la noche. Podéis ver a un guardia de seguridad por las ventanas delanteras del edificio, totalmente distraído. Quizá podáis encontrar la forma de atraer su atención y convencerle de que os deje entrar.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_1b",
+              "label": "Acto 1b: Obtener acceso",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si los investigadores gastaron pistas para avanzar:", 
+                  "content": "Encontráis la ventana más cercana al guardia y la golpeáis lo suficientemente fuerte como para llamar su atención. Se sobresalta y abre la ventana: —¿Qué quieren? —pregunta tímidamente. Le explicáis la situación y le decís que corre un grave peligro. Abre cauteloso la puerta delantera del museo y sacude la cabeza: —Ni siquiera tendría que estar aquí hoy...",
+                  "src": "audios/cap1/campaign/dunwich/cap2_acto_1b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si los investigadores realizaron con éxito la capacidad -> de las Salas del museo para avanzar:", 
+                  "content": "Con gran fuerza, echáis abajo la puerta del museo, haciendo un ruido considerable. El guardia de seguridad os ve entrar, grita de miedo y corre hacia la parte de atrás del museo.",
+                  "src": "audios/cap1/campaign/dunwich/cap2_acto_1b_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_2a_1",
+              "label": "Acto 2a: Una noche en el museo",
+              "text": "Guardan el Necronomicón en una sala restringida, en alguna parte del museo. Adam apenas conoce el lugar, y se sobresalta con cada crujido del viejo edificio.\n\n—Empecé a trabajar aquí la semana pasada —os explica—. ¿Qué problema dicen que hay? —No tenéis el valor de contarle toda la historia.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_2a_1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_2b_1",
+              "label": "Acto 2b: El destino del conservador",
+              "text": "Cuando entráis en la sala restringida, encontráis al conservador del museo sobre un charco de sangre, con los intestinos desparramados formando una grotesca visión. Se os revuelve el estómago y tenéis que combatir las ganas de vomitar. Quien haya hecho esto sigue cerca...",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_2b_1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_2a_2",
+              "label": "Acto 2a: Allanamiento",
+              "text": "Guardan el Necronomicón en una sala restringida, en alguna parte del museo.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_2a_2.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_2b_2",
+              "label": "Acto 2b: El destino del guardia",
+              "text": "Cuando entráis en la sala restringida, encontráis al conservador del museo aferrando una ornamentada estatua como si fuera una porra, con el traje manchado de sangre y una expresión de pánico en el rostro. El guardia de seguridad que visteis antes yace sobre un charco de sangre, cerca de allí, con los intestinos desparramados formando una grotesca visión. Se os revuelve el estómago y tenéis que combatir las ganas de vomitar. —Intenté detenerlo, pero... —dice el conservador con voz queda y temblorosa. Quien haya hecho esto sigue cerca...",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_2b_2.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_3a",
+              "label": "Acto 3a: Buscar el tomo",
+              "text": "En alguna parte de esta zona se encuentra la traducción al latín del Necronomicón de Olaus Wormius. ¡Debéis encontrarla y huir mientras podáis!",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_acto_3b",
+              "label": "Acto 3b: El Necronomicón",
+              "text": "Por fin, encontráis el estuche cerrado que contiene el Necronomicón.\n\nEl tomo, de más de ochocientas páginas de longitud, está repleto de todo tipo de imágenes macabras, fórmulas, hechizos, profecías y descripciones de criaturas de más allá del umbral del espacio.\n\nSin ninguna duda, es un libro peligroso... Pero sus secretos podrían ser muy útiles.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_1a",
+              "label": "Plan 1a: Acceso restringido",
+              "text": "El Dr. Armitage le ha dado la traducción al latín de la universidad del Necronomicón a su colega, Harold Walsted, el conservador del museo de la Universidad Miskatonic. Preocupados por que alguien pueda seguir tratando de hacerse con el libro, habéis ido al museo a recuperarlo.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_1b",
+              "label": "Plan 1b: Una criatura del vacío",
+              "text": "Entre las sombras de las salas del museo, una terrible criatura se desliza, larga y serpentina, y se impulsa con unas coriáceas alas negras.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_2a",
+              "label": "Plan 2a: Las sombras avanzan",
+              "text": "Las sombras del museo crecen y se vuelven más oscuras. A medida que se alargan y cambian, comienzan a sugerir el cuerpo correoso de una imposible criatura que se mueve a toda velocidad en los márgenes de vuestra percepción...",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_2b",
+              "label": "Plan 2b: Cazado",
+              "text": "La criatura no ceja, y os persigue por todo el museo.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_3a",
+              "label": "Plan 3a: En cada sombra",
+              "text": "La criatura del museo se vuelve mayor y más aterradora a cada momento que pasa. Su cuerpo repta de sombra a sombra, y cada rincón de cada sala es un escondite potencial para la terrible bestia.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_dos_plan_3b",
+              "label": "Plan 3b: Expulsados",
+              "text": "Al no tener forma de derrotar a la criatura, huis. Veis en cada sombra de cada corredor el reptante cuerpo del serpentino horror, y las salas del museo se vuelven más oscuras con la presencia de la criatura. Al llegar a la entrada, está bloqueando la puerta y os ataca con sus terribles colmillos. Apenas lográis escapar del edificio con vida, aunque los efectos del veneno de la criatura os marcarán para siempre.",
+              "audio": "audios/cap1/campaign/dunwich/cap2_plan_3b.mp3"
+            }
+          ]
+          
         },
         {
           "type": "resoluciones",
@@ -241,8 +511,92 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_tres_acto_1a",
+              "label": "Acto 1a: ¡Corred!",
+              "text": "El tren se ha detenido sobre un puente que se eleva sobre el río Miskatonic; quizá podríais sobrevivir a la caída, pero no queréis tentar a la suerte. Lo mejor que podéis hacer es llegar a la locomotora tan rápido como podáis para volver a poner el tren en marcha.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_acto_1b",
+              "label": "Acto 1b: Alas de vapor",
+              "text": "Un ténder lleno de carbón bloquea el paso hasta la cabina de la locomotora. Te tragas el miedo y sales por la ventana que tienes más cerca para trepar al techo del tren y cruzar el ténder. El incesante movimiento hacia atrás del tren te dificulta no perder el equilibrio. Al acercarte, una criatura alada desciende desde lo alto, con un cuerpo compuesto de hirviente vapor.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_acto_2a",
+              "label": "Acto 2a: Alas de vapor",
+              "text": "Habéis logrado llegar a la locomotora, pero ¡ahora tenéis que volver a arrancar el motor para poder escapar de la fuerza absorbente del portal!",
+              "audio": "audios/cap1/campaign/dunwich/cap3_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_acto_2b",
+              "label": "Acto 2b: Alas de vapor",
+              "text": "El motor ruge y se pone en marcha. Echáis carbón a paletadas en la caldera del motor, y os alivia ver que el tren vuelve a moverse hacia delante por las vías.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_1a",
+              "label": "Plan 1a: Un desgarro en la realidad",
+              "text": "Cuando el tren a Dunwich se detiene abruptamente, miráis por la ventana hacia atrás y veis una inmensa grieta en el cielo, como un desgarro en un trozo de tela. Varios de los vagones de retaguardia están siendo arrastrados hacia atrás, y se oye un terrible crujido metálico cuando se sueltan. Los vagones caen hacia arriba, en dirección de la grieta del cielo. Los pasajeros que tenéis cerca entran en pánico, otros están encogidos de miedo en sus asientos, y un hombre mayor se ha desmayado de terror.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_1b",
+              "label": "Plan 1b: ¡Seguid moviéndoos!",
+              "text": "El último vagón se desengancha al ser arrastrado hacia atrás. Veis con horror como se eleva de las vías y es consumido por el portal que tenéis encima.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_2a",
+              "label": "Plan 2a: La grieta se ensancha",
+              "text": "La grieta se hace mayor, y notáis como el último vagón del tren tiembla al ser arrastrado hacia atrás. La situación amenaza con desembocar en el caos a medida que más pasajeros se dan cuenta del peligro que corren. Algunos buscan sitios para ocultarse, mientras que otros corren por los compartimentos presa del pánico.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_2b",
+              "label": "Plan 2b: ¡No os detengáis!",
+              "text": "El siguiente vagón es arrancado con una violenta fuerza. Un hombre de mediana edad cuelga por la punta de los dedos del vagón mientras éste vuela directamente hacia la grieta. En unos instantes, el vagón es consumido por completo, y el hombre se suelta antes de ser absorbido por el vacío. Comienza a caer, pero la fuerza de la grieta lo atrapa y es engullido de todas formas.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_3a",
+              "label": "Plan 3a: Rodando hacia atrás",
+              "text": "La atracción de la grieta del cielo parece hacerse más fuerte, y todo el tren comienza a rodar hacia atrás por las vías. Los últimos vagones del tren comienzan a traquetear, y la fuerza de la grieta amenaza con desengancharlos. ¡Debéis salir de estos vagones lo más rápido que podáis!",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_3b",
+              "label": "Plan 3b: ¡Está yendo más rápido!",
+              "text": "Dos de los vagones más cercanos al portal quedan cercenados del resto del tren por una especie de cortina de vapor increíblemente caliente que atraviesa el metal como si fuera mantequilla. Los vagones son absorbidos hacia arriba y vuelan hacia el portal. Algo que hay por encima del tren emite un terrible chillido, aunque a vuestros oídos parece como el sonido de una tubería de vapor rota.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_3b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_4a",
+              "label": "Plan 4a: Atraídos",
+              "text": "El portal chisporrotea de poder a medida que aumenta su fuerza. La tierra y las rocas del borde del puente que tenéis detrás están siendo arrancadas del suelo, y los árboles están siendo desarraigados al ser atraídos por el portal. Un joven pasajero rompe la ventana de vuestro vagón y grita: —¡Debemos salir de aquí! —Salta por la ventana, pero antes de caer al río que hay debajo, es atrapado por las garras de una veloz criatura voladora y desaparece de vuestra vista. Al paso de la criatura sólo queda un rastro de vapor.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_4a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_4b",
+              "label": "Plan 4b: No hay lugar seguro",
+              "text": "Los dos vagones de la cola del tren comienzan a fundirse a medida que se llenan de vapor ultracaliente. El metal se dobla, y los pasajeros del interior gritan de agonía. Los vagones son arrancados de las vías del tren junto con tablones de los raíles y trozos del puente que tenéis detrás.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_4b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_5a",
+              "label": "Plan 5a: Se acaba el tiempo",
+              "text": "La grieta del cielo se retuerce y tiembla, completamente distorsionada. Ahora tiene un tamaño descomunal, y su forma no deja de cambiar, como si estuviera a punto de explotar.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_5a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_tres_plan_5b",
+              "label": "Plan 5b: Engullidos",
+              "text": "Todo el puente se resquebraja por la presión del portal y acaba partiéndose. En lugar de caer al río, los vagones restantes son atraídos hacia la grieta del cielo. Os agarráis como podéis y gritáis de terror al ser absorbidos por el portal. Después, todo se vuelve negro.",
+              "audio": "audios/cap1/campaign/dunwich/cap3_plan_5b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -289,8 +643,68 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cuatro_acto_1a",
+              "label": "Acto 1a: Buscando respuestas",
+              "text": "Las desapariciones producidas en el pueblo pueden estar relacionadas con los acontecimientos de Arkham. Sospecháis que hay en marcha algo terrible. Debéis encontrar dónde retienen a los lugareños desaparecidos para descubrir esta conspiración.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_acto_1b",
+              "label": "Acto 1b: Lo que estaba oculto",
+              "text": "Lográis acceder a la cámara oculta en la que creéis que retienen a los desaparecidos, pero los horrores que os plantan cara allí crispan los límites de vuestra cordura. Encadenada en un apartado rincón de la sala se encuentra una terrible criatura con rostro de hombre. Jadea y pugna por liberarse al veros entrar. Las muchas bocas que cubren el cuerpo de la criatura están cubiertas de sangre y trozos de carne, como si se hubiera alimentado hace poco.\n\nCon un terrible graznido, la criatura habla con siete bocas: —¿Ss.. se... eth... ? —Después se tambalea hacia delante como si quisiera agarraros, y varias de sus cadenas se parten.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_acto_2a",
+              "label": "Acto 2a: La cámara de la bestia",
+              "text": "La lamentable bestia se lanza para cogeros con sus viscosos brazos, y sus muchas fauces chasquean de hambre. Matarla sería un acto piadoso. Pero quizás haya algo más que descubrir sobre esta criatura...",
+              "audio": "audios/cap1/campaign/dunwich/cap4_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_acto_2b",
+              "label": "Acto 2b: Desterrar a la criatura",
+              "text": "A pesar del peligro, os enfrentáis a la aterradora presencia de la bestia y seguís investigando antes de matarla. Lo que encontráis confirma vuestras peores sospechas. Varias anotaciones de un diario escritas por un tal 'Seth Bishop' describen el proceso de alimentación de la criatura con espeluznantes detalles; primero tomates, luego caza menor, después ganado, y por último, 'sacrificios humanos'. Pero la parte más perturbadora es que Seth llama a la criatura por su nombre: 'Silas'.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_1a",
+              "label": "Plan 1a: Extrañas desapariciones",
+              "text": "Vuestra bienvenida a Dunwich ha sido fría. Una serie de desapariciones tiene en vilo a los lugareños, ya de por sí distantes. La mayoría os miran con desconfianza, y unos pocos están dispuestos a ayudar en vuestra investigación. ¿Quién sabe qué pasará si no encontráis pronto a las personas desaparecidas...?",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_1b",
+              "label": "Plan 1b: Primera sangre",
+              "text": "Sobre los tejados abuhardillados de Dunwich se reúnen chotacabras que empiezan a chillar de júbilo. La gente de Dunwich cree que la presencia de los chotacabras presagia la muerte inminente de alguien. ¿Ansían vuestra muerte? ¿O será otro su víctima?",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_2a",
+              "label": "Plan 2a: Los Primigenios tienen hambre",
+              "text": "Cuando el sol se pone, los asustados lugareños se retiran a sus casas y cierran con llave las puertas. Tenéis claro que muchos de ellos saben más de lo que dicen. Una sensación repugnante os revuelve el estómago al ver la verdadera naturaleza de la aldea.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_2b",
+              "label": "Plan 2b: Calles abandonadas",
+              "text": "Más chotacabras acuden a la aldea de Dunwich a medida que avanza la noche. Los demás lugareños, tremendamente supersticiosos, están aterrados por la presencia de los pájaros. Con todas las puertas que os rodean cerradas a cal y canto, os encontráis solos en las calles de Dunwich.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_3a",
+              "label": "Plan 3a: Alimentar a la bestia",
+              "text": "El rítmico chillido de los chotacabras llena la noche. Si las supersticiones de Dunwich son correctas, su canción augura una muerte inminente... Pero ¿de quién?",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cuatro_plan_3b",
+              "label": "Plan 3b: Sangre en el altar",
+              "text": "Los chotacabras que llevan toda la noche graznando se dispersan al unísono, como si estuvieran satisfechos de algún modo con el resultado de los acontecimientos.",
+              "audio": "audios/cap1/campaign/dunwich/cap4_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -409,8 +823,88 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_cinco_acto_1a",
+              "label": "Acto 1a: Escritura sarracena",
+              "text": "Los monstruos que están causando estragos en los campos de Dunwich son inmunes a las armas tradicionales. Sólo puede derrotarse a las criaturas recitando un ensalmo concreto. Primero debéis registrar las ruinas del hogar de Wilbur Whateley para encontrar los últimos fragmentos del sobrenatural texto.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_acto_1b",
+              "label": "Acto 1b: Obtener la fórmula",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si el Dr. Armitage sobrevivió a El legado de Dunwich:", 
+                  "content": "–¡Tomad! –Armitage suspira de alivio mientras anota las últimas frases de la fórmula–. He traducido lo que faltaba. –Se estremece a daros el texto, pues las palabras le traen recuerdos de su combate con la criatura–. Espero que sea la última vez que debo leerlo –admite–. Pero si no hacemos nada, el resultado final será mucho, mucho peor.",
+                  "src": "audios/cap1/campaign/dunwich/cap5_acto_1b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si el Dr. Armitage está anotado en la sección 'Sacrificados a Yog-Sothoth':", 
+                  "content": "Empleando la información que contienen las ruinas de la finca de los Whateley, lográis transcribir el resto de la fórmula que usó el Dr. Armitage para destruir a la bestia que aterrorizaba Dunwich. Sin embargo, la tarea os cuesta varias horas de retraso.",
+                  "src": "audios/cap1/campaign/dunwich/cap5_acto_1b_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_acto_2a",
+              "label": "Acto 2a: ¡Deben ser destruidos!",
+              "text": "Con la fórmula en vuestro poder, por fin tenéis los medios para destruir a las criaturas que siembran el caos en Dunwich... pero sólo si lográis sobrevivir el tiempo suficiente.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_acto_2b",
+              "label": "Acto 2b: El fin de la progenie",
+              "text": "Al completar el ensalmo, la siniestra criatura grita con una voz ronca e inhumana que trepida y se rompe, y las sílabas de su graznido no se parecen ni remotamente a vuestro idioma. Cuando su grito se desvanece, la criatura comienza a encogerse sobre sí misma, y sin previo aviso, desaparece. Todo lo que queda es un fétido hedor y una repulsiva marca que acaba con la vegetación allí donde estuvo la bestia.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_1a",
+              "label": "Plan 1a: Criaturas desatadas",
+              "text": "Las noticias de que unos entes aterradores están sembrando el caos en el campo han hecho que los ciudadanos de Dunwich entren en pánico. Y lo que es peor aún, las criaturas parecen ser invisibles a simple vista.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_1b",
+              "label": "Plan 1b: La calamidad golpea",
+              "text": "Una vieja camioneta se para en los erosionados caminos de Dunwich. El conductor, Joe Osborn, os llama desde la ventanilla del conductor hecha añicos, con el motor aún en marcha: –¡Está en la granja de los Erick! –grita–. Ha hecho trizas el sitio. Pobres Henry y Martha… Le pedís a Osborn la ubicación de la finca de los Erick, y eso os confirma vuestro peor temor. Para que ese ataque haya ocurrido recientemente, debe de haber varios monstruos sueltos.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_2a",
+              "label": "Plan 2a: Esperando su momento",
+              "text": "De vez en cuando, el viento que subía del fondo de la cañada de Cold Spring traía un hedor insoportable a la ya cargada atmósfera nocturna... Pero la tan esperada monstruosidad no se dejó ver en toda la noche. No cabía duda, lo que había en el fondo del barranco aguardaba el momento propicio, y Armitage dijo a sus compañeros que sería suicida intentar atacarlo en medio de la oscuridad nocturna.\n —H.P. Lovecraft, 'El Horror de Dunwich'",
+              "audio": "audios/cap1/campaign/dunwich/cap5_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_2b",
+              "label": "Plan 2b: Sin lugar donde ocultarse",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si hay una Progenie de Yog-Sothoth puesta aparte, el investigador jefe lee lo siguiente en voz alta:", 
+                  "content": "Grises nubes de tormenta se agolpan sobre vuestras cabezas, y una intensa lluvia golpea los campos. Mientras el aguacero aumenta su intensidad, os refugiáis en una cabaña medio derruida que hay cerca. Cae un relámpago, y la breve iluminación os permite ver algo enorme silueteado contra la lluvia. Sin previo aviso, los lejanos árboles se doblan, pero no parece haber nada doblándolos. Momentos más tarde, una fuerza como la de un camión se estrella contra vuestro refugio.",
+                  "src": "audios/cap1/campaign/dunwich/cap5_plan_2b_1.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_3a",
+              "label": "Plan 3a: Horrores desencadenados",
+              "text": "No tenía nada de divertido seguir la pista de algo tan grande como una casa y no lograr verlo, si bien podía respirarse en el ambiente una maléfica presencia infernal.\n—H.P. Lovecraft, 'El Horror de Dunwich'",
+              "audio": "audios/cap1/campaign/dunwich/cap5_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_cinco_plan_3b",
+              "label": "Plan 3b: A las colinas",
+              "text": "Hay un monstruoso estruendo que resuena por los campos, aunque es imposible determinar si su origen son las criaturas que buscáis o las propias montañas. Poco después, encontráis más rastros de las criaturas que llevan colina arriba: un sendero de diez metros de arbustos aplastados y árboles quebrados como ramas. Agotados por el combate, y con la noche a punto de llegar, decidís volver a un lugar seguro en vez de seguir estos rastros infernales.",
+              "audio": "audios/cap1/campaign/dunwich/cap5_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -457,8 +951,92 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_1a",
+              "label": "Acto 1a: El camino a la colina",
+              "text": "Una vibrante energía arcana llena el aire de un frío que se mete en los huesos. La energía baila por el destrozado sendero que tenéis delante, y se desliza por varios caminos más antes de desaparecer.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_1b",
+              "label": "Acto 1b: Un sacrificio realizado",
+              "text": "Durante vuestra búsqueda por los boscosos senderos que rodean el pie de Sentinel Hill, os topáis con una sorprendente visión. Hay un rebaño de ovejas muertas en el suelo de un apartado claro, y sus sangrientos cadáveres están colocados formando un extraño pero cuidadoso diseño. Os tapáis la nariz ante el hedor de la muerte, y pasáis sobre las ovejas mutiladas para llegar al centro de la extraña forma.\nEn el centro de las ovejas se encuentra un cadáver de un hombre. Tiene una gema transparente que han presionado contra su frente hasta hundirla en la parte de delante de su cráneo. Tiene los ojos abiertos como platos, y el rostro retorcido en una mueca de terror, como si os suplicara piedad. Aunque sabéis que no es posible, comprobáis si tiene pulso. Al tocar la piel del hombre, la joya de su frente se disuelve, y el bosque que os rodea parece despejarse.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2a_1",
+              "label": "Acto 2a: Ascender por la colina (v. I)",
+              "text": "Al subir por la colina, el entorno que os rodea se vuelve cada vez más extraño y sobrenatural. La energía arcana puede percibirse de forma más fuerte aquí, chisporroteando en el aire y recorriéndoos la piel.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2b_1",
+              "label": "Acto 2b: Desbaratar el diseño",
+              "text": "Al acercaros a la cumbre de Sentinel Hill, se os acercan varios ciudadanos de Dunwich. El hombre del centro de su círculo salmodia en latín mientras los demás inclinan la cabeza en señal de reverencia. -¿Seth Bishop? -preguntáis suponiendo la respuesta. El hombre del centro levanta la mirada como respuesta, lo que confirma vuestras sospechas. Le rogáis que detenga esta locura, pero no os responde. Sacáis el colgante de plata con la constelación que encontrasteis en el cuerpo de Silas y se lo entregáis a Seth. -Esto es todo lo que encontramos de tu hermano -gritáis para haceros oír sobre el aullante viento-. ¿Es éste el destino que queréis para vosotros? ¿Para todos nosotros? -Lanzáis el colgante contra el suelo, y estupefacto al verlo, se tambalea hacia atrás y se equivoca con el ensalmo mientras abre los ojos como platos. Al caer, el altar que tiene a su espalda se parte en dos, y un torrente de energía brota de la piedra, girando hasta formar un portal abierto que se traga al hombre. Apenas lográis clavar los talones en el suelo y agarraros a una roca cercana para resistir la atracción del portal.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2b_1.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2a_2",
+              "label": "Acto 2a: Ascender por la colina (v. II)",
+              "text": "Al subir por la colina, el entorno que os rodea se vuelve cada vez más extraño y sobrenatural. La energía arcana puede percibirse de forma más fuerte aquí, chisporroteando en el aire y recorriéndoos la piel.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2b_2",
+              "label": "Acto 2b: Girar la Llave",
+              "text": "Al acercaros a la cumbre de Sentinel Hill, se os acercan varios ciudadanos de Dunwich. El hombre del centro de su círculo emite una risa demente. Reconocéis al hombre, Seth Bishop, por su descripción que os dieron los lugareños. A su espalda, varios hombres y mujeres inclinan la cabeza en señal de reverencia mientras salmodian en latín. -¡Lo hemos logrado! -grita entre carcajadas-. ¡Hemos logrado lo que el viejo Whateley y los suyos no pudieron hacer! -Observáis con repulsión cómo sus ojos se le vuelven vidriosos y se mueven como si estuviese leyendo algo invisible-. Ahora puedo verlo... ¡Por fin lo veo! -Levanta los brazos hacia el cielo y la lápida del altar que tiene a su espalda se parte en dos. Un torrente de energía brota de la piedra, girando hasta formar un portal abierto. Seth se agarra a la piedra que tiene delante para evitar ser absorbido, pero varios de los demás se sorprenden y son tragados por el portal. Apenas lográis clavar los talones en el suelo y agarraros a una roca cercana para resistir la atracción del portal. Seth se pone de pie con una expresión de orgullo en el rostro.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2b_2.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2a_3",
+              "label": "Acto 2a: Ascender por la colina (v. III)",
+              "text": "Al subir por la colina, el entorno que os rodea se vuelve cada vez más extraño y sobrenatural. La energía arcana puede percibirse de forma más fuerte aquí, chisporroteando en el aire y recorriéndoos la piel.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_2b_3",
+              "label": "Acto 2b: Desear el cambio",
+              "text": "Al acercaros a la cumbre de Sentinel Hill, se os acercan varios ciudadanos de Dunwich. El hombre que se encuentra en el centro de su círculo está intentando desesperadamente completar un ensalmo en latín. -¡No funciona, Seth! -grita uno de los otros hombres-. ¿Qué vamos a hacer? -El hombre del centro deja el ensalmo y saca un cuchillo de zapatero-. El padre exige un sacrificio de sangre -declara, y su rostro se contorsiona con una expresión demente. Antes de que podáis reaccionar, se abre la muñeca izquierda con el cuchillo y cae de rodillas por el dolor. La lápida del altar que tiene a su espalda se parte en dos. Un torrente de energía brota de la piedra, girando hasta formar un portal abierto. Seth se agarra a la piedra que tiene delante para evitar ser absorbido, pero varios de los demás se sorprenden y son tragados por el portal. Apenas lográis clavar los talones en el suelo y agarraros a una roca cercana para resistir la atracción del portal. Seth se levanta, herido pero vivo, con una expresión de orgullo en el dolorido rostro.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_2b_3.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_3a",
+              "label": "Acto 3a: El portal se abre",
+              "text": "De las ruinas de la lápida del altar de la cumbre de la colina ha aparecido un portal de vibrante energía giratoria. Una fuerza como la de un huracán surge del portal, doblando los árboles y arrastrando escombros hacia él. El aullido del vendaval ahoga todos los demás sonidos. Debéis encontrar algún modo de cerrar el portal.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_acto_3b",
+              "label": "Acto 3b: Mirar en el abismo",
+              "text": "No sabéis cómo cerrar el turbulento portal que tenéis delante, y a cada momento que pasa, la fuerza de su interior crece. Teméis que se acerque la entidad que hayan invocado los hechiceros desde el más allá. Sin tiempo que perder, os acercáis al tomo abierto que hay sobre el altar de piedra, buscando respuestas desesperadamente.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_plan_1a",
+              "label": "Plan 1a: Convocando a los Primigenios",
+              "text": "Al acercaros a Sentinel Hill, oís antiguos ritos en latín que resuenan en la noche. Ha llegado el momento de entrar en acción. Si no lográis detener a los hechiceros de Dunwich, ¿quién sabe qué terrores podrían desatar en el mundo?",
+              "audio": "audios/cap1/campaign/dunwich/cap6_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_plan_1b",
+              "label": "Plan 1b: El mundo ha sido alterado",
+              "text": "Al explorar los caminos que rodean Sentinel Hill, los cánticos de la cumbre llegan a un crescendo y adoptan una naturaleza sobrenatural, reverberando entre los árboles como si los llevasen unas corrientes invisibles. El mundo comienza a cambiar. La hierba y los árboles se disuelven como azúcar en una taza de té. Un vasto cielo infinito atraviesa la realidad que veis ante vosotros y entre el terror y el asombro, notáis cómo sois atraídos hacia él. El arcano poder se distorsiona y se filtra a vuestro alrededor, creando extrañas alteraciones en la tierra.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_plan_2a",
+              "label": "Plan 2a: Atrayendo el poder",
+              "text": "Los Primigenios fueron, los Primigenios son y los Primigenios serán. No en los espacios que conocemos, sino entre ellos. Caminan serenos, prístinos, sin dimensión e invisibles para nosotros. Yog-Sothoth conoce el portal, Yog-Sothoth es el portal, Yog-Sothoth es la llave y el guardián del portal. Pasado, presente y futuro, todo es uno en Yog-Sothoth. Sabe por dónde entraron los Primigenios antaño y dónde entrarán de nuevo. Sabe dónde han hollado los campos terrestres y dónde siguen hollándolos, y por qué nadie puede contemplarlos.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_seis_plan_2b",
+              "label": "Plan 2b: La recompensa de la servitud",
+              "text": "El cántico llega a su clímax, y en la cumbre de Sentinel Hill se abre una grieta en el tejido del cielo que aparta las nubes y corta el mismo aire.\nObserváis cómo una entidad indescriptible -esferas, ojos, bocas, cieno- surge de la fisura. Los hechiceros pronuncian su nombre mientras su forma se filtra por el cielo y se extiende sobre la Tierra. '¡Iä! ¡Iä! ¡Yog-Sothoth! ¡Iä! ¡Iä! ¡Yog-Sothoth!'\nAntes de que puedan proseguir sus cantos de júbilo, son asfixiados por la masa creciente, y deja de oírseles.\nPara horror vuestro, la expansión de la masa no cesa.",
+              "audio": "audios/cap1/campaign/dunwich/cap6_plan_2b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -499,8 +1077,113 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": [],
-          "comingSoon": true
+          "items": [
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_1a",
+              "label": "Acto 1a: Fuera de este mundo",
+              "text": "Debéis encontrar de algún modo el camino a través de este paisaje alienígena para encontrar el nexo que describía el tomo del viejo Whateley.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_1b",
+              "label": "Acto 1b: El nexo de dimensiones",
+              "text": "Una luz brilla a lo lejos, y os dirigís hacia ella para investigarla. Similar a un fuego fatuo, la luz se aleja de vosotros, flotando por los extraños portales de este mundo, subiendo por escaleras serpenteantes y cruzando barreras que antes no os atrevisteis a cruzar. Ante las escasas posibilidades que tenéis de encontrar el nexo vosotros solos, seguís a la luz, con la esperanza de que os guíe en la dirección correcta.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_2a",
+              "label": "Acto 2a: Hacia el otro lado",
+              "text": "Continuáis siguiendo a la esquiva luz, pero el traicionero paisaje la convierte en una presa difícil de perseguir.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_2b",
+              "label": "Acto 2b: El límite del mundo",
+              "text": "Llegáis a un vacío negro como el carbón e imposiblemente denso, y os dais cuenta de que este lugar es donde acaba toda la realidad, toda la que es y toda la que será. En su centro, veis una grieta minúscula, suspendida fuera de vuestro alcance. Al mirar por ella, os sorprende ver la cumbre de Sentinel Hill. De algún modo, habéis llegado al otro lado de la grieta. Ahora debéis encontrar una forma de cerrarla para siempre.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_3a",
+              "label": "Acto 3a: Cerrar la grieta",
+              "text": "Las piedras sobrenaturales del suelo tienen grabado una especie de sello. Al acercaros a ellas, una voz entra en vuestra mente y habla en un idioma alienígena.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_3b",
+              "label": "Acto 3b: Reparar el desgarro",
+              "text": "Estáis absolutamente agotados, sin tener ni idea de qué se puede hacer para cerrar la grieta. Está demasiado lejos para tocarla, y nada de lo que hacéis tiene efecto alguno. Aquí no hay nada para guiaros aparte de las voces sobrenaturales que se filtran en vuestra mente. Entonces, oís una voz familiar dentro del coro de ecos, y os sentís compelidos a repetir lo que dice —Claude ostium… —susurráis en primer lugar, y las palabras se forman en la punta de vuestra lengua. Cerráis los ojos para concentraros, y el eco se vuelve más fuerte. Cuando acaba y abrís los ojos, no veis más que un abismo azabache, y la grieta se ha desvanecido.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_4a",
+              "label": "Acto 4a: Encontrar un nuevo camino",
+              "text": "Al no ver una salida clara de esta dimensión, buscáis otro camino.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_4a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_acto_4b",
+              "label": "Acto 4b: La realidad os llama",
+              "text": "Descubrís un camino que os resulta familiar en cierto modo y lo seguís. Aunque vuestra tarea está completa, ahora entendéis que, al haber cerrado la grieta, puede que nunca volváis a casa. El miedo de quedar perdidos aquí para siempre os espolea a seguir, y cruzáis una arcada que da a un corredor cubierto de vegetación. Una húmeda puerta de madera os conduce a una zona de fina lluvia y cielos oscuros. El cemento se convierte en gravilla, y luego en mármol, después en acero, y más tarde en hierba. Cruzáis prados imposiblemente largos y atravesáis densos bosques antes de que la fatiga haga mella en vosotros. Estáis desprovistos de toda energía, y no podéis avanzar más. Vuestro cuerpo desfallece.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_acto_4b.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_1a",
+              "label": "Plan 1a: Todo es uno",
+              "text": "Senderos de sonido y color se extienden durante una eternidad en todas direcciones, salpicados de arquitectura imposible y repletos de vida salvaje alienígena. Las líneas que hay entre los objetos son serradas y cambiantes, y notáis la piel como si la tuvierais del revés.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_1b",
+              "label": "Plan 1b: Ecos familiares",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si los investigadores _no_ lograron salvar a los estudiantes:", 
+                  "content": "Una enorme criatura canina, alienígena a vuestros ojos y aun así familiar, aparece ante vosotros. La criatura se lanza hacia delante, y os preparáis para defenderos de ella, pero para vuestra sorpresa, corre a través de vosotros hacia un edificio que no estaba a vuestra espalda hace un instante: el Pabellón Derby de la Universidad Miskatonic. La criatura irrumpe por la puerta principal del edificio y oís chillidos de pánico en el interior, seguidos del crujido de huesos partiéndose y gritos de dolor",
+                  "src": "audios/cap1/campaign/dunwich/cap7_plan_1b_1.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_2a",
+              "label": "Plan 2a: Pasado, presente y futuro",
+              "text": "Al cruzar este reino, atisbáis destellos ocasionales de realidad: escenas de viejos recuerdos, visiones más recientes de los últimos días y, a veces, incluso eventos que no recordáis que hayan ocurrido nunca…",
+              "audio": "audios/cap1/campaign/dunwich/cap7_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_2b",
+              "label": "Plan 2b: El precio del fracaso",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si hay al menos un nombre en la sección 'Sacrificados a Yog-Sothoth':", 
+                  "content": "Oís una voz familiar que os llama, y entráis en un edificio de forma imposible hecho de piedra agrietada. —iNo… no! —grita la voz. Corréis hacia ella, bajando por unas escaleras estrechas y empinadas. Al llegar al fondo, os encontráis en la cámara oculta de Dunwich. Veis a quienes no lograsteis salvar atados por grilletes, ensangrentados y mutilados. Una criatura con rostro de hombre está devorando un cadáver del suelo. La cabeza del cadáver se gira para miraros, y un agudo dolor os atraviesa el corazón",
+                  "src": "audios/cap1/campaign/dunwich/cap7_plan_2b_1.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_3a",
+              "label": "Plan 3a: Abriéndose paso",
+              "text": "A lo largo de toda esta distorsionada dimensión, da igual adónde viajéis, siempre hay una forma siniestra a lo lejos. Al principio, parece un disco, como una luna negra con muchos brazos que se retuercen. Pero a medida que pasa el tiempo, os dais cuenta de que va creciendo más y más…",
+              "audio": "audios/cap1/campaign/dunwich/cap7_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_4a",
+              "label": "Plan 4a: El fin de todas las cosas",
+              "text": "La silueta que hay a lo lejos atraviesa las barreras de esta dimensión, y sus numerosos brazos se extienden hasta tapar todo lo que veis. Su cuerpo es como un cieno, cubierto de ojos y bocas. Os sentís insignificantes, como insectos, ante la aterradora grandiosidad de la criatura.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_plan_4a.mp3"
+            },
+            {
+              "id": "cap1_dunwich_escenario_siete_plan_4b",
+              "label": "Plan 4b: ¡Yog-Sothoth ataca!",
+              "text": "El horror extradimensional se revuelve mientras busca la grieta por la que entrasteis en esta dimensión, y al hacerlo aplasta reinos enteros que tiene aferrados.",
+              "audio": "audios/cap1/campaign/dunwich/cap7_plan_4b.mp3"
+            }
+          ]
+          
         },
         {
           "type": "resoluciones",
