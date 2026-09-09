@@ -1,9 +1,10 @@
 {
-  "version": 2,
+  "version": 3,
   "title": "Novedades",
   "items": [
     { "text": "Septiembre 2026", "heading": true },
-    "Nueva campaña 'El legado de Dunwich' disponible.",
+    "Campaña 'La noche de la fanática' disponible.",
+    "Campaña 'El legado de Dunwich' disponible.",
     { "text": "Agosto 2026", "heading": true },
     "Nueva campaña 'Vástagos de la sangre' disponible.",
     "Nuevo escenario fanmade 'El día que la Tierra aulló' disponible.",
