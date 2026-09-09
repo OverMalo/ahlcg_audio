@@ -1,0 +1,361 @@
+{
+  "type": "campaign",
+  "origin": "oficial",
+  "era": 1,
+  "beta": true,
+  "id": "la_noche_de_la_fanatica",
+  "title": "La noche de la fanática",
+  "banner": "images/banner_fanatica_01.webp",
+  "about": [
+    "'Viernes, 18 de septiembre de 1925. Arkham, Massachusetts. Es el final de un largo y anormalmente caluroso verano. Las primeras señales del otoño empiezan a aparecer, pero persiste un sofocante e implacable calor. Una ira silenciosa e impalpable atenaza la ciudad. El mal genio está a flor de piel, y sólo en la última semana ha habido numerosas discusiones entre habitantes de la ciudad que han acabado en violentas peleas por simples malentendidos.\n\n Y ahora ha llamado James Hankerson. Afirma haber encontrado un cuerpo desmembrado en su granero. Sería demasiado fácil echarle la culpa al tiempo. A esta ciudad le pasa algo, y este viejo adivino poco puede hacer para detener su caída. Mis augurios indican que un pequeño grupo de investigadores se reunirá para arreglar las cosas. Estaré observando sus progresos... pero no tengo muchas esperanzas'",
+    "La noche de la fanática es una campaña para Arkham Horror: El juego de cartas pensada para 1–4 jugadores. Está formada por los siguientes escenarios: “El encuentro”, “Las máscaras de medianoche” y “El Devorador de las Profundidades”. Las cartas de todos estos escenarios se incluyen en la caja básica de Arkham Horror: El juego de cartas..",
+    "Aquí tienes narradas todas sus piezas: introducciones, planes, actos, resoluciones y códices, escenario a escenario, para que tu mesa se sumerja en la historia sin leer en voz alta. Elige un escenario en el menú lateral para comenzar."
+  ],
+  "intro": {
+    "type": "introduccion",
+    "title": "Introducción",
+    "items": [
+      {
+        "id": "cap1_dunwich_intro",
+        "label": "Prólogo",
+        "text": "Viernes, 18 de septiembre de 1925. Arkham, Massachusetts. Es el final de un largo y anormalmente caluroso verano. Las primeras señales del otoño empiezan a aparecer, pero persiste un sofocante e implacable calor. Una ira silenciosa e impalpable atenaza la ciudad. El mal genio está a flor de piel, y sólo en la última semana ha habido numerosas discusiones entre habitantes de la ciudad que han acabado en violentas peleas por simples malentendidos. Y ahora ha llamado James Hankerson. Afirma haber encontrado un cuerpo desmembrado en su granero. Sería demasiado fácil echarle la culpa al tiempo. A esta ciudad le pasa algo, y este viejo adivino poco puede hacer para detener su caída. Mis augurios indican que un pequeño grupo de investigadores se reunirá para arreglar las cosas. Estaré observando sus progresos... pero no tengo muchas esperanzas.",
+        "audio": "audios/cap1/campaign/fanatica/prologo.mp3"
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "escenario_1",
+      "title": "Escenario I: El encuentro",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_uno_intro",
+              "label": "El encuentro",
+              "text": "Tus compañeros y tú habéis estado investigando los extraños sucesos que están teniendo lugar en vuestra ciudad natal de Arkham, en Massachusetts. Durante las últimas semanas, varios habitantes de la ciudad han desaparecido misteriosamente. Y hace poco aparecieron sus cadáveres en el bosque, medio devorados y salvajemente mutilados. La policía y los periódicos han dicho que ha sido obra de animales, pero creéis que hay algo más en marcha. Os habéis reunido en casa del investigador jefe para deliberar sobre estos misteriosos acontecimientos.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_1a",
+              "label": "Acto 1a: Atrapados",
+              "text": "Cuando vais a poneros en acción para investigar, la puerta del estudio se desvanece ante vuestros ojos, dejando sólo una pared sólida. Estáis atrapados en el estudio hasta que podáis encontrar otra forma de salir.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_1b",
+              "label": "Acto 1b: La puerta del suelo",
+              "text": "Os dais cuenta de que los bordes de la alfombra recién comprada están deshilachados y manchados de barro. Al encontrarlo extraño, decidís apartar los muebles y quitar la alfombra. Para vuestra sorpresa, veis la puerta de salida del estudio. Uno de vosotros gira lentamente el picaporte, y la puerta se abre para descubrir que bajo ella se encuentra el pasillo.\n\nSaltáis por el umbral y caéis sobre una tierra blanda. La puerta del estudio se cierra de golpe sobre vuestras cabezas. Un olor a madera quemada llena el estrecho pasillo, mezclado con el hedor de la putrefacción y la descomposición.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_2a",
+              "label": "Acto 2a: La barrera",
+              "text": "Una brillante barrera os bloquea el paso hacia la salita. Al acercaros, un intenso calor os obliga a retroceder. Cogéis algo de tierra y la lanzáis contra la barrera, donde para vuestro horror queda totalmente incinerada. Puede que en el sótano o el ático haya algo que os sirva de ayuda.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_2b",
+              "label": "Acto 2b: Rompiendo la barrera",
+              "text": "Usáis el barril del ático para transportar hielo y nieve del sótano y lanzarlo contra la barrera. Ésta chisporrotea y vibra al consumir el hielo, para después desvanecerse con un siseo.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_3a",
+              "label": "Acto 3a: ¿Qué habéis hecho?",
+              "text": "En la salita hay una mujer con una antorcha y un brillo de odio en los ojos. —¿Qué le habéis hecho a mi barrera? —grita con furia. Antes de que podáis contestar, un espectral alarido suena a vuestra espalda, y una criatura vestida con túnica y una máscara hecha con el cráneo de un ciervo atraviesa la pared y avanza hacia vosotros.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_acto_3b",
+              "label": "Acto 3b: Defendiendo el hogar",
+              "text": "Cuando la criatura de la túnica cae, la diabólica horda vuelve a meterse en el suelo, y el caos de la casa se calma. Pero la desconocida de la salita no parece aliviada.\n\n—Habéis roto el sello que coloqué para atrapar a los gules en el interior —dice mientras levanta la antorcha—. ¡Ahora tendremos que tomar medidas más directas y quemar este pozo infernal hasta los cimientos!",
+              "audio": "audios/cap1/campaign/fanatica/cap1_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_1a",
+              "label": "Plan 1a: ¡¿Qué está pasando?!",
+              "text": "La noche está muy avanzada. Estáis metidos en tu estudio, investigando las sangrientas desapariciones que han estado teniendo lugar en la región. Tras varias horas de investigación, oís un extraño cántico proveniente de la salita que hay al final del pasillo. Al mismo tiempo, se oye un movimiento de tierra, como si algo estuviera cavando bajo el suelo.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_1b",
+              "label": "Plan 1b: Un lapso de tiempo",
+              "text": "Tu casa sigue cambiando ante tus ojos. Las paredes se descomponen, y el suelo de muchas habitaciones se ha convertido en tierra. Es casi como si os hubieran transportado a un lugar totalmente distinto, aunque aquí y allí reconocéis elementos de tu antigua casa.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_2a",
+              "label": "Plan 2a: El ascenso de los gules",
+              "text": "El suelo cede bajo vuestros pies, y veis una vasta red de túneles que se extiende en la oscuridad del subsuelo. Hay formas y siluetas de extrañas criaturas que se mueven velozmente por los corredores, tratando de encontrar la forma de subir. Es probable que no queráis estar aquí cuando lo hagan…",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_2b",
+              "label": "Plan 2b: Los túneles del subsuelo",
+              "text": "Una bestia salvaje con burdos rasgos humanoides, un rostro canino y pezuñas por pies atraviesa el suelo que tenéis delante. Bajo éste, veis vastos túneles bajo tu casa. Un aullido infernal resuena en las profundidades de las cavernas subterráneas.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_3a",
+              "label": "Plan 3a: ¡Están saliendo!",
+              "text": "Oís un demencial aullido en el exterior, y de pronto todas las criaturas vuelven su atención a ese sonido. Corren para escapar de la casa, derribando puertas y desgarrando cuanto encuentran en su camino.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_plan_3b",
+              "label": "Plan 3b: Los gules se liberan",
+              "text": "El suelo comienza a temblar, y veis garras que salen de la tierra mientras las imposibles criaturas tratan desesperadamente de cavar para emerger del suelo que os rodea. Dondequiera que miréis hay monstruos saliendo de la tierra. Aterrados, huis tan rápido como podéis.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_plan_3b.mp3"
+            }
+          ]
+
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_uno_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Apenas lográis escapar con vida de tu casa. La mujer de la salita os sigue por la puerta delantera y la cierra de un portazo.\n\n–¡Necios! ¿Veis lo que habéis hecho? –dice mientras apoya una silla contra la puerta y la mete bajo el picaporte–. Debemos salir de aquí. Venid conmigo y os diré lo que sé. Somos los únicos que podemos evitar que desaten contra la ciudad la amenaza que acecha bajo ella. No estáis en condiciones de replicar, así que asentís y seguís a la mujer mientras sale corriendo del porche delantero en dirección al Barrio Fluvial, bajo la lluvia.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_no_reso.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_reso_uno",
+              "label": "Resolución 1",
+              "text": "Asientes y permites que la mujer pelirroja prenda fuego a las paredes y suelos de tu casa. Las llamas se extienden rápidamente, y salís corriendo por la puerta delantera para evitar quedar atrapados en ese infierno. Desde la acera, observáis cómo el fuego consume todo lo que posees.\n\n–Venid conmigo –dice la mujer–. Debéis conocer la amenaza que acecha debajo. Si no colaboramos, estamos perdidos sin remedio... pero juntos podremos detenerla.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_reso_dos",
+              "label": "Resolución 2",
+              "text": "Te niegas a seguir la orden de la fanática y la echas de tu casa por miedo a que le prenda fuego sin tu permiso.\n\n–¡Necios! ¡Estáis cometiendo un funesto error! –os advierte–. No entendéis la amenaza que acecha debajo... ¡ni el grave peligro que corremos todos! Aún conmocionados por los acontecimientos de la noche, decidís escuchar a la mujer. Quizás pueda arrojar algo de luz sobre estos extraños sucesos... pero no parece confiar demasiado en vosotros.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_uno_reso_tres",
+              "label": "Resolución 3",
+              "text": "Corréis al pasillo para tratar de encontrar una forma de huir de la casa, pero la ardiente barrera sigue bloqueando vuestro camino. Estáis atrapados, y la horda de salvajes criaturas que han invadido tu casa se acerca, sin que tengáis posibilidad de huir.",
+              "audio": "audios/cap1/campaign/fanatica/cap1_reso_tres.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_2",
+      "title": "Escenario II: Las máscaras de medianoche",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducciones",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_dos_intro_1",
+              "label": "Introducción I",
+              "text": "La mujer se acerca a vosotros presa del pánico, desvariando sobre unos monstruos que surgieron del suelo en una casa cerca del Barrio Fluvial.\n\n–Logré atraparlos –explica–. Pero hay más. Otros pozos. Otros dominios.\n\nLa semana pasada la habríais tomado por loca. Sin embargo, los sucesos recientes han puesto a prueba vuestras ideas preconcebidas sobre la normalidad. Decidís escucharla. Se presenta como Lita Chantler, y os cuenta un relato que resulta casi imposible de creer.\n\n–Las criaturas de las que hablo –afirma– se llaman gules. Son seres crueles que infestan las criptas, cavernas y túneles que hay bajo Arkham...",
+              "audio": "audios/cap1/campaign/fanatica/cap2_intro_1.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_intro_2",
+              "label": "Introducción II",
+              "text": "Tras el desastre de tu casa, Lita Chantler, la mujer pelirroja que estaba en tu salita, os cuenta un relato casi imposible de creer, incluso después de todo lo que habéis presenciado.\n\n–Las criaturas de tu casa –afirma– se llaman gules. Son seres crueles que infestan las criptas, cavernas y túneles que hay bajo Arkham...",
+              "audio": "audios/cap1/campaign/fanatica/cap2_intro_2.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_intro_3",
+              "label": "Introducción III",
+              "text": "–Estas criaturas se alimentan de los cadáveres humanos, y tienen a su servicio una oscura secta de Arkham, cuyos miembros llegaron de forma inexplicable a adorar al antiguo amo de los gules. Esta secta ha estado matando a gente inocente para dárselos de comer a los gules y saciar su monstruosa hambre.Así se mantenía un siniestro equilibrio. Hasta ahora. Hace poco –prosigue Lita–, una de sus guaridas, donde almacenaban los cadáveres, fue destruida. Desde entonces, los gules han estado más activos que de costumbre. He seguido sus movimientos y he tratado como he podido de evitar que se desmandasen por toda la ciudad. Pero creo que hay algo peor en marcha. La secta ha estado planeando algo más siniestro y amenazador que nada que haya contemplado hasta la fecha. Todos los indicios apuntan a que este plan fructificará hoy, poco después de la medianoche. Después de ese punto, no logro ni siquiera atisbar qué ocurrirá.\n\n–Muchos de los sectarios –continúa Lita– parecen gente común y corriente pese a sus terribles intenciones. Cuando se reúne la secta, sus miembros llevan máscaras con forma de cráneos de distintos animales para proteger sus identidades incluso entre ellos. Estas máscaras son nuestro objetivo. Son símbolos de muerte y putrefacción. Debemos desenmascarar a los sectarios para exponer y desbaratar sus planes. Apenas tenemos unas horas. Cuantos más sectarios encontremos antes de la medianoche, mejor.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_intro_3.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_dos_acto_1a",
+              "label": "Acto 1a: Descubriendo la conspiración",
+              "text": "Tenéis una noche para encontrar a los miembros de esta secta y descubrir su plan. Cuantos más miembros de la secta podáis encontrar e interrogar antes de la medianoche, mejor.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_acto_1b",
+              "label": "Acto 1b: Secretos desvelados",
+              "text": "Habéis tenido éxito en descubrir la identidad de todos los miembros de alto rango de la secta en Arkham. El hombre que os ha perseguido por toda la ciudad estaba realmente entregado a sus creencias, así como Herman, el enterrador del cementerio. Otros parecían haber sido coaccionados para que ayudasen a la secta. A Ruth, la técnica funeraria, le habían dicho que matarían a su familia si no proveía a los gules de cadáveres frescos. Por suerte, lograsteis ayudarla a escapar del hospital a salvo. A Peter, el profesor, fue necesario convencerlo de que su implicación con la secta haría más mal que bien. La obsesión de Victoria por los artefactos de ocultismo la había hecho caer de lleno en las redes de la secta. Cuando os enfrentasteis a Drew en el manicomio, os atacó, pero curiosamente lo hizo porque pensaba que erais parte de la secta. Cuanto más os adentráis en esta conspiración, más patente queda que ha arruinado muchas vidas.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_plan_1a",
+              "label": "Plan 1a: ¿Depredador o presa?",
+              "text": "Lita parece convencida de que hay una conspiración en la ciudad de Arkham. Cree que una secta secreta sirve a los gules que habitan en las criptas que hay bajo la ciudad, y que varios de los miembros más prominentes de la secta están repartidos por todo Arkham. Cuando comenzáis a buscarlos, no lográis ignorar la sensación de que a vosotros también os están cazando.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_plan_2a",
+              "label": "Plan 2a: El tiempo se agota",
+              "text": "Los minutos pasan rápidamente mientras vuestra investigación continúa.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_plan_2b",
+              "label": "Plan 2b: El reloj da la medianoche",
+              "text": "Suenan doce campanadas por toda la ciudad. Es medianoche. No hay más tiempo para investigar la ciudad; debéis actuar en base a la información que habéis conseguido de los sectarios encontrados.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_plan_2b.mp3"
+            }
+          ]
+
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_dos_reso_uno",
+              "label": "Resolución 1",
+              "text": "Habéis logrado obtener información útil sobre la secta y sus planes. Ahora sólo queda esperar que sea suficiente.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_dos_reso_dos",
+              "label": "Resolución 2",
+              "text": "Suenan doce campanadas, señalando la medianoche. Se ha acabado el tiempo; pronto comenzará el ritual de la secta. Habéis logrado obtener información útil sobre la secta y sus planes. Ahora sólo queda esperar que sea suficiente.",
+              "audio": "audios/cap1/campaign/fanatica/cap2_reso_dos.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_3",
+      "title": "Escenario III: El Devorador de las Profundidades",
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_tres_intro",
+              "label": "El Devorador de las Profundidades",
+              "text": "Tras una frenética búsqueda nocturna por todo Arkham, habéis encontrado e interrogado a varios miembros de la secta. Vuestros hallazgos son perturbadores: afirman adorar a un ser conocido como Umôrdhoth, una monstruosa entidad de otra dimensión. Lográis confirmar gran parte de la historia de Lita: la secta está inquieta por la destrucción de un cubil de los gules. Sin embargo, también descubres un detalle sorprendente: ¡quien invadió la guarida y puso en marcha los sucesos de esta noche no fue otra que Lita Chantler! No sabéis muy bien por qué Lita omitió este importante detalle de su relato: ¿os contó sólo lo necesario para que os involucrarais en su conflicto? Pero bien visto, parece estar luchando para proteger la ciudad de Arkham de una terrible amenaza. La última pieza del puzle apareció escrita en un diario que tenía uno de los sectarios. El documento describe un oscuro ritual que va a ser realizado esta misma noche en lo más profundo de los bosques que hay al sur de Arkham. Según el diario, completar el ritual abrirá un portal que traerá a este mundo al oscuro señor de la secta.\n\n–Si no detenemos a la secta –advierte Lita–, la venganza de Umôrdhoth podría consumirlo todo a su paso.\n\nAsustados, pero decididos a detener el ritual, os dirigís al bosque...",
+              "audio": "audios/cap1/campaign/fanatica/cap3_intro.mp3"
+            }
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_1a",
+              "label": "Acto 1a: Investigando el rastro",
+              "text": "Las pruebas que habéis reunido os han llevado a los bosques que hay al sur de Arkham, donde creéis que va a tener lugar un ritual para invocar a un ser llamado “Umôrdhoth”. Os armáis de valor y os adentráis en el bosque, con la esperanza de encontrar el lugar de este ritual.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_1b",
+              "label": "Acto 1b: Desvelando el plan",
+              "text": "Diseminados por todo el bosque, encontráis signos y símbolos arcanos en distintos lugares, grabados en la corteza de los árboles, tallados en las rocas y trazados con sangre sobre el suelo. Aunque no podéis descifrarlos, os dais cuenta de que la mayoría suelen estar orientados hacia el sur. Seguís estos signos y, tras muchas vueltas, llegáis a una cueva que se encuentra en la parte más oscura y fría del bosque.\n\nCuando avanzáis hacia ella, unas sombrías siluetas surgen de entre los árboles y os cierran el paso del único camino que lleva a la cueva.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_2a",
+              "label": "Acto 2a: Adentrándose en la oscuridad",
+              "text": "Los sectarios restantes os han seguido al bosque para tratar de deteneros, y ahora os cortan el paso hacia vuestro objetivo. Están parados de forma siniestra bajo las ramas colgantes de los árboles, como silenciosos centinelas nocturnos. Debéis derrotarlos o lograr escabulliros si queréis acceder al lugar de su ritual.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_2b",
+              "label": "Acto 2b: Últimos ritos",
+              "text": "Cuando entráis en la cueva, el aire se vuelve frío, y el acre olor de la sangre y la descomposición asalta vuestras fosas nasales.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_3a",
+              "label": "Acto 3a: Interrumpiendo el ritual",
+              "text": "El ritual de la secta se celebra en el interior de una gran caverna, en un oscuro rincón de los bosques. En el centro de la cámara hay un círculo iluminado por velas y marcado con rocas y runas arcanas.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_acto_3b",
+              "label": "Acto 3b: El ritual se ha roto",
+              "text": "Afrontáis el frío sobrenatural y sorteáis los símbolos arcanos para cruzar el umbral del círculo. Borráis las marcas del suelo y las cubrís con tierra, desbaratando el cuidadoso diseño de rocas pulidas. Un estridente ruido os perfora los oídos, y el aire se vuelve más cálido de pronto, mientras que el mundo se distorsiona a vuestro alrededor hasta volver a la normalidad.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_plan_1a",
+              "label": "Plan 1a: Los bosques de Arkham",
+              "text": "Tras interrogar a los miembros de la conspiración en Arkham, habéis descubierto que están realizando un rito de venganza como respuesta a la destrucción de una de las guaridas de su señor. Os habéis adentrado en los bosques que hay a las afueras de Arkham para tratar de detenerlos. En el lugar hace un frío sobrenatural y reina un silencio sepulcral.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_plan_1b",
+              "label": "Plan 1b: Muerte a los intrusos",
+              "text": "Un penetrante grito resuena por todo el bosque. En algún lugar de su interior, un coro de terrible voces responde a la llamada, con un sonido inhumano como el ladrido de un sabueso, pero elocuente y que repite un sólo nombre: 'Umôrdhoth… Umôrdhoth… Umôrdhoth…'",
+              "audio": "audios/cap1/campaign/fanatica/cap3_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_plan_2a",
+              "label": "Plan 2a: Comienza el ritual",
+              "text": "'Umôrdhoth… Umôrdhoth… Umôrdhoth…'\n\nLos cánticos que resuenan en el frío aire nocturno aumentan de intensidad. Las escasas nubes del cielo convergen sobre el bosque de Arkham, tapando la tenue luz de las estrellas.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_plan_2b",
+              "label": "Plan 2b: La voluntad de Umôrdhoth",
+              "text": "Una presencia oscura se acerca, y os veis asaltados por una presión invisible que os hace caer de rodillas. Una terrible fuerza amenaza con invadir vuestras mentes y almas. Sentís cómo vuestra garganta se tensa y los ojos os lloran mientras algo os quema por dentro.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_plan_3a",
+              "label": "Plan 3a: La venganza aguarda",
+              "text": "El mundo comienza a moverse y cambiar a medida que el ritual va llegando a su conclusión. El aire se vuelve gélido, y todo el bosque queda cubierto de una capa de escarcha. Los árboles se inclina de forma antinatural, y sus sombras se alargan y adoptan extrañas figuras…",
+              "audio": "audios/cap1/campaign/fanatica/cap3_plan_3a.mp3"
+            }
+          ]
+
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_fanatica_escenario_tres_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Demasiado asustada como para afrontar su destino, Lita huye y se pierde en la noche. Se da cuenta de que ha fracasado, y de que la venganza de Umôrdhoth la perseguirá dondequiera que vaya. Los tentáculos de la criatura se extienden por la ciudad de Arkham, buscándola. Acecha en la oscuridad de cada rincón, tratando de abrir las costuras de la realidad. Pero Lita no aparece por ninguna parte, así que la criatura sigue habitando en las sombras a día de hoy, buscando... matando.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_no_reso.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_reso_uno",
+              "label": "Resolución 1",
+              "text": "Habéis logrado evitar que la secta invoque a su señor. Aunque no sabéis a ciencia cierta qué habría ocurrido si hubieran tenido éxito, os alivia saber que Arkham está a salvo... al menos de momento. Capturáis a tantos sectarios como podéis encontrar, pero pocos habitantes de la ciudad se creen vuestro relato. Quizás fueran imaginaciones vuestras después de todo.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_reso_uno.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_reso_dos",
+              "label": "Resolución 2",
+              "text": "Mediante la fuerza de las armas y de voluntad, de algún modo habéis logrado dañar lo suficiente a Umôrdhoth para enviarlo de vuelta a la dimensión de la que surgió. El calor y la luz vuelven al bosque mientras la masa de vacío se absorbe a sí misma y se desvanece en un instante. No estáis seguros de si es posible matar a semejante ser, pero parece haberse retirado por el momento. Cuando su señor desaparece, los gules cercanos se meten en el foso abierto y huyen entre terribles gritos y alaridos. Habéis detenido un maligno plan, pero el combate le ha pasado factura a vuestros cuerpos y mentes. Peor aún, no lográis evitar sentiros insignificantes ante los misterios del mundo. ¿Qué otros terrores existen en los rincones más oscuros y profundos de la realidad?",
+              "audio": "audios/cap1/campaign/fanatica/cap3_reso_dos.mp3"
+            },
+            {
+              "id": "cap1_fanatica_escenario_tres_reso_tres",
+              "label": "Resolución 3",
+              "text": "Tras contemplar este horror, no creéis que haya nada que podáis hacer para detenerlo. Sólo tenéis una esperanza si queréis sobrevivir. Os volvéis contra Lita y la arrojáis contra la terrible monstruosidad, observando con temor cómo su turbulenta masa de vacío la consume. La mujer grita de agonía mientras le es absorbida la vida del cuerpo.\n\n– Umôrdhoth... Umôrdhoth... –entonan los sectarios.\n\nLita Chantler se desvanece sin dejar rastro. Por un momento, teméis que la criatura os ataque, pero oís que uno de los sectarios dice:–Umôrdhoth es un dios justo que sólo reclama a los culpables y los muertos. Marchaos y no moriréis. La turbulenta masa desaparece, y el calor y la luz vuelven al bosque. Los sectarios se escabullen de allí y os dejan con vida. Los últimos momentos de Lita se os quedan grabados a fuego en la memoria para siempre.",
+              "audio": "audios/cap1/campaign/fanatica/cap3_reso_tres.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

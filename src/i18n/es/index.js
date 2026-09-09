@@ -22,6 +22,7 @@ import news from "./news.json";
 import hermanosDeLasCenizas from "./data/campaigns/hermanos_de_las_cenizas.json";
 import vastagosDeSangre from "./data/campaigns/vastagos_de_sangre.json";
 import elLegadoDeDunwich from "./data/campaigns/el_legado_de_dunwich.json";
+import laNocheDeLaFanatica from "./data/campaigns/la_noche_de_la_fanatica.json";
 import tracesToNowhere from "./data/standalone/traces_to_nowhere.json";
 import sleepyHollow from "./data/standalone/sleepy_hollow.json";
 import elDiaQueLaTierraAullo from "./data/standalone/el_dia_que_la_tierra_aullo.json";
@@ -37,7 +38,7 @@ export default {
   news,
   appData: composeContent({
     chapter: "Capítulo 2",
-    campaigns: [hermanosDeLasCenizas, vastagosDeSangre, elLegadoDeDunwich],
+    campaigns: [hermanosDeLasCenizas, vastagosDeSangre, laNocheDeLaFanatica, elLegadoDeDunwich ],
     standalone: [tracesToNowhere, elDiaQueLaTierraAullo, sleepyHollow ],
     ambientConfig: ambient.ambientConfig,
   }),
