@@ -1,0 +1,237 @@
+{
+  "type": "campaign",
+  "origin": "oficial",
+  "era": 1,
+  "comingSoon": false,
+  "beta": true,
+  "id": "el_camino_a_carcosa",
+  "title": "El camino a Carcosa",
+  "banner": "images/banner_carcosa_01.webp",
+  "about": [
+    "Mencionó el establecimiento de la Dinastía en Carcosa, los lagos que conectaban Hastur, Aldebarán y el misterio de las Híades. Habló de Cassilda y Camilla y sondeó las nubosas profundidades de Demhe y el lago de Hali.\n–Robert W. Chambers, “El reparador de reputaciones”",
+    "El camino a Carcosa es una campaña para Arkham Horror: El juego de cartas para 1–4 jugadores. El camino a Carcosa contiene 8 escenarios: “Se cierra el telón”, “El Último Rey”, “Ecos del pasado”, “El juramento inconfesable”, “El Fantasma de la Verdad”, “La máscara pálida”, “Surgen estrellas negras” y “Penumbrosa Carcosa”. Cada uno de estos escenarios también se puede jugar como escenario independiente.."
+  ],
+  "intro": {
+    "type": "introduccion",
+    "title": "Introducción",
+    "items": [
+      {
+        "id": "cap1_carcosa_intro",
+        "label": "Prólogo",
+        "segments": [
+            { 
+                "type": "audio", 
+                "title": "", 
+                "content": "Le das la vuelta al programa doblado que tienes en la mano, leyéndolo por enésima vez. Dice: “El Grupo Miskatonic presenta: El Rey de Amarillo. Una representación especial en el Teatro Ward de Arkham. Sólo una noche. Un irresistible drama en dos actos. Montaje y dirección de Nigel Engram.”. El elenco es pequeño, y solamente hay un crédito sin mención al final: “El Forastero”.\n\nQue una obra tan esperada venga a representarse a Arkham directamente desde París es un acontecimiento notable, incluso si sólo es una noche. Durante las semanas anteriores al espectáculo, no se hablaba de otra cosa en la ciudad. Parecía algo inocente... y sin embargo, tienes pruebas de que hay algo siniestro en marcha. Comenzó con la desaparición de uno de los tramoyistas del teatro: un chico de sólo diecisiete años que faltó a un ensayo una noche y al que no se le ha vuelto a ver. Después, a menos de dos semanas de la representación, se encontró el cadáver de un músico con una pistola en la boca. Y quizá lo más escalofriante de todo fue el demente al que arrestó la poli en la Plaza de la Independencia y que había estado desvariando y chillando sobre el “regreso del Rey”. Se lo llevaron al Manicomio Arkham, y te sorprendió descubrir que no era el único que sufría ese mismo delirio.\n\nPuesto que estos sucesos os parecen sospechosos, tú y tus compañeros habéis indagado en el asunto. Aunque no podéis demostrar ninguna relación, ésos no han sido los únicos acontecimientos extraños que rodean la inminente representación de la obra. Está dejando una estela de suicidios y locura a su paso, y estáis decididos a averiguar el porqué. Las luces del auditorio se atenúan, y un foco ilumina el escenario. Lo que se desarrolla no es exactamente lo que esperabas. El primer acto de El Rey de Amarillo es un tedioso tostón, de ritmo lento y monótono. La ambientación y los personajes son cautivadores, pero la dispersa y absurda historia ni entretiene ni informa. Comienzas a preguntarte si los terribles eventos que rodean a El Rey de Amarillo no están relacionados después de todo. Puede que sólo fuera tu imaginación hiperactiva; ¿cómo podría un espectáculo tan trivial e inocente causar semejante caos? Te sorprende que el primer acto acabe sin ningún momento álgido ni revelación. Las luces se encienden para el descanso, y te planteas irte antes de tiempo mientras contienes un bostezo. Pero antes de poder decidirte, empiezas a sentir que caes... caes... profundamente dormido.",
+                "src": "audios/cap1/campaign/carcosa/prologo.mp3"
+            },
+            { 
+                "type": "audio", 
+                "title": "Prólogo de Lola (_Si un investigador eligió a Lola Hayes en esta campaña_)",
+                "content": "El primer acto se desarrolló sin ningún problema, como solía pasar en los ensayos. No has podido evitar darte cuenta de las expresiones vacías y desdeñosas que hay en el rostro de muchos de los miembros del público, y te preguntas cómo reaccionará el respetable a la perturbadora segunda mitad de la obra. El papel de Cassilda es tedioso y aburrido durante la primera mitad del texto, pero disfrutas interpretando su encanto regio. De pronto, echas de menos a tu anterior coprotagonista, Miriam Twain, y el temor y los remordimientos que sentiste en París vuelven con fuerza. Con un suspiro, te retiras a un oscuro rincón entre bambalinas para escapar de los sonidos de los tramoyistas que preparan la siguiente escena. Tratas de contener tus emociones y sustituir tus pensamientos por los de Cassilda, sus esperanzas, sus miedos y su destino.\n\nEn ese momento, descubres al Forastero mirándote fijamente desde lejos, y te echas a temblar sólo de verlo. Aunque siguen sustituyendo al actor que interpreta al Forastero antes de cada representación (y hasta muchas veces durante los ensayos), sabes que este sustituto de última hora es el más horripilante de todos. Te das cuenta de que ni siquiera sabes su nombre, y un escalofrío de terror recorre tu espalda. ¿Has acabado de vuelta con los lobos, como una corderilla perdida? No puedes apartar los ojos, pues su mirada es ineludible. Todo se vuelve negro.",
+                "src": "audios/cap1/campaign/carcosa/prologo_lola.mp3"
+            }
+            ]
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "id": "escenario_1",
+      "title": "Escenario I: Se cierra el telón",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_1_intro",
+              "label": "Escenario I: Se cierra el telón",
+              "text": "Te despiertas sobresaltado, como si te hubiera sacudido una fuerza invisible. Debes de haberte dormido un buen rato, pues ya sólo quedan unos pocos espectadores entre el público, y no hay actores sobre el escenario. Las luces están atenuadas, y el telón está rasgado y hecho jirones, aunque no recuerdas que fuese así durante el primer acto. Esperas un momento para asegurarte de que no sea parte de la representación. Mientras esperas, un repulsivo olor que no logras reconocer impregna el aire. ¿Cuánto tiempo has estado dormido? Te sacudes la modorra y caminas hacia uno de los espectadores sentados para preguntarle la hora, pero no responde. Entonces te das cuenta de que estás hablándole a un cadáver.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_intro.mp3"
+            }
+
+          ]
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_1_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Te despiertas sobresaltado una vez más, aunque esta vez son los fríos y sudorosos dedos de una mano en tu hombro. –¿Está usted bien? –te pregunta un anciano mientras te ayuda a ponerte en pie. Tu mente bulle de recuerdos. Lo último que sabes es que el Teatro Ward se había convertido en un lugar de pesadilla, lleno de peligrosos fanáticos y extraños terrores. Preocupado, observas lo que te rodea y descubres que estás en la acera del exterior del teatro, resbaladiza por la lluvia. Pese a los acontecimientos anteriores, la ciudad parece tener un aspecto normal ante tus ojos, o al menos tan normal como pueda serlo Arkham. El brillante resplandor de los faros te penetra en los ojos cuando los coches pasan por la calle, salpicando de sucia agua de lluvia el suelo de la acera. El anciano adopta una expresión de preocupación al ver el terror en tu mirada. –¿Le han atracado? ¡Qué asco de críos problemáticos! –exclama– ¡Mira que atacar por sorpresa a la buena gente que acude al teatro! Le digo que no hay ni una sola calle donde estos granujas no actúen. Caminas hacia la ventana principal del Teatro Ward para tratar de mirar en su interior, pero está demasiado oscuro para ver nada. El anciano te mira con curiosidad durante unos instantes, y después se encoge de hombros y sigue caminando. –Bueno, más vale que me marche. Y si fuera usted, haría lo mismo –dice mientras dobla la esquina de la calle. Lo sigues rápidamente, esperando poder advertirle de que se aleje del teatro. Pero al doblar la esquina no ves al anciano, sino la familiar visión del Extranjero con su máscara pálida y sin facciones. Su inquebrantable mirada no te quita ojo. –¿Quién eres? –gritas. El Extranjero no responde, sino que se da media vuelta y desaparece en el callejón que hay tras el teatro. Lo persigues en busca de respuestas, pero para cuando llegas al callejón, está vacío; sólo hay un aviso en la pared junto a la entrada de empleados del teatro. “¡No seas un aguafiestas! Ven a la celebración del equipo de El Rey de Amarillo a las 20:00 en casa de Constance Dumaine, en el 1452 de la Avenida Atlantic. Se requiere ir de etiqueta.”. Arrancas el aviso de la pared y te lo llevas, sintiéndote frustrado y perdido.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_no_reso.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_1_reso_1",
+              "label": "Resolución 1",
+              "text": "Tras huir del teatro, te diriges derecho a la comisaría de policía del Barrio Este. Irrumpes por la puerta ante las miradas atónitas de los transeúntes y de los agentes de policía y exiges ver al sheriff Engle, subrayando la importancia de tu visita. El sargento de guardia que está trabajando perezosamente con un montón de papeleo en el mostrador sacude la cabeza y levanta el dedo para pedir silencio antes de señalarte una silla cercana. La espera es insoportable. Cada momento te parece una eternidad. Las manecillas del reloj más cercano se mueven con lentitud. Tamborileas con los dedos sobre el mostrador. Das golpecitos con el pie. Miras constantemente por encima del hombro para asegurarte de que la máscara pálida del Extranjero no te está observando por las ventanas. Por fin, el sargento de guardia deja el boli y se incorpora mientras te hace un gesto para que te acerques: –Muy bien, ¿qué es eso tan importante? –Empiezas a contárselo, pero a mitad de tu explicación, suspira y sacude la cabeza–. Mire, si se trata de alguna broma, no tiene gracia –dice–. Hemos tenido agentes en el centro toda la noche. No intente contarme semejante patraña a la cara –Insistes, pero el sargento de guardia se pone en pie y abre la puerta, invitándote a marcharte mientras alza la voz–. ¿Acaso se cree que no tenemos bastante trabajo o qué? ¡Largo! –Murmura algo en plan “hatajo de locos” a tus espaldas y te echa de la comisaría. Sabes a ciencia cierta lo que viste. Frustrado, regresas al Teatro Ward para encontrar alguna prueba que puedas llevarle a la policía. Te sorprende descubrir que la puerta delantera del teatro está cerrada. Estás a punto de decidir si echar o no la puerta abajo cuando ves un aviso en la pared junto a la entrada. “¡No seas un aguafiestas! Ven a la celebración del equipo de El Rey de Amarillo a las 20:00 en casa de Constance Dumaine, en el 1452 de la Avenida Atlantic. Se requiere ir de etiqueta.”. Arrancas el aviso de la pared y lo doblas para metértelo en el bolsillo del abrigo, con la esperanza de que te lleve a las respuestas que buscas.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_reso_uno.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "escenario_2",
+      "title": "Escenario II: El último rey",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_3",
+      "title": "Escenario III: Ecos del pasado",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_4",
+      "title": "Escenario IV: El juramento innombrable",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_5",
+      "title": "Escenario V: Un fantasma de verdad",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_6",
+      "title": "Escenario VI: La máscara pálida",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_7",
+      "title": "Escenario VII: Se alzan estrellas negras",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    },
+    {
+      "id": "escenario_8",
+      "title": "Escenario VIII: Tenue Carcosa",
+      "comingSoon": true,
+      "components": [
+        {
+          "type": "introduccion",
+          "title": "Introducción",
+          "items": []
+        },
+        {
+          "type": "actos_planes",
+          "title": "Actos y Planes",
+          "items": []
+        },
+        {
+          "type": "resoluciones",
+          "title": "Resoluciones",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

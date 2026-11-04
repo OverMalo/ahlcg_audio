@@ -1,0 +1,319 @@
+{
+  "type": "standalone",
+  "origin": "oficial",
+  "era": 2,
+  "id": "rastros_ninguna_parte",
+  "title": "Rastros a ninguna parte",
+  "banner": "images/banner_rastros_ninguna_parte_01.webp",
+  "comingSoon": false,
+  "beta": true,
+  "about": [
+    "Los investigadores deben llegar al fondo de una serie de desapariciones producidas por todo Arkham en Rastros a ninguna parte, un escenario para Arkham Horror: El juego de cartas para 1 a 4 jugadores. Tienes una lista de sospechosos y ningún modo de saber quién será la próxima víctima, ¿lograrás resolver el caso antes de que no quede nadie a quien salvar?",
+    "Este producto incluye dos cartas separadoras para que puedas organizar este escenario en el almacenamiento que prefieras."
+  ],
+  "components": [
+    {
+      "type": "introduccion",
+      "title": "Introducción",
+      "items": [
+        {
+          "id": "cap2_rastros_intro",
+          "label": "Rastros a ninguna parte",
+          "text": "Desde su llegada a Arkham, la familia Husserl ha ido de escándalo en escándalo, y todos los miembros de la familia parecen haberse propuesto crear problemas. Josephine Husserl, matriarca del clan, celebraba ostentosas fiestas para los potentados de la ciudad. Mientras recibía a invitados de toda clase y condición, su marido Elias acogía reuniones secretas con jefes mafiosos, políticos locales y hasta miembros del cuerpo de policía. Los Husserl tenían dinero para invertir y consideraban Arkham como una oportunidad madura.\n\nSin embargo, todos los hijos de Elias y Josephine tuvieron encontronazos con otros personajes influyentes de Arkham. Tanto si se trataba de Albrecht jugándose la fortuna familiar, como de Elias hijo cerrando tratos nefastos, de los cuadros de Lina que no suscitaban el menor interés entre la alta sociedad o de Adele debatiéndose y tratando sin éxito de distanciarse de ellos, los rumores sobre los Husserl circulaban por las calles de la ciudad. No obstante, lo sorprendente era que el Arkham Advertiser sólo comentaba las partes más positivas de su imagen pública, y se esforzaba por estirar al máximo cualquier acto humanitario, por pobre que fuera, para sacar un reportaje de ello.\n\nPero las polémicas alcanzaron su punto álgido cuando Elias Husserl padre desapareció una noche. Iba de camino a una reunión privada en French Hill, pero no regresó. Frustrada por la falta de iniciativa de la policía, Josephine contrató a la detective privada Aziza Steer, que no perdió un segundo para ponerse a indagar entre los numerosos contactos de Elias. Tras un par de semanas sin apenas progresos, Aziza se puso en contacto contigo para que la ayudaras en la investigación.",
+          "audio": "audios/cap2/standalone/rastros/intro.mp3"
+        }
+      ]
+    },
+    {
+      "type": "actos_planes",
+      "title": "Actos y Planes",
+      "items": [
+        {
+          "id": "cap2_rastros_acto_1a",
+          "label": "Acto 1a: Haciéndose cargo de la búsqueda",
+          "text": "Aziza Steer era una detective privada de lo mejorcito de la ciudad. Tras su desaparición, debes dar un paso adelante. ¿Cerrarás el caso o serás la siguiente víctima?",
+          "audio": "audios/cap2/standalone/rastros/acto_1a.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_1b",
+          "label": "Acto 1b: Desastre total",
+          "text": "En cuanto te marchas del lugar del encuentro, el aire que te rodea crepita con relámpagos, relámpagos violetas. Apenas tienes tiempo de maldecir tu suerte cuando un sonoro chasquido resuena por las calles resbaladizas por la lluvia. Oyes un grito de alarma y el sonido del cristal al romperse, y te das cuenta de que todo proviene desde la misma dirección que tu próximo destino.",
+          "audio": "audios/cap2/standalone/rastros/acto_1b.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_2a",
+          "label": "Acto 2a: Peor de lo que esperabas",
+          "text": "Esto no son un puñado de matones sueltos por la ciudad. Arkham se ha convertido en el coto de caza de otra cosa, algo capaz de aparecer donde quiere y aparentemente en cualquier momento. Te preguntas si es demasiado tarde para rechazar el caso e irte a casa.",
+          "audio": "audios/cap2/standalone/rastros/acto_2a.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_2b",
+          "label": "Acto 2b: Cada vez más cerca",
+          "text": "La noche se alarga, pero al menos empiezas a lograr progresos por fin.",
+          "audio": "audios/cap2/standalone/rastros/acto_2b.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_3a",
+          "label": "Acto 3a: El culpable",
+          "text": "Estás más cerca que nunca. Todos los indicios y todos los testigos apuntaban a la misma persona. Ahora sólo tienes que averiguar qué ha hecho con los desaparecidos, entregarla a la policía y cerrar este caso de una vez por todas.",
+          "audio": "audios/cap2/standalone/rastros/acto_3a.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_3b",
+          "label": "Acto 3b: Búsqueda concienzuda",
+          "text": "La ciudad está repleta de calles sinuosas de futuros perdidos y promesas rotas. Cuando no te estás topando con callejones sin salida, te atascas con las mismas monsergas que detuvieron al cuerpo de policía, a la señorita Steer y cualquiera que haya intentado investigar este o cualquier otro caso de desapariciones. La oscuridad de la noche cae sobre ti como los matones de la mafia que han contratado para impedir tus progresos.\n\nEsta investigación está escapando a tu control hasta tal punto que ahora estás buscando pistas en los lugares más insospechados. No hay nada vedado para los detectives desesperados, y el caso de la familia Husserl te ha hecho llegar al límite de la desesperación.\n\nLa noche es fría, pero te agarras el cuello del abrigo para ajustártelo sobre los hombros y ayudar a sobrellevarlo. Te das la vuelta y sales de nuevo a la ciudad. Tienes un raptor que atrapar.",
+          "audio": "audios/cap2/standalone/rastros/acto_3b.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4a_01",
+          "label": "Acto 4a: La pesadilla de Lina",
+          "text": "Los sueños de Lina Husserl no son simples figuraciones en mitad de la noche. Sus pesadillas tienen algún tipo de poder, y sus cuadros han hecho que cobren vida.",
+          "audio": "audios/cap2/standalone/rastros/acto_4a_01.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4b_01",
+          "label": "Acto 4b: Poniendo fin a la pesadilla",
+          "text": "Lina parpadea y mira las oscuras calles de Arkham como si acabara de despertar de un sueño. Posa la mirada en ti y es entonces cuando es consciente de todo el caos que ha provocado, ya fuera sin querer o a propósito. Cae de rodillas, invadida de una mezcla de pena, culpa y alivio. La pesadilla que llevaba tanto tiempo rondándole la mente ha terminado por fin.",
+          "audio": "audios/cap2/standalone/rastros/acto_4b_01.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4a_02",
+          "label": "Acto 4a: El plan del señor Peel",
+          "text": "Mientras Elias hijo planeaba cómo huir de la ciudad, el señor Peel urdía por su cuenta. Ahora debes detenerlo antes de que logre completar los planes de su secta.",
+          "audio": "audios/cap2/standalone/rastros/acto_4a_02.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4b_02",
+          "label": "Acto 4b: Conspiración desvelada",
+          "text": "Eugene Peel atraviesa tambaleante el portal y vuelve a las calles de Arkham. Aunque le tiemblan las piernas, intenta huir, pero lo agarras antes de que se aleje. No vas a dejar que este imbécil se te escape después de perseguirlo entre los mundos. Al principio forcejea, pero no tarda en darse cuenta de que sus planes han terminado y de que debe afrontar las consecuencias de sus actos.",
+          "audio": "audios/cap2/standalone/rastros/acto_4b_02.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4a_03",
+          "label": "Acto 4a: La jugada de Albrecht",
+          "text": "Albrecht debe mucho dinero a mucha gente poderosa. Sus intentos desesperados por aferrarse al poder dentro de su familia se le han ido de las manos.",
+          "audio": "audios/cap2/standalone/rastros/acto_4a_03.mp3"
+        },
+        {
+          "id": "cap2_rastros_acto_4b_03",
+          "label": "Acto 4b: Ganar a la casa",
+          "text": "Albrecht Husserl atraviesa tambaleante el portal y vuelve a las calles de Arkham. Aunque le tiemblan las piernas, intenta huir, pero lo agarras antes de que se aleje. No vas a dejar que este imbécil se te escape después de perseguirlo entre los mundos. Al principio forcejea, pero no tarda en darse cuenta de que sus planes han terminado y de que debe afrontar las consecuencias de sus actos.",
+          "audio": "audios/cap2/standalone/rastros/acto_4b_03.mp3"
+        },
+        
+        {
+          "id": "cap2_rastros_plan_1a",
+          "label": "Plan 1a: Un caso complicado",
+          "text": "Mucha gente describe Arkham como una ciudad “adormilada”, pero sabes que eso no es así. Allí donde otros ven una ciudad aletargada en la trivialidad, tú ves una guarida de delincuentes curtidos y misterios sin resolver. Una mujer pensó que podía marcar la diferencia y la ciudad se la tragó. Ahora es tarea tuya recoger los pedazos.",
+          "audio": "audios/cap2/standalone/rastros/plan_1a.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_1b",
+          "label": "Plan 1b: Amenaza de otro mundo",
+          "text": "Has visto cosas bastante increíbles a lo largo de tu vida. Si tratases de explicárselas a cualquier persona cuerda, las tacharían de chorradas sin sentido.\n\nPero tú conoces la verdad, los hechos inmutables que caerían sobre las frágiles mentirijillas que decide creer el resto del mundo. Tu esperanza de que esto fuese un simple caso de desaparición se esfuma en cuanto ves la primera señal sobrenatural: una sombra que se mueve sola, un sordo gruñido que sale de un callejón oscuro o el modo en que la luz no parece llegar tan lejos como debería.\n\nTienes la impresión de que la ciudad no va a revelar sus secretos tan fácilmente.",
+          "audio": "audios/cap2/standalone/rastros/plan_1b.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_2a",
+          "label": "Plan 2a: De otra dimensión",
+          "text": "No logras quitarte de encima la sensación de que alguien o algo te está siguiendo.",
+          "audio": "audios/cap2/standalone/rastros/plan_2a.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_2b",
+          "label": "Plan 2b: Las sombras cobran vida",
+          "text": "Esperabas sicarios, asesinos a sueldo y pistas falsas; a fin de cuentas, todo eso forma parte del trabajo. Pero no esperabas los portales de otro mundo, ni el influjo de un reino alienígena que empezaba a afectar a Arkham. Sea lo que sea lo que está raptando a estas personas, parece que has llamado su atención.",
+          "audio": "audios/cap2/standalone/rastros/plan_2b.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_3a",
+          "label": "Plan 3a: El tiempo se agota",
+          "text": "La noche se alarga como un cigarrillo que arde hasta el filtro. Tienes que resolver el caso antes de que acabe contigo.",
+          "audio": "audios/cap2/standalone/rastros/plan_3a.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_3b",
+          "label": "Plan 3b: Se acabó el tiempo",
+          "text": "La lluvia cae con fuerza sobre ti mientras te encuentras cara a cara con el raptor, sea monstruo, hombre u otra cosa. No te quedan ni opciones ni munición. Sabes que todo el mundo vive con tiempo prestado en este mundo demencial e indiferente. Y parece que el tuyo se ha acabado.",
+          "audio": "audios/cap2/standalone/rastros/plan_3b.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_4a",
+          "label": "Plan 4a: En el foso",
+          "text": "Justo cuando pensabas que lo habías visto todo, te ves lanzado como un pelele a un foso de cieno ceniciento y huesos rotos, bajo un cielo añil de estrellas desconocidas.",
+          "audio": "audios/cap2/standalone/rastros/plan_4a.mp3"
+        },
+        {
+          "id": "cap2_rastros_plan_4b",
+          "label": "Plan 4b: Fin de trayecto",
+          "text": "Los vientos espectrales de un mundo alienígena te asaltan mientras te encuentras cara a cara con el raptor. No te quedan ni opciones ni munición. Sabes que todo el mundo vive con tiempo prestado en este mundo demencial e indiferente. Y parece que el tuyo se ha acabado.",
+          "audio": "audios/cap2/standalone/rastros/plan_4b.mp3"
+        }
+      ]
+    },
+    {
+      "type": "codices",
+      "title": "Códices",
+      "items": [
+        {
+          "id": "cap2_rastros_codice_uno",
+          "label": "Códice A: Josephine Husserl",
+          "text": "Josephine vuelve su dura mirada hacia ti. Sus finos labios y su entrecejo fruncido te dicen que no se alegra de verte. Dedica una sonrisa forzada a quienes la rodean mientras te lleva aparte.\n\n–Quienquiera que esté detrás de esto –te dice con voz apenas más alta que un susurro– conoce a mi familia. Tiene que ser un socio cercano de Elias o uno de mis propios hijos.\n\nAl mirarla con sorpresa, se encoge ligeramente de un hombro.\n\n–Dios no lo quiera –añade con despreocupación.\n\nLe preguntas si deberías investigar a alguien en concreto.\n\n–A mi hija Lina –dice Josephine–. Últimamente ha ido mucho a la iglesia. Probablemente se sienta culpable por algo.\n\nLe da un sorbo a su bebida.\n\n–Y a Albrecht. No es capaz de mantenerse alejado de las cartas, y se ha estado reuniendo con un reportero al menos una vez a la semana.",
+          "audio": "audios/cap2/standalone/rastros/codice_01.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_dos",
+          "label": "Códice B: Adele Husserl",
+          "text": "Adele suspira de hartazgo al oír tus preguntas.\n\n–Mire, está perdiendo el tiempo –dice–. Me he esforzado mucho por sacar de mi vida la influencia de mi familia. Aparte de unos pocos cientos de dólares que Albrecht insistió en que me llevara, me he ganado todo lo que tengo.\n\nSacude la cabeza con impotencia.\n\n–Dijo que me lo merecía por no haber salido en los periódicos.\n\nLe preguntas si ha tenido contacto con alguien más y asiente.\n\n–Con Elias hijo –dice–. Hablé con él en el restaurante de Velma hace un par de noches. Parecía angustiado por algo. Nervioso. Dijo que iba a marcharse de la ciudad y me preguntó si me iría con él. Le dije que no. Ahora que voy por mi cuenta, he hecho amigos en Arkham. Gente en la que puedo confiar. No quiero volver a empezar de cero. Además, no me fío del señor Peel, su asistente.",
+          "audio": "audios/cap2/standalone/rastros/codice_02.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_tres",
+          "label": "Códice C: Gladys Washington",
+          "text": "–¿Se va a poner al frente de la investigación de Aziza? –te pregunta Gladys–. Me alegro. No todos los Husserl son malos.\n\nLe preguntas que a quién se refiere y, tras una pausa, te contesta: –Antes tenía una relación cercana con Lina. Es pintora, y su arte es muy... especial. Tuvo exposiciones en el Distrito comercial para intentar vender algunas obras, pero no ha tenido mucho éxito, y me doy cuenta de que es algo que la reconcome.\n\nPreguntas si se refiere a alguien más.\n\n–Quizás debería vigilar a Elias hijo. Lina ha dicho que quiere marcharse de la ciudad. No soy detective, pero viendo todo lo que ha sucedido, me parece una coincidencia sospechosa.\n\nAgradeces la información a Gladys y te dispones a marcharte, pero levanta una mano para que te detengas.\n\n–El otro día pasó algo extraño. Llegué a trabajar por la mañana y la puerta delantera estaba rota. Como si la hubieran forzado desde dentro. –Se encoge de hombros y añade–. Aquí sólo estábamos el finado y yo. Pero el sótano lleva un tiempo oliendo más raro de lo habitual. ¿Le importaría echar un vistazo si tiene la oportunidad?",
+          "audio": "audios/cap2/standalone/rastros/codice_03.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_cuatro",
+          "label": "Códice D: Charles Tamm",
+          "noAutoPlay": true,
+          "segments": [
+            { 
+              "type": "audio", 
+              "title": "Si es la primera vez que se ha activado este códice durante esta partida:", 
+              "content": "Cuando vuelves al despacho, dentro hay un hombre sentado con los pies en el escritorio que lleva un traje elegante. Le exiges que se identifique.\n\n–Charles Tamm –dice–. La señora Husserl me ha pagado para que esté al tanto de sus andanzas.\n\nSe encoge de hombros, se mete la mano en un bolsillo y saca un chicle que se pone a desenvolver. Se lo mete en la boca.\n\n–Lógicamente, se me podría convencer para que me vaya a casa temprano esta noche.",
+              "src": "audios/cap2/standalone/rastros/codice_04_01.mp3"
+            },
+            { 
+              "type": "audio", 
+              "title": "Si NO es la primera vez que se ha activado este códice durante esta partida:", 
+              "content": "¿Y bien? ¿Hay trato?",
+              "src": "audios/cap2/standalone/rastros/codice_04_02.mp3"
+            }
+          ]
+        },
+        {
+          "id": "cap2_rastros_codice_cinco",
+          "label": "Códice E: Albrecht Husserl",
+          "text": "Confrontas a Albrecht con todos los sobornos que ha estado pagando al cuerpo de policía de Arkham, así como al Arkham Advertiser. Levanta las manos en gesto defensivo y ves un brillo de desesperación en sus ojos.\n\n–La cosa no tendría que haber llegado tan lejos –dice–, pero cuando tienes a media docena de mafiosos echándote el aliento al cogote, por no mencionar a tu propio padre, ¡tienes que hacer algo! Y ahora parece que también voy a tener que limpiar esto.\n\nSe mete la mano en un bolsillo de la chaqueta y saca un tarro de cristal sellado. En su interior flota una criatura rosa con aspecto de medusa. Te apresuras a detenerlo y le tiras el tarro al suelo de un golpe, donde se hace añicos.",
+          "audio": "audios/cap2/standalone/rastros/codice_05.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_seis",
+          "label": "Códice F: Matilde Correa",
+          "text": "Le echas el sobre lleno a Matilde. Ésta lo atrapa torpemente, pero ni siquiera tiene que abrirlo para saber lo que contiene.\n\n–¡Necesitaba el dinero! –dice–. Y Albrecht me pagaba. ¡No haga como si usted no hubiera aceptado el mismo trato!\n\nLe preguntas acerca de la criatura sobre la que has leído, la medusa.\n\n–No sé qué es –te dice–. Tan sólo sé que Albrecht la consigue de una gente misteriosa. La necesita para hacer desaparecer a las personas.\n\nAntes de marcharte en busca de Albrecht Husserl, le dices a Matilde que busque empleo en otra ciudad.",
+          "audio": "audios/cap2/standalone/rastros/codice_06.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_siete",
+          "label": "Códice G: Vicar Yang",
+          "noAutoPlay": true,
+          "segments": [
+            { 
+              "type": "audio", 
+              "title": "Si es la primera vez que se ha activado este códice durante esta partida:", 
+              "content": "El vicario se muestra cordial cuando llegas, pero su actitud pasa a ser de arrepentimiento melancólico cuando le mencionas el motivo de tu visita.\n\n–He conocido a Lina. Esa mujer se ve asediada por pesadillas terribles. Pero no puedo hablar de las cosas que me ha contado, pues confía en que respetaré su privacidad.",
+              "src": "audios/cap2/standalone/rastros/codice_07_01.mp3"
+            },
+            { 
+              "type": "audio", 
+              "title": "Si NO es la primera vez que se ha activado este códice durante esta partida:", 
+              "content": "Será necesario convencer al vicario.",
+              "src": "audios/cap2/standalone/rastros/codice_07_02.mp3"
+            }
+          ]
+        },
+        {
+          "id": "cap2_rastros_codice_ocho",
+          "label": "Códice H: Lina Husserl",
+          "text": "Te has hartado de que Lina se ande con rodeos, así que acabas por revelar lo que viste en la Mansión Meiger. Sus ojos marrones se clavan en los tuyos con intensidad.\n\n–¿Estaba abierta? –pregunta con tono desesperado en la voz–. ¿La puerta de mis sueños? ¡¿Estaba abierta?!\n\nAntes de que puedas protestar, se marcha corriendo. La sigues. Mientras cruzáis la ciudad en dirección a la Mansión Meiger, confiesa cómo vio la puerta en sus pesadillas. La vio de forma tan vívida y con tanta frecuencia que tuvo que pintarla. Pero tras haber pintado la puerta, algo la atravesó. Se llevó a su padre. Se llevó a Aziza. Y quiere detenerla antes de que pueda llevarse a alguien más. Pero antes de que podáis volver a la mansión, parece que ese algo os ha encontrado.",
+          "audio": "audios/cap2/standalone/rastros/codice_08.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_nueve",
+          "label": "Códice I: Elias Husserl hijo",
+          "text": "–Mire, sé por qué ha venido –dice Elias–. Pero ¡yo no tengo nada que ver con todo eso!\n\nAntes de que puedas responder, el sonido de alguien que se acerca llama tu atención. Un hombre alto con un fino bigote y la mirada cansada te observa en silencio durante un instante.\n\n–Ah, Eugene –dice Elias al ver al hombre–. Me alegra que estés aquí. Dile a esta persona que me deje en paz, ¿quieres?\n\nEl señor Peel ignora la orden de Elias hijo.\n\n–No te irás a ninguna parte, Elias –le dice–. Es hora de que cumplas el trato.\n\nUn grupo de matones de aspecto duro que tienen símbolos arcanos tatuados en los brazos se reúnen, prestos para atacar. No se trata de simples gánsteres, ¡sino de sectarios disfrazados! Le dices a Elias hijo que se vaya de allí.",
+          "audio": "audios/cap2/standalone/rastros/codice_09.mp3"
+        },
+        {
+          "id": "cap2_rastros_codice_diez",
+          "label": "Códice J: Eugene Peel",
+          "text": "Después de dar una paliza a los sectarios de Peel, le agarras de las solapas y lo lanzas a unos cubos de basura cercanos. Se queda tirado en los tablones del andén, cubierto de desperdicios.\n\n–Se está inmiscuyendo en un asunto que no entiende –dice el señor Peel–. Elias hijo quería que mis hermanos y yo le diéramos dinero y nosotros queríamos influencia en la ciudad de Arkham. Pero cuando su padre se negó a cumplir el trato que había realizado Elias hijo, hicimos que lo quitaran de en medio. Lo mismo que hicimos con la otra investigadora, ¡y lo que haremos también con usted!\n\nSe lleva la mano al bolsillo y saca un tarrito de cristal que contiene una extraña criatura similar a una medusa.\n\n–¡Es hora de responder todas sus preguntas! –dice mientras lanza el tarro de cristal a tus pies, contra el suelo, donde se hace añicos. La criatura de tentáculos cae al suelo del andén.",
+          "audio": "audios/cap2/standalone/rastros/codice_10.mp3"
+        }
+      ]
+    },
+    {
+      "type": "interludio",
+      "title": "Interludio",
+      "items": [
+        {
+          "id": "cap2_rastros_interludio_01",
+          "label": "El culpable 1",
+          "text": "El mundo que te rodea se abre repentinamente, y tus sentidos se ven abrumados por un súbito destello de luz morada y por el intenso olor del ozono. Sientes unas manos frías y con garras que atraviesan el propio aire y te aferran para tirar de ti hacia la luz. Te da vueltas la vista, te mareas y lo siguiente de lo que eres consciente es de que te estás precipitando por el aire de un mundo alienígena. Aterrizas en un estanque de denso cieno gris en el que flotan y se hunden huesos humanos. Antes de pensarlo siquiera, te debates, nadas e intentas evitar caer bajo la superficie del extraño icor que se pega a tu ropa.",
+          "audio": "audios/cap2/standalone/rastros/interludio_01.mp3"
+        },
+        {
+          "id": "cap2_rastros_interludio_02",
+          "label": "El culpable 2",
+          "text": "Ves que dentro del cieno, a poca distancia de ti, se retuerce la forma de Albrecht Husserl.\n\n–¡¿Qué?! –exclama mientras se hunde lentamente en el foso de huesos repleto de cieno–. ¡No tenía que llevarme a mí! ¡Es culpa tuya!\n\nSe agarra a un lateral del foso y se aúpa para salir. Vuelve a meterse la mano en el abrigo y saca un arma. Te apunta con el cañón desde el borde del foso, pero el chillido sobrenatural de un enorme monstruo llama su atención.\n\nHas llegado demasiado lejos como para dejar que Albrecht muera en este sitio infernal. Tienes que llevarlo de vuelta a Arkham para que afronte la verdadera justicia por sus crímenes.",
+          "audio": "audios/cap2/standalone/rastros/interludio_02.mp3"
+        },
+        {
+          "id": "cap2_rastros_interludio_03",
+          "label": "El culpable 3",
+          "text": "Ves que dentro del cieno, a poca distancia de ti, se retuerce la forma de Lina Husserl. Se agarra a un lateral del foso y se aúpa para salir, escupiendo icor en el suelo mientras recupera el aliento. Mientras baja la mirada hacia ti con expresión de miedo y asombro, una silueta alienígena aparece lentamente a su espalda. La descomunal forma erizada de la criatura se cierne sobre Lina cuando ésta se gira para mirarla.\n\n–Te he visto antes –dice–. Estás aquí por mi culpa. ¡Has venido a por mí!\n\nHas llegado demasiado lejos como para dejar que Lina muera en este sitio infernal. Tienes que llevarla de vuelta a Arkham y acabar con ese monstruo que la persigue en sus pesadillas.",
+          "audio": "audios/cap2/standalone/rastros/interludio_03.mp3"
+        },
+        {
+          "id": "cap2_rastros_interludio_04",
+          "label": "El culpable 4",
+          "text": "Ves que dentro del cieno, a poca distancia de ti, se retuerce la forma de Eugene Peel.\n\n–¡Idiota insolente! –te grita mientras se desplaza hacia un lateral del foso. Se agarra al borde y se aúpa para salir.\n\n–Tu intromisión se acaba aquí –dice mientras se echa mano bajo el abrigo para sacar una daga de aspecto siniestro–. Prepárate para afrontar tu destino tan lejos de...\n\nSu amenaza queda interrumpida cuando un gran monstruo aparece de un salto y aterriza sobre una roca cercana. Gruñe en dirección a Eugene, dejando al descubierto varias hileras de afilados dientes. El hombre observa con horror cómo la criatura desciende lentamente desde su posición. Pero has llegado demasiado lejos como para dejar que Eugene muera en este sitio infernal. Tienes que llevarlo de vuelta a Arkham para que afronte la verdadera justicia por sus crímenes.",
+          "audio": "audios/cap2/standalone/rastros/interludio_04.mp3"
+        }
+      ]
+    },
+    {
+      "type": "resoluciones",
+      "title": "Resoluciones",
+      "items": [
+        {
+          "id": "cap2_rastros_no_reso",
+          "label": "Ninguna resolución",
+          "text": "La fuerza de las numerosas amenazas desplegadas contra la familia Husserl es demasiado para ti. Pese a todos tus esfuerzos, sucumbes a la voluntad del vagabundo dimensional, que te arrastra al foso de huesos del otro mundo.",
+          "audio": "audios/cap2/standalone/rastros/no_reso.mp3"
+        },
+        {
+          "id": "cap2_rastros_reso_01",
+          "label": "Resolución 1",
+          "text": "Te ha costado hasta el último ápice de fuerza que pudiste reunir, pero lograste convencer a Lina Husserl de que afrontara sus miedos más profundos y derrotar al monstruo de sus pesadillas. No sabes cómo lograron sus cuadros perforar el velo que separa los mundos y convocar al vagabundo a Arkham, pero le sugieres que sería buena idea que dejara de pintar las cosas que ve en sus sueños.",
+          "audio": "audios/cap2/standalone/rastros/reso_uno.mp3"
+        },
+        {
+          "id": "cap2_rastros_reso_02",
+          "label": "Resolución 2",
+          "text": "Pese a que era un solo hombre, Eugene Peel se erigió como líder entre sus compañeros ocultistas. Tras eliminarlo, la secta se ha acallado.",
+          "audio": "audios/cap2/standalone/rastros/reso_dos.mp3"
+        },
+        {
+          "id": "cap2_rastros_reso_03",
+          "label": "Resolución 3",
+          "text": "Regresas a Arkham con Albrecht Husserl y no tardas en entregárselo a las autoridades. Sólo te queda esperar que la familia Husserl no tenga comprado a todo el cuerpo de policía de Arkham.",
+          "audio": "audios/cap2/standalone/rastros/reso_tres.mp3"
+        },
+        {
+          "id": "cap2_rastros_reso_04",
+          "label": "Resolución 4",
+          "text": "Pese a tus esfuerzos, no logras impedir que el vagabundo dimensional se cobre su siguiente víctima. Logras huir de vuelta a Arkham, donde tan sólo te resta esperar que estos acontecimientos hayan tocado a su fin de veras.",
+          "audio": "audios/cap2/standalone/rastros/reso_cuatro.mp3"
+        },
+        {
+          "id": "cap2_rastros_reso_05",
+          "label": "Resolución 5",
+          "text": "No lograste encontrar y salvar a Elias, pero el progreso que has realizado parece haber satisfecho a la ciudad. Arkham se recupera rápido, y la ciudad parece ansiosa por olvidar todo el asunto de la investigación de la familia Husserl. Josephine asume la posición de poder y autoridad que dejó vacante su marido desaparecido, y el liderazgo de la familia Husserl sigue prosperando en la ciudad, aunque con algo más de cautela.",
+          "audio": "audios/cap2/standalone/rastros/reso_cinco.mp3"
+        }
+      ]
+    }
+  ]
+}

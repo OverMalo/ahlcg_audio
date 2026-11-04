@@ -1,14 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "title": "Novedades",
   "items": [
-    { "text": "Septiembre 2026", "heading": true },
-    "Campaña 'La noche de la fanática' disponible.",
-    "Campaña 'El legado de Dunwich' disponible.",
-    { "text": "Agosto 2026", "heading": true },
-    "Nueva campaña 'Vástagos de la sangre' disponible.",
-    "Nuevo escenario fanmade 'El día que la Tierra aulló' disponible.",
-    "Añadido dos nuevos temas visuales enfocados a la nueva campaña 'Vástagos de la sangre'."
+    { "text": "Noviembre 2026", "heading": true },
+    "Escenario 'Rastros a ninguna parte' disponible."
   ],
   "closeBtnLabel": "Entendido"
 }
