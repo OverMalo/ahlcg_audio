@@ -39,7 +39,6 @@
     {
       "id": "escenario_1",
       "title": "Escenario I: Se cierra el telón",
-      "comingSoon": true,
       "components": [
         {
           "type": "introduccion",
@@ -57,7 +56,80 @@
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_1a",
+              "label": "Acto 1a: Despertar",
+              "text": "Os pellizcáis para ver si estáis soñando y, como es natural, se os enrojece la piel y os duele. Respiráis hondo varias veces y tratáis de pensar de forma racional. Sea lo que sea lo que esté pasando, debéis explorar el teatro para descubrir la verdad.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_1b",
+              "label": "Acto 1b: Fin de la obra",
+              "text": "Una sombra se desliza por la pared junto a vosotros, y se os hace un nudo en la garganta. Al giraros, una silueta desaparece de vuestra vista rápidamente. O vuestra mente os engaña, o hay alguien más en el teatro. Seguís la dirección de la sombra doblando una esquina cercana. En el otro extremo del pasillo os espera un hombre vestido con un elegante traje negro y con el rostro cubierto por una máscara pálida. Aunque se ha cambiado de ropa, lo reconocéis al instante como el actor que interpretó el papel del Extranjero, uno de los personajes de El Rey de Amarillo. Se gira y desaparece por una puerta abierta, como si os retase a seguirlo.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_2a",
+              "label": "Acto 2a: El Extranjero",
+              "text": "El misterioso Extranjero de El Rey de Amarillo podría saber algo sobre lo ocurrido durante el descanso. Debéis encontrarlo y enfrentaros a él si queréis descubrir la verdad.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_2b_1",
+              "label": "Acto 2b: Una ciudad en llamas",
+              "text": "Al encararos con el Extranjero, tenéis la impresión de que sonríe bajo su pálida máscara sin facciones. -¿Dónde está todo el mundo? -le preguntáis, pero no responde- ¿Qué está pasando? -Sigue en silencio y retrocede cuando os acercáis, hasta acabar con la espalda contra uno de los rincones de la sala. Notáis un intenso calor a vuestra espalda, y os volvéis para ver que el auditorio es pasto de las llamas. Cuando os giráis de nuevo hacia el Extranjero, ha desaparecido.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_2b_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_2b_2",
+              "label": "Acto 2b: El camino es mío",
+              "text": "Al encararos con el Extranjero, tenéis la impresión de que sonríe bajo su pálida máscara sin facciones. -¿Dónde está todo el mundo? -le preguntáis, pero no responde- ¿Qué está pasando? -Sigue en silencio y retrocede cuando os acercáis, hasta acabar con la espalda contra uno de los rincones de la sala. Sigue retrocediendo de forma inexplicable, y su cuerpo se funde con la pared que tiene detrás. Del lugar en que se encontraba brota una masa creciente de un cieno viscoso.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_2b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_2b_3",
+              "label": "Acto 2b: Las costas de Hali",
+              "text": "Al encararos con el Extranjero, tenéis la impresión de que sonríe bajo su pálida máscara sin facciones. -¿Dónde está todo el mundo? -le preguntáis, pero no responde- ¿Qué está pasando? -Sigue en silencio y retrocede cuando os acercáis, hasta acabar con la espalda contra uno de los rincones de la sala. De pronto, las ventanas estallan, y os volvéis hacia ellas sobresaltados mientras un diluvio de fría agua salada inunda la sala. Cuando os giráis de nuevo hacia el Extranjero, ha desaparecido.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_2b_3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_3a",
+              "label": "Acto 3a: Se cierra el telón",
+              "text": "El Extranjero debe de saber cómo salir de aquí. ¡Tenéis que seguirlo!",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_acto_3b",
+              "label": "Acto 3b: Huida del teatro",
+              "text": "El Extranjero os hace una ligera reverencia mientras sale por la entrada principal del vestíbulo, abriendo una puerta de cristal que no estaba ahí hace un instante. Una repentina cacofonía de ruidos brota a vuestro alrededor, y teméis que sólo queden unos segundos antes de que el edificio sea destruido. Huis atravesando las puertas principales y dejando atrás el teatro en ruinas. No paráis a descansar y pensar en lo que acabáis de vivir hasta poner varias manzanas de por medio…",
+              "audio": "audios/cap1/campaign/carcosa/cap1_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_plan_1a",
+              "label": "Plan 1a: El tercer acto",
+              "text": "En el teatro reina un siniestro silencio. El viejo suelo de madera cruje bajo nuestros pies, y una ligera lluvia repiquetea sobre el tejado mientras exploráis el auditorio. Hay más cadáveres en descomposición entre los asientos, y el resto del público ha desaparecido…",
+              "audio": "audios/cap1/campaign/carcosa/cap1_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_plan_1b",
+              "label": "Plan 1b: El mensaje del emisario",
+              "text": "El cuerpo deforme de una pesadilla antinatural cae sobre el escenario de forma abrupta, y sus serpenteantes tentáculos se extienden hacia los pasillos. Abre sus fauces y emite un agudo y penetrante canto, una melodía imposible cuyas notas os perforan la mente. La frente os palpita de dolor, y os sangran los oídos.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_plan_2a",
+              "label": "Plan 2a: Bis",
+              "text": "La canción de la criatura resuena sin cesar por las salas del teatro. La melodía se repite una y otra vez, pero, de algún modo, nunca suena la misma nota dos veces.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_uno_plan_2b",
+              "label": "Plan 2b: 'Marchaos ya'",
+              "text": "La canción se hace más y más fuerte, hasta ahogar todos vuestros pensamientos. Os desplomáis en el suelo y os tapáis los oídos, pero por mucho que lo intentéis, no podéis atenuar la intensidad de la terrible voz de la criatura. El mundo entero parece cerrarse sobre vosotros, hasta que por fin oís una frase discordante en la melodía: 'MARCHAOS YA'.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_plan_2b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
@@ -73,7 +145,13 @@
               "id": "cap1_carcosa_escenario_1_reso_1",
               "label": "Resolución 1",
               "text": "Tras huir del teatro, te diriges derecho a la comisaría de policía del Barrio Este. Irrumpes por la puerta ante las miradas atónitas de los transeúntes y de los agentes de policía y exiges ver al sheriff Engle, subrayando la importancia de tu visita. El sargento de guardia que está trabajando perezosamente con un montón de papeleo en el mostrador sacude la cabeza y levanta el dedo para pedir silencio antes de señalarte una silla cercana. La espera es insoportable. Cada momento te parece una eternidad. Las manecillas del reloj más cercano se mueven con lentitud. Tamborileas con los dedos sobre el mostrador. Das golpecitos con el pie. Miras constantemente por encima del hombro para asegurarte de que la máscara pálida del Extranjero no te está observando por las ventanas. Por fin, el sargento de guardia deja el boli y se incorpora mientras te hace un gesto para que te acerques: –Muy bien, ¿qué es eso tan importante? –Empiezas a contárselo, pero a mitad de tu explicación, suspira y sacude la cabeza–. Mire, si se trata de alguna broma, no tiene gracia –dice–. Hemos tenido agentes en el centro toda la noche. No intente contarme semejante patraña a la cara –Insistes, pero el sargento de guardia se pone en pie y abre la puerta, invitándote a marcharte mientras alza la voz–. ¿Acaso se cree que no tenemos bastante trabajo o qué? ¡Largo! –Murmura algo en plan “hatajo de locos” a tus espaldas y te echa de la comisaría. Sabes a ciencia cierta lo que viste. Frustrado, regresas al Teatro Ward para encontrar alguna prueba que puedas llevarle a la policía. Te sorprende descubrir que la puerta delantera del teatro está cerrada. Estás a punto de decidir si echar o no la puerta abajo cuando ves un aviso en la pared junto a la entrada. “¡No seas un aguafiestas! Ven a la celebración del equipo de El Rey de Amarillo a las 20:00 en casa de Constance Dumaine, en el 1452 de la Avenida Atlantic. Se requiere ir de etiqueta.”. Arrancas el aviso de la pared y lo doblas para metértelo en el bolsillo del abrigo, con la esperanza de que te lleve a las respuestas que buscas.",
-              "audio": "audios/cap1/campaign/carcosa/cap1_reso_uno.mp3"
+              "audio": "audios/cap1/campaign/carcosa/cap1_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_1_reso_2",
+              "label": "Resolución 2",
+              "text": "Te planteas acudir a la policía, pero teniendo en cuenta los horrores del teatro, es muy probable que piensen que estás loco y que no se crean tu historia. Una pequeña parte de ti se pregunta si no será todo una broma, pero no puede ser así; todo era demasiado real y aterrador como para olvidarlo. Mientras te preguntas qué acciones emprender, te descubres volviendo sobre tus pasos por tu ruta de huida y regresando al teatro con cautela. El brillante resplandor de los faros te penetra en los ojos cuando los coches pasan por la calle, salpicando de sucia agua de lluvia el suelo de la acera. Pronto tienes a la vista el Teatro Ward, y sus brillantes luces dominan las calles del centro. Esperabas que estuviera en ruinas, pero su exterior tiene el mismo aspecto que cuando llegaste hace un rato para ver El Rey de Amarillo. Caminas hacia la ventana principal del Teatro Ward para tratar de mirar en su interior, pero está demasiado oscuro para ver nada.\n\nDe repente, un soplo helado te roza la nuca, y tienes la impresión de que te observan. Te giras y ves una sombra que huye doblando la esquina. Un enjambre de cucarachas corretea por la acera siguiendo los pasos de la sombra. Tus músculos se ponen en tensión por la incertidumbre, y doblas la esquina para perseguirla. De pie tranquilamente sobre la acera, ves a un hombre de aspecto familiar con una máscara pálida sin facciones.\n\nSu inquebrantable mirada no te quita ojo. –¿Quién eres? –gritas. El Extranjero no responde, sino que se da media vuelta y desaparece en el callejón que hay tras el teatro. Lo persigues en busca de respuestas, pero para cuando llegas al callejón, está vacío; sólo hay un aviso en la pared junto a la entrada de empleados del teatro. “¡No seas un aguafiestas! Ven a la celebración del equipo de El Rey de Amarillo a las 20:00 en casa de Constance Dumaine, en el 1452 de la Avenida Atlantic. Se requiere ir de etiqueta.”. Arrancas el aviso de la pared y te lo guardas, con la esperanza de que te lleve a las respuestas que buscas.",
+              "audio": "audios/cap1/campaign/carcosa/cap1_reso_2.mp3"
             }
           ]
         }
@@ -82,22 +160,144 @@
     {
       "id": "escenario_2",
       "title": "Escenario II: El último rey",
-      "comingSoon": true,
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_2_intro",
+              "label": "Escenario II: El Último Rey",
+              "text": "Si alguien tiene respuestas para las preguntas que arden en tu mente, son el elenco y el equipo de El Rey de Amarillo. Sin más pistas que seguir, te pones tu mejor ropa y acudes al 1452 de la Avenida Atlantic, donde una mujer llamada Constance Dumaine organiza una velada para celebrar la representación de la obra en Arkham por una sola noche.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_intro.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_dos_acto_1a",
+              "label": "Acto 1a: Descubriendo la verdad",
+              "text": "Esto no es una fiesta, es un manicomio. Pero, por algún motivo, los invitados no se dan cuenta. Hay muy pocos cuerdos, y muchos de los que veis son verdaderos horrores. Quizá podáis hablar con ellos para saber algo más sobre El Rey de Amarillo.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_dos_plan_1a",
+              "label": "Plan 1a: Elegantemente tarde",
+              "text": "Al aparcar cerca de la mansión, os dais cuenta de que algo no va bien. Hay un rastro de sangre en los escalones del porche, y la puerta principal está hundida. Del interior de la casa llega una música amortiguada, y sus distorsionadas y discordantes notas os hacen daño a los oídos. ¿Ha llegado ya aquí la locura del Rey de Amarillo?",
+              "audio": "audios/cap1/campaign/carcosa/cap2_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_dos_plan_1b",
+              "label": "Plan 1b: La última invitada",
+              "text": "-Vaya, nuestra última invitada -anuncia el portero-. Señorita Devine, todo el mundo aguardaba su presencia hoy. -La mujer lleva un pícaro vestido y una sonrisa a juego. Juraríais que ya habéis visto antes el símbolo de su amuleto-. Bueno, pues que empiece la fiesta de verdad -declara antes de mezclarse con el resto de asistentes.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_dos_plan_2a",
+              "label": "Plan 2a: La aterradora verdad",
+              "text": "Este sitio está cayendo presa de la locura cada vez más, transformándose ante vuestros ojos…",
+              "audio": "audios/cap1/campaign/carcosa/cap2_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_dos_plan_2b",
+              "label": "Plan 2b: Si no puedes vencerlos…",
+              "text": "Está todo en vuestras cabezas. Tiene que ser aquí. ¿Cómo si no podéis explicar todo lo que sucede a vuestro alrededor? Habéis tomado alguna copa de más, y vuestra mente os juega malas pasadas. Todo el mundo se está divirtiendo mucho y sólo quieren que os unáis a ellos.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_plan_2b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_2_reso_1",
+              "label": "Resolución 1",
+              "text": "El fresco aire otoñal te recibe cuando sales de la mansión. En tu cabeza no hay la menor duda de que el elenco y el equipo de El Rey de Amarillo están aquejados de locura. Puede que también te esté afectando a ti. Notas una oscuridad invasora, una presencia en tu mente no muy distinta a la mirada del Extranjero. Sobresaltado, miras el patio delantero por primera vez desde que escapaste de la mansión. La escena es... distinta. Las ventanas no están rotas, como lo estaban cuando llegaste por primera vez. El rastro de sangre que viste en el porche ha sido limpiado, y en lugar de la perturbadoramente distorsionada música que oíste al entrar, desde el patio interior llega el relajante sonido de un jazz lento.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_2_reso_2",
+              "label": "Resolución 2",
+              "text": "–Disculpe, pero ya es muy tarde –oyes que dice un criado mientras te da unos ligeros golpecitos en el hombro. Te das cuenta de que estás sentado en un sillón de la sala de estar de la mansión y de que llevas un rato dormido. Parece que la fiesta se va apagando. Ya no se oye música en las salas, prácticamente se ha acabado la comida y sólo quedan unos pocos invitados. –¿Quiere que le traiga su abrigo? –pregunta el criado con una sonrisa practicada. Te pones en pie, algo tambaleante, apoyándote en el brazo del sofá. Notas un martilleo en la cabeza de una intensidad mareante y ves manchas en tu visión. Insistes que estás bien y empiezas a andar hacia el recibidor. Ya no está ninguno de los invitados a los que buscabas antes, ni siquiera la anfitriona, la Sra. Dumaine. Ha desaparecido todo rastro de la locura y el terror que experimentaste. Hasta las cosas raras que viste al entrar a la mansión se han esfumado: los signos de pelea, las ventanas rotas, el rastro de sangre en el porche... Han borrado todas las pruebas. Pero aún recuerdas los sucesos de esta noche, y encontrarás respuestas en tu memoria.",
+              "audio": "audios/cap1/campaign/carcosa/cap2_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_2_reso_3",
+              "label": "Resolución 3",
+              "text": "Varios días más tarde, te pones a recordar la fiesta a la que asististe en el 1452 de la Avenida Atlantic. ¡Qué velada más fantástica pasaste! Y aun así, tu memoria está borrosa. No puedes evitar tener la sensación de que se te olvida algo importante. Algo sobre la obra que viste esa misma noche: El Rey de Amarillo. Esa persistente sensación te persigue a cada minuto. Por mucho que intentes recordar los sucesos de esa noche por completo, sigue habiendo un evidente agujero en tu memoria. Cuanto más te esfuerzas por recordar, más crece tu preocupación, casi hasta el punto de convertirse en obsesión. Tras decidir que debes saber a toda costa lo que ocurrió esa noche, te diriges a la mansión de la Sociedad Histórica del Barrio Sur. Puede que allí logres encontrar más información sobre la obra El Rey de Amarillo...",
+              "audio": "audios/cap1/campaign/carcosa/cap2_reso_3.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interludios",
+      "title": "Interludios",
+      "components": [
+        {
+          "type": "interludio",
+          "title": "Interludio I: La sombra de la realidad",
+          "items": [
+            {
+              "id": "cap1_carcosa_interludio_1_1",
+              "label": "La sombra de la realidad 1",
+              "text": "El cambio en el ambiente te pica la curiosidad. ¿Y si tu mente te jugó una mala pasada? ¿Y si las apariciones que siguen al Rey de Amarillo son sólo transitorias? Las respuestas a todas tus preguntas podrían estar dentro. Vuelves a abrir la puerta principal de la mansión con cautela. El volumen del reconfortante jazz y del ruido de las conversaciones triviales aumenta cuando entras. El tentador olor del cerdo asado flota en el aire. Como sospechabas, los signos de pelea y las cosas extrañas que viste antes han desaparecido sin explicación alguna. Entonces, cuando doblas la esquina para llegar al comedor, descubres al Extranjero hablando con otro hombre, uno alto, con bigote, vestido con un elegante traje negro y que lleva un bastón con el mango de plata. El Extranjero se vuelve hacia ti; su mirada te perfora la mente y tu visión se vuelve borrosa por el dolor. Sin saber ni cómo, echas a correr tan rápido como puedes, atravesando la puerta principal entre una bruma de dolor y desorientación. Sin tiempo para recobrar el aliento, corres hacia tu vehículo y te marchas a toda velocidad, sujetando el volante con manos temblorosas.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_1_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_1_2",
+              "label": "La sombra de la realidad 2",
+              "text": "No puedes fiarte de tus sentidos. Es sólo un truco, un intento de atraerte otra vez al interior. Sigues estando tan en peligro como antes. Te tragas tu miedo y te pones a bloquear la puerta principal de la mansión con varios de los pesados bancos de piedra que hay situados en el sendero de adoquines del patio delantero. Esperas que sea suficiente, pero no vas a quedarte para averiguarlo. En cuanto acabas, vuelves a tu vehículo y te diriges al Barrio Sur, donde esperas encontrar respuestas.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_1_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_1_3",
+              "label": "La sombra de la realidad 3",
+              "text": "No te atreves a volver a entrar en esa casa de locos. Pero tampoco puedes dejar que las monstruosidades anden sueltas. Registras el garaje abierto en busca de algo que te resulte útil y encuentras una vieja manguera, una lata de gasolina vacía y unas cerillas. Sabes lo que debes hacer, así que primero sacas gasolina del Oakland 6-54A de la Sra. Dumaine. Rocías con ella el porche delantero, el interior del garaje y las paredes exteriores de la mansión. Una vez hecho eso, sólo hacen falta varias cerillas para empezar el incendio. Observas desde el patio delantero cómo las llamas acaban por consumir la mansión. La calle se llena de los sonidos del crepitar del fuego y de la madera que se parte y de los chillidos de los horrores que mueren. Satisfecho, vuelves a tu vehículo y te pones en camino al Barrio Sur con una sombría determinación.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_1_3.mp3"
+            }
+          ]
+        },
+        {
+          "type": "interludio",
+          "title": "Interludio II: Alma perdida",
+          "items": [
+            {
+              "id": "cap1_carcosa_interludio_2_1",
+              "label": "Daniel sobrevivió",
+              "text": "Decides ocultarte por un tiempo en la Pensión de Ma y evitar que las autoridades den con Daniel, aunque no estás seguro de cuánto tiempo podrás quedarte en Arkham con un paciente fugado del manicomio. Daniel es totalmente imprevisible, y puede estar aturdido y casi catatónico en un momento dado y gritando como si lo mataran un segundo después. Hasta que no pasan varios días, no se da cuenta de que ya no está ingresado, lo que, por algún motivo, le aterra aún más. –¡Viene a por mí, viene a por mí! –repite incesantemente, a veces durante horas. Por fin, durante una estrellada noche extrañamente cálida, Daniel está lo suficientemente tranquilo como para abrirse a ti: –El Rey de Amarillo no es sólo una obra –explica–. Es un ser llamado Hastur, que ya me ha reclamado. Pero aún hay tiempo para ti. Todavía no estás poseído. Aún no has pronunciado el juramento. Hagas lo que hagas, no digas su nombre. No cedas –Le preguntas acerca de los extraños sucesos que han estado ocurriendo en la ciudad, y sobre los sectarios y criaturas con los que te has topado–. Están intentando encontrar Carcosa –dice como si tal cosa. Reconoces el nombre como el de la ciudad ficticia de la obra en la que gobierna El Rey de Amarillo–. Quieren liberar a Hastur de Su prisión. ¡Pero tú...! ¡Tú puedes abrir el camino a Carcosa antes de que lo hagan ellos! ¡Puedes encerrar a Hastur para siempre! –Te agarra con fuerza mientras desvaría–. ¡Rápido, antes de que el Extranjero descubra nuestro plan!\n\nHoras más tarde, Daniel vuelve a resultar incoherente y a no responder. Das un largo paseo para ordenar tus pensamientos y reflexionar sobre esta nueva información. No estás seguro de qué pensar sobre sus disparatadas afirmaciones. Antes de poder tomar una decisión, regresas y descubres que han roto la puerta de tu habitación. Daniel está hecho un guiñapo en el suelo, con el rostro pálido y el cuerpo inerte. A juzgar por los hematomas del cuello, supones que lo han estrangulado.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_2_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_2_2",
+              "label": "Daniel no sobrevivió",
+              "text": "Decides ocultarte por un tiempo en la Pensión de Ma, sin saber si las noticias de lo sucedido en el manicomio serán de dominio público. Aprovechas el tiempo para poner por escrito los sucesos que has experimentado hasta ahora, incluido el breve diálogo entre tú y Daniel. Habló de El Rey de Amarillo como si fuera un ser real, y hasta le puso nombre. “Hastur”. También murmuró, gritó y divagó pronunciando otras frases. Dudas que vayas a olvidarlas algún día. “Nos obligó a pronunciar el juramento”. “Se pagó el precio”. “Están abriendo el camino a Carcosa”. Dedicas horas a pensar en la advertencia de Daniel, la que te rogó que siguieras: “No pronuncies Su nombre”. Revives sus últimos momentos en tu mente una y otra vez.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_2_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_2_3",
+              "label": "Daniel fue poseido",
+              "text": "Decides ocultarte por un tiempo en la Pensión de Ma, sin saber si las noticias de lo sucedido en el manicomio serán de dominio público. Aprovechas el tiempo para poner por escrito los sucesos que has experimentado hasta ahora, incluido el breve diálogo entre tú y Daniel. Habló de El Rey de Amarillo como si fuera un ser real, y hasta le puso nombre. “Hastur”. También murmuró, gritó y divagó pronunciando otras frases. Dudas que vayas a olvidarlas algún día. “Nos obligó a pronunciar el juramento”. “Se pagó el precio”. “Están abriendo el camino a Carcosa”. La tercera noche, vuelves a tu habitación y descubres que han roto la puerta. Entras con cuidado, preguntándote si la policía te sigue la pista. O peor aún, el Extranjero. Te sorprende encontrar el cuerpo de Daniel Chesterfield, tendido en el suelo con una expresión de dolor en el rostro y los ojos abiertos como platos. Está muerto. Tiene los ojos inyectados en sangre y amarillentos, y está aferrando una copia de El Rey de Amarillo en sus rígidas manos. Arrancas el libreto de su rigor mortis y lo examinas. Daniel ha garabateado notas en los márgenes de cada página, y aunque la mayoría son incomprensibles, hay algunos momentos de lucidez destacables. La primera vez que se menciona la ciudad ficticia de Carcosa, Daniel escribió lo siguiente junto a esa parte:\n\n*Carcosa es real No dejes que abran el camino.\n\nCuando Cassilda habla del Rey Andrajoso, Daniel ha escrito: Hastur es el Rey Andrajoso cautivo en su prisión de las estrellas ¡Enciérralo y detén esta locura!\n\nTu mente se llena de preguntas. ¿Cómo escapó del manicomio? ¿Cómo murió? ¿Por qué ahora vuelve a parecer humano? No tienes tiempo que perder, así que reúnes tus cosas y huyes de la habitación. Las palabras de Daniel, las que te rogó que escucharas, se repiten en tu mente una y otra vez.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_2_3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_2_4",
+              "label": "Ignorar la advertencia",
+              "text": "Pasas horas dándole vueltas a la información que tienes sobre El Rey de Amarillo. ¿Qué es cierto? ¿Qué es real? Eres el único que puede encontrarle algún sentido a esta locura.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_2_4.mp3"
+            },
+            {
+              "id": "cap1_carcosa_interludio_2_5",
+              "label": "Hacer caso de la advertencia",
+              "text": "Pasas horas dándole vueltas a la información que tienes sobre El Rey de Amarillo. ¿Qué es cierto? ¿Qué es real? Eres el único que puede encontrarle algún sentido a esta locura.",
+              "audio": "audios/cap1/campaign/carcosa/interludio_2_4.mp3"
+            }
+          ]
         }
       ]
     },
@@ -109,127 +309,996 @@
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_3_intro",
+              "label": "Escenario III: Ecos del pasado",
+              "text": "Un dolor sordo te palpita en la cabeza mientras conduces por las lluviosas calles de Arkham hacia tu próximo destino. Tienes la amenaza del Extranjero muy en mente, y te descubres mirando por el retrovisor muy a menudo, esperando ver el rostro sin expresión de su máscara persiguiéndote. En lugar de eso, no ves nada más que la neblinosa noche sin estrellas y la carretera desierta que va quedando a tu espalda. Tus pensamientos vuelven a divagar, como lo han hecho en varias ocasiones durante las últimas horas, y vuelven a El Rey de Amarillo y a la ciudad de Carcosa y sus habitantes. ¿Cuál era el mensaje oculto en esa terrible obra y el significado de su locura? Hay un detalle que se abre paso hasta la primera línea de tus pensamientos. Uno que salió a relucir durante las conversaciones que oísteis en la mansión de la Sra. Dumaine: que la representación de El Rey de Amarillo de esta noche no fue la primera vez que Arkham había visto la terrible obra. Había habido al menos una representación más, dirigida por el mismo hombre: Nigel Engram. En Arkham hay un lugar en el que suelen conservarse registros de los acontecimientos más importantes que han ocurrido en la ciudad: la casa señorial de la Sociedad Histórica en el Barrio Sur. Si hay algún registro de la representación anterior de El Rey de Amarillo, puede que la Sociedad Histórica disponga de él. Quizás allí encuentres respuestas a las preguntas que arden en tu mente.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_intro.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_3_intro_2",
+              "label": "Información de Sebastien",
+              "text": "Recuerdas lo que te contó Sebastien durante la fiesta. El Rey de Amarillo vino a Arkham hace varias décadas, mucho antes de que se construyera el Teatro Ward. Según él, no es sorprendente que lo recuerden pocas personas; de hecho, parte de su objetivo de esta noche era hacer llegar El Rey de Amarillo a un público mayor. Es posible que la Sociedad Histórica haya conservado algún registro sobre esta producción anterior, especialmente si la siguieron acontecimientos similares a los sucedidos esta noche. Quizás logres encontrar algún recorte de periódico u otros artículos que describan lo que ocurrió en el pasado.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_intro_2.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_1a",
+              "label": "Acto 1a: La búsqueda de respuestas",
+              "text": "Todas y cada una de las numerosas salas de la Sociedad Histórica contienen registros y documentos que podrían ayudarte en tu búsqueda de respuestas sobre El Rey de Amarillo.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_1b",
+              "label": "Acto 1b: Estudios nocturnos",
+              "text": "Encuentras un documento que guardó uno de los historiadores de la sociedad que hace referencia a los 'terribles sucesos' que rodearon el cierre de un antiguo teatro de Arkham: el Auditorio Cedar. Aunque no hay ninguna mención explícita de El Rey de Amarillo, crees que vas por el camino correcto. Las notas del historiador se cortan de pronto, y hay una desvaída página escrita a mano sujeta a la última entrada. Este asiento es demasiado macabro como para que se haga público. Voy a dejar el resto de este documento en la biblioteca oculta. Cualquier indagación posterior debe hacerse alejada de los ojos curiosos, pues es un asunto peligroso y que no debe investigarse a la ligera.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_2a",
+              "label": "Acto 2a: Errores del pasado",
+              "text": "En algún lugar de la mansión hay una 'biblioteca oculta' en la que podrías encontrar más información sobre El Rey de Amarillo. Debes encontrar la forma de acceder para poder continuar tu investigación.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_2b",
+              "label": "Acto 2b: Pasadizos secretos",
+              "text": "Mientras rebuscas en los cajones de un escritorio, te sobresalta oír una voz a tu espalda: -¡Perdón! ¿Puedo ayudarle? -Te alivia descubrir que la voz pertenece a un delgado anciano que lleva unas gafas de montura ancha, sin duda un miembro de la Sociedad Histórica. Le explicas que estás buscando una biblioteca oculta en algún lugar de la mansión, aunque evitas contarle el motivo. Se presenta como el Sr. Peabody, el conservador de la Sociedad Histórica. -Le ayudaré a encontrar lo que busca -te dice-, pero sólo si me cuenta de qué va todo esto cuando estemos allí -Esperas no tener que llegar a eso.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_2b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_3a",
+              "label": "Acto 3a: El juramento",
+              "text": "-Este edificio es muy antiguo y está repleto de todo tipo de pasadizos secretos -explica el Sr. Peabody-. Puede que alguno de ellos lleve a esta biblioteca que busca.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_acto_3b",
+              "label": "Acto 3b: El broche",
+              "text": "Mientras estudias la biblioteca oculta, encuentras varias informaciones que te llaman la atención. Como ocurrió con la reciente producción, la anterior representación de El Rey de Amarillo vino a Arkham desde el extranjero y la realizó un elenco actoral francés. No reconoces ninguno de los nombres de los actores, aunque, como esperabas, el intérprete del Extranjero es anónimo. Sin embargo, parece que un miembro de la Sociedad Histórica ya te ha hecho parte del trabajo; hay varios recortes de periódico recopilados junto con la información de la obra. Algunos de los titulares son: El Auditorio Cedar cierra por un incendio, Expertos atónitos ante las extrañas inundaciones. Escondido entre estas informaciones, también encuentras un extraño objeto; un broche de ónice con una extraña inscripción.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_1a",
+              "label": "Plan 1a: La verdad está oculta",
+              "text": "Sorprendentemente, las puertas principales de la mansión georgiana de la Sociedad Histórica están medio abiertas cuando llegas. ¿Quién más podría estar aquí a estas horas?",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_1b",
+              "label": "Plan 1b: Ritual oscuro",
+              "text": "Un susurro recorre el edificio, pronunciando una frase en un idioma que no puedes describir; sin previo aviso, todas las luces eléctricas explotan a la vez. Enciendes una vela y sigues la búsqueda. El edificio es bastante distinto cuando está sumido en la oscuridad. Sombras y siluetas bailan por las paredes. Huecos que no habías visto antes te llaman la atención ahora. ¿Qué otros secretos contiene este edificio?",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_2a",
+              "label": "Plan 2a: Saqueando la mansión",
+              "text": "Aunque los susurros han cesado, sigues oyendo el ruido inconfundible de alguien que mueve muebles y rebusca. Quienquiera que esté aquí está registrando el edificio tan a fondo como tú…",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_2b",
+              "label": "Plan 2b: Rompiendo el juramento",
+              "text": "La puerta principal de la mansión se abre, dejando entrar el ulular de un frío viento y el repiqueteo de la lluvia, y luego se cierra de golpe. Encuentras un lugar en el que ocultarte y escuchar, preguntándote quién más podría haber entrado en el edificio tan tarde. -No, lo juro ¡Juro que no sé dónde está la puerta! -grita un hombre-. Tendréis que encontrar el camino vosotros solos. ¡No puedo ayudaros! -Su voz suena llena de pánico y desorientada. -Pronunciaste el juramento -responde una voz masculina-. Pronunciaste Su Nombre -El primer hombre tartamudea-: ¡No! ¡No, no puedo! ¡No lo haré! -Después de esto, su voz se distorsiona y deja de hablar. Oyes pasos en la escalera, pasos húmedos y pesados.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_3a",
+              "label": "Plan 3a: Secretos que es mejor dejar ocultos",
+              "text": "Quienesquiera que sean estas personas, deben de estar involucradas en la conspiración de El Rey de Amarillo. ¡No puedes dejar que encuentren lo que estén buscando!",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_tres_plan_3b",
+              "label": "Plan 3b: El camino hacia adelante",
+              "text": "Hay un ajetreo de pisadas en la escalinata central de la mansión, y la puerta principal vuelve a abrirse: -¿Lo habéis encontrado? -pregunta una voz apagada. -Sí, podemos embarcar inmediatamente. El camino se abrirá.\n\nLa puerta se cierra, la mansión vuelve a estar en silencio y solitaria. Durante el resto de tu búsqueda, no encuentras más rastros de los misteriosos personajes encapuchados, ni tampoco información que responda las muchas preguntas que tienes sobre El Rey de Amarillo…",
+              "audio": "audios/cap1/campaign/carcosa/cap3_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_3_reso_1",
+              "label": "Resolución 1",
+              "text": "Cuando se trata de El Rey de Amarillo, no existen las coincidencias. No tienes ninguna duda de que el objeto que has encontrado es importante, y decides llevártelo antes de proseguir tu investigación. El último documento que encuentras que esté relacionado con la producción original de El Rey de Amarillo es una evaluación psiquiátrica de un tal Daniel Chesterfield, un tramoyista que perdió la cabeza tras la última representación. Parece que lo ingresaron en el manicomio después de que acabara la producción. Puede que siga allí...",
+              "audio": "audios/cap1/campaign/carcosa/cap3_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_3_reso_2",
+              "label": "Resolución 2",
+              "text": "Esta investigación volvería paranoico al más pintado. Atribuirle un gran significado a todo lo que encuentras puede ser realmente peligroso. Estás seguro de que este broche no tiene importancia, y puede que sea parte de la utilería de la obra original. Lo dejas allí y prosigues tu investigación. El último documento que encuentras que esté relacionado con la producción original de El Rey de Amarillo es una evaluación psiquiátrica de un tal Daniel Chesterfield, un tramoyista que perdió la cabeza tras la última representación. Parece que lo ingresaron en el manicomio después de que acabara la producción. Puede que siga allí...",
+              "audio": "audios/cap1/campaign/carcosa/cap3_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_3_reso_3",
+              "label": "Resolución 3",
+              "text": "El personaje se desploma en el suelo, y su distorsionado cuerpo se retuerce de agonía mientras parece fundirse. Jadea y grita mientras un brillo amarillo brota del interior de su boca y de sus ojos: –Daniel –dice la cosa con voz quebrada–. Buscad a Daniel... Daniel Chesterfield, el tramoyista. ¡Él lo recuerda! –Detrás de las palabras del hombre hay otra voz que susurra levemente en un idioma melódico–. Encontradlo... El también pronunció el juramento... ¡El juramento que nos condenó a todos...! –Con esas últimas palabras, la piel del hombre se funde, dejando sus huesos al descubierto, y se agita en el suelo.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_reso_3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_3_reso_4",
+              "label": "Resolución 4",
+              "text": "Los acontecimientos de la noche te han dejado agotado. No lograste descubrir nada en la mansión de la Sociedad Histórica que pudiera hacer avanzar tu investigación. Quienesquiera que fueran esos intrusos, debían de estar buscando la misma información que tú. Consternado, te diriges al alojamiento más cercano que encuentras, la Pensión de Ma, a poca distancia de la Sociedad Histórica. Cuando llegas allí, despunta el alba, y el picaporte de la puerta delantera y los helechos del porche están cubiertos de rocío. Tienes suerte de que haya una habitación libre para todo el día, y pronto te quedas profundamente dormido.\n\nDe pronto, estás cayendo. A tu alrededor, un brillo cegador resplandece como un furioso infierno. Te palpita la cabeza de dolor, y tu vista se ve inundada de brillantes colores. Las llamas queman tu piel. Debajo de ti, el abismo se abre y te engulle. Entonces te encuentras en una celda húmeda y sin ventanas y en la que impera un pútrido hedor. Hay un hombre acurrucado en un rincón, temblando de frío o por la desesperación de su situación, o quizá por ambas cosas. –Sin máscara –murmura una y otra vez–. Sin máscara, sin máscara... –Das un par de vacilantes pasos hacia delante, pero antes de poder alcanzarlo, la ranura metálica de la puerta de la celda se abre, y oyes que un auxiliar le llama: –Daniel, despierta. Despierta, Daniel –Y entonces despiertas.",
+              "audio": "audios/cap1/campaign/carcosa/cap3_reso_4.mp3"
+            }
+          ]
         }
       ]
     },
     {
       "id": "escenario_4",
-      "title": "Escenario IV: El juramento innombrable",
-      "comingSoon": true,
+      "title": "Escenario IV: El juramento inconfesable",
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_4_intro_1",
+              "label": "Introducción 1",
+              "text": "“Despierta, Daniel”. Las palabras resuenan en tus pensamientos mientras das vueltas por la destartalada habitación, tratando de encontrarle un sentido a lo que acabas de experimentar. Te despertaste esa tarde con un violento sobresalto; tu cuerpo temblaba, y tenías las sabanas empapadas de sudor. Aunque has dormido unas buenas ocho horas y media, te sientes incluso más agotado que la noche anterior. Ves tus ojerosos ojos inyectados en sangre en el espejo que hay junto a la cómoda, y te preguntas si habrás dormido de verdad.\n\n¿Quién será Daniel? La habitación de tu sueño parecía una prisión, pero ese hombre –Daniel– parecía desequilibrado, como si no controlase su mente. Esto sólo lleva a una conclusión: un manicomio. Sabiendo que no vas a descansar mucho, te diriges al Manicomio Arkham, con la esperanza de que tu corazonada sea correcta.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_intro_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_intro_2",
+              "label": "Introducción 2",
+              "text": "Durante los días siguientes, examinas a fondo las pistas de que dispones, tratando de encontrar alguna información respecto a Daniel Chesterfield, un tramoyista de la anterior producción de El Rey de Amarillo. Por lo que sabes, fue el único superviviente del elenco y equipo de esa producción. El resto, o al menos de los que encuentras alguna información, desaparecieron o murieron poco después de la noche del estreno de distintas formas cuya única conexión es su crudeza. Extraños accidentes, suicidios, desapariciones.\n\nParece que Daniel es tu única pista si quieres seguir investigando. Según los registros que has encontrado, fue internado en el Manicomio Arkham hace muchos años. Toda la documentación sobre el tratamiento de Daniel parece acabar ahí. Ni siquiera estás seguro de si seguirá vivo. Puede que se curase y le dieran el alta. Esperabas poder evitar esto, pero parece que sólo hay una forma de averiguarlo. Coges tus cosas y te diriges al centro, hacia el Manicomio Arkham.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_intro_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_intro_3",
+              "label": "Introducción 3",
+              "text": "Cuando entras en el manicomio, te paras a hablar con el recepcionista, aunque notas cómo tu cuerpo te insta a penetrar en las garras de este manicomio. Adopta una expresión de confusión cuando le hablas de El Rey de Amarillo y de Daniel. Pero ante tu insistencia, revisa el archivo hasta sacar una carpeta de un blanco inmaculado. Dentro hay todo tipo de información sobre los pacientes ingresados en el manicomio: historiales médicos, evaluaciones psiquiátricas y todo ese tipo de cosas. Reconoces algunos de los rostros mientras pasa las hojas. –Daniel... Daniel Chesterfield, ¿no? Está ingresado en cuidados especial con el doctor Mintz. Pero no puede visitarlo; su planta está restringida al personal autorizado –Discutes con él e insistes en que te deje pasar al ala de pacientes, sabiendo que Daniel debe de tener la clave para comprender qué está sucediendo.\n\nEl recepcionista esboza una sonrisa compasiva y cede, haciéndole un gesto con la cabeza a los guardias de seguridad que hay cerca: –Ah, está bien, está bien –dice con una sinceridad propia de un vendedor callejero–. Le concertaré una cita con el doctor Mintz para que pueda hablar con él sobre Daniel. Estos caballeros le acompañarán –Aliviado por poder conseguir pronto las respuestas que buscas, te escoltan al ala de pacientes del Manicomio Arkham...",
+              "audio": "audios/cap1/campaign/carcosa/cap4_intro_3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_intro_constance",
+              "label": "Información de Constance",
+              "text": "Recuerdas lo que te contó Constance cuando hablaste con ella durante esa infernal fiesta. El director de la obra, Nigel Engram, les pidió a ella y a los demás miembros del elenco y del equipo que recitasen una especie de juramento. Al principio, pensó que no era más que un capricho propio de un artista excéntrico; algo que el Sr. Engram hacía como una extraña formalidad para unir y reforzar los lazos entre el elenco y el equipo. Constance afirmó que, en honor a la verdad, había funcionado; desde que pronunciaron su extraño juramento, tanto ella como los demás miembros de la obra sintieron una confianza y unos ánimos mucho mayores. Puede que Daniel tuviera una experiencia similar durante la última producción de El Rey de Amarillo. Debéis hablar con él sobre ello.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_intro_constance.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_1a",
+              "label": "Acto 1a: Manicomio Arkham",
+              "text": "Aparte de unos pocos pacientes que te rehúyen, no hay ningún auxiliar ni médico por allí con los que puedas hablar. Parece que tendrás que encontrar al Sr. Chesterfield por tu cuenta.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_1b",
+              "label": "Acto 1b: La llave del sótano",
+              "text": "Al doblar una esquina, Estás a punto de chocarte con una enfermera de marcados rasgos y pelo castaño claro. Le cuentas lo ocurrido con los pacientes violentos y las cosas extrañas que has visto, pero no te escucha. Cuando le preguntas por Daniel, te informa que es paciente del Dr. Mintz y que se encuentra en la planta segura del sótano. Por desgracia, se niega a dejarte entrar en esa zona del manicomio.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_2a_1",
+              "label": "Acto 2a: 'Los realmente graves' (v. I)",
+              "text": "Daniel está en alguna parte del sótano seguro en el que se encuentran los pacientes más peligrosos. Ahora que tienes la llave, puedes explorar esta zona del manicomio.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_2b_1",
+              "label": "Acto 2b: Tres gansos en bandada",
+              "text": "Cuando entras en su celda, encuentras a Daniel hecho un ovillo en un rincón de la estancia, sollozando y meciéndose en el suelo: -Sin máscara… Sin máscara… -repite una y otra vez. Lo ayudas a levantarse y tratas de consolarlo, diciéndole que no está loco, que han estado ocurriendo extraños sucesos por toda la ciudad desde que El Rey de Amarillo volvió a Arkham. -¡Es Nigel! -exclama mientras te agarra-. Nigel nos obligó a pronunciar su nombre… Nos hizo pronunciar el juramento, y ahora Él vive dentro de nosotros, ¿no lo entiendes? -sigue desvariando-. ¡Pronunciamos Su nombre y se pagó el precio! ¡Hastur! ¡Hastur! ¡Oh, Rey! Crees que podrías entender algo más acerca de la situación si logras calmarlo, pero tendrás que sacarlo de este manicomio para conseguirlo.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_2b_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_2a_2",
+              "label": "Acto 2a: 'Los realmente graves' (v. II)",
+              "text": "Daniel está en alguna parte del sótano seguro en el que se encuentran los pacientes más peligrosos. Ahora que tienes la llave, puedes explorar esta zona del manicomio.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_2b_2",
+              "label": "Acto 2b: La advertencia de Daniel",
+              "text": "Cuando entras en su celda, encuentras a Daniel hecho un ovillo en un rincón de la estancia, sollozando y meciéndose en el suelo: -Sin máscara… Sin máscara… -repite una y otra vez. Lo ayudas a ponerse en pie y le preguntas qué recuerda sobre El Rey de Amarillo, pero te interrumpe: '¡No pronuncies Su nombre!' -exclama con frenesí y los ojos abiertos y con un brillo amarillo-. Nigel nos obligó a pronunciar su nombre… Nos hizo pronunciar el juramento, y ahora Él vive dentro de nosotros, ¿no lo entiendes? -sigue desvariando. El hombre se acerca con una expresión demente en el rostro, y das un paso hacia atrás por si acaso: -¡Pronunciamos Su nombre y se pagó el precio! ¡Hastur! ¡Hastur! ¡Oh, Rey! -A continuación, se transforma de repente ante tus ojos. Sus huesos se retuercen y se parten. Su cuerpo se distorsiona de forma grotesca. El símbolo grabado en su frente emite un fuerte brillo, y un resplandor amarillo brota del interior de su cuerpo. Se abalanza sobre ti para atacarte.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_2b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_3a",
+              "label": "Acto 3a: Planeando la huida",
+              "text": "Tienes que salir de este lugar lo antes posible, con Daniel o sin él.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_3b",
+              "label": "Acto 3b: Una forma de escapar",
+              "text": "El grito de un auxiliar resuena en el pasillo. En pocos instantes, una alarma comienza a sonar ruidosamente por toda la institución. Las enfermeras y los guardias empiezan a correr por todo el manicomio intentando controlar la situación. Te notas aturdido, y tu visión es borrosa, como si te hubieran golpeado con algo pesado. Las paredes son un borrón que se funde y retuerce. Comienzan a surgir criaturas de grietas y rincones que no existían hace unos instantes.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_4a",
+              "label": "Acto 4a: Sin salvación",
+              "text": "Se ha armado un buen cristo.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_acto_4a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_acto_4b",
+              "label": "Acto 4b: Fuga",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "Si _los investigadores cogieron las llaves por la fuerza_:", 
+                  "content": "Cuando intentas escapar, aparece la enfermera a la que atacaste antes a la cabeza de un grupo de guardias y te descubre: -¡Ahí está! ¡Rápido, detenedlo!",
+                  "src": "audios/cap1/campaign/carcosa/cap4_acto_4b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si no es así:", 
+                  "content": "Los guardias están demasiado ocupados controlando la situación y reduciendo a los pacientes del manicomio como para darse cuenta de tu fuga.",
+                  "src": "audios/cap1/campaign/carcosa/cap4_acto_4b_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_1a",
+              "label": "Plan 1a: Encerrados dentro",
+              "text": "El ala de pacientes del manicomio es mucho más tranquila y solitaria de lo que esperabas. En el pasillo impera un hedor a productos químicos y olor corporal. En cuanto te acompañan dentro, las puertas se cierran a cal y canto detrás de ti.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_1b",
+              "label": "Plan 1b: Los pacientes",
+              "text": "Hablar con los pacientes está resultando ser más difícil de lo que suponías. Te miran con recelo y se niegan a contestar ninguna de las preguntas, retrocediendo o huyendo si los confrontas. O bien no están acostumbrados a que haya invitados o tienes algo que les provoca una enorme cantidad de angustia. Algunos se comportan como animales acorralados en un rincón, y crees que podrían atacarte en cualquier momento.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_2a",
+              "label": "Plan 2a: Descenso tortuoso",
+              "text": "Cuanto más tiempo pasas en este lugar infernal, más ganas tienes de marcharte. Te parece que llevaras días aquí. Temes que, si te quedas aquí mucho más tiempo, acabes como los pacientes: una incontrolable y peligrosa sombra de tu antiguo yo.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_2b",
+              "label": "Plan 2b: El signo Amarillo",
+              "text": "En una parte de tu mente, una fuerza te habla. '¿lo has visto?'. Te llama. Atisbas algo en tu visión periférica y te giras para encontrar un símbolo familiar que aparece allí donde miras. Está grabado en las puertas. Dibujado en las paredes. Pintado en las telas de los pacientes. No puedes escapar de él.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_3a",
+              "label": "Plan 3a: Descenso tortuoso",
+              "text": "Huye. Huye mientras aún puedas.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cuatro_plan_3b",
+              "label": "Plan 3b: Máscaras, máscaras, máscaras",
+              "text": "Las paredes se cierran. Se te nubla la visión. Suena un chillido en tus oídos. Te cogen y no puedes defenderte. Pides ayuda, pero no acude nadie. Buscas una forma de escapar, pero en lugar de eso, ves la máscara pálida del Extranjero que te devuelve la mirada. A la vuelta de cada esquina, detrás de cada puerta, a través de todas las ventanas. Esa máscara… Esa maldita máscara….",
+              "audio": "audios/cap1/campaign/carcosa/cap4_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_4_reso_derrotado",
+              "label": "Investigador derrotado",
+              "text": "–Doctor Mintz, el paciente ha sido medicado y está listo para verle –dijo la enfermera Heather mientras abría el archivo del escritorio y dedicaba un instante a repasar el historial del paciente.\n\n–¿Ha habido algún cambio en el estado del paciente? –preguntó el doctor Mintz con voz monótona. Mera formalidad. Ambos sabían que el paciente no tenía cura.\n\n–Ninguno. Los delirios del paciente continúan. Exige hablar con el director, afirma que era un invitado y sigue desvariando sobre esa obra que se representó la otra noche, El Rey de Amarillo.\n\n–¿Y sus otros delitos? ¿El incidente del teatro? ¿Y lo del 1452 de la Avenida Atlantic?\n\n–Cree que fue atacado y que sólo se defendió –respondió ella con la voz llena de compasión. ¿Qué podría hacer que alguien perdiera la razón tan rápidamente? El historial del paciente no incluía ningún síntoma previo de inestabilidad mental–. ¿Usted le encuentra algún sentido, doctor?\n\n–No creo que nadie pueda encontrárselo –suspiró el doctor Mintz. Se puso en pie y cogió el archivo del escritorio–. Mi trabajo no es entender, sino curar. Puede que mis procedimientos experimentales den su fruto con este paciente –La enfermera dio un respingo y sintió que se le ponía la piel de gallina. Sabía cómo acabarían esos procedimientos y dudaba que el resultado sirviera de algo.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_reso_derrotado.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_reso_1",
+              "label": "Resolución 1",
+              "text": "...Y así acabó la locura de El Rey de Amarillo.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_reso_2",
+              "label": "Resolución 2 (cada investigador derrotado debe resolver primero Investigador derrotado)",
+              "text": "Te ves enfrentado a varios auxiliares y guardias de seguridad que bloquean tu huida. Al sentirte acorralado y atrapado, no tienes más elección que abrirte paso entre ellos peleando. Mientras luchas por escapar, varios de los pacientes cercanos quieren aprovechar la oportunidad y atacan a los guardias con una furia enloquecida. La enfermera Heather chilla y se marcha, y tú logras huir en medio de la confusión, magullado y maltrecho, pero libre de nuevo. Hará falta tiempo para que se curen tus heridas, pero ahora no tienes tiempo para eso.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_4_reso_3",
+              "label": "Resolución 3 (cada investigador derrotado debe resolver primero Investigador derrotado)",
+              "text": "Con el personal del manicomio distraído y los pacientes sueltos y causando estragos, logras marcharte sin ser descubierto. Te adentras en el jardín que hay detrás del manicomio, donde una verja de una altura de dos pisos y coronada por alambre de espino es lo único que se interpone entre el mundo exterior y tú. No tienes mucho tiempo, y debes alejarte del manicomio antes de que vuelvan los guardias y te vean. Usando una camisa de fuerza que encontraste en el manicomio para cubrir el alambre de espino, trepas rápidamente por la verja y echas a correr en cuanto estás en el otro lado.",
+              "audio": "audios/cap1/campaign/carcosa/cap4_reso_3.mp3"
+            }
+          ]
         }
       ]
     },
     {
       "id": "escenario_5",
-      "title": "Escenario V: Un fantasma de verdad",
-      "comingSoon": true,
+      "title": "Escenario V: El Fantasma de la Verdad",
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_5_intro_1",
+              "label": "Introducción 1",
+              "text": "Han pasado varios meses desde que El Rey de Amarillo se representara en el Teatro Ward. Tus compañeros y tú habéis estado investigando los extraños incidentes que se produjeron después. Lo que habéis encontrado hace que te preguntes si es sensato proseguir la investigación, pero la verdad te llama, y no puedes evitar responder a su llamada. Parece que no sois los únicos que unisteis las piezas que vinculaban los extraños acontecimientos que rodean a El Rey de Amarillo. Otro grupo de investigadores también ha investigado estos sucesos. Unos días después de la representación en Arkham, fueron ingresados en el manicomio, desvariando acerca del regreso del Rey y de los “monstruos” que los habían atacado. La noticia no te sorprende. Su destino te hace estar aún más seguro de que estás siguiendo el rastro correcto... Y mucho más de que deberías parar mientras aún estás a tiempo.\n\nHas encontrado los documentos que tenían esos investigadores antes de su ingreso y has seguido las pistas que dejaron. Habían interrogado a parte del elenco y del equipo de El Rey de Amarillo y descubierto varias informaciones de vital importancia. Su investigación también contiene notas sobre sus descubrimientos en la Sociedad Histórica de Arkham, además de la narración del tiempo que pasaron en el manicomio, incluido su encuentro con un paciente llamado “Daniel Chesterfield”. Tras una larga noche de recopilar y comparar notas, te quedas profundamente dormido. En tus sueños, te ves sometido a visiones de Carcosa: de sus estrellas negras, soles gemelos, lunas destrozadas y torres retorcidas.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_2",
+              "label": "Introducción 2",
+              "text": "Han pasado varias semanas desde los sucesos ocurridos en el manicomio, y sigues igual de lejos de la verdad sobre El Rey de Amarillo y Carcosa. Has registrado la ciudad en busca de algún indicio de aquellos que mencionó Daniel, los que estaban “abriendo el camino a Carcosa”, pero no has encontrado nada. O el rastro se ha enfriado o ya no están en Arkham. Puede que Daniel estuviera loco de verdad, y que lo único que estés haciendo sea seguirlo cada vez más dentro de la madriguera del conejo. Cada noche, te agitas mientras duermes al verte expuesto a vívidos sueños de Carcosa: de sus estrellas negras, soles gemelos, lunas destrozadas y torres retorcidas.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_5",
+              "label": "Sueño 5",
+              "text": "Miras en el espejo, y tu reflejo te observa con curiosidad. –Espera un momento, éste no es el Sueño 1 –dices.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s5.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_4",
+              "label": "Sueño 4",
+              "text": "Humo y ascuas flotan hacia el cielo nocturno carente de estrellas. Los gritos de criaturas que arden hacen que te invada la horrenda sensación de haberlo logrado. Casi parecen gritos humanos, piensas. Pero sabes que no es verdad.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s4.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_8",
+              "label": "Sueño 8",
+              "text": "Miras en el espejo, y el Extranjero te devuelve la mirada. Sus ojos penetran en tu mente. El espejo se hace pedazos.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s8.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_12",
+              "label": "Sueño 12",
+              "text": "Levantas la vista hacia la vidriera por curiosidad. ¿Qué es esa sombra que hay en la ventana? ¿Qué significado tiene este extraño diseño?",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s12.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_2",
+              "label": "Sueño 2",
+              "text": "Constance te coge de la mano y te lleva a la reluciente pista de baile. –Vamos, que no te dé vergüenza. ¡Hoy es una noche para bailar! ¡Para celebrar!",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_9",
+              "label": "Sueño 9",
+              "text": "Persigues al Extranjero por oscuros corredores fríos como el hielo y formados por cientos de miles de esqueletos. Los cráneos te miran correr, castañeteando de forma burlona sus mandíbulas cuando pasas. El Extranjero llega a una pared hecha de hueso y unas manos huesudas lo agarran y lo meten en la pared. Sus burlonas risas llegan a un terrible crescendo.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s9.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_1",
+              "label": "Sueño 1",
+              "text": "Caes por el vacío abismal de Hali. Unas criaturas de origen desconocido e imposible acechan en la oscuridad, donde no puedes verlas. Hastur se alza sobre ti de forma gloriosa, pero cautivo de su prisión de locura, manipulando tu tortuoso descenso con un brazo extendido.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_7",
+              "label": "Sueño 7",
+              "text": "Te encuentras en el interior de la comisaría de policía de Arkham, tratando desesperadamente de explicarle al sargento de guardia lo que ha ocurrido en el Teatro Ward. Éste hace una mueca burlona y se niega a creerte: –Sabemos lo que intentas hacer –dice mientras te pone unas esposas en las muñecas–. Quedas arrestado por robo. Chicos, lleváoslo –Varios agentes te rodean para evitar que huyas. Nadie escucha tus protestas mientras te llevan escaleras abajo y te meten en una fría celda–. Quizás pasarte un tiempo encerrado te haga cambiar el cuento –grita el sargento de guardia. Cierra la puerta de un golpe y te deja sumido en una cascada de pensamientos. ¿Cómo se han enterado? ¿Cómo han podido saberlo?",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s7.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_10",
+              "label": "Sueño 10",
+              "text": "Persigues al Extranjero por una empinada escalera de piedra rota mientras una lluvia torrencial descarga sobre ti mientras corres. Ves relámpagos a lo lejos. Un remolino de nubes negras se forma sobre ti, amenazando con tragarse el mundo. El enmascarado atraviesa a la carrera unas anchas puertas que hay en lo alto de las escaleras, y le sigues de cerca. El sonido del trueno queda amortiguado cuando las puertas se cierran a tu espalda. Al levantar la vista, ves una imagen familiar en una vidriera. –¿Verdad que es precioso? –dice el Extranjero en voz baja.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s10.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_3",
+              "label": "Sueño 3",
+              "text": "–Vaya, vaya, si es nuestro estimado invitado –dice el hombre del bigote y el bastón de mango de plata. Coge una botella de vino de una encimera cercana y te sirve un vaso–. Me han dicho que tiene un gran interés por nuestra modesta producción –dice con una sonrisa–. Dígame, ¿cómo le está pareciendo el segundo acto hasta ahora?",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_13",
+              "label": "Sueño 13",
+              "text": "La voz de Daniel te llama: –Están abriendo el camino a Carcosa.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s13.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_6",
+              "label": "Sueño 6",
+              "text": "Las luces del auditorio se atenúan, y un foco ilumina el escenario. –¡Bienvenidos, damas y caballeros! –exclama la criatura. Sus numerosos tentáculos recorren el escenario, llegan hasta el techo y penetran en los pasillos. Arranca el telón, y una andrajosa tela roja cae sobre su bulbosa forma.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s6.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_s_11",
+              "label": "Sueño 11",
+              "text": "Evitas mirar la vidriera. Si este hombre malvado la considera preciosa, probablemente sea una trampa para atrapar tu mente. Aprietas los puños hasta que se te ponen blancos los nudillos y avanzas para enfrentarte al Extranjero.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_s11.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_despertar",
+              "label": "Despertar",
+              "text": "Despiertas de tu agitado sueño, sudoroso y boqueante. Esto no puede continuar. Sólo tienes una opción si quieres continuar tu investigación. Debes encontrar a Nigel Engram, director de El Rey de Amarillo y arquitecto de esta locura. Sólo él tendrá las respuestas que buscas. Haces las maletas y preparas tu viaje a París, la Ciudad de la Luz.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_despertar.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_intro_jordan",
+              "label": "Información de Jordan",
+              "text": "Según el Sr. Jordan Perry, que financió varias representaciones de El Rey de Amarillo por todo el mundo, Nigel Engram era un hombre excéntrico y apasionado, rozando lo obsesivo. Se rumorea que, desde que descubrió El Rey de Amarillo, no ha dirigido ninguna otra obra. Jordan conoció al Sr. Engram en una cafetería de Montparnasse, “L’agneau perdu”. Es allí adonde vas primero, con la esperanza de poder encontrar al Sr. Engram...",
+              "audio": "audios/cap1/campaign/carcosa/cap5_intro_jordan.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_1a_1",
+              "label": "Acto 1a: La conspiración parisina (v. I)",
+              "text": "Pasas junto a la iglesia de San Bernabé al salir de la estación de tren y no puedes evitar oír la música de su órgano. ¿Habrá servicio religioso a esta hora de la noche? Te maravillas ante los extraños y tempestuosos acordes durante unos instantes antes de continuar. París es una ciudad muy grande, y tienes muy pocas pistas…",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_1b_1",
+              "label": "Acto 1b: San Bernabé",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "_Si los investigadores gastaron pistas para avanzar_", 
+                  "content": "Estás a punto de chocarte con un hombre alto, cuyo abrigo y sombrero son tan negros como pálida es su piel. Recuerdas haberlo visto por las ventanas de la iglesia de San Bernabé. Su forma de tocar el órgano te sigue obsesionando…",
+                  "src": "audios/cap1/campaign/carcosa/cap5_acto_1b_1_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si no es así:", 
+                  "content": "El órgano que escuchaste antes te sigue obsesionando. Allá donde vas, los tortuosos acordes se repiten una y otra vez en tu cabeza. Extrañado, le preguntas por la iglesia a una transeúnte. –¿San Bernabé?– responde con un fuerte acento –. Ese sitio no existe.",
+                  "src": "audios/cap1/campaign/carcosa/cap5_acto_1b_1_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_1a_2",
+              "label": "Acto 1a: La conspiración parisina (v. II)",
+              "text": "Pasas junto a la iglesia de San Bernabé al salir de la estación de tren y no puedes evitar oír la música de su órgano. ¿Habrá servicio religioso a esta hora de la noche? Te maravillas ante los extraños y tempestuosos acordes durante unos instantes antes de continuar. París es una ciudad muy grande, y tienes muy pocas pistas…",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_1b_2",
+              "label": "Acto 1b: El mal verdadero",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "_Si los investigadores gastaron pistas para avanzar_", 
+                  "content": "El órgano que escuchaste antes te sigue obsesionando. Allá donde vas, los tortuosos acordes se repiten una y otra vez en tu cabeza. La sensación de que te están observando no deja de dar vueltas en tu mente.",
+                  "src": "audios/cap1/campaign/carcosa/cap5_acto_1b_2_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "Si no es así:", 
+                  "content": "Estás a punto de chocarte con un hombre alto, cuyo abrigo y sombrero es tan negros como pálida es su piel. Te echa una mirada de odio tan intensa y letal como jamás has visto. Retrocedes al verlo, y las sombras se arremolinan en torno a sus pies mientras camina hacia ti.",
+                  "src": "audios/cap1/campaign/carcosa/cap5_acto_1b_2_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_2a_1",
+              "label": "Acto 2a: Persiguiendo sombras",
+              "text": "Los acordes que resuenan en tu mente, el hombre infernal cuya música de órgano te intriga y aterra… ¿Podría haber alguna conexión entre esta sombría presencia y El Rey de Amarillo?",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_2a_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_2b_1",
+              "label": "Acto 2b: La oveja perdida",
+              "text": "Persigues a tu presa por una estrecha avenida y a través de unos pesados portones de hierro. Estás en un callejón sin salida, un patio con altas casas antiguas en todos sus lados. Cierras los portones y te vuelves hacia la sombría silueta justo cuando comienza a despuntar el alba. Rayos de luz asoman por las siluetas de los edificios, y levantas la mano para tapar el brillo del sol. A continuación, como si lo hubiera dispersado la luz de sol, la figura que perseguías se funde entre las sombras y desaparece. Registras el patio en busca del misterioso personaje, pero no hay ni rastro por ninguna parte. Cuando estás a punto de marcharte, ves una placa junto a una puerta de color marrón rojizo que se encuentra en lo alto de una empinada y estrecha escalinata y que dice: 'N. Engram'.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_2b_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_2a_2",
+              "label": "Acto 2a: Acechados por las sombras",
+              "text": "Sabía que cada vez que lo encontrara, el cumplimiento de su cometido y mi destino estarían más cerca. Y aún trataba de salvarme. –Robert W. Chambers, 'En la corte del dragón', El Rey de Amarillo",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_2a_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_acto_2b_2",
+              "label": "Acto 2b: El cayado del pastor",
+              "text": "Ni siquiera miras por dónde vas mientras huyes por la ciudad para ponerte a salvo. Tus pies se mueven solos. El batir de unas fuertes alas y el chillido de las criaturas que te sobrevuelan te hacen ir más rápido. Pronto te encuentras corriendo por una estrecha avenida y a través de unos pesados portones de hierro. Estás en un callejón sin salida, un patio con altas casas antiguas en todos sus lados. Te vuelves hacia la entrada y respiras con alivio al ver que el sol vuelve a salir sobre la silueta de los edificios de París. Como si lo hubiera dispersado la luz del sol, la figura que te perseguía se funde entre las sombras y desaparece. Cuando estás a punto de marcharte, ves una placa junto a una puerta de color marrón rojizo que se encuentra en lo alto de una empinada y estrecha escalinata y que dice: 'N. Engram'.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_acto_2b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_1a",
+              "label": "Plan 1a: La primera noche",
+              "text": "Cuando bajas del tren en la Gare d’Orsay, el sol se está poniendo tras la silueta de los edificios de París. No puedes perder tiempo. Si Nigel Engram está en algún lugar de París, debes encontrarlo y sacarle respuestas de un modo u otro.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_1b",
+              "label": "Plan 1b: La llegada del día",
+              "text": "Los pájaros empiezan a piar con ganas. Un suave tono naranja se extiende lentamente por el cielo mientras las criaturas de la noche se repliegan en la oscuridad. Pasas la mayor parte del día descansando, y la luz diurna pasa rápidamente sin que la aproveches del todo. Antes de que hayas podido recuperarte por completo de los acontecimientos de la noche anterior, vuelve a caer la noche.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_2a",
+              "label": "Plan 2a: La segunda noche",
+              "text": "La ciudad se agita cuando las frías sombras envuelven las calles. Estás rodeado de peligros. Peligros de los que no puedes escapar. Peligros que te seguirán hasta los confines de la Tierra. ¿Cuándo terminará esta pesadilla viviente?",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_2b",
+              "label": "Plan 2b: Sale un sol rojo",
+              "text": "Para tu alivio, el sol vuelve a salir una vez más, asomando por el horizonte oriental y proyectando largas sombras por las calles de la ciudad. Estás completamente agotado por los sucesos de la noche. Tienes la sensación de llevar semanas sin dormir. Y puede que sea así.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_3a",
+              "label": "Plan 3a: La tercera noche",
+              "text": "Cuando llega tu tercera noche en París, una determinación desesperada se agita en tu interior. Hay que acabar con este juego el gato y el ratón. De un modo u otro, esta noche será la última.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_cinco_plan_3b",
+              "label": "Plan 3b: Por fin llega el alba",
+              "text": "El sol se alza y disipa la oscuridad. Una cálida niebla envuelve la ciudad y tapa el cielo.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_5_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Ni siquiera miras por dónde vas mientras huyes por la ciudad para ponerte a salvo. Tus pies se mueven solos. El batir de unas fuertes alas y el chillido de las criaturas que te sobrevuelan te hacen ir más rápido. Pronto te encuentras corriendo por una estrecha avenida, por unos pesados portones de hierro. Estás en un callejón sin salida; un patio con altas casas antiguas en todos sus lados. Te vuelves hacia la entrada y ves las siluetas de muchas criaturas aladas que te bloquean el paso. Están posadas en los portones y en los balcones de los pisos superiores, esperando tu muerte. Caminando con fría y siniestra confianza, el hombre de negro abre el portón de hierro y entra en el patio. Su rostro brilla en la oscuridad. Sus ojos te atraviesan el alma. Durante un instante, reconoces su verdadero ser. Es lo último que recuerdas de esa noche.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_no_reso.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_reso_1",
+              "label": "Resolución 1",
+              "text": "Supones que esta casa pertenece a Nigel Engram, el director de El Rey de Amarillo. Por fin has encontrado tu objetivo... y aun así, no alivia tu forzada cordura. Te sientes como un perro al que llevan de una correa, con tu destino decidido por un cruel amo que te mantiene en la ignorancia. Apartas estos pesimistas pensamientos de tu mente y llamas a la puerta del Sr. Engram. No hay respuesta, pero una bandada de urracas sale volando del tejado por el ruido. Agarras el picaporte, esperando no tener que recurrir a la fuerza, pero, para tu sorpresa, la puerta está abierta. El interior del hogar de Nigel es un batiburrillo de notas, viejos libros y extraños diagramas. Sobre la mesita de su sala de estar hay un viejo mapa desvaído con muchos dobleces y bordes desgastados. Parece un mapa incompleto de las catacumbas que hay bajo París, o al menos parte de ellas. La comida de la despensa lleva allí mucho tiempo y está podrida. No parece que nadie haya vivido aquí desde hace años, y aun así, la tinta de las paredes de la sala de estar está húmeda y parece fresca. Cada centímetro del papel pintado está cubierto por una frase que se repite una y otra vez: Ya está aquí.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_reso_2",
+              "label": "Resolución 2",
+              "text": "Supones que esta casa pertenece a Nigel Engram, el director de El Rey de Amarillo. Por fin has encontrado tu objetivo...y aun así, no alivia tu forzada cordura. Te sientes como un perro al que llevan de una correa, con tu destino decidido por un cruel amo que te mantiene en la ignorancia. Apartas estos pesimistas pensamientos de tu mente y llamas a la puerta del Sr. Engram. No hay respuesta, pero una bandada de urracas sale volando del tejado por el ruido. Para tu sorpresa, la puerta se abre.\n\nEn el umbral de la puerta se encuentra un hombre alto con un poblado bigote marrón. Junto al perchero hay un familiar bastón con mango de plata apoyado en la pared. –Así que eres tú –dice el hombre–. Pasa. Llevo tiempo esperándote –Se gira y camina hacia la cocina. Oyes el silbido de una tetera, como si hubiera preparado tu llegada.\n\nEntras en su casa sin saber muy bien qué hacer. Este amable y sencillo hombre no es precisamente como esperabas. El interior del hogar de Nigel es un batiburrillo de notas, viejos libros y extraños diagramas. Sobre la mesita de su sala de estar hay un viejo mapa desvaído con muchos dobleces y bordes desgastados. Parece un mapa incompleto de las catacumbas que hay bajo París, o al menos parte de ellas. El Sr. Engram regresa poco después con té caliente y un plato de queso y galletas saladas. –¿Has venido para encontrar el camino hacia Carcosa? –pregunta con una sonrisa de emoción. Sacudes la cabeza como respuesta, pero no parece darse cuenta. Va de un lado a otro de la habitación mientras habla rápidamente–. Me dijo que llegarías pronto. Que debería... prepararme –Nigel se vuelve hacia ti con los ojos brillantes mientras extiende la mano hacia la puerta de madera que tienes enfrente–. No te preocupes. Todo está listo. El camino está creado –Abre la puerta de su estudio y entra, dejándote fuera mientras tratas de interpretar sus enigmáticos comentarios. Esperas unos minutos a que vuelva, pero al ver que no lo hace, comienzas a preocuparte. Entonces te das cuenta de que ya ha empezado a aparecer moho sobre el queso que ha traído–. ¿Señor Engram? –le llamas, y das unos golpecitos en la puerta del estudio. No hay respuesta. Cuando entras en la habitación, le encuentras ahorcado del ventilador del techo, podrido tras semanas de descomposición.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_5_reso_3",
+              "label": "Resolución 3",
+              "text": "Cuando el sol vuelve a salir sobre los tejados de París, pierdes de vista a la misteriosa figura. Frustrado por tu fracaso, vuelves a tu hotel para dormir y recuperarte de los horrores de las noches pasadas. Tus agitados sueños regresan: sueños de Carcosa, del Rey Andrajoso y de la sombría figura a la que perseguiste por las calles de París. Cuando despiertas, no estás en tu habitación del hotel.",
+              "audio": "audios/cap1/campaign/carcosa/cap5_reso_3.mp3"
+            }
+          ]
         }
       ]
     },
     {
       "id": "escenario_6",
       "title": "Escenario VI: La máscara pálida",
-      "comingSoon": true,
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_6_intro_1",
+              "label": "Introducción 1",
+              "text": "Te despiertan el aire sucio y rancio y el polvo que se cuelan en tu garganta. Estás tendido sobre una losa de fría piedra en un pasadizo subterráneo sin ninguna luz. ¿Cómo has llegado aquí? ¿Y dónde estás exactamente? Un escalofrío te recorre el cuerpo, y se te ponen los pelos de punta. Al levantarte, examinas tus alrededores. Las paredes y el techo están decorados con huesos, y ves cráneos con la boca abierta que te devuelven la mirada allí donde pones los ojos.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_intro_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_6_intro_2",
+              "label": "Introducción 2",
+              "text": "Lo que contenía la casa de Nigel Engram no responde ninguna de tus preguntas sobre El Rey de Amarillo, pero sí te da una pista de tu siguiente destino. El viejo y raído mapa que encontraste en la mesita muestra una sección de las infames catacumbas de París. Una de las salas del mapa está rodeada por un círculo a bolígrafo, y junto a ella hay escrito: “¡Aquí está la llave para abrir el camino!”. Te tragas el miedo y te diriges inmediatamente a la entrada a las catacumbas que hay bajo la Rue de la Tombe-Issoire.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_intro_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_6_intro_3",
+              "label": "Información de Haruko:",
+              "text": "Después del arco más cercano, ves un símbolo familiar grabado en el cráneo de una oveja: filas de semicírculos concéntricos y runas exóticas. Dos líneas onduladas bajan desde el diseño hacia la mandíbula inferior del cráneo. Reconoces el dibujo que te mostró Haruko. Preguntándote por qué aparece aquí, examinas el cráneo con atención. En cuanto tocas la parte inferior de la mandíbula del cráneo, su boca se abre de repente. Varios huesos caen al suelo cuando la pared se desliza para revelar un nuevo camino.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_intro_3.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_1a",
+              "label": "Acto 1a: Por las catacumbas",
+              "text": "Al final del largo túnel que tienes al lado, el Extranjero atraviesa la oscuridad, y su pálida máscara centellea con la luz de las velas. -¡Espera! -gritas. Mira en tu dirección antes de desaparecer entre las sombras. Una vez más, te ves obligado a buscarlo para encontrar respuestas…",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_1b",
+              "label": "Acto 1b: La sombra del Extranjero",
+              "text": "Hilera tras hilera de cráneos hacen castañetear sus dientes de forma incesante mientras atraviesas una estrecha arcada de piedra hacia una cámara redonda iluminada por un fuego. En el centro de la tumba se encuentra el Extranjero, mirando la llama. Las sombras bailan y se retuercen a lo largo de la pared. Allí donde deberían estar sus brazos de sombra, emergen formas de tentáculos que envuelven las paredes en oscuridad. Levanta las manos hacia la pared, como si intentara mostrarte algo.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_2a",
+              "label": "Acto 2a: El camino está bloqueado",
+              "text": "Las sombras proyectadas por las paredes de hueso se transforman en las siluetas de varios personajes que interpretan una macabra parodia de El Rey de Amarillo.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_2b",
+              "label": "Acto 2b: Detrás de la máscara",
+              "noAutoPlay": true,
+              "segments": [
+                { 
+                  "type": "audio", 
+                  "title": "_Si el hombre de la máscara pálida fue derrotado_", 
+                  "content": "El Extranjero hinca la rodilla, visiblemente herido. Tienes los nudillos blancos de ira y gritas: -Estamos al tanto de Carcosa y de Hastur. ¡Ahora dinos cómo detener esta locura! -El Extranjero clava los dedos en el frío suelo de piedra y las catacumbas tiemblan…",
+                  "src": "audios/cap1/campaign/carcosa/cap6_acto_2b_1.mp3"
+                },
+                { 
+                  "type": "audio", 
+                  "title": "_Si los investigadores gastaron pistas para avanzar_", 
+                  "content": "Tras darte cuenta que el Extranjero no supone ningún peligro inmediato, estudias los que te rodea y las extrañas sombras de la pared. Coge algo del fuego, y las sobras vuelve a retorcerse y distorsionarse, revelando un extraño diagrama…",
+                  "src": "audios/cap1/campaign/carcosa/cap6_acto_2b_2.mp3"
+                }
+              ]
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_3a_1",
+              "label": "Acto 3a: La salida de allí",
+              "text": "Varios huesos caen al suelo debido a que las cavernas que te rodean tiemblan y se desmoronan. El Extranjero agarra un cráneo que hay en las llamas del centro de la cámara y huye.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_3a_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_3b_1",
+              "label": "Acto 3b: Las catacumbas se desploman",
+              "text": "Las catacumbas retumban y se desploman a tu espalda mientras tratas de escapar. Logras seguir la sombra del Extranjero y seguir sus pasos para encontrar el camino de salida por los laberínticos corredores. Cruzas el umbral de la entrada de las catacumbas, dejando a tu paso una oleada de escombros y esquirlas de hueso. Un ruido ensordecedor de restos que caen a tu espalda te hace girarte para descubrir que la entrada está bloqueada por un muro recién formado de huesos y rocas. Cuando estás a punto de marcharte, un cráneo parcialmente calcinado y que tiene un extraño diagrama rueda hasta detenerse a tus pies. No hay rastro del Extranjero por ninguna parte.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_3b_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_3a_2",
+              "label": "Acto 3a: Marcando el camino",
+              "text": "Las sombras que recorren las paredes de la tumba empiezan a fusionarse. Extraños símbolos rúnicos se retuercen hasta formar la imagen de una torre que crece hacia el techo. A continuación, el Extranjero te hace un gesto para que lo sigas y desaparece por la arcada de piedra que tienes detrás.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_3a_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_acto_3b_2",
+              "label": "Acto 3b: La salida secreta",
+              "text": "Siguiendo al Extranjero, recorres un circuito por los pasadizos subterráneos, hasta que por fin llegas a un callejón sin salida: un túnel bloqueado por un muro imposiblemente grueso hecho de huesos y escombros. El Extranjero está allí al lado, sosteniendo el cráneo parcialmente calcinado que sacó del fuego en la Tumba de las sombras. -¿Y ahora qué? -preguntas, confundido. Él sostiene el cráneo en alto, y el suelo comienza a hundirse y a formar un pozo de oscuro vacío. Los huesos y escombros del muro caen al pozo, que va creciendo con cada instante que pasa. El Extranjero hace una inclinación y luego cae de espaldas por el pozo antes de que puedas cogerlo. -¡Espera! -gritas, pero es demasiado tarde. Puesto que el pozo crece y amenaza con tragarse las catacumbas por completo, no tienes más elección que seguirlo.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_acto_3b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_plan_1a",
+              "label": "Plan 1a: El imperio de los muertos",
+              "text": "El frío y húmedo aire rancio de las catacumbas penetra en tu ropa y te hace estremecerte. Mires donde mires, los restos de los muertos te saludan como un siniestro recuerdo de tu propia mortalidad.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_plan_2a",
+              "label": "Plan 2a: El imperio de los no muertos",
+              "text": "A tu alrededor, los ojos de los cráneos brillan con un tono sobrenatural. Una voz fantasmal resuena por las laberínticas catacumbas. Notas una presencia amenazadora que te acecha. Está siempre fuera de tu campo visual, tras la tenue niebla que recorre las catacumbas, en cada rincón…",
+              "audio": "audios/cap1/campaign/carcosa/cap6_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_seis_plan_2b",
+              "label": "Plan 2b: Unirse a ellos en la muerte",
+              "text": "La presencia fantasmal que te amenaza crece cada minuto que pasas explorando estas terribles catacumbas. Caminas más rápido, echando nerviosas miradas hacia atrás cada pocos pasos. ¿Por qué te persigue? ¿Cuál es su propósito? Tira y estira en la periferia de tus sentidos. Doblas una esquina y ves su sombría silueta informe mirándote. Das media vuelta y huyes, pasando por un estrecho corredor de piedra que no reconoces. En cada intersección, en cada esquina, sus brazos de sombra intentan cogerte, y sus muchos rostros están demudados por la agonía. No puedes escapar. Resignado a tu destino, caes de rodillas tras perder la esperanza y te quedas mirando el frío suelo de piedra. Notas cómo se acerca la presencia, pero no puedes levantar la vista. Todo se vuelve negro.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_plan_2b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_6_no_reso",
+              "label": "Ninguna resolución",
+              "text": "Te despierta el zarandeo de un agente de policía que te pone en pie. Te sientes como si un tren se hubiera estrellado contra tu cabeza. El dolor es insoportable. El hombre te apunta con una linterna a los ojos y te hace varias preguntas en francés. Conmocionado como estás, te resulta difícil responder. Señala la escalera cercana y te saca a empujones de las catacumbas. Sales a trompicones a la Rue de la Tombe-Issoire y te diriges lentamente hacia un hotel en el que puedas pasar la noche. Tras varios días de investigación, sigues sin entender el significado de los extraños diagramas que viste en las catacumbas. Notas como si te hubieran puesto a buscar una aguja en un pajar. Cuando estás a punto de darte por vencido, ves un desvaído libro amarillo en la mesa que tienes más cerca. Te asombra descubrir que es el guion completo de El Rey de Amarillo. Dibujado con tinta negra en la portada ves el mismo diagrama cuyo significado llevas tratando de interpretar varias noches insomnes. ¿Quién lo ha puesto aquí? ¿Cómo ha llegado a tu habitación? Independientemente de eso, sabes lo que debes hacer. La obra contiene los secretos, lo ha hecho todo el tiempo, y aun así, como un idiota, has evitado leer el segundo acto por pura superstición. Sus palabras no pueden dañarte más que las criaturas y fanáticos que has encontrado. Tembloroso, abres la segunda parte y comienzas a leer.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_no_reso.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_6_reso_1",
+              "label": "Resolución 1",
+              "text": "El cráneo calcinado es la clave de todo. Estás seguro. Has intentado todos los métodos que tienes a tu disposición para estudiar el diagrama que lleva, pero se te sigue escapando la respuesta. Has llevado el cráneo a expertos, ocultistas y profesores. Incluso has tratado de hablar con el cráneo en más de una ocasión. Exasperado, colocas el cráneo en tu mesilla de noche y tratas de dormir por primera vez desde que escapaste de las catacumbas. Cuando te quedas dormido, no logras borrar la imagen del diagrama grabado en la frente del cráneo. Te despiertas con una chispa de inspiración y te diriges corriendo al Musée du Louvre, un famoso museo parisino que alberga decenas de miles de cuadros, dibujos y hallazgos arqueológicos. Pasas días explorando el museo; cada exposición, colección y objeto de arte que podría contener alguna pista sobre el significado del diagrama. Por fin lo ves: un cuadro que muestra una preciosa ciudad isleña que soporta una tormenta torrencial. Las olas chocan contra la piedra de la muralla exterior, y la marea amenaza con engullir la isla entera. Hay destellos de relámpagos alrededor de la torre de la abadía que hay sobre la aldea. Un remolino de nubes negras gira en el cielo. El diagrama del cráneo quemado que tienes en las manos aparece perfectamente recreado en una vidriera de la abadía. El título del cuadro es “El camino está abierto”.",
+              "audio": "audios/cap1/campaign/carcosa/cap6_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_6_reso_2",
+              "label": "Resolución 2",
+              "text": "Caes sin cesar por un abismo vacío. No hay aire que ralentice tu descenso ni recorra tu pelo. Es un pasaje desprovisto de realidad. Por fin, atraviesas un portal invisible y entras en otro reino. Por encima y por debajo de ti hay dos firmamentos, y uno es el distorsionado reflejo del otro. Entre ellos se encuentra un remolino de nubes negras y olas rompientes. Estudias ambos lados: la familiar ciudad y su extraño reflejo. ¿Podría ser éste el camino a Carcosa? ¿Un pasaje entre realidades, donde convergen los reinos? Si es así, todo lo que debes hacer es encontrar dónde aparece este portal en la Tierra. Te precipitas al vórtice que tienes debajo. Te despierta el zarandeo de un agente de policía que te pone en pie. Te sientes como si un tren se hubiera estrellado contra tu cabeza. El dolor es insoportable. El hombre te apunta con una linterna a los ojos y te hace varias preguntas en francés. Abres los ojos como platos al comprenderlo todo, y te sueltas del agarre del confundido hombre. –¡Debo irme de inmediato!",
+              "audio": "audios/cap1/campaign/carcosa/cap6_reso_2.mp3"
+            }
+          ]
         }
       ]
     },
     {
       "id": "escenario_7",
-      "title": "Escenario VII: Se alzan estrellas negras",
-      "comingSoon": true,
+      "title": "Escenario VII: Surgen estrellas negras",
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_7_intro_1",
+              "label": "Introducción",
+              "text": "La comunidad isleña de Mont Saint-Michel se encuentra en la costa noroeste de Francia. Es preciosa, elegante y enigmática; un lugar sacado de un cuento de hadas. Sólo que este cuento está lleno de horrores y locura. Durante la marea baja, podrías alcanzar la isla a pie cruzando el paso que emerge del mar. Sin embargo, para cuando llegas a la costa, la marea está mucho más alta de lo que esperabas. Oscuras nubes cubren el cielo, y un lejano trueno señala el inicio de la tormenta que se avecina. Encuentras un barco cuyo capitán está dispuesto a llevarte a la isla, y te preparas para el ritual que va a producirse.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_intro_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_7_intro_2",
+              "label": "Información de Ashleigh",
+              "text": "Recuerdas la noche en la que comenzó todo esto, y tus recuerdos vuelven a la cautivadora canción que interpretó Ashleigh aquella noche. De algún modo, recuerdas perfectamente la letra a pesar del tiempo que ha transcurrido, y su espectral melodía está grabada en tu mente. “Arriba, sobre la ciudad, las nubes truenan y las olas chocan contra la jaula dorada... Abajo, en la tierra, el agua salada se filtra, las sombras caen donde el sol rojo dormita”. Al estudiar la isla que tienes delante, iluminada por los destellos de los relámpagos y asaltada por violentas olas, no puedes evitar preguntarte si Ashleigh cantaba sobre este mismo instante.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_intro_2.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_siete_acto_3a",
+              "label": "Acto 3a: Abrir el camino de abajo",
+              "text": "El agua de la marea se agita en torno a los muros de la ciudad. Las capas de la realidad se despliegan. Ves las retorcidas torres de Carcosa reflejadas en las profundidades. No tienes más elección que sumergirte.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_acto_3b",
+              "label": "Acto 3b: A Carcosa",
+              "text": "Solo tú puedes evitar que Hastur escape de su prisión. Te sumerges en las aguas revueltas y abres el camino a Carcosa, el reino de la locura.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_acto_3c",
+              "label": "Acto 3c: Abrir el camino de arriba",
+              "text": "Las nubes se agitan en torno a la torre de la abadía. Las capas de la realidad se despliegan. Ves las retorcidas torres de Carcosa a través de las oscuras nubes de tormenta. No tienes más elección que dar el salto.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_acto_3c.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_acto_3d",
+              "label": "Acto 3d: A Carcosa",
+              "text": "Solo tú puedes evitar que Hastur escape de su prisión. Saltas hacia el rugiente remolino y abres el camino a Carcosa, el reino de la locura.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_acto_3d.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_1a",
+              "label": "Plan 1a: La marea sube",
+              "text": "Tu barco atraca en la Porte de l’Avancée, pero entre la marea creciente y la lluvia torrencial que inunda la calle, el capitán del barco no tiene intención de quedarse. Te dice que volverá a por ti por la mañana. le dices que no se moleste; probablemente no estés aquí para entonces.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_1b",
+              "label": "Plan 1b: Que el amanecer rojo adivine",
+              "text": "La marea sigue subiendo rápidamente, y los muros exteriores del pueblo se ven asaltados por vientos de fuerza huracanada y una lluvia gélida. La tormenta no deja de crecer en intensidad cuando la tarde da paso a la noche. Pronto, el agua de la marea inundará la ciudad por completo.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2a",
+              "label": "Plan 2a: Que ruja la tormenta",
+              "text": "El enfurecido mar sigue golpeando la isla. Las olas chocan contra los muros, y la lluvia azota los tejados. ¿Será el embravecido mar la llave para abrir el camino? Si es así, no tienes más elección que dejar que la tormenta ruja…",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2b_1",
+              "label": "Plan 2b: Los mundos se entrelazan",
+              "text": "Algo no va bien. La inundación ya tendría que haber activado el portal a estas alturas. Has investigado este ritual hasta donde has podido, pero, por algún motivo, no está funcionando. Desesperado, miras hacia el firmamento en busca de alguna señal. Varios relámpagos surcan el vórtice de nubes negras que lo cubre. Ves siluetas con túnicas amarillas que escudriñan el cielo a lomos de monstruosas criaturas aladas. De pronto, te das cuenta de tu error: la llave no era la marea, ¡sino el cielo!",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2b_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2b_2",
+              "label": "Plan 2b: El camino a Carcosa",
+              "text": "El ritual está casi completo. Lo único que queda es encontrar el portal y atravesarlo.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_3a",
+              "label": "Plan 3a: La ciudad se inunda",
+              "text": "El nivel del agua sigue creciendo. Los muros exteriores no pueden evitar que la marea se trague la isla. Las calles se inundan de agua fría como el hielo, y unas poderosas olas derriban los edificios. Si no actúas pronto, el camino se perderá para siempre, y nadie podrá evitar que los agentes de Hastur lo liberen de su prisión.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_3b",
+              "label": "Plan 3b: Morir inaudibles",
+              "text": "El mar se traga entera Mont Saint-Michel. El agua marina se desborda sobre los muros y rompe contra la mitad inferior de la ciudad. La abadía es el único refugio ante la inundación, pero incluso ella acabará siendo consumida. El vórtice del cielo, tu única esperanza para escapar de esta perdición, de pronto se disipa en volutas grises.Te sientas sobre una losa de roca mojada en el exterior de la abadía y contemplas la locura que te rodea. ¿Cómo se ha llegado a esto? ¿Está ocurriendo realmente todo esto? ¿O vas a despertar en el manicomio como Daniel Chesterfield, víctima de una cruel broma cósmica?",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_1c",
+              "label": "Plan 1c: Comienza el ritual",
+              "text": "Negras nubes de tormenta se arremolinan sobre tu cabeza. Un vórtice de energía arcana ruge en el centro de la tormenta. El ritual ha comenzado. El portal podría aparecer sobre la abadía o bajo ella. Debes elegir qué ruta seguir y llegar al portal antes de que lo hagan los agentes de Hastur.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_1c.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_1d",
+              "label": "Plan 1d: Muerte de la estrella azul",
+              "text": "A medida que el vórtice aumenta en tamaño y fuerza, también lo hace su efecto sobre la realidad. Los restos y escombros comienzan a flotar hacia arriba, atraídos hacia el terrible vacío. Un estruendo hace temblar la isla hasta su mismísimo núcleo. La ciudad entera pronto será destruida por el torbellino.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_1d.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2c",
+              "label": "Plan 2c: La entidad de arriba",
+              "text": "El remolino que hay sobre la isla sigue rugiendo. Cegadores destellos de relámpagos y ensordecedores truenos asaltan tus sentidos. ¿ Es el vórtice de arriba la llave para abrir el camino? Si es así, no tienes más elección que hacer que la entidad se acerque…",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2c.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2d_1",
+              "label": "Plan 2d: Los mundos se entrelazan",
+              "text": "Algo no va bien. El vórtice ya tendría que haber activado el portal a estas alturas. Has investigado este ritual hasta donde has podido, pero, por algún motivo, no está funcionando. Desesperado, examinas lo que te rodea. Las olas rompen y se desbordan sobre los muros exteriores del pueblo, inundando las calles. Ves siluetas con túnicas amarillas escudriñando las calles, y sus faroles iluminan las aguas de la inundación. De pronto, te das cuenta de tu error: la llave no era el vórtice, ¡sino el mar!",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2d_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_2d_2",
+              "label": "Plan 2d: El camino a Carcosa",
+              "text": "El ritual está casi completo. Lo único que queda es encontrar el portal y atravesarlo.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_2b_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_3c",
+              "label": "Plan 3c: Cielo engullido",
+              "text": "El torbellino del cielo envuelve el horizonte. La isla comienza a hacerse pedazos. Los chillidos de unas criaturas imposibles llenan el aire como un coro impío que reza a una fuerza más allá de tu comprensión. Si no actúas pronto, el camino se perderá para siempre, y nadie podrá evitar que los agentes de Hastur lo liberen de su prisión.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_3c.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_siete_plan_3d",
+              "label": "Plan 3d: Morir inaudibles",
+              "text": "El vórtice consume la abadía de Mont Saint-Michel, convirtiéndola en miles de esquirlas de realidad. La isla deja de estar sujeta pro la gravedad, y los escombros comienzan a elevarse por los aires. Las calles inferiores de la isla son el único refugio del enfurecido cielo, pero también acabarán por ser consumidas. El agua de la marea, tu única esperanza para escapar de esta perdición, se retira de improviso, y la inundación se filtra en la tierra./nTe sientas al borde de la torre norte, bajo la abadía y contemplas la locura que te rodea. ¿Cómo se ha llegado a esto? ¿Está ocurriendo realmente todo esto? ¿O vas a despertar en el manicomio como Daniel Chesterfield, víctima de una cruel broma cósmica?",
+              "audio": "audios/cap1/campaign/carcosa/cap7_plan_3d.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_7_reso_1",
+              "label": "Resolución 1",
+              "text": "Aguantas la respiración mientras buceas por la helada agua hacia las torres de las profundidades. Al acercarte, ves ondas por el agua, como si mirases un reflejo en la superficie del mar. Atraviesas la superficie y jadeas mientras el aire llena tus pulmones.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_7_reso_2",
+              "label": "Resolución 2",
+              "text": "Te maravillas ante las nubosas olas que te rodean y vuelas hacia las torres del cielo. La desolada e inescrutable ciudad de Carcosa se alza ante ti. De pronto, te das cuenta de que estás cayendo, y no flotando, y que una fuerza ha hecho presa de tu cuerpo y tira de ti.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_7_reso_3",
+              "label": "Resolución 3",
+              "text": "Cuando despiertas, estás sentado en el coro gótico de la abadía de Mont Saint-Michel. La lluvia ya no golpea el cristal de las ventanas, y tampoco oyes truenos ni el chillido de los horrores alados. De algún modo, has escapado a la perdición segura de la isla. Te acercas a la puerta de la abadía y la abres con inquietud. Una deslumbrante luz te ciega, y levantas la mano para tapar el brillo de dos soles. Te encuentras sobre el Lago de Hali. El cielo que hay sobre tu cabeza está poblado de estrellas negras. Al otro lado, sobre leguas de nubosas olas agitadas, las torres de Carcosa se alzan tras la destrozada luna.",
+              "audio": "audios/cap1/campaign/carcosa/cap7_reso_3.mp3"
+            }
+          ]
         }
       ]
     },
     {
       "id": "escenario_8",
-      "title": "Escenario VIII: Tenue Carcosa",
-      "comingSoon": true,
+      "title": "Escenario VIII: Pebumbrosa Carcosa",
       "components": [
         {
           "type": "introduccion",
           "title": "Introducción",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_8_intro_1",
+              "label": "Introducción 1",
+              "text": "Nadas hasta el borde de agua y te tiras sobre la rocosa orilla, jadeando mientras tragas aire. Te quedas allí tendido un rato, completamente agotado. Te duelen todos los músculos del cuerpo. Ante ti, ves una desolada llanura muy extensa. A lo lejos, las torres alienígenas de una retorcida ciudad se alzan hacia las nubes. A tu espalda, la oscura superficie del lago del que has emergido refleja el brillo de dos soles. Cuando vuelves a mirar las turbias profundidades, no ves ni rastro de la capilla desde la que saltaste, ni de Mont Saint-Michel o ni siquiera de la Tierra. Esto es Carcosa, el reino de la locura en las estrellas, donde Hastur reina supremo.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_intro_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_8_intro_2",
+              "label": "Introducción 2",
+              "text": "Aterrizas en un trozo de roca de obsidiana negra que sube por una oscura torre. Toses sangre y notas un agudo dolor en el estómago, como si te hubieras roto una costilla. Ante ti, se extiende una retorcida ciudad alienígena. Sus serpenteantes calles y aberrante arquitectura no tienen ningún semblante de orden o estructura. A lo lejos, un turbio lago refleja el brillo de dos soles. Al levantar la vista, la abadía de Mont Saint-Michel apenas asoma bajo las nubes, puesta del revés. Esto es Carcosa, el reino de la locura en las estrellas, donde Hastur reina supremo.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_intro_2.mp3"
+            }
+          ]
         },
         {
           "type": "actos_planes",
           "title": "Actos y Planes",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_ocho_acto_1a",
+              "label": "Acto 1a: En la Perdida Carcosa",
+              "text": "Has abierto el camino a Carcosa para detener a quienes pretenden liberar a Hastur de su prisión de estrellas. ¡Sólo tú puedes ponerle fin a esta locura!",
+              "audio": "audios/cap1/campaign/carcosa/cap8_acto_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_acto_1b",
+              "label": "Acto 1b: ¿Fin de la obra…?",
+              "text": "Una sombra se desliza por la pared junto a ti, y se te hace un nudo en la garganta. Al girarte, una silueta desaparece de tu vista rápidamente. O tu mente te engaña, o hay alguien más en el teatro.\n\nSigues la dirección de la sombra doblando una esquina cercana. En el otro extremo del pasillo te espera el hombre que lleva la máscara pálida: el Extranjero cuyos pasos llevas siguiendo varias semanas. Recuerdas que ya has estado antes aquí.\n\nEl teatro se disuelve a tu alrededor. El brillante resplandor de dos soles te inunda los ojos. –¿Lo recuerdas ahora?– te pregunta. Se da media vuelta y desaparece en el éter, como si te retara a que lo sigas.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_acto_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_acto_2a_1",
+              "label": "Acto 2a: En busca del Extranjero (v.I & v.II & v.III)",
+              "text": "Es hora de enfrentarte definitivamente al Extranjero y descubrir la verdad sobre su identidad de una vez por todas.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_acto_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_acto_3a",
+              "label": "Acto 3a: El Rey harapiento",
+              "text": "…oí al Rey de Amarillo que me susurraba al aído: –¡Es terrible caer en las garras del Dios vivo!.\n– Robert W. Chambers, 'En la corte del dragón', El Rey de Amarillo",
+              "audio": "audios/cap1/campaign/carcosa/cap8_acto_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_acto_3b",
+              "label": "Acto 3b: Fin",
+              "text": "Un coro de gritos resuena en tu mente. Los caóticos acordes de un órgano torturan tus oídos. Caes de rodillas mientras te sangran los ojos. El reino de Carcosa se rompe en millones de pedazos y se desvanece en el vacío del espacio.\nSe cierra el telón.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_acto_3b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_1a",
+              "label": "Plan 1a: La locura se enrosca",
+              "text": "Y ahora, a lo lejos, sobre leguas de nubosas olas agitadas, vi la luna con perlas de rocío; y más allá las torres de Carcosa se alzaban tras la luna.\n– Robert W. Chambers, 'En la corte del dragón', El Rey de Amarillo",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_1a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_1b",
+              "label": "Plan 1b: ¿La llave de…?",
+              "text": "Al doblar una esquina, estás a punto de chocarte con una enfermera de marcados rasgos y pelo castaño claro. Le cuentas lo ocurrido con los pacientes violentos y las cosas extrañas que has visto, pero no te escucha. Cuando le preguntas por Daniel, te informa que es amigo del Rey y que se encuentra en palacio.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_1b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_2a",
+              "label": "Plan 2a: La locura ahoga",
+              "text": "También pensaba en el Rey de Amarillo envuelto en los fantásticos colores de su capa harapienta y el amargo grito de Cassilda: '¡No a nosotros no, oh Rey, no a nosotros!'\n– Robert W. Chambers, 'La máscara', El Rey de Amarillo",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_2a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_2b",
+              "label": "Plan 2b: ¿La última invitada…?",
+              "text": "–Vaya, nuestra última invitada –anuncia el portero–. Señora Devine, todo el mundo aguardaba su presencia hoy. –La criatura sube reptando por el lateral del palacio. Jurarías que ya has visto antes el símbolo de amuleto. Un momento, esto no puede ser cierto–.\nBueno, pues que empiece la fiesta de verdad –ruge.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_2b.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_3a",
+              "label": "Plan 3a: La locura muere",
+              "text": "…no puedo olvidarme de Carcosa donde estrellas negras lucen en los cielos; donde las sombras de los pensamientos de los hombres se alargan en la tarde, cuando los soles gemelos se hunden en el lago Hali; y mi memoria cargará para siempre con el recuerdo de la Máscara Pálida.\n– Robert W. Chambers, 'El reparador de reputaciones', El Rey de Amarillo",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_3a.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_ocho_plan_3b",
+              "label": "Plan 3b: La Tierra y Carcosa",
+              "text": "El cielo cae. Volutas de nubes azotan la tierra, y las docenas de lunas del cielo se hacen pedazos. Los fragmentos de las entidades cósmicas se precipitan contra el suelo y asaltan la ciudad. El oscuro reflejo de Mont Saint-Michel que flota boca abajo sobre ti comienza a descender. La abadía se estrella contra el palacio del Rey, lanzando escombros de ébano en todas direcciones. La espantosa y sonora risa de Hastur invade tu mente. Se acabó.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_plan_3b.mp3"
+            }
+          ]
         },
         {
           "type": "resoluciones",
           "title": "Resoluciones",
-          "items": []
+          "items": [
+            {
+              "id": "cap1_carcosa_escenario_8_reso_1",
+              "label": "Resolución 1",
+              "text": "Estás en el balcón de la torre de la abadía de Mont Saint-Michel, y el húmedo viento te atraviesa el pelo. Tienes la máscara pálida en las manos, desprovista de calor. Apenas eres capaz de obligarte a mirarla. Ahora lo recuerdas todo: cómo empezó, cómo acabó y todo lo que sucedió entremedias. Sólo queda una cosa por hacer. Lanzas la máscara por los aires con todas tus fuerzas y miras cómo cae hacia las olas movidas por la tempestad.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_reso_1.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_8_reso_2",
+              "label": "Resolución 2",
+              "text": "Un aplauso ensordecedor te despierta. El público del teatro se pone en pie mientras vitorea sin cesar. Varios espectadores de la primera fila están echándoles rosas a los actores del escenario, que saludan con amplias sonrisas en el rostro. Un punzante dolor de cabeza te recorre las sienes. ¿Cómo has vuelto aquí? ¿Estuviste todo el tiempo en el teatro? ¿Qué pasa con la fiesta? ¿Con el manicomio? ¿Con las catacumbas? ¿...con Carcosa? ¿Fue todo un terrible sueño? Sales del auditorio antes de que el numeroso público haga lo mismo. El mareo y el agotamiento inundan tus sentidos. El peso de tu larga investigación te aplasta la mente. Para cuando llegas al vestíbulo, vas arrastrándote por el suelo. Entonces, un hombre con un elegante traje se agacha y te coge del brazo para ayudarte a ponerte en pie. Estás a punto de darle las gracias cuando te das cuenta de quién es. Su mera visión hace que retrocedas tambaleándote de horror durante un instante. El actor que interpreta el papel del Extranjero aún llega su pálida máscara sin facciones. Hace una inclinación sin decir nada y luego se da media vuelta para marcharse por la entrada principal del Teatro Ward.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_reso_2.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_8_reso_3",
+              "label": "Resolución 3",
+              "text": "Cuando despiertas, estás sentado en el coro gótico de la abadía de Mont Saint-Michel. La lluvia ya no golpea el cristal de las ventanas, y tampoco oyes truenos ni el chillido de los horrores alados. De algún modo, has escapado. Te acercas a la puerta de la abadía y la abres con inquietud. Una deslumbrante luz te ciega, y levantas la mano para tapar el brillo del sol. Tienes ante ti el precioso pueblo de Mont Saint-Michel. Las gaviotas sobrevuelan la abadía por el cielo sin nubes. Las aguas que rodean la abadía están tranquilas y son de un color azul celeste. –¡Le he estado buscando por todas partes! –oyes que dice una voz a tu espalda. Te giras con sobresalto, y por un instante esperas ver al Extranjero y su máscara pálida. Sin embargo, se trata del capitán de barco al que contrataste para que te trajera a Mont Saint-Michel. Está al final de los escalones y te sonríe–: ¿Listo para regresar?",
+              "audio": "audios/cap1/campaign/carcosa/cap8_reso_3.mp3"
+            },
+            {
+              "id": "cap1_carcosa_escenario_8_reso_4",
+              "label": "Resolución 4",
+              "text": "Cuando despiertas, estás sentado en el coro gótico de la abadía de Mont Saint-Michel. La lluvia ya no golpea el cristal de las ventanas, y tampoco oyes truenos ni el chillido de los horrores alados. De algún modo, has escapado a la perdición segura de la isla. Te acercas a la puerta de la abadía y la abres con inquietud. Una deslumbrante luz te ciega, y levantas la mano para tapar el brillo de dos soles. Te encuentras sobre el Lago de Hali. El cielo que hay sobre tu cabeza está poblado de estrellas negras. Al otro lado, sobre leguas de nubosas olas agitadas, las torres de Carcosa se alzan tras la destrozada luna.",
+              "audio": "audios/cap1/campaign/carcosa/cap8_reso_4.mp3"
+            }
+          ]
         }
       ]
     }

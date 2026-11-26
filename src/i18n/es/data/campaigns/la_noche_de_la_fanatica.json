@@ -2,7 +2,7 @@
   "type": "campaign",
   "origin": "oficial",
   "era": 1,
-  "beta": true,
+  "beta": false,
   "id": "la_noche_de_la_fanatica",
   "title": "La noche de la fanática",
   "banner": "images/banner_fanatica_01.webp",

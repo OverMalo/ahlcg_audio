@@ -39,7 +39,7 @@ export default {
   news,
   appData: composeContent({
     chapter: "Capítulo 2",
-    campaigns: [hermanosDeLasCenizas, vastagosDeSangre, laNocheDeLaFanatica, elLegadoDeDunwich ],
+    campaigns: [hermanosDeLasCenizas, vastagosDeSangre, laNocheDeLaFanatica, elLegadoDeDunwich, elCaminoACarcosa ],
     standalone: [rastrosNingunaParte, elDiaQueLaTierraAullo, sleepyHollow ],
     ambientConfig: ambient.ambientConfig,
   }),

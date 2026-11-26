@@ -1,8 +1,10 @@
 {
-  "version": 4,
+  "version": 5,
   "title": "Novedades",
   "items": [
-    { "text": "Noviembre 2026", "heading": true },
+    { "text": "Noviembre 2026 - Capítulo 1", "heading": true },
+    "Campaña 'El camino a Carcosa' disponible.",
+    { "text": "Noviembre 2026 - Capítulo 2", "heading": true },
     "Escenario 'Rastros a ninguna parte' disponible."
   ],
   "closeBtnLabel": "Entendido"
